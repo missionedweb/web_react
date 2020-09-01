@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="77.76" height="76.96" viewBox="0 0 77.76 76.96">
+  <defs>
+    <ellipse id="ellipse-1" cx="38.88" cy="37.48" rx="37.88" ry="37.48"/>
+    <filter id="filter-2" width="200%" height="200%" x="-50%" y="-50%" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="1" in="SourceAlpha" result="shadow-1-feOffset-shadow"/>
+      <feGaussianBlur in="shadow-1-feOffset-shadow" result="shadow-1-feGaussianBlur-shadow" stdDeviation=".602"/>
+      <feColorMatrix in="shadow-1-feGaussianBlur-shadow" result="shadow-1-feColorMatrix-shadow" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.5 0"/>
+    </filter>
+  </defs>
+  <g>
+    <g>
+      <use fill="black" stroke="black" stroke-opacity="0" stroke-width="0" filter="url(#filter-2)" xlink:href="#ellipse-1"/>
+      <use fill="rgb(253,247,233)" xlink:href="#ellipse-1"/>
+    </g>
+    <path fill="rgb(255,98,0)" fill-rule="evenodd" d="M15.68 17.08h9.92c.36 0 .64.28.64.64v40.24c0 .36-.28.64-.64.64h-9.92c-.36 0-.64-.28-.64-.64V17.72c-.04-.36.24-.64.64-.64z"/>
+    <path fill="rgb(255,130,12)" fill-rule="evenodd" d="M30.32 17.08h9.92c.36 0 .64.28.64.64v40.24c0 .36-.28.64-.64.64h-9.92c-.36 0-.64-.28-.64-.64V17.72c0-.36.28-.64.64-.64z"/>
+    <path fill="rgb(254,165,63)" fill-rule="evenodd" d="M64.36 56.24L57.2 58.4c-1 .32-2.04-.24-2.32-1.24L43.68 21c-.28-.96.24-2 1.24-2.32l7.16-2.16c1-.28 2.04.24 2.32 1.24l11.16 36.16c.32 1-.24 2.04-1.2 2.32z"/>
+  </g>
+</svg>
