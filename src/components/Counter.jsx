@@ -4,7 +4,8 @@ import cont1 from "../Images/cont1.png";
 import cont2 from "../Images/cont2.png";
 import cont3 from "../Images/cont3.png";
 import cont4 from "../Images/cont4.png";
-
+import AOS from "aos";
+AOS.init();
 
 const Counter = () => {
   return (

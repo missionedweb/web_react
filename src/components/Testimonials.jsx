@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import team1 from "../Images/team1.png";
 import Carousel from "react-bootstrap/Carousel";
-
+import AOS from "aos";
+AOS.init();
 const Testimonials = () => {
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex, e) => {
@@ -23,7 +24,7 @@ const Testimonials = () => {
             alt=""
             className="d-block mx-auto img-fluid"
             data-aos="zoom-in-down"
-            data-aos-duration="1500"
+            data-aos-duration={1500}
           />
         </div>
         <h2 className="text-dark text-center font-weight-bold">
@@ -41,7 +42,7 @@ const Testimonials = () => {
             alt=""
             className="d-block mx-auto img-fluid"
             data-aos="zoom-in-down"
-            data-aos-duration="1500"
+            data-aos-duration={1500}
           />
         </div>
         <h2 className="text-dark text-center font-weight-bold">
@@ -59,7 +60,7 @@ const Testimonials = () => {
             alt=""
             className="d-block mx-auto img-fluid"
             data-aos="zoom-in-down"
-            data-aos-duration="1500"
+            data-aos-duration={1500}
           />
         </div>
         <h2 className="text-dark text-center font-weight-bold">
@@ -77,7 +78,7 @@ const Testimonials = () => {
             alt=""
             className="d-block mx-auto img-fluid"
             data-aos="zoom-in-down"
-            data-aos-duration="1500"
+            data-aos-duration={1500}
           />
         </div>
         <h2 className="text-dark text-center font-weight-bold">

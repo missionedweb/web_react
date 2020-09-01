@@ -1240,12 +1240,15 @@ ul {
   font-size: 16px;
   margin-right: 15px;
 }
+
+
 .footer-social-icon i {
   height: 40px;
   width: 40px;
   text-align: center;
   line-height: 38px;
   border-radius: 50%;
+  
 }
 .facebook-bg {
   background: #3b5998;

@@ -3,20 +3,22 @@ import per_learn from "../Images/per_learn.svg";
 import live_inter from "../Images/live_inter.svg";
 import engg_ass from "../Images/engg_ass.svg";
 import expert_teac from "../Images/expert_teac.svg";
-
+import AOS from "aos";
+AOS.init();
 const Features = () => {
   return (
     <div>
       <div>
         <section
           className="feature"
-          data-aos="zoom-in-down"
-          data-aos-duration="1500"
+          
         >
-          <h1 className="main text-center">
+          <h1 className="main text-center"
+          data-aos="zoom-in-down" data-aos-duration={1500}
+          >
             <b>
               <span className="main-title">Why</span>{" "}
-              <span style={{ color: " #fa9917" }}>MissionED</span>{" "}
+              <span style={{ color: " red" }}>MissionED</span>{" "}
               <span className="main-title">Works?</span>
             </b>
           </h1>
@@ -29,7 +31,7 @@ const Features = () => {
                 <div
                   className="col-lg-3 center col-md-6 col-12 mt-3"
                   data-aos="flip-right"
-                  data-aos-duration="1500"
+                  data-aos-duration={1500}
                 >
                   <div className="card text-center h-100 border-0 image-background">
                    <a href="/feature3"> <img
@@ -50,7 +52,7 @@ const Features = () => {
                 <div
                   className="col-lg-3 center col-md-6 col-12 mt-3 "
                   data-aos="flip-right"
-                  data-aos-duration="1500"
+                  data-aos-duration={1500}
                 >
                   <div className="card text-center h-100 border-0 image-background">
                    <a href="/feature1"> <img
@@ -71,7 +73,7 @@ const Features = () => {
                 <div
                   className="col-lg-3 center col-md-6 col-12 mt-3 "
                   data-aos="flip-right"
-                  data-aos-duration="1500"
+                  data-aos-duration={1500}
                 >
                   <div className="card text-center h-100 border-0 image-background">
                     <a href="/feature4"><img
@@ -92,7 +94,7 @@ const Features = () => {
                 <div
                   className="col-lg-3 center col-md-6 col-12 mt-3 "
                   data-aos="flip-right"
-                  data-aos-duration="1500"
+                  data-aos-duration={1500}
                 >
                   <div className="card text-center h-100 border-0 image-background">
                    <a href="/feature5"> <img
@@ -109,7 +111,7 @@ const Features = () => {
                 </div>
                 <div className="space" />
                 <div className="col-lg-12 center col-md-6 col-12 mt-1 text-right explore-all">
-                  <a href="/feature6" data-aos="zoom-in" data-aos-duration="1500">
+                  <a href="/feature6" data-aos="zoom-in" data-aos-duration={1500}>
                     <u>Explore more</u> <i className="fas fa-arrow-right" />
                   </a>
                 </div>

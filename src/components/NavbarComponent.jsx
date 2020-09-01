@@ -6,12 +6,15 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Auth";
+import AOS from "aos";
 
+
+AOS.init();
 const NavbarComponent = () => {
   const { currentUser } = useContext(AuthContext);
   return (
     <>
-      <Navbar center bg="light" expand="lg">
+      <Navbar center  expand="lg" data-aos="zoom-out" data-aos-duration="1000">
         <Navbar.Brand href="#home">
           <img className="logo mt-n4" src={NavigationLogo} alt="logo" />
           <span className="missioned-nav font-weight-bold">

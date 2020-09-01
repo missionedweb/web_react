@@ -4,7 +4,8 @@ import books from "../Images/books.png";
 import counsellingImg from "../Images/counsellingImg.png";
 import PhoneInput from "react-phone-number-input";
 import swal from "sweetalert";
-
+import AOS from "aos";
+AOS.init();
 const GetTheApp = () => {
   const [value, setValue] = useState("");
   const alertModal = () => {
@@ -25,7 +26,7 @@ const GetTheApp = () => {
               src={Group52}
               alt=""
               data-aos="flip-up"
-              data-aos-duration="2000"
+              data-aos-duration={1500}
             />
             <p
               className="app-txt"
@@ -44,7 +45,9 @@ const GetTheApp = () => {
               <br />
               <br />
               <a href="https://play.google.com/store/apps/details?id=com.missionedappdev.missoned">
-                <button className="download border-0">Download</button>
+                <button className="download border-0" 
+                data-aos="zoom-in-up" data-aos-duration="1000"
+                >Download</button>
               </a>
               <img
                 className="books"
@@ -63,7 +66,7 @@ const GetTheApp = () => {
             data-aos-duration="1000"
           >
             <p className="app">
-              <span>Get a free counselling today!</span>
+              <span data-aos="zoom-out" data-aos-duration="1000">Get a free counselling today!</span>
               <br />
             </p>
             <h6 />
@@ -75,7 +78,7 @@ const GetTheApp = () => {
             <br />
             <br />
             <p />
-            <div className="buttonIn ">
+            <div className="buttonIn " data-aos="zoom-out" data-aos-duration="1000">
               <PhoneInput
                 type="tel"
                 // className="form-control textfield"
@@ -90,7 +93,8 @@ const GetTheApp = () => {
               <br />
             </div>
           </div>
-          <img className="counselling-img" src={counsellingImg} />
+          <img className="counselling-img" src={counsellingImg} data-aos="fade-left" data-aos-duration="1000" />
+          
         </div>
       </div>
     </div>
