@@ -1,20 +1,17 @@
-import React, { useContext } from "react";
-import NavigationLogo from "../Images/NavigationLogo.svg";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Form from "react-bootstrap/Form";
-import Nav from "react-bootstrap/Nav";
-import { Link } from "react-router-dom";
-import { AuthContext } from "../Auth";
-import AOS from "aos";
-
+import React, { useContext } from 'react';
+import NavigationLogo from '../Images/NavigationLogo.svg';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import { Link } from 'react-router-dom';
+import AOS from 'aos';
 
 AOS.init();
 const NavbarComponent = () => {
-  const { currentUser } = useContext(AuthContext);
   return (
-    <>
-      <Navbar center  expand="lg" data-aos="zoom-out" data-aos-duration="1000">
+    <React.Fragment>
+      <Navbar center expand="lg" data-aos="zoom-out" data-aos-duration="1000">
         <Navbar.Brand href="#home">
           <img className="logo mt-n4" src={NavigationLogo} alt="logo" />
           <span className="missioned-nav font-weight-bold">
@@ -73,33 +70,34 @@ const NavbarComponent = () => {
             <Nav.Link href="/pricing">Pricing</Nav.Link>
             <Nav.Link href="https://missioned.in/blog/">Blog</Nav.Link>
           </Nav>
-          {currentUser !== null ? (
-            <Link to="/dashboard">
-              <div>
-                <div className="name-user px-3 py-2 text-center font-weight-bold align-self-center nav-item d-none d-sm-block">
-                  {currentUser.displayName.slice(0, 1)}
-                </div>
-              </div>
-            </Link>
-          ) : (
-            <Form inline>
-              <Link to="/login">
-                {" "}
-                <a className="btn login-btn mr-2" href="#" role="button">
-                  Login
-                </a>
-              </Link>
-              <Link to="/register">
-                <a className="btn register-btn" href="#" role="button">
-                  Register
-                </a>
-              </Link>
-            </Form>
-          )}
         </Navbar.Collapse>
       </Navbar>
-    </>
+    </React.Fragment>
   );
 };
 
 export default NavbarComponent;
+
+// {currentUser !== null ? (
+//             <Link to="/dashboard">
+//               <div>
+//                 <div className="name-user px-3 py-2 text-center font-weight-bold align-self-center nav-item d-none d-sm-block">
+//                   {currentUser.displayName.slice(0, 1)}
+//                 </div>
+//               </div>
+//             </Link>
+//           ) : (
+//             <Form inline>
+//               <Link to="/login">
+//                 {" "}
+//                 <a className="btn login-btn mr-2" href="#" role="button">
+//                   Login
+//                 </a>
+//               </Link>
+//               <Link to="/register">
+//                 <a className="btn register-btn" href="#" role="button">
+//                   Register
+//                 </a>
+//               </Link>
+//             </Form>
+//           )}
