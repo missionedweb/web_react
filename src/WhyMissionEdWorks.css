@@ -1,0 +1,79 @@
+/* Why MissionEd Works */
+.feature {
+    margin-top: 800px;
+  }
+  .main-title {
+    color: #fa9917;
+  }
+  .main-missioned {
+    font-size: 60px;
+    letter-spacing: 3.33px;
+    line-height: 70px;
+  }
+  .image-background {
+    background: #ffffff;
+    box-shadow: 0px 16px 32px rgba(44, 39, 56, 0.04),
+      0px 32px 64px rgba(44, 39, 56, 0.08);
+    border-color: coral;
+  }
+  .card {
+    border-radius: 20px !important;
+  }
+  .card01 {
+    width: 200px;
+    height: 250px;
+    padding: 30px;
+  }
+  .image-1 {
+    margin-top: 60px;
+  }
+  .image-2 {
+    margin-top: 60px;
+  }
+  .image-3 {
+    margin-top: 60px;
+  }
+  .image-4 {
+    margin-top: 100px;
+  }
+  .image-5 {
+    width: 37.5%;
+    margin-top: 20px;
+  }
+  .image-6 {
+    width: 45%;
+    margin-top: 20px;
+  }
+  .ct-1 {
+    color: #ff6200;
+  
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    line-height: 28px;
+  }
+  .card-one {
+    margin-top: 40px;
+    color: #eb5757;
+    padding: 20px;
+  }
+  .card-two {
+    margin-top: 50px;
+    color: #2f80ed;
+  }
+  .card-three {
+    margin-top: 0px;
+    color: #f2c94c;
+  }
+  .card-four {
+    margin-top: 100px;
+    color: #6fcf97;
+  }
+  .explore-all {
+    padding-top: 30px;
+  }
+  .explore-all a {
+    color: #fb8f1d;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+  }

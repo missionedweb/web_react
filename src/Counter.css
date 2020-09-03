@@ -1,0 +1,20 @@
+/* COUNTER */
+.counters {
+    margin-top: 7%;
+    margin-bottom: 7%;
+  }
+  .counter {
+    color: #ff6200;
+  
+    font-size: 40px;
+    letter-spacing: 0.6px;
+    line-height: 28px;
+    margin-top: 20px;
+  }
+  .tx7 {
+    color: black;
+  
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }

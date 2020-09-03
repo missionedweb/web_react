@@ -1,6 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './Navbar.css';
+import './Footer.css';
+import './Testimonials.css';
+import './LearningPage1.css';
+import './LearningPage2.css';
+import './Header.css';
+import './WhyMissionEdWorks.css';
+import './GetTheApp.css';
+import './Counselling.css';
+import './Counter.css';
+
 import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';

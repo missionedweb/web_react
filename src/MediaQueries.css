@@ -1,0 +1,151 @@
+/* MEDIA QUERIES */
+@media (max-width: 400px) {
+    .missioned-nav {
+      font-size: 30px;
+    }
+  }
+  @media (max-width: 754px) {
+    .counters {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media (max-width: 400px) {
+    .ed {
+      font-size: 30px;
+    }
+  }
+  @media (max-width: 1320px) {
+    .teach {
+      margin-top: 40px;
+    }
+  }
+  @media (max-width: 900px) {
+    .tagline {
+      font-size: 50px;
+    }
+  }
+  @media (max-width: 900px) {
+    .tg2 {
+      font-size: 20px;
+    }
+  }
+  
+  .image_section img {
+    display: block;
+    margin: 70px 100px;
+  }
+  
+  @media (max-width: 1408px) {
+    .feature .main {
+      margin-top: 1250px;
+    }
+  }
+  
+  @media (max-width: 1320px) {
+    .image_section img:first-child {
+      display: none;
+    }
+  }
+  @media (max-width: 1320px) {
+    .tg4 {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 601px) {
+    .centered-num {
+      margin-right: 50%;
+    }
+  }
+  @media (max-width: 450px) {
+    .play img {
+      display: block;
+      /* margin-left: auto; */
+      /* margin-right: auto; */
+      /* width: 100%; */
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 601px) {
+    .tg4 {
+      font-size: 5vw;
+    }
+  }
+  @media (max-width: 1414px) {
+    .img-section-left {
+      display: none;
+    }
+  }
+  @media (max-width: 1414px) {
+    .learning-page {
+      display: block;
+      /*float: none;*/
+      margin: -50px 20% 5%;
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 1414px) {
+    .learning-page-2 {
+      display: block;
+      /*float: none;*/
+      margin: 3% 30% 5%;
+      width: 50%;
+    }
+  }
+  @media (max-width: 1386px) {
+    .feature {
+      margin-top: 170px;
+    }
+  }
+  @media (max-width: 1414px) {
+    .img-section-right {
+      display: none;
+    }
+  }
+  @media (max-width: 1382px) {
+    .img-mobile {
+      display: none;
+    }
+  }
+  @media (max-width: 1382px) {
+    .books {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 601px) {
+    .app-txt {
+      font-size: 70%;
+      margin-top: 30px;
+    }
+  }
+  
+  @media (max-width: 1396px) {
+    .counselling-img {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 601px) {
+    .counselling-left {
+      font-size: 70%;
+    }
+  }
+  
+  @media (max-width: 1396px) {
+    .counselling {
+      margin-top: 50px;
+    }
+  }
+  @media (max-width: 1396px) {
+    .get-app {
+      margin-top: 50px;
+    }
+  }
+  
+  @media (max-width: 1396px) {
+    .learning-heading-2 {
+      margin-top: 80px;
+    }
+  }
