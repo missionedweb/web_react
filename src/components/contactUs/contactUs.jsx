@@ -1,12 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import Footer from "../Footer";
-import GetTheApp from "../GetTheApp";
-import Group67 from "./Images/Group67.png";
-import NavbarComponent from "../NavbarComponent";
-{
-  /*import NavbarComponent from "../NavbarComponent";*/
-}
+import React from 'react';
+import styled from 'styled-components';
+import Footer from '../Footer';
+import GetTheApp from '../GetTheApp';
+import Group67 from './Images/Group67.png';
+import NavbarComponent from '../NavbarComponent';
 
 const contactUs = () => {
   return (
@@ -26,7 +23,7 @@ const contactUs = () => {
               <div className="col" />
               <div
                 className="col-sm-10 hidden-xs display"
-                style={{ marginRight: "110px" }}
+                style={{ marginRight: '110px' }}
               >
                 <div className="card top">
                   <div className="card-body">
@@ -36,14 +33,14 @@ const contactUs = () => {
                       data-aos-duration={1000}
                     >
                       <div className="col-md-4 center text">
-                        <i className="fas fa-phone-alt  icon" />{" "}
+                        <i className="fas fa-phone-alt  icon" />{' '}
                         <span className="txt"> Phone</span>
                         <br />
                         <br />
                         <span className="details">+91-9674037142</span>
                       </div>
                       <div className="col-md-4 center text ">
-                        <i className="fas fa-envelope icon" />{" "}
+                        <i className="fas fa-envelope icon" />{' '}
                         <span className="txt">Email</span>
                         <br />
                         <br />
@@ -71,7 +68,7 @@ const contactUs = () => {
               <div
                 data-aos="fade-down"
                 data-aos-duration={1000}
-                style={{ margin: "auto" }}
+                style={{ margin: 'auto' }}
               >
                 <img src={Group67} className="right-img" alt="" />
               </div>
@@ -104,7 +101,7 @@ const contactUs = () => {
                     rows={4}
                     cols={50}
                     className="form-control"
-                    defaultValue={""}
+                    defaultValue={''}
                   />
                   <br />
                   <button className="border-0 btn download submit ">
@@ -126,8 +123,8 @@ export default contactUs;
 
 const Wrapper = styled.div`
   body {
-    background-image: url("Images/bg.png");
-    font-family: "Playfair Display", serif;
+    background-image: url('Images/bg.png');
+    font-family: 'Playfair Display', serif;
   }
   html,
   body {

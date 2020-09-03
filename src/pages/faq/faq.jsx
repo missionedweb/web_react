@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import Footer from "../Footer";
-import NavbarComponent from "../NavbarComponent";
-import Collapse from "react-bootstrap/Collapse";
-import Button from "react-bootstrap/Button";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import Footer from '../../components/Footer';
+import NavbarComponent from '../../components/NavbarComponent';
+import Collapse from 'react-bootstrap/Collapse';
+import Button from 'react-bootstrap/Button';
 
 const FAQ = () => {
   const [openOne, setOpenOne] = useState(false);
@@ -30,7 +30,7 @@ const FAQ = () => {
           </div>
           <section
             className="faq"
-            style={{ marginTop: "-32px" }}
+            style={{ marginTop: '-32px' }}
             data-aos="zoom-out"
             data-aos-duration={2500}
           >
@@ -287,8 +287,8 @@ export default FAQ;
 
 const Wrapper = styled.div`
   body {
-    background-image: url("Images/bg.png");
-    font-family: "Playfair Display", serif;
+    background-image: url('Images/bg.png');
+    font-family: 'Playfair Display', serif;
   }
   html,
   body {
@@ -390,10 +390,10 @@ const Wrapper = styled.div`
     border: 1px solid #ff5f74;
     border-radius: 50%;
     line-height: 100%;
-    content: "\f067";
+    content: '\f067';
     font-size: 10px;
     line-height: 18px;
-    font-family: "Font Awesome 5 Free";
+    font-family: 'Font Awesome 5 Free';
     font-weight: 900;
   }
 
@@ -406,8 +406,8 @@ const Wrapper = styled.div`
     box-shadow: 0px 20px 40px rgba(252, 104, 45, 0.1);
   }
 
-  .faq .accordion .card .card-header h5 button[aria-expanded="true"]:after {
-    content: "\f068";
+  .faq .accordion .card .card-header h5 button[aria-expanded='true']:after {
+    content: '\f068';
     color: #fff;
     background-image: -webkit-linear-gradient(
       -180deg,

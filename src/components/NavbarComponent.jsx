@@ -1,14 +1,17 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import NavigationLogo from '../Images/NavigationLogo.svg';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import { Link } from 'react-router-dom';
-import AOS from 'aos';
+import { connect } from 'react-redux';
 
-AOS.init();
-const NavbarComponent = () => {
+import { auth } from '../firebase/firebase.utils';
+import { createStructuredSelector } from 'reselect';
+import { selectCurrentUser } from '../redux/user/user.selector';
+
+function NavbarComponent({ currentUser }) {
   return (
     <React.Fragment>
       <Navbar center expand="lg" data-aos="zoom-out" data-aos-duration="1000">
@@ -70,34 +73,32 @@ const NavbarComponent = () => {
             <Nav.Link href="/pricing">Pricing</Nav.Link>
             <Nav.Link href="https://missioned.in/blog/">Blog</Nav.Link>
           </Nav>
+          {currentUser !== null ? (
+            <Link to="/login">
+              <button
+                className="btn login-btn mr-2"
+                onClick={() => auth.signOut()}
+              >
+                SignOut
+              </button>
+            </Link>
+          ) : (
+            <Form inline>
+              <Link to="/login" className="btn login-btn mr-2" role="button">
+                Login
+              </Link>
+              <Link to="/register" className="btn register-btn" role="button">
+                Register
+              </Link>
+            </Form>
+          )}
         </Navbar.Collapse>
       </Navbar>
     </React.Fragment>
   );
-};
+}
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
+});
 
-export default NavbarComponent;
-
-// {currentUser !== null ? (
-//             <Link to="/dashboard">
-//               <div>
-//                 <div className="name-user px-3 py-2 text-center font-weight-bold align-self-center nav-item d-none d-sm-block">
-//                   {currentUser.displayName.slice(0, 1)}
-//                 </div>
-//               </div>
-//             </Link>
-//           ) : (
-//             <Form inline>
-//               <Link to="/login">
-//                 {" "}
-//                 <a className="btn login-btn mr-2" href="#" role="button">
-//                   Login
-//                 </a>
-//               </Link>
-//               <Link to="/register">
-//                 <a className="btn register-btn" href="#" role="button">
-//                   Register
-//                 </a>
-//               </Link>
-//             </Form>
-//           )}
+export default connect(mapStateToProps, null)(NavbarComponent);
