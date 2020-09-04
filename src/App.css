@@ -21,7 +21,7 @@ body {
 .mr-auto>ul{float:left;position:relative}
 .mr-auto li{list-style:none;float:left;padding-top: 20px;}
 .mr-auto .dropdown{position:relative}
-.mr-auto li a{float:left;padding:25px;color:white;}
+.mr-auto li a{float:left;padding:26px;color:white;}
 .mr-auto li a:hover{background:#2C3E50; text-decoration: none; color: white; }
 .mr-auto li .linkname{float:left;padding:25px;color:white;} */
 .mr-auto li .linkname:hover{background:#2C3E50; text-decoration: none; color: white; }

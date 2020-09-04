@@ -30,6 +30,7 @@ const Header = () => {
               data-aos="fade-down"
               data-aos-duration="3000"
             >
+              <br />
               <b>
                 Learn From The <br />
                 Best{" "}
