@@ -11,14 +11,16 @@ body {
 /* Starts */
 
 
-#header{background:#1E262D;width:100%;position:relative}
+#header{background:#1E262D;width:100%;position: relative}
 #header:after{content:"";clear:both;display:block}
 
-
+.navbar-expand-sm{
+  width: 100%;
+}
 
 .row  a:hover{text-decoration: none;color: white;}
 .mr-auto{float:right;}
-.mr-auto>ul{float:left;position:relative}
+.mr-auto>ul{float:right;position:relative}
 .mr-auto li{list-style:none;float:left;padding-top: 20px;}
 .mr-auto .dropdown{position:relative}
 .mr-auto li a{float:left;padding:26px;color:white;}
@@ -42,17 +44,17 @@ body {
 .mega-col1{width:20%;float:left}
 .mega-col2{width:100%;float: right;}
 
-@media only screen and (max-width: 1170px) {
-  nav >ul>li >a{padding:35px 15px}
-}
+
+
+
+
 @media only screen and (max-width: 959px) {
   nav{display:none;width:100%;clear:both;float:none;max-height:400px;overflow-y:scroll}
   #menu-icon{display:inline;top:45px;cursor:pointer}
   #menu-icon.active .first{transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px}
   #menu-icon.active .second{transform:rotate(135deg);-webkit-transform:rotate(135deg);position:relative;top:-9px;}
   #menu-icon.active .third{display:none}
-  .search{float:none}
-  .search input{width:100%}
+  
   nav{padding:10px}
   nav ul{float:none}
   nav li{float:none}
@@ -62,24 +64,27 @@ body {
   #header nav a:hover{background:#fff;color:#333;border-radius:3px}
   #header nav ul li li a:before{content:"- "}
   .mega-col{width:100%}
+  .btn{
+      float: right;
+  }
 }
 
 a.login-btn {
-  /* border: 1px solid #fb8f1d;
-  color: #fb8f1d; */
+  border: 1px solid #fb8f1d;
+  color: #fb8f1d;
   box-sizing: border-box;
   border-radius: 8px;
   width: 132px;
   height: 44px;
   font-size: 20px;
-  /* margin-left: 150px; */
+  /* margin-left: 150px;*/ 
 }
 
-a.login-btn:hover {
+/* a.login-btn:hover {
   text-decoration: none;
-  /* background-color: #fb8f1d;
-  color: white; */
-}
+  background-color: #fb8f1d;
+  color: white;
+} */
 
 a.register-btn {
   width: 100px;
