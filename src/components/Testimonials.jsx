@@ -196,6 +196,9 @@
 import React, { Component } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import team1 from "../Images/team1.png";
+import team2 from "../Images/team2.png";
+import team3 from "../Images/team3.png";
 //import './components/css/Testimonials.css';
 
 export default class Testimonials extends Component {
@@ -210,7 +213,7 @@ export default class Testimonials extends Component {
         interval={6100}
       >
         <div>
-          <img src="src/Images/team2.png" />
+          <img src={team1} />
           <div className="myCarousel">
             <h3>Diana </h3>
             <h4>Designer</h4>
@@ -222,7 +225,7 @@ export default class Testimonials extends Component {
         </div>
 
         <div>
-          <img src="src/Images/team1.png" />
+          <img src={team2} />
           <div className="myCarousel">
             <h3>Daniel K</h3>
             <h4>Designer</h4>
@@ -234,7 +237,7 @@ export default class Testimonials extends Component {
         </div>
 
         <div>
-          <img src="src/Images/team3.png" />
+          <img src={team3} />
           <div className="myCarousel">
             <h3>John</h3>
             <h4>Designer</h4>
