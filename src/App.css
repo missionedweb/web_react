@@ -9,6 +9,43 @@ body {
   overflow-x: hidden !important;
 }
 
+/* Starts */
+
+
+#header{background:#1E262D;width:100%;position:relative}
+#header:after{content:"";clear:both;display:block}
+
+
+
+.row  a:hover{text-decoration: none;color: white;}
+.mr-auto{float:right;}
+.mr-auto>ul{float:left;position:relative}
+.mr-auto li{list-style:none;float:left;padding-top: 20px;}
+.mr-auto .dropdown{position:relative}
+.mr-auto li a{float:left;padding:25px;color:white;}
+.mr-auto li a:hover{background:#2C3E50; text-decoration: none; color: white; }
+.mr-auto li .linkname{float:left;padding:25px;color:white;} */
+.mr-auto li .linkname:hover{background:#2C3E50; text-decoration: none; color: white; }
+.linkname{float:left;padding:25px;color:white;}
+.mr-auto li ul{display:none}
+.mr-auto li:hover ul{display:inline}
+.mr-auto li li{float:none}
+.mr-auto .dropdown ul{position:absolute;left:0;top:100%;background:#fff;padding:20px 0;border-bottom:3px solid #34495e}
+.mr-auto .dropdown li{white-space:nowrap}
+.mr-auto .dropdown li a{padding:10px 40px;font-size:13px;min-width:200px}
+.mr-auto .mega-dropdown{width:100%;position:absolute;top:100%;left:0;background:#fff;overflow:hidden;padding:10px 30px;border-bottom:3px solid #34495e}
+.mr-auto .mega-dropdown1{width:100%;position:absolute ;top:100%;left:0;background:#fff;overflow:hidden;padding:10px 30px;border-bottom:3px solid #34495e}
+.mr-auto li li a{float:none;color:#333;display:block;padding:8px 10px;border-radius:3px;font-size:13px}
+.mr-auto li li a:hover{background:#bdc3c7;background:blue}
+.mr-auto li li .link{float:none;color:#333;display:block;padding:8px 10px;border-radius:3px;font-size:13px}
+.mr-auto li li .link:hover{background:#bdc3c7;background:yellow; color: white;}
+.mega-col{width:33%;float:left}
+.mega-col1{width:20%;float:left}
+.mega-col2{width:100%;float: right;}
+
+
+
+/* Ends */
 h1 {
   font-family: Playfair Display;
 }
