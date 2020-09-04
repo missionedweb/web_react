@@ -43,7 +43,30 @@ body {
 .mega-col2{width:100%;float: right;}
 
 
-
+@media only screen and (max-width: 1170px) {
+  nav >ul>li >a{padding:35px 15px}
+}
+@media only screen and (min-width: 960px) {
+  nav{display:block!important}
+}
+@media only screen and (max-width: 959px) {
+  nav{display:none;width:100%;clear:both;float:none;max-height:400px;overflow-y:scroll}
+  #menu-icon{display:inline;top:45px;cursor:pointer}
+  #menu-icon.active .first{transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px}
+  #menu-icon.active .second{transform:rotate(135deg);-webkit-transform:rotate(135deg);position:relative;top:-9px;}
+  #menu-icon.active .third{display:none}
+  .search{float:none}
+  .search input{width:100%}
+  nav{padding:10px}
+  nav ul{float:none}
+  nav li{float:none}
+  nav ul li a{float:none;padding:8px;display:block}
+  #header nav ul ul{display:block;position:static;background:none;border:none;padding:0}
+  #header nav a{color:#fff;padding:8px}
+  #header nav a:hover{background:#fff;color:#333;border-radius:3px}
+  #header nav ul li li a:before{content:"- "}
+  .mega-col{width:100%}
+}
 /* Ends */
 h1 {
   font-family: Playfair Display;
