@@ -8,6 +8,16 @@ import GetTheApp from "./GetTheApp";
 import Counter from "./Counter";
 import Footer from "./Footer";
 
+import "./css/Navbar.scss";
+import "./css/Footer.scss";
+import "./css/Testimonials.scss";
+import "./css/LearningPage1.scss";
+import "./css/LearningPage2.scss";
+import "./css/Header.scss";
+import "./css/WhyMissionEdWorks.scss";
+import "./css/GetTheApp.scss";
+import "./css/Counselling.scss";
+import "./css/Counter.scss";
 
 function AllImports() {
   return (
@@ -15,8 +25,8 @@ function AllImports() {
       <NavbarComponent />
       <Header />
       <LearningPage />
-    
-       <Features /> 
+
+      <Features />
       <Testimonials />
       <Counter />
       <GetTheApp />

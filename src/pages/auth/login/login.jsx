@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { auth } from '../../firebase/firebase.utils';
-import './login.styles.scss';
+import React, { useState } from "react";
+import { auth } from "../../../firebase/firebase.utils";
+import "./login.styles.scss";
 
 function Login({ history }) {
   const [details, setDetails] = useState({
-    email: '',
-    password: '',
+    email: "",
+    password: "",
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,8 +18,8 @@ function Login({ history }) {
     //signInWithEmailAndPassword
     try {
       await auth.signInWithEmailAndPassword(email, password);
-      setDetails({ email: '', password: '' });
-      history.push('/dashboard');
+      setDetails({ email: "", password: "" });
+      history.push("/dashboard");
     } catch (err) {
       //error handling
       console.log(err.message);
@@ -30,8 +30,7 @@ function Login({ history }) {
     <React.Fragment>
       <form
         onSubmit={handleSubmit}
-        style={{ display: 'flex', flexDirection: 'column', width: '20%' }}
-      >
+        style={{ display: "flex", flexDirection: "column", width: "20%" }}>
         <input
           type="email"
           onChange={handleChange}

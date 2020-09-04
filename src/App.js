@@ -1,33 +1,32 @@
-import React, { useEffect } from 'react';
-import './App.css';
+import React, { useEffect } from "react";
+import "./App.css";
 // import "./script.js";
-import 'aos/dist/aos.css';
-import 'react-phone-number-input/style.css';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { Route, Switch, Redirect } from 'react-router-dom';
-import Register from './pages/register/register';
-import Login from './pages/login/login';
-import engagingAssignments from './components/FeatureComponents/Feature1/engagingAssignments';
-import convenientSafe from './components/FeatureComponents/Feature2/convenientSafe';
-import bestTeacher from './components/FeatureComponents/Feature3/bestTeacher';
-import liveInteractive from './components/FeatureComponents/Feature4/liveInteractive';
-import personalizedLearning from './components/FeatureComponents/Feature5/personalizedLearning';
-import trustedContent from './components/FeatureComponents/Feature6/trustedContent';
-import Pricing from './components/Price/Pricing';
-import Counselling from './components/Counselling/counselling';
-import contactUs from './components/contactUs/contactUs';
-import Faq from './pages/faq/faq';
-import Testim from './components/Testim/Testim';
-import AllImports from './components/AllImports';
+import "aos/dist/aos.css";
+import "react-phone-number-input/style.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import { Route, Switch, Redirect } from "react-router-dom";
+import Login from "./pages/auth/login/login";
+import engagingAssignments from "./components/FeatureComponents/Feature1/engagingAssignments";
+import convenientSafe from "./components/FeatureComponents/Feature2/convenientSafe";
+import bestTeacher from "./components/FeatureComponents/Feature3/bestTeacher";
+import liveInteractive from "./components/FeatureComponents/Feature4/liveInteractive";
+import personalizedLearning from "./components/FeatureComponents/Feature5/personalizedLearning";
+import trustedContent from "./components/FeatureComponents/Feature6/trustedContent";
+import Pricing from "./components/Price/Pricing";
+import Counselling from "./components/Counselling/counselling";
+import contactUs from "./components/contactUs/contactUs";
+import Faq from "./pages/faq/faq";
+import Testim from "./components/Testim/Testim";
+import AllImports from "./components/AllImports";
 
-import { auth, createUserProfileDocument } from './firebase/firebase.utils';
+import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 
 //REDUX
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
-import { setCurrentUser } from './redux/user/user.actions';
-import { selectCurrentUser } from './redux/user/user.selector';
-import Dashboard from './pages/dashboard/dashboard';
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { setCurrentUser } from "./redux/user/user.actions";
+import { selectCurrentUser } from "./redux/user/user.selector";
+import Dashboard from "./pages/dashboard/dashboard";
 
 function App({ setCurrentUser, currentUser }) {
   useEffect(() => {
@@ -56,7 +55,6 @@ function App({ setCurrentUser, currentUser }) {
       <Switch>
         <Route exact path="/" component={AllImports} />
         <Route path="/login" component={Login} />
-        <Route path="/register" component={Register} />
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/feature1" component={engagingAssignments} />
         <Route path="/feature2" component={convenientSafe} />

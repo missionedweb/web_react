@@ -1,15 +1,16 @@
-import React from 'react';
-import NavigationLogo from '../Images/NavigationLogo.svg';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
+import React from "react";
+import NavigationLogo from "../Images/NavigationLogo.svg";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import Form from "react-bootstrap/Form";
+import Nav from "react-bootstrap/Nav";
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
-import { auth } from '../firebase/firebase.utils';
-import { createStructuredSelector } from 'reselect';
-import { selectCurrentUser } from '../redux/user/user.selector';
+import { auth } from "../firebase/firebase.utils";
+import { createStructuredSelector } from "reselect";
+import { selectCurrentUser } from "../redux/user/user.selector";
+import Register from "../pages/auth/register/register";
 
 function NavbarComponent({ currentUser }) {
   return (
@@ -29,18 +30,10 @@ function NavbarComponent({ currentUser }) {
               <NavDropdown.Item href="#action/3.1">Class 8</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Class 9</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Class 10</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">
-                Class 11 Science
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.5">
-                Class 11 Commerce
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.6">
-                Class 12 Science
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.7">
-                Class 12 Commerce
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4">Class 11 Science</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.5">Class 11 Commerce</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.6">Class 12 Science</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.7">Class 12 Commerce</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Study Materials" id="basic-nav-dropdown">
               <NavDropdown.Item>NEET</NavDropdown.Item>
@@ -65,9 +58,7 @@ function NavbarComponent({ currentUser }) {
               <NavDropdown.Item href="/">About Us</NavDropdown.Item>
               <NavDropdown.Item href="/feature4">Features</NavDropdown.Item>
               <NavDropdown.Item href="/testim">Testimonials</NavDropdown.Item>
-              <NavDropdown.Item href="/counselling">
-                Counselling
-              </NavDropdown.Item>
+              <NavDropdown.Item href="/counselling">Counselling</NavDropdown.Item>
               <NavDropdown.Item href="/faq">FAQ's</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/pricing">Pricing</Nav.Link>
@@ -75,10 +66,7 @@ function NavbarComponent({ currentUser }) {
           </Nav>
           {currentUser !== null ? (
             <Link to="/login">
-              <button
-                className="btn login-btn mr-2"
-                onClick={() => auth.signOut()}
-              >
+              <button className="btn login-btn mr-2" onClick={() => auth.signOut()}>
                 SignOut
               </button>
             </Link>
@@ -87,9 +75,7 @@ function NavbarComponent({ currentUser }) {
               <Link to="/login" className="btn login-btn mr-2" role="button">
                 Login
               </Link>
-              <Link to="/register" className="btn register-btn" role="button">
-                Register
-              </Link>
+              <Register />
             </Form>
           )}
         </Navbar.Collapse>
