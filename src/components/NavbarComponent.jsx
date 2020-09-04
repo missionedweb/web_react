@@ -127,13 +127,13 @@ function NavbarComponent({ currentUser }) {
           </Nav>
           {currentUser !== null ? (
             <Link to="/login">
-              <button className="btn login-btn mr-2" onClick={() => auth.signOut()}>
+              <button className="btn login-btn mr-2 float-right" onClick={() => auth.signOut()}>
                 SignOut
               </button>
             </Link>
           ) : (
             <Form inline>
-              <Link to="/login" className="btn login-btn mr-2" role="button">
+              <Link to="/login" className="btn login-btn mr-2 float-right" role="button">
                 Login
               </Link>
               <Register />
