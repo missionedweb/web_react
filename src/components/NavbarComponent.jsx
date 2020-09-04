@@ -14,7 +14,7 @@ import Register from "../pages/auth/register/register";
 
 function NavbarComponent({ currentUser }) {
   return (
-    <React.Fragment>
+    <>
       <div id="header">
       <div class="row">
       <Navbar center bg="dark" expand="lg">
@@ -143,7 +143,7 @@ function NavbarComponent({ currentUser }) {
       </Navbar>
       </div>
       </div>
-    </React.Fragment>
+    </>
   );
 }
 const mapStateToProps = createStructuredSelector({
