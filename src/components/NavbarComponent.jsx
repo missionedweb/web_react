@@ -11,8 +11,16 @@ import { auth } from "../firebase/firebase.utils";
 import { createStructuredSelector } from "reselect";
 import { selectCurrentUser } from "../redux/user/user.selector";
 import Register from "../pages/auth/register/register";
+import $ from 'jquery';
+
+const handleChange = () => {
+  
+    $("ul").slideToggle();
+    $(this).toggleClass("active");
 
 
+
+}
 
 function NavbarComponent({ currentUser }) {
   return (
@@ -27,12 +35,12 @@ function NavbarComponent({ currentUser }) {
             Mission<span className="ed">Ed</span>
           </span>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick = { handleChange() }/>
         <Navbar.Collapse id="basic-navbar-nav navbar-left">
           <Nav className="mr-auto mb-2">
 
             <ul>
-              <li>
+              <li className="mega-link">
         <a href="/">Home</a>
         
       </li>
@@ -62,7 +70,7 @@ function NavbarComponent({ currentUser }) {
         <a href="">STUDY MATERIALS</a>
         <ul class="mega-dropdown mr-auto">
           <li class="row">
-            <ul class="mega-col1 mr-auto">
+            <ul class="mega-col1">
               <li><Nav.Link href="#action/3.1" className="link">NEET</Nav.Link></li>
               <li><Nav.Link href="#action/3.1" className="link">NTSE</Nav.Link></li>
               <li><Nav.Link href="#action/3.1" className="link">CBSE</Nav.Link></li>
@@ -117,10 +125,10 @@ function NavbarComponent({ currentUser }) {
           </li>
         </ul>        
       </li>
-      <li>
-      <a href="/pricing"> PRICING</a>
+      <li className="mega-link">
+      <a href="/pricing" className="float-left"> PRICING</a>
       </li>
-      <li>
+      <li className="mega-link">
       <a href="/https://missioned.in/blog/">BLOG</a>
       </li>
               
@@ -135,11 +143,11 @@ function NavbarComponent({ currentUser }) {
               </button>
             </Link>
           ) : (
-            <Form inline >
+            <Form inline className="p-2" >
               <Link to="/login" className="btn login-btn mr-2" role="button">
                 Login
               </Link>
-              <Register className="mr-2" />
+              <Register className="mr-2 p-2" />
             </Form>
           )}
         </Navbar.Collapse>

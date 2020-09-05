@@ -20,12 +20,12 @@ body {
 
 .row  a:hover{text-decoration: none;color: white;}
 .mr-auto{float:right;}
-.mr-auto>ul{float:right;position:relative}
-.mr-auto li{list-style:none;float:left;padding-top: 20px;}
+.mr-auto>ul{float:left;position:relative}
+.mr-auto li{list-style:none;float:left;}
 .mr-auto .dropdown{position:relative}
-.mr-auto li a{float:left;padding:26px;color:white;}
+.mr-auto li a{float:left;padding:23px;color:white;}
 .mr-auto li a:hover{background:#2C3E50; text-decoration: none; color: white; }
-.mr-auto li .linkname{float:left;padding:25px;color:white;} */
+.mr-auto li .linkname{float:left;padding:23px;color:white;} */
 .mr-auto li .linkname:hover{background:#2C3E50; text-decoration: none; color: white; }
 .linkname{float:left;padding:25px;color:white;}
 .mr-auto li ul{display:none}
@@ -34,7 +34,7 @@ body {
 .mr-auto .dropdown ul{position:absolute;left:0;top:100%;background:#fff;padding:20px 0;border-bottom:3px solid #34495e;z-index: 1;}
 .mr-auto .dropdown li{white-space:nowrap}
 .mr-auto .dropdown li a{padding:10px 40px;font-size:13px;min-width:200px}
-.mr-auto .mega-dropdown{width:100%;position:absolute;top:100%;left:0;background:#fff;overflow:hidden;padding:10px 30px;border-bottom:3px solid #34495e; z-index: 1 ;}
+.mr-auto .mega-dropdown{width:100%;position :absolute;top:100%;left:0;background:#fff;overflow:hidden;padding:10px 30px;border-bottom:3px solid #34495e; z-index: 1 ;}
 .mr-auto .mega-dropdown1{width:50%;position:absolute ;top:100%;left:0;background:#fff;overflow:hidden;padding:10px 30px;border-bottom:3px solid #34495e; z-index: 1 ;}
 .mr-auto li li a{float:none;color:#333;display:block;padding:8px 10px;border-radius:3px;font-size:13px;z-index: 1;}
 .mr-auto li li a:hover{background:#bdc3c7;background:blue}
@@ -64,6 +64,9 @@ body {
   #header nav a:hover{background:#fff;color:#333;border-radius:3px}
   #header nav ul li li a:before{content:"- "}
   .mega-col{width:100%}
+  .mega-col1{width:100%}
+  .mega-link{width: 100%;}
+  .mr-auto .mega-dropdown{height:100%}
   .btn{
       float: right;
   }
