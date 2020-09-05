@@ -30,104 +30,107 @@ function NavbarComponent({ currentUser }) {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav navbar-left">
-          <Nav className="mr-auto mb-2">
-
-            <ul>
-              <li className="mega-link">
-        <a href="/">Home</a>
+          <Nav className="navbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="/" class="nav-link">Home</a>
         
-      </li>
-              
-      <li>
-        <a href="">Classes</a>
-        <ul class="mega-dropdown mr-auto">
-          <li class="row">
-            <ul class="mega-col">
-              <li><Nav.Link href="#action/3.1" className="link">Class 8</Nav.Link></li>
-              <li><Nav.Link href="#action/3.2" className="link">Class 9</Nav.Link></li>
-            </ul>
-            <ul class="mega-col">
-              <li><Nav.Link href="#action/3.3" className="link">Class 10</Nav.Link></li>
-              <li><Nav.Link href="#action/3.4" className="link">Class 11 Science</Nav.Link></li>
-              <li><Nav.Link href="#action/3.5" className="link">Class 12 Science</Nav.Link></li>
-            </ul>
-            <ul class="mega-col">
-              <li><Nav.Link href="#action/3.6" className="link">Class 11 Commerce</Nav.Link></li>
-              <li><Nav.Link href="#action/3.7" className="link">Class 12 Commerce</Nav.Link></li>
-            </ul>
-            
-          </li>
-        </ul>        
-      </li>
-      <li>
-        <a href="">STUDY MATERIALS</a>
-        <ul class="mega-dropdown mr-auto">
-          <li class="row">
-            <ul class="mega-col1">
-              <li><Nav.Link href="#action/3.1" className="link">NEET</Nav.Link></li>
-              <li><Nav.Link href="#action/3.1" className="link">NTSE</Nav.Link></li>
-              <li><Nav.Link href="#action/3.1" className="link">CBSE</Nav.Link></li>
-              <li><Nav.Link href="#action/3.1" className="link">ICSE</Nav.Link></li>
-            </ul>
-            <ul class="mega-col1">
-              <li><Nav.Link href="#action/3.1" className="link">JEE MAINS</Nav.Link></li>
-              <li><Nav.Link href="#action/3.1" className="link">JEE ADVANCED</Nav.Link></li>
-              <li><Nav.Link href="#action/3.1" className="link">NCERT SOL</Nav.Link></li>
-              <li><Nav.Link href="#action/3.1" className="link">IMO</Nav.Link></li>
-            </ul>
-            <ul class="mega-col1">
-              <li><Nav.Link href="#action/3.1" className="link">KVPY</Nav.Link></li>
-              <li><Nav.Link href="#action/3.1" className="link">NSEJS</Nav.Link></li>
-              <li><Nav.Link href="#action/3.1" className="link">NSO</Nav.Link></li>
-              <li><Nav.Link href="#action/3.1" className="link">InPHO</Nav.Link></li>
-            </ul>
-            <ul class="mega-col1">
-              <li><Nav.Link href="#action/3.1" className="link">InCHO</Nav.Link></li>
-              <li><Nav.Link href="#action/3.1" className="link">RMO</Nav.Link></li>
-              <li><Nav.Link href="#action/3.1" className="link">NSO</Nav.Link></li>
-              <li><Nav.Link href="#action/3.1" className="link">NSTSE</Nav.Link></li>
-            </ul>
-            <ul class="mega-col1">
-              <li><Nav.Link href="#action/3.1" className="link">BITSAT</Nav.Link></li>
-              <li><Nav.Link href="#action/3.1" className="link">SRMJEE</Nav.Link></li>
-            </ul>
-            
-          </li>
-        </ul>        
-      </li>
-      <li>
-        <a href="">MORE</a>
-        <ul class="mega-dropdown">
-          <li class="row">
-            <ul class="mega-col1">
-              <li><Nav.Link href="#action/3.1" className="link">About Us</Nav.Link></li>
-            </ul>
-            <ul class="mega-col1">
-              <li><Nav.Link href="#action/3.1" className="link">Features</Nav.Link></li>
-            </ul>
-            <ul class="mega-col1">
-              <li><Nav.Link href="#action/3.1" className="link">Testimonials</Nav.Link></li>
-            </ul>
-            <ul class="mega-col1">
-              <li><Nav.Link href="#action/3.1" className="link">Counselling</Nav.Link></li>
-            </ul>
-            <ul class="mega-col1">
-              <li><Nav.Link href="#action/3.1" className="link">FAQ's</Nav.Link></li>
-            </ul>
-            
-          </li>
-        </ul>        
-      </li>
-      <li className="mega-link">
-      <a href="/pricing" className="float-left"> PRICING</a>
-      </li>
-      <li className="mega-link">
-      <a href="/https://missioned.in/blog/">BLOG</a>
-      </li>
-              
-    </ul> 
-            
-            
+                 </li>
+                 
+                <li class="nav-item dropdown menu-area">
+                  <a class="nav-link dropdown-toggle" href="#" id="mega-one"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Classes
+                  </a>
+                  <div class="dropdown-menu mega-area" aria-labelledby="mega-one">
+                   <div class="row">
+                     <div class="col-sm-4">
+                       <a href="#" class="dropdown-item">Class 8</a>
+                       <a href="#" class="dropdown-item">Class 9</a>
+                     </div>
+                     <div class="col-sm-4">
+                      <a href="#" class="dropdown-item">Class 10</a>
+                      <a href="#" class="dropdown-item">Class 11 Science</a>
+                      <a href="#" class="dropdown-item">Class 12 Science</a>
+                    </div>
+                    <div class="col-sm-4">
+                      <a href="#" class="dropdown-item">Class 11 Commerece</a>
+                      <a href="#" class="dropdown-item">Class 12 Commerece</a>
+                    </div>
+                    
+                   </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown menu-area">
+                  <a class="nav-link dropdown-toggle" href="#" id="mega-two"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Portfolio
+                  </a>
+                  <div class="dropdown-menu mega-area" aria-labelledby="mega-two">
+                   <div class="row">
+                     <div class="col-sm-6 col-lg-3">
+                       <a href="#" class="dropdown-item">NEET</a>
+                       <a href="#" class="dropdown-item">NTSE</a>
+                       <a href="#" class="dropdown-item">CBSE</a>
+                       <a href="#" class="dropdown-item">ICSE</a>
+                       <a href="#" class="dropdown-item">BITSAT</a>  
+                     </div>
+                     <div class="col-sm-6 col-lg-3">
+                      <a href="#" class="dropdown-item">JEE MAINS</a>
+                      <a href="#" class="dropdown-item">JEE ADVANCED</a>
+                      <a href="#" class="dropdown-item">NCERT SOL</a>
+                      <a href="#" class="dropdown-item">IMO</a>
+                      <a href="#" class="dropdown-item">SRMJEE</a>
+                     </div>  
+                    <div class="col-sm-6 col-lg-3">
+                      <a href="#" class="dropdown-item">KVPY</a>
+                      <a href="#" class="dropdown-item">NSEJS</a>
+                      <a href="#" class="dropdown-item">NSO</a>
+                      <a href="#" class="dropdown-item">InPHO</a>
+                      
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                      <a href="#" class="dropdown-item">InCHO</a>
+                      <a href="#" class="dropdown-item">RMO</a>
+                      <a href="#" class="dropdown-item">NSO</a>
+                      <a href="#" class="dropdown-item">NSTSE</a>
+                     
+                    </div>
+                   </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown menu-area">
+                  <a class="nav-link dropdown-toggle" href="#" id="mega-three"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    MORE
+                  </a>
+                  <div class="dropdown-menu mega-area" aria-labelledby="mega-three">
+                   <div class="row">
+                     <div class="col-sm-6 col-lg-3">
+                       <a href="#" class="dropdown-item">About Us</a>
+                       <a href="#" class="dropdown-item">FAQ's</a>
+                     </div>
+                     <div class="col-sm-6 col-lg-3">
+                      <a href="#" class="dropdown-item">Features</a>
+                      <a href="#" class="dropdown-item">Counselling</a>
+                     </div>  
+                    <div class="col-sm-6 col-lg-3">
+                      <a href="#" class="dropdown-item">Testimonials</a>
+                      
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                     
+                    </div>
+                   </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pricing">PRICING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/https://missioned.in/blog/">BLOG</a>
+                </li>
+              </ul>
           </Nav>
           {currentUser !== null ? (
             <Link to="/login" >
