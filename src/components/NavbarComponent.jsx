@@ -36,94 +36,110 @@ function NavbarComponent({ currentUser }) {
                   <a href="/" class="nav-link">Home</a>
         
                  </li>
-                 
-                <li class="nav-item dropdown menu-area">
-                  <a class="nav-link dropdown-toggle" href="#" id="mega-one"
-                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Classes
-                  </a>
-                  <div class="dropdown-menu mega-area" aria-labelledby="mega-one">
-                   <div class="row">
-                     <div class="col-sm-4">
-                       <a href="#" class="dropdown-item">Class 8</a>
-                       <a href="#" class="dropdown-item">Class 9</a>
-                     </div>
-                     <div class="col-sm-4">
+                 <li class="nav-item">
+	            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> Classes <b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-2">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+                    <a href="#" class="dropdown-item">Class 8</a>
+                    <a href="#" class="dropdown-item">Class 9</a>
+					            
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
                       <a href="#" class="dropdown-item">Class 10</a>
                       <a href="#" class="dropdown-item">Class 11 Science</a>
                       <a href="#" class="dropdown-item">Class 12 Science</a>
-                    </div>
-                    <div class="col-sm-4">
-                      <a href="#" class="dropdown-item">Class 11 Commerece</a>
-                      <a href="#" class="dropdown-item">Class 12 Commerece</a>
-                    </div>
-                    
-                   </div>
-                  </div>
-                </li>
-                <li class="nav-item dropdown menu-area">
-                  <a class="nav-link dropdown-toggle" href="#" id="mega-two"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Portfolio
-                  </a>
-                  <div class="dropdown-menu mega-area" aria-labelledby="mega-two">
-                   <div class="row">
-                     <div class="col-sm-6 col-lg-3">
-                       <a href="#" class="dropdown-item">NEET</a>
+				            </ul>
+			            </div>
+                  <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+                      <a href="#" class="dropdown-item">Class 11 Comm</a>
+                      <a href="#" class="dropdown-item">Class 12 Comm</a>
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>
+          <li class="nav-item">
+	            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> STUDY MATERIALS <b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-2">
+		            <div class="row">
+			            <div class="col-sm-3">
+				            <ul class="multi-column-dropdown">
+                    <a href="#" class="dropdown-item">NEET</a>
                        <a href="#" class="dropdown-item">NTSE</a>
                        <a href="#" class="dropdown-item">CBSE</a>
                        <a href="#" class="dropdown-item">ICSE</a>
-                       <a href="#" class="dropdown-item">BITSAT</a>  
-                     </div>
-                     <div class="col-sm-6 col-lg-3">
-                      <a href="#" class="dropdown-item">JEE MAINS</a>
+                       <a href="#" class="dropdown-item">BITSAT</a>
+					            
+				            </ul>
+			            </div>
+			            <div class="col-sm-3">
+				            <ul class="multi-column-dropdown">
+                    <a href="#" class="dropdown-item">JEE MAINS</a>
                       <a href="#" class="dropdown-item">JEE ADVANCED</a>
                       <a href="#" class="dropdown-item">NCERT SOL</a>
                       <a href="#" class="dropdown-item">IMO</a>
                       <a href="#" class="dropdown-item">SRMJEE</a>
-                     </div>  
-                    <div class="col-sm-6 col-lg-3">
-                      <a href="#" class="dropdown-item">KVPY</a>
+				            </ul>
+			            </div>
+                  <div class="col-sm-3">
+				            <ul class="multi-column-dropdown">
+                    <a href="#" class="dropdown-item">KVPY</a>
                       <a href="#" class="dropdown-item">NSEJS</a>
                       <a href="#" class="dropdown-item">NSO</a>
                       <a href="#" class="dropdown-item">InPHO</a>
-                      
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                      <a href="#" class="dropdown-item">InCHO</a>
+				            </ul>
+			            </div>
+                  <div class="col-sm-3">
+				            <ul class="multi-column-dropdown">
+                    <a href="#" class="dropdown-item">InCHO</a>
                       <a href="#" class="dropdown-item">RMO</a>
                       <a href="#" class="dropdown-item">NSO</a>
                       <a href="#" class="dropdown-item">NSTSE</a>
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>
+
+          <li class="nav-item">
+	            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> MORE <b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-2">
+		            <div class="row">
+			            <div class="col-sm-3">
+				            <ul class="multi-column-dropdown">
+                    <a href="#" class="dropdown-item">About Us</a>
+                    <a href="#" class="dropdown-item">Testimonials</a>
+                    
+					            
+				            </ul>
+			            </div>
+			            <div class="col-sm-3">
+				            <ul class="multi-column-dropdown">
+                    <a href="#" class="dropdown-item">Features</a>
                      
-                    </div>
-                   </div>
-                  </div>
-                </li>
-                <li class="nav-item dropdown menu-area">
-                  <a class="nav-link dropdown-toggle" href="#" id="mega-three"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    MORE
-                  </a>
-                  <div class="dropdown-menu mega-area" aria-labelledby="mega-three">
-                   <div class="row">
-                     <div class="col-sm-6 col-lg-3">
-                       <a href="#" class="dropdown-item">About Us</a>
-                       <a href="#" class="dropdown-item">FAQ's</a>
-                     </div>
-                     <div class="col-sm-6 col-lg-3">
-                      <a href="#" class="dropdown-item">Features</a>
-                      <a href="#" class="dropdown-item">Counselling</a>
-                     </div>  
-                    <div class="col-sm-6 col-lg-3">
-                      <a href="#" class="dropdown-item">Testimonials</a>
-                      
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                     
-                    </div>
-                   </div>
-                  </div>
-                </li>
+				            </ul>
+			            </div>
+                  <div class="col-sm-3">
+				            <ul class="multi-column-dropdown">
+                    <a href="#" class="dropdown-item">Counselling</a>
+				            </ul>
+			            </div>
+                  <div class="col-sm-3">
+				            <ul class="multi-column-dropdown">
+                    <a href="#" class="dropdown-item">FAQ's</a>
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>
+                
+                
+               
                 <li class="nav-item">
                   <a class="nav-link" href="/pricing">PRICING</a>
                 </li>
