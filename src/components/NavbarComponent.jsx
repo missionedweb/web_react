@@ -132,6 +132,7 @@ function NavbarComponent({ currentUser }) {
                 </li>
               </ul>
           </Nav>
+          <div class="ml-auto">
           {currentUser !== null ? (
             <Link to="/login" >
               <button className="btn login-btn mr-auto float-right ml-auto" onClick={() => auth.signOut()}>
@@ -146,6 +147,7 @@ function NavbarComponent({ currentUser }) {
               <Register className="mr-2 p-2" />
             </Form>
           )}
+          </div>
         </Navbar.Collapse>
       </Navbar>
       </div>

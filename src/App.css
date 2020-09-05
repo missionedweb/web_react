@@ -25,7 +25,7 @@ body {
 .navbar-nav .nav-item .nav-link:hover{
   background-color: #2C3E50;
 }
-.menu-area{
+.dropdown .menu-area{
   position: static;
 }
 .mega-area{
