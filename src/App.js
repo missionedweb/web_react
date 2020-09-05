@@ -1,11 +1,9 @@
 import React, { useEffect } from "react";
 import "./App.css";
-// import "./script.js";
 import "aos/dist/aos.css";
 import "react-phone-number-input/style.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Route, Switch, Redirect } from "react-router-dom";
-import Login from "./pages/auth/login/login";
 import engagingAssignments from "./components/FeatureComponents/Feature1/engagingAssignments";
 import convenientSafe from "./components/FeatureComponents/Feature2/convenientSafe";
 import bestTeacher from "./components/FeatureComponents/Feature3/bestTeacher";
@@ -54,7 +52,7 @@ function App({ setCurrentUser, currentUser }) {
     <div>
       <Switch>
         <Route exact path="/" component={AllImports} />
-        <Route path="/login" component={Login} />
+
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/feature1" component={engagingAssignments} />
         <Route path="/feature2" component={convenientSafe} />

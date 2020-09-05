@@ -29,7 +29,6 @@ const useStyles = makeStyles((theme) => ({
     border: "1px solid #000",
     boxShadow: theme.shadows[5],
     padding: theme.spacing(3, 3),
-
     height: "100%",
     [theme.breakpoints.down("lg")]: {
       width: "50vw",
@@ -251,13 +250,6 @@ export default function Register() {
                 className={classes.submit}>
                 Sign Up
               </Button>
-              <Grid container justify="flex-end">
-                <Grid item>
-                  <Link href="/login" variant="body2">
-                    Already have an account? Sign in
-                  </Link>
-                </Grid>
-              </Grid>
             </form>
           </div>
         </Fade>
