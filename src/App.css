@@ -23,7 +23,7 @@ body {
 .mr-auto>ul{float:left;position:relative}
 .mr-auto li{list-style:none;float:left;}
 .mr-auto .dropdown{position:relative}
-.mr-auto li a{float:left;padding:10px;color:white;}
+.mr-auto li a{float:left;padding:20px;color:white;}
 .mr-auto li a:hover{background:#2C3E50; text-decoration: none; color: white; }
 .mr-auto li .linkname{float:left;padding:23px;color:white;} */
 .mr-auto li .linkname:hover{background:#2C3E50; text-decoration: none; color: white; }

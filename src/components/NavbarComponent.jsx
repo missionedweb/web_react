@@ -21,7 +21,7 @@ function NavbarComponent({ currentUser }) {
     
       <div id="header">
       <div class="row">
-      <Navbar center bg="dark" expand="lg" className="navbar-expand-xl">
+      <Navbar center bg="dark" expand="xl" className="navbar-expand-xl">
         <Navbar.Brand href="#home">
           <img className="logo mt-n4" src={NavigationLogo} alt="logo" />
           <span className="missioned-nav font-weight-bold">
@@ -136,7 +136,7 @@ function NavbarComponent({ currentUser }) {
               </button>
             </Link>
           ) : (
-            <Form inline className="p-2" >
+            <Form inline className="mega-link p-2" >
               <Link to="/login" className="btn login-btn mr-2" role="button">
                 Login
               </Link>
