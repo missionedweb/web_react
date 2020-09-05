@@ -14,7 +14,7 @@ body {
 #header{background:#1E262D;width:100%;position: relative}
 #header:after{content:"";clear:both;display:block}
 
-.navbar-expand-sm{
+.navbar-expand-xl{
   width: 100%;
 }
 
@@ -23,11 +23,11 @@ body {
 .mr-auto>ul{float:left;position:relative}
 .mr-auto li{list-style:none;float:left;}
 .mr-auto .dropdown{position:relative}
-.mr-auto li a{float:left;padding:20px;color:white;}
+.mr-auto li a{float:left;padding:10px;color:white;}
 .mr-auto li a:hover{background:#2C3E50; text-decoration: none; color: white; }
 .mr-auto li .linkname{float:left;padding:23px;color:white;} */
 .mr-auto li .linkname:hover{background:#2C3E50; text-decoration: none; color: white; }
-.linkname{float:left;padding:25px;color:white;}
+.linkname{float:left;padding:15px;color:white;}
 .mr-auto li ul{display:none}
 .mr-auto li:hover ul{display:inline}
 .mr-auto li li{float:none}
@@ -49,16 +49,16 @@ body {
 
 
 
-@media only screen and (max-width: 330px) {
-  nav{display:none;width:100%;clear:both;float:none;max-height:100px;overflow-y:scroll}
+@media only screen and (max-width: 100px) {
+  nav{display:none;width:100%;clear:both;float:none;max-height:500px;overflow-y:scroll}
   #menu-icon{display:inline;top:45px;cursor:pointer}
   #menu-icon.active .first{transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px}
   #menu-icon.active .second{transform:rotate(135deg);-webkit-transform:rotate(135deg);position:relative;top:-9px;}
   #menu-icon.active .third{display:none}
   
   nav{padding:10px}
-  nav ul{float:none}
-  nav li{float:none}
+  nav ul{float: left;}
+  nav li{float: left}
   nav ul li a{float:none;padding:8px;display:block}
   /* HERE */
   /* #header nav ul ul{display:block;position: relative;;background:none;border:none;padding:0} */
