@@ -13,14 +13,7 @@ import { selectCurrentUser } from "../redux/user/user.selector";
 import Register from "../pages/auth/register/register";
 import $ from 'jquery';
 
-const handleChange = () => {
-  
-    $("ul").slideToggle();
-    $(this).toggleClass("active");
 
-
-
-}
 
 function NavbarComponent({ currentUser }) {
   return (
@@ -35,7 +28,7 @@ function NavbarComponent({ currentUser }) {
             Mission<span className="ed">Ed</span>
           </span>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick = { handleChange() }/>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav navbar-left">
           <Nav className="mr-auto mb-2">
 

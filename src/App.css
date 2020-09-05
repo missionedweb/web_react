@@ -23,7 +23,7 @@ body {
 .mr-auto>ul{float:left;position:relative}
 .mr-auto li{list-style:none;float:left;}
 .mr-auto .dropdown{position:relative}
-.mr-auto li a{float:left;padding:23px;color:white;}
+.mr-auto li a{float:left;padding:20px;color:white;}
 .mr-auto li a:hover{background:#2C3E50; text-decoration: none; color: white; }
 .mr-auto li .linkname{float:left;padding:23px;color:white;} */
 .mr-auto li .linkname:hover{background:#2C3E50; text-decoration: none; color: white; }
@@ -49,8 +49,8 @@ body {
 
 
 
-@media only screen and (max-width: 959px) {
-  nav{display:none;width:100%;clear:both;float:none;max-height:400px;overflow-y:scroll}
+@media only screen and (max-width: 330px) {
+  nav{display:none;width:100%;clear:both;float:none;max-height:100px;overflow-y:scroll}
   #menu-icon{display:inline;top:45px;cursor:pointer}
   #menu-icon.active .first{transform:rotate(45deg);-webkit-transform:rotate(45deg);margin-top:10px}
   #menu-icon.active .second{transform:rotate(135deg);-webkit-transform:rotate(135deg);position:relative;top:-9px;}
