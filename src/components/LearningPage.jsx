@@ -56,6 +56,10 @@ const LearningPage = () => {
             [name]:value
         })
     }
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     // const handleLastInputChange = e=> {
     //     const {name , value} = e.target

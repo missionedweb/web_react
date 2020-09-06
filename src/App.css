@@ -22,11 +22,14 @@ body {
   font-size: 18px;
   font-weight: 700;
 }
-.navbar-nav .nav-item .nav-link:hover{
-  background-color: #2C3E50;
-}
+/* .navbar-nav .nav-item .nav-link:hover{
+  background-color: lightyellow;
+} */
 .dropdown .menu-area{
   position: static;
+}
+.row .dropdown-item:hover{
+  background-color: lightyellow;
 }
 .mega-area{
   position: absolute;
