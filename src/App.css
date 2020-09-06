@@ -51,6 +51,22 @@ ul li a{
 .navbar{
   text-align: center
 }
+.register-btn {
+  width: 100px;
+  height: 44px;
+  background: #fb8f1d;
+  color: #ffffff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.register-btn:hover {
+  text-decoration: none;
+  color: white;
+  background: #ff8300;
+}
 
 /* Ends */
 h1 {

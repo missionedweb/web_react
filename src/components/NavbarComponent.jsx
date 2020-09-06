@@ -32,11 +32,11 @@ function NavbarComponent({ currentUser }) {
         <Navbar.Collapse id="basic-navbar-nav navbar-left">
           <Nav className="navbar transparent ml-auto mr-auto">
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+                <li class="nav-item mr-auto ml-2">
                   <a href="/" class="nav-link">Home</a>
         
                  </li>
-                 <li class="nav-item">
+                 <li class="nav-item mr-auto ml-2">
 	            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> Classes <b class="caret"></b></a>
 	            <ul class="dropdown-menu multi-column columns-2">
 		            <div class="row">
@@ -63,8 +63,8 @@ function NavbarComponent({ currentUser }) {
 		            </div>
 	            </ul>
 	        </li>
-          <li class="nav-item">
-	            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> STUDY MATERIALS <b class="caret"></b></a>
+          <li class="nav-item mr-auto ml-2">
+	            <a href="#" class="dropdown-toggle nav-link mr-auto" data-toggle="dropdown"> STUDY MATERIALS <b class="caret"></b></a>
 	            <ul class="dropdown-menu multi-column columns-2">
 		            <div class="row">
 			            <div class="col-sm-3">
@@ -106,7 +106,7 @@ function NavbarComponent({ currentUser }) {
 	            </ul>
 	        </li>
 
-          <li class="nav-item">
+          <li class="nav-item mr-auto ml-2">
 	            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> MORE <b class="caret"></b></a>
 	            <ul class="dropdown-menu multi-column columns-2">
 		            <div class="row">
@@ -140,10 +140,10 @@ function NavbarComponent({ currentUser }) {
                 
                 
                
-                <li class="nav-item">
-                  <a class="nav-link" href="/pricing">PRICING</a>
+                <li class="nav-item mr-auto ml-2">
+                  <a class="nav-link " href="/pricing">PRICING</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mr-auto ml-2">
                   <a class="nav-link" href="/https://missioned.in/blog/">BLOG</a>
                 </li>
               </ul>
@@ -160,7 +160,7 @@ function NavbarComponent({ currentUser }) {
               <Link to="/login" className="btn login-btn mr-2" role="button">
                 Login
               </Link>
-              <Register className="mr-2 p-2" />
+              <Register className=".register-btn pr-2" />
             </Form>
           )}
           </div>

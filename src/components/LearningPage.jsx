@@ -15,6 +15,7 @@ import Select from '@material-ui/core/Select';
 //import Button from '@material-ui/core/Button';
 import { Paper } from "@material-ui/core";
 import logo from "../Images/logo.svg";
+import Grid from "@material-ui/core/Grid";
 
 
 AOS.init();
@@ -93,7 +94,13 @@ const LearningPage = () => {
         </Modal.Header> */}
         <Modal.Body>
         
-        <img src={logo} stylealt="logo" style={{ Align: "center" }}/>
+        {/* <img src={logo} stylealt="logo" style={{ Align: "center" }}/> */}
+        <Grid item xs={12} style={{ textAlign: "center" }}>
+            <img src={logo} alt="logo" />
+        </Grid>
+        <Grid item xs={12} style={{ textAlign: "center" }}>
+          <h2>Modal</h2>
+          </Grid>
         <form className={classes.root}>
             <TextField
                     variant="outlined"

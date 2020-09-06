@@ -149,7 +149,7 @@ export default function Register() {
         type="button"
         onClick={handleOpen}
         className={classes.button}
-        style={{ outline: " none" }}>
+        style={{ outline: " none" ,  background:"#fb8f1d" , width: 100 , height: 44  }}>
         Register
       </Button>
 
@@ -174,6 +174,8 @@ export default function Register() {
                 <Grid item xs={12} style={{ textAlign: "center" }}>
                   <h2>Join MissionEd</h2>
                 </Grid>
+
+              
                 <Grid item xs={12} sm={6}>
                   <TextField
                     onChange={handleChange}
