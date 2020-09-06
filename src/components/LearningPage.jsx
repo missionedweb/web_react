@@ -14,7 +14,7 @@ import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 //import Button from '@material-ui/core/Button';
 import { Paper } from "@material-ui/core";
-
+import logo from "../Images/logo.svg";
 
 
 AOS.init();
@@ -92,6 +92,8 @@ const LearningPage = () => {
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header> */}
         <Modal.Body>
+        
+        <img src={logo} stylealt="logo" style={{ Align: "center" }}/>
         <form className={classes.root}>
             <TextField
                     variant="outlined"
