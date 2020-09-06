@@ -122,12 +122,19 @@ export default function Login() {
   return (
     <div>
       <Button
-        variant="contained"
-        color="secondary"
+        variant="outlined"
         type="button"
         onClick={handleOpen}
         className={classes.button}
-        style={{ outline: " none", marginRight: "10px" }}>
+        style={{
+          outline: "none",
+          color: "#fb8f1d",
+          borderColor: "#fb8f1d",
+          width: 100,
+          height: 44,
+          marginRight: "10px",
+          fontWeight: "600",
+        }}>
         Login
       </Button>
 
