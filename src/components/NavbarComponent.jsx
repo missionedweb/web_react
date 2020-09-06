@@ -30,7 +30,7 @@ function NavbarComponent({ currentUser }) {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav navbar-left">
-          <Nav className="navbar transparent">
+          <Nav className="navbar transparent ml-auto mr-auto">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                   <a href="/" class="nav-link">Home</a>
@@ -40,7 +40,7 @@ function NavbarComponent({ currentUser }) {
 	            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> Classes <b class="caret"></b></a>
 	            <ul class="dropdown-menu multi-column columns-2">
 		            <div class="row">
-			            <div class="col-sm-4">
+			            <div class="col-sm-3">
 				            <ul class="multi-column-dropdown">
                     <a href="#" class="dropdown-item">Class 8</a>
                     <a href="#" class="dropdown-item">Class 9</a>

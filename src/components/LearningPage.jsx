@@ -14,7 +14,7 @@ import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 //import Button from '@material-ui/core/Button';
 import { Paper } from "@material-ui/core";
-
+import logo from "../Images/logo.svg";
 
 
 AOS.init();
@@ -92,6 +92,8 @@ const LearningPage = () => {
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header> */}
         <Modal.Body>
+        
+        <img src={logo} stylealt="logo" style={{ Align: "center" }}/>
         <form className={classes.root}>
             <TextField
                     variant="outlined"
@@ -102,7 +104,7 @@ const LearningPage = () => {
                     value={values.firstname}
                     onChange = {handleInputChange}
                     autoFocus
-                  />
+              />
              <TextField
                     variant="outlined"
                     required
@@ -164,9 +166,7 @@ const LearningPage = () => {
           {/* <button type="button" className="btn  btn-lg" dataToggle="modal" dataTarget="#myModal" 
           style={{ marginLeft: "20px",  background:"#FB8F1D", color:"white"}} 
           onClick = {() => setOpenPopup(true)}>Open Modal</button>
-
         <Popup>
-
         openPopup={openPopup}
         setPopup={setOpenPopup}
         
@@ -192,7 +192,6 @@ const LearningPage = () => {
                     onChange ={handleInputChange}
                     
                   />
-
                   <FormControl variant="outlined" className={classes.formControl} varient="outlined">
                      <InputLabel variant="outlined" id="demo-simple-select-label">Class</InputLabel>
                       <Select
@@ -209,7 +208,6 @@ const LearningPage = () => {
                         <MenuItem value={30}>12 Science</MenuItem>
                         <MenuItem value={30}>12 Commerce</MenuItem>
                       </Select>
-
                   </FormControl>
                         <TextField
                         variant="outlined"
@@ -224,7 +222,6 @@ const LearningPage = () => {
                         <div>
                           <Button  variant="contained" color="primary">Primary</Button>
                         </div>
-
               <Controls.Select
               name="Class"
               label="Class"
