@@ -85,23 +85,21 @@ const LearningPage = () => {
           
           FREE <span>Coding</span>  Certification | (Age 6-18)  <i style ={{ color:"pink", marginLeft: "20px"}} class="fas fa-arrow-right"></i>
           <Button style={{ marginLeft: "20px",  background:"#FB8F1D", color:"white"}} variant="primary" onClick={handleShow}>
-          Open Modal
+          Book
       </Button>
 
-      <Modal show={show} onHide={handleClose} animation={false}>
+      <Modal show={show} onHide={handleClose} animation={false} centered>
         {/* <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header> */}
         <Modal.Body>
         
         {/* <img src={logo} stylealt="logo" style={{ Align: "center" }}/> */}
-        <Grid item xs={12} style={{ textAlign: "center" }}>
-            <img src={logo} alt="logo" />
+        <Grid item xs={12} style={{ textAlign: "center"}}>
+        <img src={logo} stylealt="logo" style={{ textAlign: "center"}}/>
         </Grid>
-        <Grid item xs={12} style={{ textAlign: "center" }}>
-          <h2>Modal</h2>
-          </Grid>
-        <form className={classes.root}>
+
+        <form className={classes.root} style={{ textAlign: "center"}}>
             <TextField
                     variant="outlined"
                     required
@@ -162,13 +160,13 @@ const LearningPage = () => {
               onChange={handleInputChange}
               option={Classes.class()}
               /> */}
-          </form>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="primary" onClick={handleClose}>
+              <Button variant="primary" style={{width: '375px', marginTop: "10px",marginLeft: "4px" , marginright: "35px"}}
+          onClick={handleClose}>
             Submit
           </Button>
-        </Modal.Footer>
+          </form>
+        </Modal.Body>
+        
       </Modal>
           {/* <button type="button" className="btn  btn-lg" dataToggle="modal" dataTarget="#myModal" 
           style={{ marginLeft: "20px",  background:"#FB8F1D", color:"white"}} 
