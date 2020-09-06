@@ -21,7 +21,7 @@ function NavbarComponent({ currentUser }) {
     
       <div id="header">
       <div class="row">
-      <Navbar center bg="dark" expand="xl" className="navbar-expand-xl">
+      <Navbar center bg="transparent" expand="xl" className="navbar-expand-xl">
         <Navbar.Brand href="#home">
           <img className="logo mt-n4" src={NavigationLogo} alt="logo" />
           <span className="missioned-nav font-weight-bold">
@@ -30,8 +30,8 @@ function NavbarComponent({ currentUser }) {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav navbar-left">
-          <Nav className="navbar">
-              <ul class="navbar-nav">
+          <Nav className="navbar transparent">
+              <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                   <a href="/" class="nav-link">Home</a>
         
