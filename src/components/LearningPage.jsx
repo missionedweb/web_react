@@ -4,13 +4,15 @@ import Right from "../Images/Right.png";
 import AOS from "aos";
 import Popup from './Popup';
 import {TextField , makeStyles } from "@material-ui/core";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 //import * as Classes from "./Classes";
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import Button from '@material-ui/core/Button';
+//import Button from '@material-ui/core/Button';
 import { Paper } from "@material-ui/core";
 
 
@@ -61,13 +63,13 @@ const LearningPage = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    // const handleLastInputChange = e=> {
-    //     const {name , value} = e.target
-    //     setValues({
-    //         ...values,
-    //         [name]:value
-    //     })
-    // }  
+    const handleLastInputChange = e=> {
+        const {name , value} = e.target
+        setValues({
+            ...values,
+            [name]:value
+        })
+    }  
 
   return (
     <div>
@@ -81,7 +83,85 @@ const LearningPage = () => {
           >
           
           FREE <span>Coding</span>  Certification | (Age 6-18)  <i style ={{ color:"pink", marginLeft: "20px"}} class="fas fa-arrow-right"></i>
-          <button type="button" className="btn  btn-lg" dataToggle="modal" dataTarget="#myModal" 
+          <Button style={{ marginLeft: "20px",  background:"#FB8F1D", color:"white"}} variant="primary" onClick={handleShow}>
+          Open Modal
+      </Button>
+
+      <Modal show={show} onHide={handleClose} animation={false}>
+        {/* <Modal.Header closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header> */}
+        <Modal.Body>
+        <form className={classes.root}>
+            <TextField
+                    variant="outlined"
+                    required
+                    fullWidth
+                    label="First Name"
+                    name="firstname"
+                    value={values.firstname}
+                    onChange = {handleInputChange}
+                    autoFocus
+                  />
+             <TextField
+                    variant="outlined"
+                    required
+                    fullWidth
+                    label="Last Name"
+                    name="lastname"
+                    value={values.lastname}
+                    onChange ={handleInputChange}
+                    
+                  />
+
+                  <FormControl variant="outlined" className={classes.formControl} varient="outlined">
+                     <InputLabel variant="outlined" id="demo-simple-select-label">Class</InputLabel>
+                      <Select
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        value={values.class}
+                        onChange={handleInputChange}
+                      >
+                        <MenuItem value={10}>8</MenuItem>
+                        <MenuItem value={20}>9</MenuItem>
+                        <MenuItem value={30}>10</MenuItem>
+                        <MenuItem value={30}>11 Science</MenuItem>
+                        <MenuItem value={30}>11 Commerce</MenuItem>
+                        <MenuItem value={30}>12 Science</MenuItem>
+                        <MenuItem value={30}>12 Commerce</MenuItem>
+                      </Select>
+
+                  </FormControl>
+                        <TextField
+                        variant="outlined"
+                        required
+                        fullWidth
+                        label="Email/Phone number"
+                        name="email"
+                        value={values.email}
+                        onChange = {handleInputChange}
+                        autoFocus
+                      />
+                        {/* <div>
+                          <Button  variant="contained" color="primary">Primary</Button>
+                        </div> */}
+
+              {/* <Controls.Select
+              name="Class"
+              label="Class"
+              value={values.Class}
+              onChange={handleInputChange}
+              option={Classes.class()}
+              /> */}
+          </form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="primary" onClick={handleClose}>
+            Submit
+          </Button>
+        </Modal.Footer>
+      </Modal>
+          {/* <button type="button" className="btn  btn-lg" dataToggle="modal" dataTarget="#myModal" 
           style={{ marginLeft: "20px",  background:"#FB8F1D", color:"white"}} 
           onClick = {() => setOpenPopup(true)}>Open Modal</button>
 
@@ -145,16 +225,16 @@ const LearningPage = () => {
                           <Button  variant="contained" color="primary">Primary</Button>
                         </div>
 
-              {/* <Controls.Select
+              <Controls.Select
               name="Class"
               label="Class"
               value={values.Class}
               onChange={handleInputChange}
               option={Classes.class()}
-              /> */}
+              />
           </form>
           </Paper>
-        </Popup>
+        </Popup> */}
 
 {/* <div className="modal fade" id="myModal" role="dialog">
   <div className="modal-dialog">
