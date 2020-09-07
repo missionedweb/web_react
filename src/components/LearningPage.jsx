@@ -88,7 +88,7 @@ const LearningPage = () => {
           Open Modal
       </Button>
 
-      <Modal show={show} onHide={handleClose} animation={false}>
+      <Modal show={show} onHide={handleClose} animation={false}  centered>
         {/* <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header> */}
@@ -101,7 +101,8 @@ const LearningPage = () => {
         <Grid item xs={12} style={{ textAlign: "center" }}>
           <h2>Modal</h2>
           </Grid>
-        <form className={classes.root}>
+        <form className={classes.root} style={{ textAlign: "center" }}>
+        <Grid item xs={12} sm={12} >
             <TextField
                     variant="outlined"
                     required
@@ -112,6 +113,8 @@ const LearningPage = () => {
                     onChange = {handleInputChange}
                     autoFocus
               />
+            </Grid>
+            <Grid item xs={12} sm={12}>
              <TextField
                     variant="outlined"
                     required
@@ -122,6 +125,7 @@ const LearningPage = () => {
                     onChange ={handleInputChange}
                     
                   />
+            </Grid>
 
                   <FormControl variant="outlined" className={classes.formControl} varient="outlined">
                      <InputLabel variant="outlined" id="demo-simple-select-label">Class</InputLabel>
@@ -164,8 +168,8 @@ const LearningPage = () => {
               /> */}
           </form>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="primary" onClick={handleClose}>
+        <Modal.Footer style={{ textAlign: "center" }}>
+          <Button variant="primary" onClick={handleClose} >
             Submit
           </Button>
         </Modal.Footer>

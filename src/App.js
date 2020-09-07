@@ -11,6 +11,7 @@ import liveInteractive from "./components/FeatureComponents/Feature4/liveInterac
 import personalizedLearning from "./components/FeatureComponents/Feature5/personalizedLearning";
 import trustedContent from "./components/FeatureComponents/Feature6/trustedContent";
 import Pricing from "./components/Price/Pricing";
+import AboutUs from "./components/AboutUs/AboutUs"
 import Counselling from "./components/Counselling/counselling";
 import contactUs from "./components/contactUs/contactUs";
 import Faq from "./pages/faq/faq";
@@ -65,6 +66,7 @@ function App({ setCurrentUser, currentUser }) {
         <Route path="/contactus" component={contactUs} />
         <Route path="/faq" component={Faq} />
         <Route path="/testim" component={Testim} />
+        <Route path="/aboutus" component={AboutUs} />
       </Switch>
     </div>
   );
