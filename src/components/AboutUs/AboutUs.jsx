@@ -10,6 +10,8 @@ import Testimonials from "../Testimonials";
 import GetTheApp from "../GetTheApp";
 import Footer from "../Footer";
 import NavbarComponent from "../NavbarComponent";
+import Right from "../../Images/Right.png";
+import Left from "../../Images/left.png";
 
 const AboutUs = () => {
   return (
@@ -36,7 +38,6 @@ const AboutUs = () => {
 
           </div>
           <div>
-            
           </div>
           {/* <div >
         <div
@@ -65,10 +66,77 @@ const AboutUs = () => {
 
         </div> */}
         <div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        <center>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <iframe
+          className="img-section-left ml-auto"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+          alt=""
+          style={{ marginTop: "180px", width: "23%" , height : "300px" , marginLeft : "50px" }}
+          
+        />
+        {/* <img
+          className="img-section-left"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          src={Left}
+          alt=""
+          style={{ marginTop: "20px", width: "42%" }}
+          
+        /> */}
+        <div
+          className="learning-page "
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
+          <p className="learning-heading">What we believe in?</p>
+          <h6 className="learning-txt">
+            {" "}
+            The environment of learning we provide  is nurtured by the experts. The guidance that  
+            <br/>you are seeking is from the IITians. They will provide you the enhanced way of teaching 
+            <br/> You  will get the quality as well as playful atmosphere.
+          </h6>
+          <br />
+          <br />
+          <div
+            className="col-md-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+          >
+            {" "}
+            <a href="/feature1">
+            <button className="border-0 learn-more-btn">Learn More</button>{" "}
+            </a>
+
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        </center>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        
+        <div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        </div>
+        <div>
         <div
               className="heading"
               data-aos="zoom-in-up"
@@ -78,36 +146,36 @@ const AboutUs = () => {
             </div>
           <div className="jumbotron m-auto">
             
-            <div className="row offset-1 mt-2 " style={{ width : "100%" }}>
+            <div className="row  mt-2 " style={{ width : "100%" }}>
                 <div className="col-3">
-                  <h1 className="ml-auto mr-auto" 
-                  >Efficiency</h1>
+                  <h1 style = {{ color : "black" }}
+                  > Efficiency</h1>
                 </div>
                 <div className="col-3" >
-                <h1>Passion</h1>
+                <h1 style = {{ color : "black" }}>Passion</h1>
                 </div>
                 <div className="col-3">
-                  <h1>Empathy</h1>
+                  <h1 style = {{ color : "black" }}>Empathy</h1>
                 </div>
                 <div className="col-3">
-                  <h1>Curiosity</h1>
+                  <h1 style = {{ color : "black" }}>Curiosity</h1>
                 </div>
             </div>
             <br/>
 
-            <div className="row offset-1 mt-2" style={{ width : "100%" }}>
+            <div className="row mt-2" style={{ width : "100%" }}>
                 <div className="col-3">
-                  <h1 
+                  <h1 style = {{ color : "black" }}
                   >Excellence</h1>
                 </div>
                 <div className="col-3" >
-                <h1>Optimism</h1>
+                <h1 style = {{ color : "black" }}>Optimism</h1>
                 </div>
                 <div className="col-3">
-                  <h1>Creativity</h1>
+                  <h1 style = {{ color : "black" }}>Creativity</h1>
                 </div>
                 <div className="col-3">
-                  <h1>Growth</h1>
+                  <h1 style = {{ color : "black" }}>Growth</h1>
                 </div>
             </div>
 
@@ -141,11 +209,13 @@ const AboutUs = () => {
             data-aos-duration={2500}
             className="mt-2"
             >
-            <center>Experience Learning By These Expert Guides Like You Have Never Experienced Before!</center>
+              <br/>
+            <center>The guides you need to surpass any challenge your academic life throws at you are here at your rescue 24X7</center>
             </div>
             
 
           </div>
+          
 
           </div>
         
