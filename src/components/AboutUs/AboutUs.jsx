@@ -36,122 +36,133 @@ const AboutUs = () => {
 
           </div>
           <div>
-          <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <img
-          className="img-section-left"
-          data-aos="fade-right"
-          data-aos-duration="1500"
-          alt=""
-          style={{ marginTop: "20px", width: "42%" }}
-          
-        />
-          <div
-          className="learning-page "
+            
+          </div>
+          {/* <div >
+        <div
+          className="learning-page-2"
           data-aos="fade-left"
           data-aos-duration="1500"
         >
-          <p className="learning-heading">What we believe in?</p>
-          <h6 className="learning-txt">
-            {" "}
-            The environment of learning we provide is nurtured by the experts.
-            The guidance that
-            <br /> you are seeking is from the IITians. They will provide you
-            the enhanced way of teaching <br /> with the pinch of fun and
-            enthusiasm. You will get the quality as well as playful atmosphere.
+          <p className="learning-heading-2 ml-auto">What we believe in?</p>
+          <h6 className="learning-txt-2">
+          The environment of learning we provide is nurtured by the experts. The guidance that you are seeking is from the IITians. They will provide you the enhanced way of teaching with the pinch of fun and enthusiasm. You will get the quality as well as playful atmosphere.
           </h6>
           <br />
           <br />
-          
-        </div>
+          <div
+            className="col-md-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+          >
+            {" "}
+            <a href="/feature2">
+            <button className="border-0 learn-more-btn">Learn More</button>{" "}
+            </a>
           </div>
-          {/* <div className="section over-hide">
-            <div className="container">
-              <div className="row full-height justify-content-center">
-                <div className="col-12 text-center align-self-center py-5">
-                  <div className="section text-center py-5 py-md-0">
-                    <input
-                      className="pricing"
-                      type="checkbox"
-                      id="pricing"
-                      name="pricing"
-                    />
-                    <label htmlFor="pricing">
-                      <span
-                        className="block-diff"
-                        style={{ marginLeft: "20px" }}
-                      >
-                        Free<span className="float-right">Premium</span>
-                      </span>
-                    </label>
-                    <div className="card-3d-wrap mx-auto">
-                      <div className="card-3d-wrapper">
-                        <div className="card-front">
-                          <div className="pricing-wrap">
-                            <h4 className="mb-5">Free</h4>
-                            <p className="mb-4">Profile with level being zero,<br></br>e-Credits as 30</p>
-                            <p className="mb-4">Free notes and questions for only <br></br> 1 chapter of each subject</p>
-                            <p className="mb-4">Sample mock test of <br></br>each paper module</p>
-                            
-                            <a href="#0" className="link">
-                              BOOK NOW
-                            </a>
-                            <div className="img-wrap img-2">
-                              <img src={free3} alt="" />
-                            </div>
-                            <div className="img-wrap img-1">
-                              <img src={free2} alt="" />
-                            </div>
-                            <div className="img-wrap img-3">
-                              <img src="https://assets.codepen.io/1462889/water.png" alt="" />
-                            </div>
-                            <div className="img-wrap img-6">
-                              <img src={free1} alt="" />
-                            </div>
-                          </div>
-                        </div>
-                        <div className="card-back">
-                          <div className="pricing-wrap">
-                            <h4 className="mb-5">Premium</h4>
-                            <p className="mb-4">One to One mentorship</p>
-                            <p className="mb-4">Full access to subjects <br></br> with targeted exams</p>
-                            <p className="mb-4">Live Classes</p>
-                            
-                            <a href="#0" className="link">
-                              BOOK NOW
-                            </a>
-                            <div className="img-wrap img-2">
-                              <img src={pre3} alt="" />
-                            </div>
-                            <div className="img-wrap img-4">
-                              <img src={pre1} alt="" />
-                            </div>
-                            <div className="img-wrap img-5"></div>
-                            <div className="img-wrap img-7">
-                              <img src={pre2} alt="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        </div>
+
+
+        </div> */}
+        <div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div
+              className="heading"
+              data-aos="zoom-in-up"
+              data-aos-duration={2500}
+            >
+              Our Values
             </div>
-          </div> */}
-          <h1 class="main" data-aos="zoom-in-down" data-aos-duration="1500">
+          <div className="jumbotron m-auto">
+            
+            <div className="row offset-1 mt-2 " style={{ width : "100%" }}>
+                <div className="col-3">
+                  <h1 className="ml-auto mr-auto" 
+                  >Efficiency</h1>
+                </div>
+                <div className="col-3" >
+                <h1>Passion</h1>
+                </div>
+                <div className="col-3">
+                  <h1>Empathy</h1>
+                </div>
+                <div className="col-3">
+                  <h1>Curiosity</h1>
+                </div>
+            </div>
+            <br/>
+
+            <div className="row offset-1 mt-2" style={{ width : "100%" }}>
+                <div className="col-3">
+                  <h1 
+                  >Excellence</h1>
+                </div>
+                <div className="col-3" >
+                <h1>Optimism</h1>
+                </div>
+                <div className="col-3">
+                  <h1>Creativity</h1>
+                </div>
+                <div className="col-3">
+                  <h1>Growth</h1>
+                </div>
+            </div>
+
+
+          </div>
+          </div>
+          <div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+          <div
+              className="heading"
+              data-aos="zoom-in-up"
+              data-aos-duration={2500}
+            >
+              Our Team
+            </div>
+            <div className="jumbotron1">
+              <br/>
+              <br/>
+            <div
+              className="heading1"
+              data-aos="zoom-in-up"
+              data-aos-duration={2500}
+            >
+              Meet the Experts!
+            </div>
+            <div
+            data-aos="zoom-in-up"
+            data-aos-duration={2500}
+            className="mt-2"
+            >
+            <center>Experience Learning By These Expert Guides Like You Have Never Experienced Before!</center>
+            </div>
+            
+
+          </div>
+
+          </div>
+        
+        <div className="mt-5">
+          <br></br>
+          {/* <h1 class="main" data-aos="zoom-in-down" data-aos-duration="1500">
             <b>Testimonials</b>
-          </h1>
+          </h1> */}
           <br></br>
           <br></br>
           <Testimonials />
           <GetTheApp />
           <Footer />
         </div>
+        </div>
       </Wrapper>
+      
     </div>
   );
 };
@@ -170,17 +181,26 @@ const Wrapper = styled.div`
 
   .jumbotron {
     background: #fff5e5;
-    height: 200px;
+    height: 300px;
+  }
+  .jumbotron1 {
+    height: 300px;
   }
 
   .heading {
     text-align: center;
     font-weight: bold;
-    font-size: 64px;
+    font-size: 50px;
     line-height: 80px;
     color: #202336;
   }
-
+  .heading1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 69px;
+    line-height: 80px;
+    color: #202336;
+  }
   a {
     cursor: pointer;
     transition: all 200ms linear;
