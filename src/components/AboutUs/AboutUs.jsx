@@ -1,17 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import free3 from "./images/free3.png";
-import free2 from "./images/free2.png";
-import free1 from "./images/free1.png";
-import pre1 from "./images/pre1.png";
-import pre2 from "./images/pre2.png";
-import pre3 from "./images/pre3.png";
+import live_inter from "../../Images/live_inter.svg";
+import engg_ass from "../../Images/engg_ass.svg";
+import expert_teac from "../../Images/expert_teac.svg";
 import Testimonials from "../Testimonials";
 import GetTheApp from "../GetTheApp";
 import Footer from "../Footer";
 import NavbarComponent from "../NavbarComponent";
-import Right from "../../Images/Right.png";
-import Left from "../../Images/left.png";
+import cont1 from "../../Images/cont1.png";
+import cont2 from "../../Images/cont2.png";
 
 const AboutUs = () => {
   return (
@@ -96,7 +93,7 @@ const AboutUs = () => {
           data-aos-duration="1500"
         >
           <p className="learning-heading">What we believe in?</p>
-          <h6 className="learning-txt">
+          <h6 className="learning-txt" style={{ margin: "auto" }}>
             {" "}
             The environment of learning we provide  is nurtured by the experts. The guidance that  
             <br/>you are seeking is from the IITians. They will provide you the enhanced way of teaching 
@@ -218,6 +215,148 @@ const AboutUs = () => {
           
 
           </div>
+          <div className="container ">
+              <div className="row ">
+                <div
+                  className="col-lg-4 center col-md-6 col-12 mt-3"
+                  data-aos="flip-right"
+                  data-aos-duration={1500}
+                >
+                  <div className="card text-center h-100 border-0 image-background">
+                   <a href=""> <img
+                      className="card-img-top img-fluid card01 mx-auto image-1 "
+                      src={cont1}
+                      alt=""
+                    />
+                    </a>
+                    <div className="card-block">
+                      <h4 className="card-title ct-1 card-three">
+                        Name
+                      </h4>
+                      <h6>Designation</h6>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <br />
+                <div
+                  className="col-lg-4 center col-md-6 col-12 mt-3"
+                  data-aos="flip-right"
+                  data-aos-duration={1500}
+                >
+                  <div className="card text-center h-100 border-0 image-background">
+                   <a href=""> <img
+                      className="card-img-top img-fluid card01 mx-auto image-1 "
+                      src={cont2}
+                      alt=""
+                    />
+                    </a>
+                    <div className="card-block">
+                      <h4 className="card-title ct-1 card-three">
+                        Name
+                      </h4>
+                      <h6>Designation</h6>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <br />
+                <div
+                  className="col-lg-4 center col-md-6 col-12 mt-3 "
+                  data-aos="flip-right"
+                  data-aos-duration={1500}
+                >
+                  <div className="card text-center h-100 border-0 image-background">
+                    <a href=""><img
+                      className="card-img-top img-fluid  card01 mx-auto image-3"
+                      src={cont1}
+                      alt=""
+                    />
+                    </a>
+                    <div className="card-block">
+                      <h4 className="card-title ct-1 card-three">
+                        Name
+                      </h4>
+                      <h6>Designation</h6>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <br />
+                
+                </div>
+                <div className="row ">
+                <div
+                  className="col-lg-4 center col-md-6 col-12 mt-3"
+                  data-aos="flip-right"
+                  data-aos-duration={1500}
+                >
+                  <div className="card text-center h-100 border-0 image-background">
+                   <a href=""> <img
+                      className="card-img-top img-fluid card01 mx-auto image-1 "
+                      src={cont1}
+                      alt=""
+                    />
+                    </a>
+                    <div className="card-block">
+                      <h4 className="card-title ct-1 card-three">
+                        Name
+                      </h4>
+                      <h6>Designation</h6>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <br />
+                <div
+                  className="col-lg-4 center col-md-6 col-12 mt-3"
+                  data-aos="flip-right"
+                  data-aos-duration={1500}
+                >
+                  <div className="card text-center h-100 border-0 image-background">
+                   <a href=""> <img
+                      className="card-img-top img-fluid card01 mx-auto image-1 "
+                      src={cont2}
+                      alt=""
+                    />
+                    </a>
+                    <div className="card-block">
+                      <h4 className="card-title ct-1 card-three">
+                        Name
+                      </h4>
+                      <h6>Designation</h6>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <br />
+                <div
+                  className="col-lg-4 center col-md-6 col-12 mt-3 "
+                  data-aos="flip-right"
+                  data-aos-duration={1500}
+                >
+                  <div className="card text-center h-100 border-0 image-background">
+                    <a href=""><img
+                      className="card-img-top img-fluid  card01 mx-auto image-3"
+                      src={cont1}
+                      alt=""
+                    />
+                    </a>
+                    <div className="card-block">
+                      <h4 className="card-title ct-1 card-three">
+                        Name
+                      </h4>
+                      <h6>Designation</h6>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <br />
+                
+                </div>
+                </div>
+
+          
         
         <div className="mt-5">
           <br></br>
