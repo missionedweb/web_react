@@ -22,8 +22,8 @@ function NavbarComponent({ currentUser }) {
       <div id="header">
       <div class="row">
       <Navbar center bg="transparent" expand="xl" className="navbar-expand-xl">
-        <Navbar.Brand href="#home">
-          <img className="logo mt-n4" src={NavigationLogo} alt="logo" />
+        <Navbar.Brand href="#home" className="ml-8">
+          <img className="logo mt-n4 mr-auto" src={NavigationLogo} alt="logo" />
           <span className="missioned-nav font-weight-bold">
             Mission<span className="ed">Ed</span>
           </span>
@@ -157,7 +157,7 @@ function NavbarComponent({ currentUser }) {
             </Link>
           ) : (
             <Form inline className="mega-link p-2" >
-              <Link to="/login" className="btn login-btn mr-2" role="button">
+              <Link to="/login" className="btn login-btn mr-2" role="button" style={{ outline: " none" , width: 100 , height: 44  }}>
                 Login
               </Link>
               <Register className=".register-btn pr-2" />

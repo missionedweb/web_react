@@ -16,11 +16,13 @@ import Col from 'react-bootstrap/Col';
 const AboutUs = () => {
   return (
     <div>
-      <NavbarComponent />
+      <NavbarComponent className="ml-2"/>
       <Wrapper>
         <div>
+        
           {/* <NavbarComponent/>*/}
           <div className="jumbotron">
+          
             <div
               className="heading"
               data-aos="zoom-in-up"
@@ -206,18 +208,18 @@ const AboutUs = () => {
                   data-aos="flip-right"
                   data-aos-duration={1500}
                 >
-                  <div className="card text-center h-100 border-0 image-background">
+                  <div className="card text-center h-80 border-0 image-background">
                    <a href=""> <img
                       className="card-img-top img-fluid card01 mx-auto image-1 "
                       src={cont1}
                       alt=""
+                      style = {{ width : "200px" }}
                     />
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
                         Name
                       </h4>
-                      <h6>Designation</h6>
                     </div>
                   </div>
                 </div>
@@ -228,18 +230,18 @@ const AboutUs = () => {
                   data-aos="flip-right"
                   data-aos-duration={1500}
                 >
-                  <div className="card text-center h-100 border-0 image-background">
+                  <div className="card text-center h-80 border-0 image-background">
                    <a href=""> <img
                       className="card-img-top img-fluid card01 mx-auto image-1 "
                       src={cont2}
                       alt=""
+                      style = {{ width : "200px" }}
                     />
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
                         Name
                       </h4>
-                      <h6>Designation</h6>
                     </div>
                   </div>
                 </div>
@@ -250,18 +252,18 @@ const AboutUs = () => {
                   data-aos="flip-right"
                   data-aos-duration={1500}
                 >
-                  <div className="card text-center h-100 border-0 image-background">
+                  <div className="card text-center h-80 border-0 image-background">
                     <a href=""><img
                       className="card-img-top img-fluid  card01 mx-auto image-3"
                       src={cont1}
                       alt=""
+                      style = {{ width : "200px" }}
                     />
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
                         Name
                       </h4>
-                      <h6>Designation</h6>
                     </div>
                   </div>
                 </div>
@@ -275,18 +277,18 @@ const AboutUs = () => {
                   data-aos="flip-right"
                   data-aos-duration={1500}
                 >
-                  <div className="card text-center h-100 border-0 image-background">
+                  <div className="card text-center h-80 border-0 image-background">
                    <a href=""> <img
                       className="card-img-top img-fluid card01 mx-auto image-1 "
                       src={cont1}
                       alt=""
+                      style = {{ width : "200px" }}
                     />
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
                         Name
                       </h4>
-                      <h6>Designation</h6>
                     </div>
                   </div>
                 </div>
@@ -297,18 +299,18 @@ const AboutUs = () => {
                   data-aos="flip-right"
                   data-aos-duration={1500}
                 >
-                  <div className="card text-center h-100 border-0 image-background">
+                  <div className="card text-center h-80 border-0 image-background">
                    <a href=""> <img
                       className="card-img-top img-fluid card01 mx-auto image-1 "
                       src={cont2}
                       alt=""
+                      style = {{ width : "200px" }}
                     />
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
                         Name
                       </h4>
-                      <h6>Designation</h6>
                     </div>
                   </div>
                 </div>
@@ -319,18 +321,18 @@ const AboutUs = () => {
                   data-aos="flip-right"
                   data-aos-duration={1500}
                 >
-                  <div className="card text-center h-100 border-0 image-background">
+                  <div className="card text-center h-80 border-0 image-background">
                     <a href=""><img
                       className="card-img-top img-fluid  card01 mx-auto image-3"
                       src={cont1}
                       alt=""
+                      style = {{ width : "200px" }}
                     />
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
                         Name
                       </h4>
-                      <h6>Designation</h6>
                     </div>
                   </div>
                 </div>
@@ -375,6 +377,7 @@ const Wrapper = styled.div`
   .jumbotron {
     background: #fff5e5;
     height: 300px;
+    z-index : 1
   }
   .jumbotron1 {
     height: 300px;
