@@ -9,6 +9,9 @@ import Footer from "../Footer";
 import NavbarComponent from "../NavbarComponent";
 import cont1 from "../../Images/cont1.png";
 import cont2 from "../../Images/cont2.png";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const AboutUs = () => {
   return (
@@ -141,43 +144,24 @@ const AboutUs = () => {
             >
               Our Values
             </div>
-          <div className="jumbotron m-auto">
             
-            <div className="row  mt-2 " style={{ width : "100%" }}>
-                <div className="col-3">
-                  <h1 style = {{ color : "black" }}
-                  > Efficiency</h1>
-                </div>
-                <div className="col-3" >
-                <h1 style = {{ color : "black" }}>Passion</h1>
-                </div>
-                <div className="col-3">
-                  <h1 style = {{ color : "black" }}>Empathy</h1>
-                </div>
-                <div className="col-3">
-                  <h1 style = {{ color : "black" }}>Curiosity</h1>
-                </div>
+          <div className="jumbotron m-auto" style = {{ height : "300px" }}>
+            
+          <Row>
+    <Col sm={3} style = {{ fontSize : "24px" , width : "110px" ,height : "50px" }}>Efficiency</Col>
+    <Col sm={3} style = {{ fontSize : "24px" , width : "110px" ,height : "50px" }}>Passion</Col>
+    <Col sm={3} style = {{ fontSize : "24px" , width : "110px" ,height : "50px" }}>Empathy</Col>
+    <Col sm={3} style = {{ fontSize : "24px" , width : "110px" ,height : "50px" }}>Curiosity</Col>
+  </Row>
+  <Row>
+  <Col sm={3} style = {{ fontSize : "24px" , width : "110px" ,height : "50px" }}>Excellence</Col>
+    <Col sm={3} style = {{ fontSize : "24px" , width : "110px" ,height : "50px" }}>Optimism</Col>
+    <Col sm={3} style = {{ fontSize : "24px" , width : "110px" ,height : "50px" }}>Creativity</Col>
+    <Col sm={3} style = {{ fontSize : "24px" , width : "110px" ,height : "50px" }}>Growth</Col>
+  </Row>
             </div>
-            <br/>
+            
 
-            <div className="row mt-2" style={{ width : "100%" }}>
-                <div className="col-3">
-                  <h1 style = {{ color : "black" }}
-                  >Excellence</h1>
-                </div>
-                <div className="col-3" >
-                <h1 style = {{ color : "black" }}>Optimism</h1>
-                </div>
-                <div className="col-3">
-                  <h1 style = {{ color : "black" }}>Creativity</h1>
-                </div>
-                <div className="col-3">
-                  <h1 style = {{ color : "black" }}>Growth</h1>
-                </div>
-            </div>
-
-
-          </div>
           </div>
           <div>
             <br/>
@@ -355,7 +339,7 @@ const AboutUs = () => {
                 
                 </div>
                 </div>
-
+        
           
         
         <div className="mt-5">
