@@ -1,20 +1,21 @@
 import React, { useState } from "react";
-// import "./register.styles.scss";
-//Firebase
-import { auth } from "../../../firebase/firebase.utils";
-//MaterialUI+Spring
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Checkbox from "@material-ui/core/Checkbox";
 
+//Firebase
+
+//MaterialUI+Spring
+import MenuItem from "@material-ui/core/MenuItem";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import { useSpring, animated } from "react-spring/web.cjs"; // web.cjs is required for IE 11 support
 import Button from "@material-ui/core/Button";
-import logo from "../../../Images/logo.svg";
+import logo from "../../Images/logo.svg";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
+import Select from "@material-ui/core/Select";
+import InputLabel from "@material-ui/core/InputLabel";
+import FormControl from "@material-ui/core/FormControl";
 
 const useStyles = makeStyles((theme) => ({
   button: {},
@@ -29,13 +30,14 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     border: "1px solid #000",
     boxShadow: theme.shadows[5],
-    padding: theme.spacing(4, 4),
+    padding: theme.spacing(3, 3),
     height: "100%",
-    [theme.breakpoints.down("lg")]: {
+    [theme.breakpoints.up("sm")]: {
       width: "30vw",
     },
+
     [theme.breakpoints.down("sm")]: {
-      width: "80vw",
+      width: "70vw",
     },
     borderRadius: "5px",
   },
@@ -49,6 +51,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(3),
   },
   submit: {
+    margin: theme.spacing(3, 0, 2),
     padding: theme.spacing(1.5, 0),
     fontSize: "16px",
   },
@@ -85,7 +88,7 @@ Fade.propTypes = {
   onExited: PropTypes.func,
 };
 
-export default function Login() {
+export default function LearningModal() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -98,8 +101,10 @@ export default function Login() {
   };
 
   const [details, setDetails] = useState({
+    firstName: "",
+    lastName: "",
     email: "",
-    password: "",
+    standard: "",
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -107,35 +112,20 @@ export default function Login() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const { email, password } = details;
-
-    //signInWithEmailAndPassword
-    try {
-      await auth.signInWithEmailAndPassword(email, password);
-      setDetails({ email: "", password: "" });
-    } catch (err) {
-      //error handling
-      console.log(err.message);
-    }
+    const { firstName, lastName, email, standard } = details;
+    console.log(firstName, lastName, email, standard);
   };
 
   return (
     <div>
       <Button
-        variant="outlined"
+        variant="contained"
+        color="secondary"
         type="button"
         onClick={handleOpen}
         className={classes.button}
-        style={{
-          outline: "none",
-          color: "#fb8f1d",
-          borderColor: "#fb8f1d",
-          width: 100,
-          height: 44,
-          marginRight: "10px",
-          fontWeight: "600",
-        }}>
-        Login
+        style={{ outline: "none", marginLeft: "20px", background: "#FB8F1D", color: "white" }}>
+        Register
       </Button>
 
       <Modal
@@ -157,7 +147,35 @@ export default function Login() {
                   <img src={logo} alt="logo" />
                 </Grid>
                 <Grid item xs={12} style={{ textAlign: "center" }}>
-                  <h2>Welcome Back !</h2>
+                  <h2>Get Details</h2>
+                </Grid>
+
+                <Grid item xs={12}>
+                  <TextField
+                    onChange={handleChange}
+                    autoComplete="fname"
+                    name="firstName"
+                    variant="outlined"
+                    required
+                    fullWidth
+                    id="firstName"
+                    label="First Name"
+                    value={details.firstName}
+                    autoFocus
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    onChange={handleChange}
+                    variant="outlined"
+                    required
+                    fullWidth
+                    id="lastName"
+                    label="Last Name"
+                    name="lastName"
+                    value={details.lastName}
+                    autoComplete="lname"
+                  />
                 </Grid>
 
                 <Grid item xs={12}>
@@ -167,40 +185,48 @@ export default function Login() {
                     required
                     fullWidth
                     id="email"
-                    label="Email Address"
+                    label="Email/ Phone No."
                     name="email"
                     value={details.email}
                     autoComplete="email"
-                    autoFocus
                   />
                 </Grid>
 
                 <Grid item xs={12}>
-                  <TextField
-                    onChange={handleChange}
-                    variant="outlined"
-                    required
-                    fullWidth
-                    name="password"
-                    label="Password"
-                    type="password"
-                    id="password"
-                    value={details.password}
-                    autoComplete="current-password"
-                  />
+                  <FormControl fullWidth>
+                    <InputLabel variant="outlined" id="demo-simple-select-label">
+                      Class
+                    </InputLabel>
+                    <Select
+                      labelId="demo-simple-select-outlined-label"
+                      id="demo-simple-select-outlined"
+                      name="standard"
+                      value={details.standard}
+                      onChange={handleChange}
+                      label="Class"
+                      variant="outlined"
+                      fullWidth>
+                      <MenuItem value="">
+                        <em>None</em>
+                      </MenuItem>
+                      <MenuItem value={10}>8</MenuItem>
+                      <MenuItem value={20}>9</MenuItem>
+                      <MenuItem value={30}>10</MenuItem>
+                      <MenuItem value={40}>11 Science</MenuItem>
+                      <MenuItem value={50}>11 Commerce</MenuItem>
+                      <MenuItem value={60}>12 Science</MenuItem>
+                      <MenuItem value={70}>12 Commerce</MenuItem>
+                    </Select>
+                  </FormControl>
                 </Grid>
               </Grid>
-              <FormControlLabel
-                control={<Checkbox value="remember" color="primary" />}
-                label="Remember me"
-              />
               <Button
                 type="submit"
                 fullWidth
                 variant="contained"
                 color="primary"
                 className={classes.submit}>
-                Sign In
+                Submit
               </Button>
             </form>
           </div>
