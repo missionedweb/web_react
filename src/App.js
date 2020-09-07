@@ -17,6 +17,8 @@ import contactUs from "./components/contactUs/contactUs";
 import Faq from "./pages/faq/faq";
 import Testim from "./components/Testim/Testim";
 import AllImports from "./components/AllImports";
+import Addfeatures from "./components/FeatureComponents/Features/Addfeatures";
+
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 
@@ -61,6 +63,7 @@ function App({ setCurrentUser, currentUser }) {
         <Route path="/feature4" component={liveInteractive} />
         <Route path="/feature5" component={personalizedLearning} />
         <Route path="/feature6" component={trustedContent} />
+        <Route path="/features" component={Addfeatures} />
         <Route path="/pricing" component={Pricing} />
         <Route path="/counselling" component={Counselling} />
         <Route path="/contactus" component={contactUs} />
