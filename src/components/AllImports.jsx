@@ -1,6 +1,6 @@
 import React from "react";
 import NavbarComponent from "./NavbarComponent";
-import Header from "./Header";
+import Header from "./Header/Header";
 import LearningPage from "./Learning/LearningPage";
 import Features from "./Features";
 import Testimonials from "./Testimonials";

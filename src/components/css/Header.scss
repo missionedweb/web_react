@@ -1,128 +1,128 @@
 /* Header */
 .tagline {
-    color: #202336;
-    font-size: 60px;
-    font-family: Playfair Display;
-    line-height: 80px;
-    padding-top: 50px;
-  }
-  
-  .intl-tel-input {
-    display: table-cell;
-  }
-  .intl-tel-input .selected-flag {
-    z-index: 4;
-  }
-  .intl-tel-input .country-list {
-    z-index: 5;
-  }
-  .input-group .intl-tel-input .form-control {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 0;
-  }
-  
-  .play {
-    margin-top: 20px;
-  }
-  .s0 {
-    width: auto;
-    height: auto;
-  }
-  .x1 a:hover {
-    box-shadow: 2px 2px 5px black;
-  }
-  
-  .tg2 {
-    color: #828282;
-  
-    font-size: 24px;
-    letter-spacing: 0.3px;
-    line-height: 28px;
-    margin-top: 20px;
-  }
-  .tg3 {
-    color: #000;
-  
-    font-size: 24px;
-    letter-spacing: 0.3px;
-    line-height: 28px;
-    margin-top: 20px;
-  }
-  
-  .headerButtons {
-    margin-top: 3%;
-    margin-left: 5%;
-  }
-  .headerButtons .btn {
-    border-radius: 25px;
-    width: 250px;
-  }
-  
-  .header .btn,
-  .header .btn :hover,
-  .header.btn:active {
-    background: linear-gradient(42.42deg, #fa9917 0%, #fa9917 0%, #ff5f58 100%);
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-family: Raleway;
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    line-height: 28px;
-    text-align: center;
-    padding: 10px;
-  }
-  .getapp {
-    color: #b8becd;
-    margin-left: 60px;
-  }
-  
-  .contact {
-    display: flex;
-  }
-  .buttonIn {
-    display: flex;
-  }
-  
-  .number-input {
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    border-radius: 3.5px;
-    width: 250px;
-  }
-  .join {
-    background: #fa9917;
-    border-radius: 0 5px 5px 0;
-    width: 70px;
-    color: white;
-  }
-  .textfield {
-    border-radius: 0 !important;
-  }
-  .joins {
-    background: #fa9917;
-    border-radius: 0 5px 5px 0;
-    width: 70px;
-    height: 29px;
-    color: white;
-    margin-top: 9px;
-  }
-  .joins2 {
-    background: #fa9917;
-    border-radius: 0 5px 5px 0;
-    width: 70px;
-    height: 29px;
-    color: white;
-    margin-top: 0px;
-    padding-bottom: 0px !important;
-  }
-  .teach {
-    font-family: Playfair Display;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 50px;
-    margin-top: 191px;
-    padding: 40px;
-    background: #fff5e5;
-  }
+  color: #202336;
+  font-size: 60px;
+  font-family: Playfair Display;
+  line-height: 80px;
+  padding-top: 50px;
+}
+
+.intl-tel-input {
+  display: table-cell;
+}
+.intl-tel-input .selected-flag {
+  z-index: 4;
+}
+.intl-tel-input .country-list {
+  z-index: 5;
+}
+.input-group .intl-tel-input .form-control {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0;
+}
+
+.play {
+  margin-top: 20px;
+}
+.s0 {
+  width: auto;
+  height: auto;
+}
+.x1 a:hover {
+  box-shadow: 2px 2px 5px black;
+}
+
+.tg2 {
+  color: #828282;
+
+  font-size: 24px;
+  letter-spacing: 0.3px;
+  line-height: 28px;
+  margin-top: 20px;
+}
+.tg3 {
+  color: #000;
+
+  font-size: 24px;
+  letter-spacing: 0.3px;
+  line-height: 28px;
+  margin-top: 20px;
+}
+
+.headerButtons {
+  margin-top: 3%;
+  margin-left: 5%;
+}
+.headerButtons .btn {
+  border-radius: 25px;
+  width: 250px;
+}
+
+.header .btn,
+.header .btn :hover,
+.header.btn:active {
+  background: linear-gradient(42.42deg, #fa9917 0%, #fa9917 0%, #ff5f58 100%);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 28px;
+  text-align: center;
+  padding: 10px;
+}
+.getapp {
+  color: #b8becd;
+  margin-left: 60px;
+}
+
+.contact {
+  display: flex;
+}
+.buttonIn {
+  display: flex;
+}
+
+.number-input {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 3.5px;
+  width: 250px;
+}
+.join {
+  background: #fa9917;
+  border-radius: 0 5px 5px 0;
+  width: 70px;
+  color: white;
+}
+.textfield {
+  border-radius: 0 !important;
+}
+.joins {
+  background: #fa9917;
+  border-radius: 0 5px 5px 0;
+  width: 70px;
+  height: 32px;
+  color: white;
+  border: 1px solid #fa9917;
+}
+.joins2 {
+  background: #fa9917;
+  border-radius: 0 5px 5px 0;
+  width: 70px;
+  height: 29px;
+  color: white;
+  margin-top: 0px;
+  padding-bottom: 0px !important;
+}
+.teach {
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 50px;
+  margin-top: 191px;
+  padding: 40px;
+  background: #fff5e5;
+}
