@@ -376,7 +376,7 @@ const Wrapper = styled.div`
 
   .jumbotron {
     background: #fff5e5;
-    height: 300px;
+    height: 200px;
     z-index : 1
   }
   .jumbotron1 {

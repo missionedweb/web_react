@@ -157,7 +157,7 @@ function NavbarComponent({ currentUser }) {
             </Link>
           ) : (
             <Form inline className="mega-link p-2" >
-              <Link to="/login" className="btn login-btn mr-2" role="button" style={{ outline: " none" , width: 100 , height: 44  }}>
+              <Link to="/login" className="btn login-btn mr-2" role="button" style={{  width: 110 , height: 46 , textDecoration: "none" }}>
                 Login
               </Link>
               <Register className=".register-btn pr-2" />
