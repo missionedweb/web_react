@@ -1,5 +1,7 @@
 import React from 'react';
+import styled from "styled-components";
 import './Addfeatures.css';
+//import './Addfeatures.css';
 import img1 from "./Images/img1.svg";
 import img2 from "./Images/img2.svg";
 import img3 from "./Images/img3.png";
@@ -12,32 +14,23 @@ import GetTheApp from "../../GetTheApp";
 import Footer from "../../Footer";
 
 
+
 function Addfeatures() {
   return (
         <div>
-        <NavbarComponent />
-            <div>
+        <NavbarComponent className="ml-2"/>
+         
+          <div>
            <div className="jumbotron">
             <div className="container">
               <div className="row">
                 <div className="col-md-12">
-                  <h1 className="live"> Features</h1>
+                  <p className="learning-heading">Features</p>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="features ">
-              <div className="container ">
-                <div className="row"></div>
-              </div>
-            </div>
-        
-          <br />
-          <br />
-          <br />
-          <br />
-
+<br /><br /><br /><br />
           <div className="container">
             <div className="row">
               <div
@@ -46,7 +39,7 @@ function Addfeatures() {
                 data-aos-duration={1000}
                 style={{ margin: "auto" }}
               >
-                <img src={img1} alt="picture" />
+                <img src={img1} style ={{marginRight: "600px"}}alt="picture" />
               </div>
               <div
                 className="col-md-4 col-12"
@@ -54,21 +47,23 @@ function Addfeatures() {
                 data-aos-duration={1500}
                 style={{ margin: "auto" }}
               >
-                <h3 className=" above1">Expert Teachers</h3>
-                <p style={{float: "right"}}className=" abovep">
-                  Our tier 1 Faculty who have experience of cracking one of the toughest exams 
-                  like JEE, NTSE etc, 
-                  so students would feel more connected and can ask doubts more freely
-                </p>
-                <div>
-                  <Button
-                  variant="contained"
-                  color="secondary"
-                  type="button"
-                  style={{ outline: "none", marginLeft: "20px", background: "#FB8F1D", color: "white" }}>
-                  Read More
-                </Button>
-                </div>
+                <p className="learning-heading">Expert Teachers</p>                
+                <h6 className="learning-txt" style={{ margin: "auto" }}>
+            {" "}
+            Our tier 1 Faculty who have experience of cracking one of the 
+            toughest exams like JEE,NTSE <br /> etc, so students would feel more connected and can ask doubts more freely
+          </h6><br /><br />
+                <div
+            className="col-md-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+          >
+            {" "}
+            <a href="/feature3">
+            <button className="border-0 learn-more-btn">Learn More</button>{" "}
+            </a>
+
+          </div>
               </div>
             </div>
           </div>
@@ -88,19 +83,25 @@ function Addfeatures() {
                 data-aos-duration={1000}
                 style={{ margin: "auto" }}
               >
-                <h3 className=" above ">Engaging Assignments</h3>
-                <p className=" abovep">
-                  Daily package of randomly selected questions to test the student’s knowledge 
-                  and polish the understanding of various concepts posted on the app for classes 8-12th
+                <p className="learning-heading">Engaging Assignments</p>                
+                <h6 className="learning-txt" style={{ margin: "auto" }}>
+            {" "}
+            Daily package of randomly selected questions to test the student’s knowledge
+            and polish the understanding of various concepts posted on the <br /> app for classes 8-12th.
+          </h6><br /><br />
                   
-                  <Button
-                  variant="contained"
-                  color="secondary"
-                  type="button"
-                  style={{ outline: "none", marginLeft: "20px", background: "#FB8F1D", color: "white" }}>
-                  Read More
-                </Button>
-                </p>
+                  <div
+            className="col-md-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+          >
+            {" "}
+            <a href="/feature1">
+            <button className="border-0 learn-more-btn">Learn More</button>{" "}
+            </a>
+
+          </div>
+                
               </div>
               <div
                 className="col-md-8 col-12 women2 "
@@ -135,20 +136,23 @@ function Addfeatures() {
                 data-aos-duration={1500}
                 style={{ margin: "auto" }}
               >
-                <h3 className=" above1">Trusted Content</h3>
-                <p className=" abovep">
-                  The environment of learning we provide is nurtured by the experts. 
-                  The guidance that you are seeking is from the IITians. 
-                  They will provide you the enhanced way of teaching with the pinch of fun and enthusiasm. 
-                  You will get the quality as well as playful atmosphere.
-                </p>
-                <Button
-                  variant="contained"
-                  color="secondary"
-                  type="button"
-                  style={{ outline: "none", marginLeft: "20px", background: "#FB8F1D", color: "white" }}>
-                  Read More
-                </Button>
+                <p className="learning-heading">Trusted Content</p>                
+                <h6 className="learning-txt" style={{ margin: "auto" }}>
+            {" "}
+            We make learning a fun session by not just involving the students in the course content but <br />also, by allowing them to open their horizons and be aware about the world. The content is always 
+            updated with the latest norms to ensure students are able to cope up with new challenges.
+          </h6><br /><br />
+                <div
+            className="col-md-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+          >
+            {" "}
+            <a href="/feature6">
+            <button className="border-0 learn-more-btn">Learn More</button>{" "}
+            </a>
+
+          </div>
               </div>
             </div>
           </div>
@@ -167,20 +171,22 @@ function Addfeatures() {
                 data-aos-duration={1000}
                 style={{ margin: "auto" }}
               >
-                <h3 className=" above ">Personalized Learning</h3>
-                <p className=" abovep">
-                  Provides students with an opportunity to study with the best mentors as well as 
-                  gain insight on their performance. A study shows that 71.58% of students opt for home tutors 
-                  which proves the likeliness of students towards private mentors.
-                  <br /><br />
-                  <Button
-                  variant="contained"
-                  color="secondary"
-                  type="button"
-                  style={{ outline: "none", marginLeft: "20px", background: "#FB8F1D", color: "white" }}>
-                  Read More
-                </Button>
-                </p>
+                <p className="learning-heading">Personalized Learning</p>                
+                <h6 className="learning-txt" style={{ margin: "auto" }}>
+            {" "}
+            Provides students with an opportunity to study with the best mentors as well as gain insight on their performance. A study shows that 71.58% of students opt 
+            for home tutors which proves the likeliness of students towards private mentors.          </h6><br /><br />
+                <div
+            className="col-md-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+          >
+            {" "}
+            <a href="/feature5">
+            <button className="border-0 learn-more-btn">Learn More</button>{" "}
+            </a>
+
+          </div>
               </div>
               <div
                 className="col-md-8 col-12 women2 "
@@ -215,19 +221,24 @@ function Addfeatures() {
                 data-aos-duration={1500}
                 style={{ margin: "auto" }}
               >
-                <h3 className=" above1">Live and Interactive</h3>
-                <p className=" abovep">
-                  Provides personalised attention by organising one-to-one doubt clearing sessions 
-                  for the students which ensures a long term relationship with students 
-                  where they can ask anything and everything, any number of times.
-                </p>
-                <Button
-                  variant="contained"
-                  color="secondary"
-                  type="button"
-                  style={{ outline: "none", marginLeft: "20px", background: "#FB8F1D", color: "white" }}>
-                  Read More
-                </Button>
+                <p className="learning-heading">Live and Interactive</p>                
+
+                <h6 className="learning-txt" style={{ margin: "auto" }}>
+            {" "}
+            Provides personalised attention by organising one-to-one doubt clearing sessions for the students which ensures a long term relationship 
+            with students where they can ask anything and everything, any number of times.
+          </h6><br /><br />
+                <div
+            className="col-md-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+          >
+            {" "}
+            <a href="/feature4">
+            <button className="border-0 learn-more-btn">Learn More</button>{" "}
+            </a>
+
+          </div>
               </div>
             </div>
           </div>
@@ -246,22 +257,23 @@ function Addfeatures() {
                 data-aos-duration={1000}
                 style={{ margin: "auto" }}
               >
-                <h3 className=" above ">Convinient and Safe</h3>
-                <p className=" abovep">
-                  Studying is hard? But it doesn’t have to be that way. 
-                  At MissionEd we believe in making learning fun. With our specially 
-                  crafted notes and assignments every child is bound to fall in love with learning.
-                  <br /><br />
+                <p className="learning-heading">Convinient and Safe </p>                
+                <h6 className="learning-txt" style={{ margin: "auto" }}>
+            {" "}
+            Providing education to the students at nominal price and at their comforts. The students can also 
+            keep a track on their performance with the help of regular unbiased feedback.
+          </h6><br /><br />
+                <div
+            className="col-md-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+          >
+            {" "}
+            <a href="/feature2">
+            <button className="border-0 learn-more-btn">Learn More</button>{" "}
+            </a>
 
-
-                  <Button
-                  variant="contained"
-                  color="secondary"
-                  type="button"
-                  style={{ outline: "none", marginLeft: "20px", background: "#FB8F1D", color: "white" }}>
-                  Read More
-                </Button>
-                </p>
+          </div>
               </div>
               <div
                 className="col-md-8 col-12 women2 "
@@ -282,6 +294,7 @@ function Addfeatures() {
       </div>
       <GetTheApp/>
       <Footer/>
+
       </div>
   );
 }

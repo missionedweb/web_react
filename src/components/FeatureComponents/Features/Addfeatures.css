@@ -1,35 +1,11 @@
 .jumbotron {
-    /* padding-top: .5rem; */
-    height: 200px;
-    margin: 0 auto;
     top: 24.41%;
     bottom: 51.17%;
     text-align: center;
-    background: linear-gradient(297.17deg, #b06ab3 6.67%, #4568dc 91.82%);
-    mix-blend-mode: normal;
+    background:linear-gradient(297.17deg, #FFEDBA 6.67%, #EE4D47 91.82%);
   }
 
-  h2 {
-    font-weight: 100px;
-  }
-
-.main-title {
-    color: #fa9917;
-  }
-  #main {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    bottom: 0%;
-  }
-  #h1 {
-    background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
-    width: 100%;
-    height: 20vh;
-    position: relative;
-  }
-
+  
   h1 {
     position: relative;
     font-family: "Playfair Display", serif;
@@ -41,22 +17,7 @@
     padding-top: 2%;
     font-size: 70px;
   }
-  h3 {
-    font-weight: bold;
-  }
-  h2 {
-    position: relative;
-    font-family: "Playfair Display", serif;
-    color: black;
-    font-size: 50px;
-
-    text-align: center;
-    vertical-align: middle;
-    top: 1%;
-  }
-  .image-background {
-    background-color: #fffbef;
-  }
+  
 
   .image-1 {
     margin-top: 5%;
@@ -76,66 +37,16 @@
   .image-6 {
     margin-bottom: 5%;
   }
-  .btn {
-    background-color: DodgerBlue;
-    border: none;
-    color: white;
-    padding: 12px 30px;
-    cursor: pointer;
-    font-size: 20px;
-  }
-  .explore-all a {
-    color: #fb8f1d;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 20px;
-  }
-  /* Darker background on mouse-over */
-  .btn:hover {
-    box-shadow: 2px 2px 5px black;
-  }
-
-  .ct-1 {
-    color: #ff6200;
-
-    font-size: 24px;
-    letter-spacing: 0.6px;
-    line-height: 28px;
-  }
-  .ct-2 {
-    color: #000;
-
-    font-size: 18px;
-    letter-spacing: 0.45px;
-    line-height: 21px;
-    opacity: 0.8;
-    padding-bottom: 10%;
-  }
-
-  .banner {
-    margin-top: 10%;
-  }
-
-  .live {
-    margin-top: -35px;
-  }
-
-  .main-para {
-    opacity: 0.5;
-  }
-
-  .abovep {
-    text-align: justify;
-  }
-
+  
+  
   .women1 img {
-    margin-left: 50px;
+    margin-left: 100px; 
     height: auto;
     width: 500px;
   }
 
   .women2 img {
-    margin-left: 200px;
+    margin-left: 300px;
     height: auto;
     width: 500px;
   }
