@@ -32,43 +32,12 @@ const AboutUs = () => {
             >
               About Us
             </div>
-            <div
-            data-aos="zoom-in-up"
-            data-aos-duration={2500}
-            className="mt-2"
-            >
-            <center>Experience Learning By These Expert Guides Like You Have Never Experienced Before!</center>
-            </div>
+            
 
           </div>
           <div>
           </div>
-          {/* <div >
-        <div
-          className="learning-page-2"
-          data-aos="fade-left"
-          data-aos-duration="1500"
-        >
-          <p className="learning-heading-2 ml-auto">What we believe in?</p>
-          <h6 className="learning-txt-2">
-          The environment of learning we provide is nurtured by the experts. The guidance that you are seeking is from the IITians. They will provide you the enhanced way of teaching with the pinch of fun and enthusiasm. You will get the quality as well as playful atmosphere.
-          </h6>
-          <br />
-          <br />
-          <div
-            className="col-md-6"
-            data-aos="zoom-in-up"
-            data-aos-duration="1500"
-          >
-            {" "}
-            <a href="/feature2">
-            <button className="border-0 learn-more-btn">Learn More</button>{" "}
-            </a>
-          </div>
-        </div>
-
-
-        </div> */}
+          
         <div>
         <center>
         <br />
@@ -85,15 +54,7 @@ const AboutUs = () => {
           style={{ marginTop: "180px", width: "23%" , height : "300px" , marginLeft : "50px" }}
           
         />
-        {/* <img
-          className="img-section-left"
-          data-aos="fade-right"
-          data-aos-duration="1500"
-          src={Left}
-          alt=""
-          style={{ marginTop: "20px", width: "42%" }}
-          
-        /> */}
+        
         <div
           className="learning-page "
           data-aos="fade-left"
@@ -179,27 +140,7 @@ const AboutUs = () => {
             >
               Our Team
             </div>
-            <div className="jumbotron1">
-              <br/>
-              <br/>
-            <div
-              className="heading1"
-              data-aos="zoom-in-up"
-              data-aos-duration={2500}
-            >
-              Meet the Experts!
-            </div>
-            <div
-            data-aos="zoom-in-up"
-            data-aos-duration={2500}
-            className="mt-2"
-            >
-              <br/>
-            <center>The guides you need to surpass any challenge your academic life throws at you are here at your rescue 24X7</center>
-            </div>
             
-
-          </div>
           
 
           </div>
