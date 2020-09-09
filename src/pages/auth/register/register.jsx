@@ -149,7 +149,7 @@ export default function Register() {
         type="button"
         onClick={handleOpen}
         className={classes.button}
-        style={{ outline: " none" ,  background:"#fb8f1d" , width: 100 , height: 44  }}>
+        style={{ outline: " none" ,  background:"#fb8f1d" , width: 100 , height: 44 , borderRadius: "10px" }}>
         Register
       </Button>
 
