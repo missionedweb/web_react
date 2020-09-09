@@ -1,6 +1,4 @@
 import React from "react";
-import AOS from "aos";
-AOS.init();
 const Footer = () => {
   return (
     <div>
@@ -10,7 +8,7 @@ const Footer = () => {
               <div className="footer-cta pt-5 pb-5">
                 <div className="row">
                   <div className="col-xl-5 col-md-4 mb-30 footer-info ">
-                    <div className="single-cta" data-aos="zoom-in" data-aos-duration={2000}>
+                    <div className="single-cta">
                       <i className="fas fa-map-marker-alt" />
                       <div className="cta-text" >
                         <h4 >Find us</h4>
@@ -19,7 +17,7 @@ const Footer = () => {
                     </div>
                   </div>
                   <div className="col-xl-4 col-md-4 mb-30 footer-info">
-                    <div className="single-cta" data-aos="zoom-in" data-aos-duration={2000}>
+                    <div className="single-cta" >
                       <i className="fas fa-phone" />
                       <div className="cta-text">
                         <h4>Call us</h4>
@@ -28,7 +26,7 @@ const Footer = () => {
                     </div>
                   </div>
                   <div className="col-xl-3 col-md-4 mb-30 ">
-                    <div className="single-cta" data-aos="zoom-in" data-aos-duration={2000}>
+                    <div className="single-cta" >
                       <i className="far fa-envelope-open" />
                       <div className="cta-text">
                         <h4>Mail us</h4>
@@ -44,24 +42,24 @@ const Footer = () => {
                     <div className="footer-widget">
                       <div className="footer-logo">
                       </div>
-                      <div className="footer-text" data-aos="zoom-in" data-aos-duration={2000}>
+                      <div className="footer-text" >
                         <p > Welcome to MissionEd <br />Learning Platform For Classes 8th - 12th</p>
                       </div>
                       <div className="footer-social-icon footer-info" >
-                        <span data-aos="zoom-in" data-aos-duration={2000}>Follow us</span>
-                        <a  href="https://www.facebook.com/MissionEd2020/"  ><i data-aos="zoom-in" data-aos-duration={2000}  className="fab fa-facebook-f social-links " /></a>
-                        <a  href="https://www.instagram.com/mission_ed/"><i data-aos="zoom-in" data-aos-duration={2000} className="fab fa-instagram social-links" /></a>                            
-                        <a  href="https://www.linkedin.com/company/missioned"><i data-aos="zoom-in" data-aos-duration={2000} className="fab fa-linkedin social-links" /></a>                           
-                        <a  href="https://missioned.in/blog/"><i data-aos="zoom-in" data-aos-duration={2000} className="fas fa-blog social-links " /></a> 
+                        <span >Follow us</span>
+                        <a  href="https://www.facebook.com/MissionEd2020/"  ><i   className="fab fa-facebook-f social-links " /></a>
+                        <a  href="https://www.instagram.com/mission_ed/"><i  className="fab fa-instagram social-links" /></a>                            
+                        <a  href="https://www.linkedin.com/company/missioned"><i  className="fab fa-linkedin social-links" /></a>                           
+                        <a  href="https://missioned.in/blog/"><i className="fas fa-blog social-links " /></a> 
                       </div>
                     </div>
                   </div>
                   <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
                     <div className="footer-widget">
                       <div className="footer-widget-heading">
-                        <h3 data-aos="zoom-in" data-aos-duration={2000}>Useful Links</h3>
+                        <h3 >Useful Links</h3>
                       </div>
-                      <ul data-aos="zoom-in" data-aos-duration={2000}>
+                      <ul >
                               <li><a href="#" style={{cursor:"pointer"}}>Home</a></li>
                               <li><a href="#" style={{cursor:"pointer"}}>About</a></li>
                               <li><a href="/contactus" style={{cursor:"pointer"}}>Contact</a></li>
@@ -77,7 +75,7 @@ const Footer = () => {
                       <div className="footer-widget-heading footer-info">
                         <h3>Classes </h3>
                       </div>
-                      <ul data-aos="zoom-in" data-aos-duration={2000}>
+                      <ul >
                         <li><a  href="#" style={{cursor:"pointer"}}>Class 8</a></li>
                         <li><a  href="#" style={{cursor:"pointer"}}>Class 12 Science</a></li>
                         <li><a  href="#" style={{cursor:"pointer"}}>Class 9</a></li>

@@ -5,6 +5,8 @@ import counsellingImg from "../Images/counsellingImg.png";
 import PhoneInput from "react-phone-number-input";
 import swal from "sweetalert";
 import AOS from "aos";
+import MuiPhoneNumber from "material-ui-phone-number";
+
 AOS.init();
 const GetTheApp = () => {
   const [value, setValue] = useState("");
@@ -15,6 +17,9 @@ const GetTheApp = () => {
         icon: "success",
       });
     }
+  };
+  const handleOnChange = (value) => {
+    setValue((prevState) => ({ ...prevState, phone: value }));
   };
   return (
     <div>
@@ -28,11 +33,7 @@ const GetTheApp = () => {
               data-aos="flip-up"
               data-aos-duration={1500}
             />
-            <p
-              className="app-txt"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-            >
+            <p className="app-txt" data-aos="fade-right" data-aos-duration="1000">
               <span className="app">
                 Get the app now! <br />
               </span>
@@ -45,9 +46,12 @@ const GetTheApp = () => {
               <br />
               <br />
               <a href="https://play.google.com/store/apps/details?id=com.missionedappdev.missoned">
-                <button className="download border-0" 
-                data-aos="zoom-in-up" data-aos-duration="1000"
-                >Download</button>
+                <button
+                  className="download border-0"
+                  data-aos="zoom-in-up"
+                  data-aos-duration="1000">
+                  Download
+                </button>
               </a>
               <img
                 className="books"
@@ -60,41 +64,44 @@ const GetTheApp = () => {
           </div>
         </div>
         <div className="container-fluid counselling">
-          <div
-            className="counselling-left"
-            data-aos="zoom-out"
-            data-aos-duration="1000"
-          >
+          <div className="counselling-left" data-aos="zoom-out" data-aos-duration="1000">
             <p className="app">
-              <span data-aos="zoom-out" data-aos-duration="1000">Get a free counselling today!</span>
+              <span data-aos="zoom-out" data-aos-duration="1000">
+                Get a free counselling today!
+              </span>
               <br />
             </p>
             <h6 />
             Talk to our experts online and get free counselling whenever you
-            <br /> needs and learn how MissionEd can help you in overcoming{" "}
-            <br />
+            <br /> needs and learn how MissionEd can help you in overcoming <br />
             all your academic challenges.
             <br />
             <br />
             <br />
             <p />
-            <div className="buttonIn " data-aos="zoom-out" data-aos-duration="1000">
-              <PhoneInput
-                type="tel"
-                // className="form-control textfield"
+            <div className="buttonIn " data-aos="zoom-out" data-aos-duration="500">
+              <MuiPhoneNumber
+                defaultCountry={"in"}
+                onChange={handleOnChange}
+                required
+                id="phone"
+                name="phone"
                 value={value}
-                onChange={setValue}
-                defaultCountry="IN"
-                placeholder="Phone Number"
               />
-              <button className="border-0 py-0 join" onClick={alertModal}>
+
+              <button className="joins" onClick={alertModal}>
                 Join
               </button>
+
               <br />
             </div>
           </div>
-          <img className="counselling-img" src={counsellingImg} data-aos="fade-left" data-aos-duration="1000" />
-          
+          <img
+            className="counselling-img"
+            src={counsellingImg}
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          />
         </div>
       </div>
     </div>
