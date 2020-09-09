@@ -10,7 +10,17 @@ body {
 }
 /* Starts */
 
+.sticky {
+  padding: 15px 100px;
+  background-color: #fff5e5;
+  opacity: 0.8;
+  transition: 0.6s;
+  z-index: 1;
+}
 
+.sticky ul li a {
+  color: #111;
+}
 
 
 .navbar-expand-xl{

@@ -16,12 +16,16 @@ import $ from 'jquery';
 
 
 function NavbarComponent({ currentUser }) {
+  window.addEventListener("scroll", function () {
+    let header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+  });
   return (
     <>
     
       <div id="header">
       <div class="row">
-      <Navbar center bg="transparent" expand="xl" className="navbar-expand-xl">
+      <Navbar center bg="transparent" expand="xl" className="navbar-expand-xl fixed-top">
         <Navbar.Brand href="#home" className="ml-8">
           <img className="logo mt-n4 mr-auto" src={NavigationLogo} alt="logo" />
           <span className="missioned-nav font-weight-bold">
@@ -160,7 +164,7 @@ function NavbarComponent({ currentUser }) {
               <Link to="/login" className="btn login-btn mr-2" role="button" style={{  width: 110 , height: 46 , textDecoration: "none" }}>
                 Login
               </Link>
-              <Register className=".register-btn pr-2" />
+              <Register className="btn register-btn pr-2" />
             </Form>
           )}
           </div>

@@ -18,7 +18,10 @@ import Footer from "../../Footer";
 function Addfeatures() {
   return (
         <div>
-        <NavbarComponent className="ml-2"/>
+          <header>
+          <NavbarComponent className="ml-2"/>
+      </header>
+        
          
           <div>
            <div className="jumbotron">

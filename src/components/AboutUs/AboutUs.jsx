@@ -16,7 +16,9 @@ import Col from 'react-bootstrap/Col';
 const AboutUs = () => {
   return (
     <div>
-      <NavbarComponent className="ml-2"/>
+      <header>
+      <NavbarComponent />
+      </header>
       <Wrapper>
         <div>
         

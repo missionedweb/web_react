@@ -22,7 +22,9 @@ import "./css/Counter.scss";
 function AllImports() {
   return (
     <div>
+      <header>
       <NavbarComponent />
+      </header>
       <Header />
       <LearningPage />
 
