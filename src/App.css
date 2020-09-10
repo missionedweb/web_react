@@ -13,11 +13,13 @@ body {
 .sticky {
   padding: 15px 100px;
   background-color: #fff5e5;
-  opacity: 0.8;
+  opacity: 1;
   transition: 0.6s;
   z-index: 1;
 }
-
+.header{
+  z-index: 1;
+}
 .sticky ul li a {
   color: #111;
 }
@@ -25,6 +27,7 @@ body {
 
 .navbar-expand-xl{
   width:100%;
+  z-index: 1;
 }
 
 .navbar-nav .nav-item .nav-link{
@@ -103,6 +106,12 @@ h1 {
     margin-right: auto;
   }
 }
+@media (max-width: 595px) {
+  .heading {
+    margin-top: 50px;
+  }
+}
+
 /* @media (max-width: 400px) {
   .ed {
     font-size: 30px;
