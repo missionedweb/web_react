@@ -26,7 +26,7 @@ const AboutUs = () => {
           <div className="jumbotron">
           
             <div
-              className="heading"
+              className="heading pt-2"
               data-aos="zoom-in-up"
               data-aos-duration={2500}
             >
