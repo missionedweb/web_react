@@ -38,7 +38,7 @@ const Addfeatures=()=> {
               <div className="col-md-4 col-12" data-aos="fade-up" data-aos-duration={1500} style={{ margin: "auto" }}>
                 <h3 className="above1">Expert Teachers</h3><br /><br />
                 <p className="abovep">
-                  Our tier 1 Faculty who have experience of cracking one of the 
+                  Our tier 1 Faculty who hve experience of cracking one of the 
                   toughest exams like JEE,NTSE etc, 
                   so students would feel more connected and can ask doubts more freely.</p>
                 
