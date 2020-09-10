@@ -20,15 +20,18 @@ const Addfeatures=()=> {
               </header>
             <Wrapper>
             <div>
-              <div className="jumbotron">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-md-12 col-lg-12"data-aos="fade-right"data-aos-duration={1000}style={{ margin: "auto" }}>
-                      <h1 className="live">Features</h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="jumbotron">
+          
+          <div
+            className="heading pt-2"
+            data-aos="zoom-in-up"
+            data-aos-duration={2500}
+          >
+            Features
+          </div>
+          
+
+        </div>
           <br /><br />
 
           <div className="container sp">
@@ -284,11 +287,21 @@ const Wrapper = styled.div`
   }
 
   .jumbotron {
-    height: 180px;
-    top: 24.41%;
-    bottom: 51.17%;
+    background: #fff5e5;
+    height: 200px;
+    z-index : 1
+  }
+  .heading {
     text-align: center;
-    background:linear-gradient(297.17deg, #FFEDBA 6.67%, #EE4D47 91.82%); 
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    color: #202336;
+  }
+  @media (max-width: 495px) {
+    .live {
+      margin-top: 10px;
+    }
   }
 
   h3 {

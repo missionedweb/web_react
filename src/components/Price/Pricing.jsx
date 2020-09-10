@@ -14,7 +14,11 @@ import NavbarComponent from "../NavbarComponent";
 const Pricing = () => {
   return (
     <div>
+      <header>
+
       <NavbarComponent />
+      </header>
+      
       <Wrapper>
         <div>
           {/* <NavbarComponent/>*/}
