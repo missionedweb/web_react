@@ -15,13 +15,11 @@ import Footer from "../../Footer";
 const Addfeatures=()=> {
   return (
         <div>
-          <Wrapper>
-            <div>
-              <header>
-              <NavbarComponent className="ml-2"/>
+            <header>
+              <NavbarComponent />
               </header>
-              <br /><br /><br /><br />
-              <div>
+            <Wrapper>
+            <div>
               <div className="jumbotron">
                 <div className="container">
                   <div className="row">
@@ -44,7 +42,7 @@ const Addfeatures=()=> {
                   toughest exams like JEE,NTSE etc, 
                   so students would feel more connected and can ask doubts more freely.</p>
                 
-                <br /><br /><br />
+                <br />
                   <div
                   className="col-md-6 btnex"
                   data-aos="zoom-in-up"
@@ -72,7 +70,7 @@ const Addfeatures=()=> {
           <br />
           <br />
           
-          <div className="container sp">
+          <div className="container spen">
             <div className="row">
               <div
                 className="col-md-4 col-12" 
@@ -80,11 +78,11 @@ const Addfeatures=()=> {
                 data-aos-duration={1500}
                 style={{ margin: "auto" }}>
                 <h3 className="above">Engaging Assignments</h3><br /><br />
-                <p className=" abovep">
+                <p className=" aboveen">
                   Daily package of randomly selected questions to test the 
                   student’s knowledge and polish the understanding of various concepts 
                   posted on the app for classes 8-12th.</p>
-                <br /><br /><br /><br />
+                <br />
                         <div className="col-md-6 btnen" data-aos="zoom-in-up" data-aos-duration="1500">
                           {" "}
                           <a href="/feature1">
@@ -111,7 +109,7 @@ const Addfeatures=()=> {
           <br />
           <br />
           <br />
-          <div className="container sp1">
+          <div className="container sp">
             <div className="row">
               <div
                 className="col-md-8 col-12 women1">
@@ -129,7 +127,7 @@ const Addfeatures=()=> {
                   and be aware about the world. The content is always updated with the latest 
                   norms to ensure students are able to cope up with new challenges.</p>
                   <br />
-                    <div className="col-md-6 btnex" data-aos="zoom-in-up" data-aos-duration="1500">
+                    <div className="col-md-6 btntst" data-aos="zoom-in-up" data-aos-duration="1500">
                       {" "}
                       <a href="/feature6">
                       <button className="border-0 learn-more-btn">Learn More</button>{" "}
@@ -146,8 +144,12 @@ const Addfeatures=()=> {
           <br />
           <br />
           <br />
+          <br />
+          <br />
+          <br />
+          <br />
 
-          <div className="container sp">
+          <div className="container sp1">
             <div className="row">
               <div
                 className="col-md-4 col-12" 
@@ -155,13 +157,13 @@ const Addfeatures=()=> {
                 data-aos-duration={1500}
                 style={{ margin: "auto" }}>
                 <h3 className="above">Personalised Learning </h3><br /><br />
-                <p className="abovep">
+                <p className="aboveen">
                   Provides students with an opportunity to study with the best mentors as 
                   well as gain insight on their performance. A study shows that 71.58% of 
                   students opt for home tutors which
                    proves the likeliness of students towards private mentors.</p>
-                  <br /><br /><br />
-                <div className="col-md-6 btnen" data-aos="zoom-in-up" data-aos-duration="1500">
+                  <br />
+                <div className="col-md-6 btnper" data-aos="zoom-in-up" data-aos-duration="1500">
                     {" "}
                     <a href="/feature5">
                     <button className="border-0 learn-more-btn">Learn More</button>{" "}
@@ -186,8 +188,8 @@ const Addfeatures=()=> {
           <br />
           <br />
           <br />
-          <br />
-          <div className="container sp1">
+          
+          <div className="container splive">
             <div className="row">
               <div
                 className="col-md-8 col-12 women1">
@@ -204,8 +206,8 @@ const Addfeatures=()=> {
                   sessions for the students which ensures a long term relationship 
                   with students where they can ask anything and everything, any number of times.
                   </p>
-                  <br /><br />
-                <div className="col-md-6 btnex" data-aos="zoom-in-up" data-aos-duration="1500">
+                  <br />
+                <div className="col-md-6 btnlive" data-aos="zoom-in-up" data-aos-duration="1500">
                     {" "}
                     <a href="/feature4">
                     <button className="border-0 learn-more-btn">Learn More</button>{" "}
@@ -222,7 +224,11 @@ const Addfeatures=()=> {
           <br />
           <br />
           <br />
-          <div className="container sp">
+          <br />
+          <br />
+          <br />
+          <br />
+          <div className="container spcon">
             <div className="row">
               <div
                 className="col-md-4 col-12" 
@@ -230,13 +236,13 @@ const Addfeatures=()=> {
                 data-aos-duration={1500}
                 style={{ margin: "auto" }}>
                 <h3 className=" above">Convinient and safe</h3><br /><br />
-                <p className="abovep">
+                <p className="aboveen">
                   Providing education to the students at nominal price and at their comforts.
                    The students can also keep a track on their performance with the help of 
                    regular unbiased feedback.</p>
-                <br /><br /><br />
+                <br />
                 <div
-                className="col-md-6 btnen"
+                className="col-md-6 btncon"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500">
                     {" "}
@@ -259,7 +265,7 @@ const Addfeatures=()=> {
           <br />
           <br />
           </div>
-          </div>
+          
           <GetTheApp/>
           <Footer/>
         
@@ -278,7 +284,7 @@ const Wrapper = styled.div`
   }
 
   .jumbotron {
-    height: 150px;
+    height: 180px;
     top: 24.41%;
     bottom: 51.17%;
     text-align: center;
@@ -289,23 +295,14 @@ const Wrapper = styled.div`
     font-weight: bold;
   }
 
-  #h1{
-      background: linear-gradient(90deg, #FF512F 0%, #DD2476 100%);
-      width: 100%;
-      height: 20vh;
-      position: relative;
-  }
-
   h1 {
-    position: relative;
+   
     font-family: "Playfair Display", serif;
     font-weight: bold;
-
-    letter-spacing: calc(0.5em+1vh);
-    line-height: calc(1em+0.75vh);
     color: black;
     padding-bottom: 10%;
-    font-size: 70px;
+    padding-top: 4%;
+    font-size: 65px;
   }
   
   .image-background{
@@ -325,44 +322,148 @@ const Wrapper = styled.div`
   .abovep
   {
     text-align: justify;
+    margin-right: -60px;
+  }
+
+  .aboveen {
+    margin-left: -50px;
+  }
+
+  .above {
+    margin-left: -50px;
   }
 
   .women1 img
   {
-    margin-left: 50px; 
+    margin-left: -50px; 
     height: auto;
-    width: 500px;
-  }
-  
-  .women2 img
-  {
-    margin-left: 200px; 
-    height: auto;
+    margin-top: 80px; 
     width: 500px;
   }
 
+  .above1 {
+    margin-top: 40px;
+  }
+
+  .btnex {
+    margin-left: -15px;
+  }
+
+  .btnen {
+    margin-left: -70px;
+
+  }
+
+  .btntst {
+    margin-left: -20px;
+
+  }
+  .btnper {
+    margin-left: -70px;
+
+  }
+
+  .btnlive {
+    margin-left: -20px;
+
+  }
+
+  .btncon {
+    margin-left: -70px;
+
+  }
+
+
+  
+  
+  .women2 img
+  {
+    margin-left: 300px; 
+    height: auto;
+    width: 500px;
+    margin-right: -60px;
+
+  }
+
    @media only screen and (max-width: 800px) {
+
     h1{
-    padding-top: 10%;
+    padding-top: 30%;
     font-size: calc(2rem + 3vw);
   }
   .live
   {
-    margin-top: 15px;
+    
+    text-align: center;
   }
-  #h1{
-      height: 20vh;
-  }
+    
   .women2, .women3, .women1{
    display: none;
   }
 
+  .abovep {
+    text-align: justify;
+    padding-right: 70px;
+  }
+
+  .aboveen {
+    padding-right: 70px;
+  }
+
+  
+
+  .btnex {
+    margin-top: -10px;
+  }
+
+  .btnen {
+    margin-top: -15px;
+  }
+
+  .btnper {
+    margin-top: -20px;
+  }
+
   .sp {
     margin-bottom: -200px;
+    margin-top: -80px;
+    text-align: justify;
+    padding-right: -80px;
+  }
+
+  .spen {
+    margin-bottom: -200px;
+    margin-top: -15px;
+    margin-left: 50px;
+    text-align: justify;
   }
 
   .sp1 {
-    margin-botttom: -300px;
+    margin-top: 2px;
+    margin-left: 50px;
+    text-align: justify;
+  }
+
+  .splive {
+    margin-top: -250px;
+  }
+
+  .btntst {
+    margin-top: -4px;
+  }
+
+  .btnlive {
+    margin-top: -20px;
+  }
+
+  .spcon {
+    margin-top: -200px;
+    margin-bottom: -320px;
+    margin-left:50px;
+  }
+
+  .btncon {
+    margin-top: -20px;
   }
 
  
