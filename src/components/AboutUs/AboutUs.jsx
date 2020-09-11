@@ -9,6 +9,15 @@ import Footer from "../Footer";
 import NavbarComponent from "../NavbarComponent";
 import cont1 from "../../Images/cont1.png";
 import cont2 from "../../Images/cont2.png";
+
+import Creativity from "./images/Creativity.png"
+import Curiosity from "./images/Curiosity.png"
+import Passion from "./images/Passion.png"
+import Efficiency from "./images/Efficiency.png"
+import Empathy from "./images/Empathy.png"
+import Excellence from "./images/Excellence.png"
+
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -108,21 +117,80 @@ const AboutUs = () => {
               Our Values
             </div>
             
-          <div className="jumbotron m-auto" style = {{ height : "300px" }}>
-            
-          <Row>
-    <Col sm={3} style = {{ fontSize : "24px" , width : "110px" ,height : "50px" }}>Efficiency</Col>
-    <Col sm={3} style = {{ fontSize : "24px" , width : "110px" ,height : "50px" }}>Passion</Col>
-    <Col sm={3} style = {{ fontSize : "24px" , width : "110px" ,height : "50px" }}>Empathy</Col>
-    <Col sm={3} style = {{ fontSize : "24px" , width : "110px" ,height : "50px" }}>Curiosity</Col>
-  </Row>
-  <Row>
-  <Col sm={3} style = {{ fontSize : "24px" , width : "110px" ,height : "50px" }}>Excellence</Col>
-    <Col sm={3} style = {{ fontSize : "24px" , width : "110px" ,height : "50px" }}>Optimism</Col>
-    <Col sm={3} style = {{ fontSize : "24px" , width : "110px" ,height : "50px" }}>Creativity</Col>
-    <Col sm={3} style = {{ fontSize : "24px" , width : "110px" ,height : "50px" }}>Growth</Col>
-  </Row>
+            <div>
+      <section className="counters text-center">
+        <div className="container">
+          <div className="row">
+            <div
+              className="col-md-2"
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+              id="counter"
+            >
+              <img src={Efficiency} style={{ width: "70%" }} alt="" />
+              <h3 >Efficiency</h3>
             </div>
+            <div
+              className="col-md-2"
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+            >
+              <img src={Empathy} style={{ width: "70%" }} alt="" />
+              
+              <h3>
+              Empathy
+              </h3>
+            </div>
+            <div
+              className="col-md-2"
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+            >
+              <img src={Excellence} style={{ width: "70%" }} alt="" />
+              
+              <h3>
+              Excellence
+              </h3>
+            </div>
+            <div
+              className="col-md-2"
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+              
+            >
+              <img src={Passion} style={{ width: "70%" , }} alt="" />
+              
+              <h3>
+              Passion
+              </h3>
+            </div>
+            <div
+              className="col-md-2"
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+              height = "200px"
+            >
+              <img src={Creativity} style={{ width: "70%" }} alt="" />
+              
+              <h3 >
+              Creativity
+              </h3>
+            </div>
+            <div
+              className="col-md-2"
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+            >
+              <img src={Curiosity} style={{ width: "70%" }} alt="" />
+              
+              <h3>
+              Curiosity
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
             
 
           </div>
