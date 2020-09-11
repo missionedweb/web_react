@@ -23,9 +23,9 @@ function NavbarComponent({ currentUser }) {
   return (
     <>
     
-      <div id="header">
+      <div id="header" className="fixed-top" style={{boxShadow:"1px 1px 10px 1px black"}}>
       <div class="row">
-      <Navbar center bg="white" expand="xl" className="navbar-expand-xl">
+      <Navbar center bg="white" expand="xl" className="navbar-expand-xl ">
         <Navbar.Brand href="#home" className="ml-8">
           <img className="logo mt-n4 mr-auto" src={NavigationLogo} alt="logo" />
           <span className="missioned-nav font-weight-bold">
