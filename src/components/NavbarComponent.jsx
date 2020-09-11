@@ -25,7 +25,7 @@ function NavbarComponent({ currentUser }) {
     
       <div id="header">
       <div class="row">
-      <Navbar center bg="white" expand="xl" className="navbar-expand-xl fixed-top">
+      <Navbar center bg="white" expand="xl" className="navbar-expand-xl">
         <Navbar.Brand href="#home" className="ml-8">
           <img className="logo mt-n4 mr-auto" src={NavigationLogo} alt="logo" />
           <span className="missioned-nav font-weight-bold">
