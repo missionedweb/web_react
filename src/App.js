@@ -18,6 +18,7 @@ import Faq from "./pages/faq/faq";
 import Testim from "./components/Testim/Testim";
 import AllImports from "./components/AllImports";
 import Addfeatures from "./components/FeatureComponents/Features/Addfeatures";
+import Class8 from "./components/Class/Class8/Class8"
 
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
@@ -70,6 +71,7 @@ function App({ setCurrentUser, currentUser }) {
         <Route path="/faq" component={Faq} />
         <Route path="/testim" component={Testim} />
         <Route path="/aboutus" component={AboutUs} />
+        <Route path="/class8" component={Class8} />
       </Switch>
     </div>
   );

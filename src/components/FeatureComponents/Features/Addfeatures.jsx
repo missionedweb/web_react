@@ -23,7 +23,7 @@ const Addfeatures=()=> {
             <div className="jumbotron">
           
           <div
-            className="heading pt-2"
+            className="heading pt-5"
             data-aos="zoom-in-up"
             data-aos-duration={2500}
           >

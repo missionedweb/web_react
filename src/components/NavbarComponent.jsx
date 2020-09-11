@@ -46,7 +46,7 @@ function NavbarComponent({ currentUser }) {
 		            <div class="row">
 			            <div class="col-sm-3">
 				            <ul class="multi-column-dropdown">
-                    <a href="#" class="dropdown-item">Class 8</a>
+                    <a href="/class8" class="dropdown-item">Class 8</a>
                     <a href="#" class="dropdown-item">Class 9</a>
 					            
 				            </ul>

@@ -1,18 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import Testimonials from "../Testimonials";
-import GetTheApp from "../GetTheApp";
-import Footer from "../Footer";
-import NavbarComponent from "../NavbarComponent";
-import cont1 from "../../Images/cont1.png";
-import cont2 from "../../Images/cont2.png";
+import Testimonials from "../../Testimonials";
+import GetTheApp from "../../GetTheApp";
+import Footer from "../../Footer";
+import NavbarComponent from "../../NavbarComponent";
+import cont1 from "../../../Images/cont1.png";
+import cont2 from "../../../Images/cont2.png";
 
-import Creativity from "./images/Creativity.png"
-import Curiosity from "./images/Curiosity.png"
-import Passion from "./images/Passion.png"
-import Efficiency from "./images/Efficiency.png"
-import Empathy from "./images/Empathy.png"
-import Excellence from "./images/Excellence.png"
+import Creativity from "../../AboutUs/images/Creativity.png"
+import Curiosity from "../../AboutUs/images/Curiosity.png"
+import Passion from "../../AboutUs/images/Passion.png"
+import Efficiency from "../../AboutUs/images/Efficiency.png"
+import Empathy from "../../AboutUs/images/Empathy.png"
+import Excellence from "../../AboutUs/images/Excellence.png"
 
 
 import Container from 'react-bootstrap/Container';
@@ -29,179 +29,19 @@ const AboutUs = () => {
         <div>
         
           {/* <NavbarComponent/>*/}
-          <div className="jumbotron">
-          
-            <div
-              className="heading pt-5"
-              data-aos="zoom-in-up"
-              data-aos-duration={2500}
-            >
-              About Us
-            </div>
+          <div className="jumbotron1">
             
 
           </div>
           
         <div>
-        <center>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <iframe
-          className="img-section-left ml-auto"
-          data-aos="fade-right"
-          data-aos-duration="1500"
-          src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-          alt=""
-          style={{ marginTop: "180px", width: "23%" , height : "300px" , marginLeft : "50px" }}
-          
-        />
         
-        <div
-          className="learning-page "
-          data-aos="fade-left"
-          data-aos-duration="1500"
-        >
-          <p className="learning-heading">What we believe in?</p>
-          <h6 className="learning-txt" style={{ margin: "auto" }}>
-            {" "}
-            The environment of learning we provide  is nurtured by the experts. The guidance that  
-            <br/>you are seeking is from the IITians. They will provide you the enhanced way of teaching 
-            <br/> You  will get the quality as well as playful atmosphere.
-          </h6>
-          <br />
-          <br />
-          <div
-            className="col-md-6"
-            data-aos="zoom-in-up"
-            data-aos-duration="1500"
-          >
-            {" "}
-            <a href="/feature1">
-            <button className="border-0 learn-more-btn">Learn More</button>{" "}
-            </a>
-
-          </div>
-        </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        </center>
-        </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        
-        <div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        </div>
-        <div>
-        <div
-              className="heading"
-              data-aos="zoom-in-up"
-              data-aos-duration={2500}
-            >
-              Our Values
-            </div>
-            
-            <div>
-      <section className="counters text-center">
-        <div className="container">
-          <div className="row">
-            <div
-              className="col-md-2"
-              data-aos="zoom-out"
-              data-aos-duration="1000"
-              id="counter"
-            >
-              <img src={Efficiency} style={{ width: "70%" }} alt="" />
-              <h3 >Efficiency</h3>
-            </div>
-            <div
-              className="col-md-2"
-              data-aos="zoom-out"
-              data-aos-duration="1000"
-            >
-              <img src={Empathy} style={{ width: "70%" }} alt="" />
-              
-              <h3>
-              Empathy
-              </h3>
-            </div>
-            <div
-              className="col-md-2"
-              data-aos="zoom-out"
-              data-aos-duration="1000"
-            >
-              <img src={Excellence} style={{ width: "70%" }} alt="" />
-              
-              <h3>
-              Excellence
-              </h3>
-            </div>
-            <div
-              className="col-md-2"
-              data-aos="zoom-out"
-              data-aos-duration="1000"
-              
-            >
-              <img src={Passion} style={{ width: "70%" , }} alt="" />
-              
-              <h3>
-              Passion
-              </h3>
-            </div>
-            <div
-              className="col-md-2"
-              data-aos="zoom-out"
-              data-aos-duration="1000"
-              height = "200px"
-            >
-              <img src={Creativity} style={{ width: "70%" }} alt="" />
-              
-              <h3 >
-              Creativity
-              </h3>
-            </div>
-            <div
-              className="col-md-2"
-              data-aos="zoom-out"
-              data-aos-duration="1000"
-            >
-              <img src={Curiosity} style={{ width: "70%" }} alt="" />
-              
-              <h3>
-              Curiosity
-              </h3>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-            
-
-          </div>
-          <div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
           <div
               className="heading"
               data-aos="zoom-in-up"
               data-aos-duration={2500}
             >
-              Our Team
+              Class8
             </div>
             
           
@@ -209,30 +49,8 @@ const AboutUs = () => {
           </div>
           <div className="container ">
               <div className="row ">
-                <div
-                  className="col-lg-4 center col-md-6 col-12 mt-3"
-                  data-aos="flip-right"
-                  data-aos-duration={1500}
-                >
-                  <div className="card text-center h-80 border-0 image-background">
-                   <a href=""> <img
-                      className="card-img-top img-fluid card01 mx-auto image-1 "
-                      src={cont1}
-                      alt=""
-                      style = {{ width : "200px" }}
-                    />
-                    </a>
-                    <div className="card-block">
-                      <h4 className="card-title ct-1 card-three">
-                        Name
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <br />
-                <div
-                  className="col-lg-4 center col-md-6 col-12 mt-3"
+              <div
+                  className="col-lg-2 center col-md-6 col-12 "
                   data-aos="flip-right"
                   data-aos-duration={1500}
                 >
@@ -241,7 +59,6 @@ const AboutUs = () => {
                       className="card-img-top img-fluid card01 mx-auto image-1 "
                       src={cont2}
                       alt=""
-                      style = {{ width : "200px" }}
                     />
                     </a>
                     <div className="card-block">
@@ -254,16 +71,15 @@ const AboutUs = () => {
                 <br />
                 <br />
                 <div
-                  className="col-lg-4 center col-md-6 col-12 mt-3 "
+                  className="col-lg-2 center col-md-6 col-12 "
                   data-aos="flip-right"
                   data-aos-duration={1500}
                 >
                   <div className="card text-center h-80 border-0 image-background">
-                    <a href=""><img
-                      className="card-img-top img-fluid  card01 mx-auto image-3"
-                      src={cont1}
+                   <a href=""> <img
+                      className="card-img-top img-fluid card01 mx-auto image-1 "
+                      src={cont2}
                       alt=""
-                      style = {{ width : "200px" }}
                     />
                     </a>
                     <div className="card-block">
@@ -276,10 +92,94 @@ const AboutUs = () => {
                 <br />
                 <br />
                 
+                <div
+                  className="col-lg-2 center col-md-6 col-12 "
+                  data-aos="flip-right"
+                  data-aos-duration={1500}
+                >
+                  <div className="card text-center h-80 border-0 image-background">
+                   <a href=""> <img
+                      className="card-img-top img-fluid card01 mx-auto image-1 "
+                      src={cont2}
+                      alt=""
+                    />
+                    </a>
+                    <div className="card-block">
+                      <h4 className="card-title ct-1 card-three">
+                        Name
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <br />
+                <div
+                  className="col-lg-2 center col-md-6 col-12 "
+                  data-aos="flip-right"
+                  data-aos-duration={1500}
+                >
+                  <div className="card text-center h-80 border-0 image-background">
+                   <a href=""> <img
+                      className="card-img-top img-fluid card01 mx-auto image-1 "
+                      src={cont2}
+                      alt=""
+                    />
+                    </a>
+                    <div className="card-block">
+                      <h4 className="card-title ct-1 card-three">
+                        Name
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <br />
+                <div
+                  className="col-lg-2 center col-md-6 col-12 "
+                  data-aos="flip-right"
+                  data-aos-duration={1500}
+                >
+                  <div className="card text-center h-80 border-0 image-background">
+                   <a href=""> <img
+                      className="card-img-top img-fluid card01 mx-auto image-1 "
+                      src={cont2}
+                      alt=""
+                    />
+                    </a>
+                    <div className="card-block">
+                      <h4 className="card-title ct-1 card-three">
+                        Name
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <br />
+                <div
+                  className="col-lg-2 center col-md-6 col-12 "
+                  data-aos="flip-right"
+                  data-aos-duration={1500}
+                >
+                  <div className="card text-center h-80 border-0 image-background">
+                   <a href=""> <img
+                      className="card-img-top img-fluid card01 mx-auto image-1 "
+                      src={cont2}
+                      alt=""
+                    />
+                    </a>
+                    <div className="card-block">
+                      <h4 className="card-title ct-1 card-three">
+                        Name
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <br />
                 </div>
                 <div className="row ">
                 <div
-                  className="col-lg-4 center col-md-6 col-12 mt-3"
+                  className="col-lg-2 center col-md-6 col-12 mt-3"
                   data-aos="flip-right"
                   data-aos-duration={1500}
                 >
@@ -301,7 +201,74 @@ const AboutUs = () => {
                 <br />
                 <br />
                 <div
-                  className="col-lg-4 center col-md-6 col-12 mt-3"
+                  className="col-lg-2 center col-md-6 col-12 mt-3"
+                  data-aos="flip-right"
+                  data-aos-duration={1500}
+                >
+                  <div className="card text-center h-80 border-0 image-background">
+                   <a href=""> <img
+                      className="card-img-top img-fluid card01 mx-auto image-1 "
+                      src={cont1}
+                      alt=""
+                      style = {{ width : "200px" }}
+                    />
+                    </a>
+                    <div className="card-block">
+                      <h4 className="card-title ct-1 card-three">
+                        Name
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <br />
+                <div
+                  className="col-lg-2 center col-md-6 col-12 mt-3"
+                  data-aos="flip-right"
+                  data-aos-duration={1500}
+                >
+                  <div className="card text-center h-80 border-0 image-background">
+                   <a href=""> <img
+                      className="card-img-top img-fluid card01 mx-auto image-1 "
+                      src={cont1}
+                      alt=""
+                      style = {{ width : "200px" }}
+                    />
+                    </a>
+                    <div className="card-block">
+                      <h4 className="card-title ct-1 card-three">
+                        Name
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <br />
+                
+                <div
+                  className="col-lg-2 center col-md-6 col-12 mt-3"
+                  data-aos="flip-right"
+                  data-aos-duration={1500}
+                >
+                  <div className="card text-center h-80 border-0 image-background">
+                   <a href=""> <img
+                      className="card-img-top img-fluid card01 mx-auto image-1 "
+                      src={cont1}
+                      alt=""
+                      style = {{ width : "200px" }}
+                    />
+                    </a>
+                    <div className="card-block">
+                      <h4 className="card-title ct-1 card-three">
+                        Name
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <br />
+                <div
+                  className="col-lg-2 center col-md-6 col-12 mt-3"
                   data-aos="flip-right"
                   data-aos-duration={1500}
                 >
@@ -323,7 +290,7 @@ const AboutUs = () => {
                 <br />
                 <br />
                 <div
-                  className="col-lg-4 center col-md-6 col-12 mt-3 "
+                  className="col-lg-2 center col-md-6 col-12 mt-3 "
                   data-aos="flip-right"
                   data-aos-duration={1500}
                 >
@@ -347,9 +314,14 @@ const AboutUs = () => {
                 
                 </div>
                 </div>
-        
+        <br/>
+        <br/>
           
+        <hr/>
+        {/* Tips  part Here */}
         
+        <hr/>
+
         <div className="mt-5">
           <br></br>
           {/* <h1 class="main" data-aos="zoom-in-down" data-aos-duration="1500">
@@ -386,7 +358,7 @@ const Wrapper = styled.div`
     z-index : 1
   }
   .jumbotron1 {
-    height: 300px;
+    height: 200px;
   }
 
   .heading {
