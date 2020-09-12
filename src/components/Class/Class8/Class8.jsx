@@ -6,6 +6,7 @@ import Footer from "../../Footer";
 import NavbarComponent from "../../NavbarComponent";
 import cont1 from "../../../Images/cont1.png";
 import cont2 from "../../../Images/cont2.png";
+import { Link } from 'react-router-dom'
 
 import Creativity from "../../AboutUs/images/Creativity.png"
 import Curiosity from "../../AboutUs/images/Curiosity.png"
@@ -42,6 +43,7 @@ const AboutUs = () => {
               data-aos-duration={2500}
             >
               Class  8
+             
             </div>
             
           
@@ -49,33 +51,15 @@ const AboutUs = () => {
           </div>
           <div className="container ">
               <div className="row ">
-              <div
-                  className="col-lg-2 center col-md-6 col-12 "
-                  data-aos="flip-right"
-                  data-aos-duration={1500}
-                >
-                  <div className="card text-center h-80 border-0 image-background">
-                   <a href=""> <img
-                      className="card-img-top img-fluid card01 mx-auto image-1 "
-                      src={cont2}
-                      alt=""
-                    />
-                    </a>
-                    <div className="card-block">
-                      <h4 className="card-title ct-1 card-three">
-                        Name
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <br />
+              
                 <div
-                  className="col-lg-2 center col-md-6 col-12 "
+                  className="col-lg-2 offset-lg-1 center col-md-6 col-12 "
                   data-aos="flip-right"
                   data-aos-duration={1500}
                 >
-                  <div className="card text-center h-80 border-0 image-background">
+                  <div className="card text-center h-80 border-0 image-background border border-warning"
+                  style = {{ borderRadius : "40px" }}
+                  >
                    <a href=""> <img
                       className="card-img-top img-fluid card01 mx-auto image-1 "
                       src={cont2}
@@ -179,7 +163,7 @@ const AboutUs = () => {
                 </div>
                 <div className="row ">
                 <div
-                  className="col-lg-2 center col-md-6 col-12 mt-3"
+                  className="col-lg-2 offset-lg-1 center col-md-6 col-12 mt-3"
                   data-aos="flip-right"
                   data-aos-duration={1500}
                 >
@@ -267,28 +251,7 @@ const AboutUs = () => {
                 </div>
                 <br />
                 <br />
-                <div
-                  className="col-lg-2 center col-md-6 col-12 mt-3"
-                  data-aos="flip-right"
-                  data-aos-duration={1500}
-                >
-                  <div className="card text-center h-80 border-0 image-background">
-                   <a href=""> <img
-                      className="card-img-top img-fluid card01 mx-auto image-1 "
-                      src={cont2}
-                      alt=""
-                      style = {{ width : "200px" }}
-                    />
-                    </a>
-                    <div className="card-block">
-                      <h4 className="card-title ct-1 card-three">
-                        Name
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <br />
+                
                 <div
                   className="col-lg-2 center col-md-6 col-12 mt-3 "
                   data-aos="flip-right"
@@ -319,6 +282,8 @@ const AboutUs = () => {
         <div>
             {/* 2 Banners  part Here */}
         
+            <div>
+        
         <div
             className="heading"
             data-aos="zoom-in-up"
@@ -326,6 +291,82 @@ const AboutUs = () => {
           >
             Start Learning Today!
           </div>
+          
+        
+
+        </div>
+        <br/>
+        <br/>
+        <div className="container ">
+            <div className="row ">
+            
+              <div
+                className="col-lg-4 offset-lg-2 center col-md-6 col-12 "
+                data-aos="flip-right"
+                data-aos-duration={1500}
+                style = {{  borderColor: "orange"}}
+              >
+                <div className="card text-center h-100 border-0 image-background" style = {{ borderRadius :"50%" , borderColor: "orange"}}>
+                <div class="card-header" style = {{ background : "orange" , color : "white" , fontSize : "20px", borderRadius :"20px 20px 0 0"}}>
+                  Featured
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  {/* <a href="#" class="btn btn-primary">Buy</a> */}
+                  <hr  style = {{  borderColor: "orange"}}/>
+                  <h3>Features</h3>
+                  <h3>Features</h3>
+                  <h3>Features</h3>
+                  <br/>
+                  <br/>
+                  <Link to="#" className="btn login-btn mr-2" role="button" style={{  width: 110 , height: 46 , textDecoration: "none" , borderRadius: "10px"}}>
+                Buy
+              </Link>
+                </div>
+               
+                 
+                </div>
+              </div>
+              <br />
+              <br />
+              <div
+                className="col-lg-4 center col-md-6 col-12 "
+                data-aos="flip-right"
+                data-aos-duration={1500}
+              >
+                <div className="card text-center h-100 border-0 image-background" style = {{ borderRadius :"50%" , borderColor: "orange"}}>
+                <div class="card-header" style = {{ background : "orange" , color : "white" , fontSize : "20px", borderRadius :"20px 20px 0 0"}}>
+                  Featured
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  {/* <a href="#" class="btn btn-primary">Buy</a> */}
+                  <hr  style = {{  borderColor: "orange"}}/>
+                  <h3>Features</h3>
+                  <h3>Features</h3>
+                  <h3>Features</h3>
+                  <br/>
+                  <br/>
+                  <Link to="#" className="btn login-btn mr-2" role="button" style={{  width: 110 , height: 46 , textDecoration: "none" , borderRadius: "10px"}}>
+                Buy
+              </Link>
+                </div>
+               
+                 
+                </div>
+              </div>
+              <br />
+              <br />
+              
+              
+              
+              </div>
+              
+              </div>
+      <br/>
+      <br/>
           
         
 
