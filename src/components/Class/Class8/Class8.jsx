@@ -297,30 +297,39 @@ const AboutUs = () => {
         </div>
         <br/>
         <br/>
+        
         <div className="container ">
             <div className="row ">
-            
-              <div
+            <div
                 className="col-lg-4 offset-lg-2 center col-md-6 col-12 "
                 data-aos="flip-right"
                 data-aos-duration={1500}
-                style = {{  borderColor: "orange"}}
               >
                 <div className="card text-center h-100 border-0 image-background" style = {{ borderRadius :"50%" , borderColor: "orange"}}>
-                <div class="card-header" style = {{ background : "orange" , color : "white" , fontSize : "20px", borderRadius :"20px 20px 0 0"}}>
-                  Featured
+                <div class="card-header" style = {{ background : "orange" , color : "white" , fontSize : "20px", borderRadius :"20px 20px 0 0" , textTransform : "uppercase"}}>
+                Complete Module
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  {/* <a href="#" class="btn btn-primary">Buy</a> */}
+                <div class="container">
+                  <div class="row">
+                    <div class="col" style = {{ color : "#FB8F1D", fontSize : "15px" }}><del>₹10000</del></div>
+                    <div class="col" style = {{ color : "orange" , fontSize : "15px" , background : "rgba(251, 143, 29, 0.45)" , borderRadius :"8px"}}>50% OFF</div>
+                    <div class="w-100"></div>
+                    <br/>
+                    <div class="col" style = {{ color : "orange" ,  fontSize : "30px" }}>₹5000</div>
+                    <div class="col mt-2" style = {{ color : "orange" , fontSize : "15px" }}>Incl. GST</div>
+                  </div>
+                </div>
+                  {/* <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
+                  
                   <hr  style = {{  borderColor: "orange"}}/>
                   <h3>Features</h3>
                   <h3>Features</h3>
                   <h3>Features</h3>
                   <br/>
                   <br/>
-                  <Link to="#" className="btn login-btn mr-2" role="button" style={{  width: 110 , height: 46 , textDecoration: "none" , borderRadius: "10px"}}>
+                  <Link to="#" className="btn login-btn mr-2" role="button" style={{  width: 110 , height: 46 , textDecoration: "none" , borderRadius: "10px", background : "#FB8F1D" , color : "white"}}>
                 Buy
               </Link>
                 </div>
@@ -330,19 +339,33 @@ const AboutUs = () => {
               </div>
               <br />
               <br />
+              <br />
+              <br />
+              <br />
+              <br />
               <div
                 className="col-lg-4 center col-md-6 col-12 "
                 data-aos="flip-right"
                 data-aos-duration={1500}
               >
                 <div className="card text-center h-100 border-0 image-background" style = {{ borderRadius :"50%" , borderColor: "orange"}}>
-                <div class="card-header" style = {{ background : "orange" , color : "white" , fontSize : "20px", borderRadius :"20px 20px 0 0"}}>
-                  Featured
+                <div class="card-header" style = {{ background : "orange" , color : "white" , fontSize : "20px", borderRadius :"20px 20px 0 0" , textTransform : "uppercase"}}>
+                Individual Module
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  {/* <a href="#" class="btn btn-primary">Buy</a> */}
+                <div class="container">
+                  <div class="row">
+                    <div class="col" style = {{ color : "#FB8F1D", fontSize : "15px" }}><del>₹10000</del></div>
+                    <div class="col" style = {{ color : "orange" , fontSize : "15px" , background : "rgba(251, 143, 29, 0.45)" , borderRadius :"8px"}}>50% OFF</div>
+                    <div class="w-100"></div>
+                    <br/>
+                    <div class="col" style = {{ color : "orange" ,  fontSize : "30px" }}>₹5000</div>
+                    <div class="col mt-2" style = {{ color : "orange" , fontSize : "15px" }}>Incl. GST</div>
+                  </div>
+                </div>
+                  {/* <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
+                  
                   <hr  style = {{  borderColor: "orange"}}/>
                   <h3>Features</h3>
                   <h3>Features</h3>
