@@ -19,6 +19,12 @@ import Testim from "./components/Testim/Testim";
 import AllImports from "./components/AllImports";
 import Addfeatures from "./components/FeatureComponents/Features/Addfeatures";
 import Class8 from "./components/Class/Class8/Class8"
+import Class9 from "./components/Class/Class9/Class9"
+import Class10 from "./components/Class/Class10/Class10"
+import Class11_Commerce from "./components/Class/Class11_Commerce/Class11_Commerce"
+import Class11_Science from "./components/Class/Class11_Science/Class11_Science"
+import Class12_Commerce from "./components/Class/Class12_Commerce/Class12_Commerce"
+import Class12_Science from "./components/Class/Class12_Science/Class12_Science"
 
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
@@ -72,6 +78,12 @@ function App({ setCurrentUser, currentUser }) {
         <Route path="/testim" component={Testim} />
         <Route path="/aboutus" component={AboutUs} />
         <Route path="/class8" component={Class8} />
+        <Route path="/class9" component={Class9} />
+        <Route path="/class10" component={Class10} />
+        <Route path="/class11C" component={Class11_Commerce} />
+        <Route path="/class11S" component={Class11_Science} />
+        <Route path="/class12C" component={Class12_Commerce} />
+        <Route path="/class12S" component={Class12_Science} />
       </Switch>
     </div>
   );

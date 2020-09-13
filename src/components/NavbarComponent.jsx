@@ -47,21 +47,21 @@ function NavbarComponent({ currentUser }) {
 			            <div class="col-sm-3">
 				            <ul class="multi-column-dropdown">
                     <a href="/class8" class="dropdown-item">Class 8</a>
-                    <a href="#" class="dropdown-item">Class 9</a>
+                    <a href="/class9" class="dropdown-item">Class 9</a>
 					            
 				            </ul>
 			            </div>
 			            <div class="col-sm-4">
 				            <ul class="multi-column-dropdown">
-                      <a href="#" class="dropdown-item">Class 10</a>
-                      <a href="#" class="dropdown-item">Class 11 Science</a>
-                      <a href="#" class="dropdown-item">Class 12 Science</a>
+                      <a href="/class10" class="dropdown-item">Class 10</a>
+                      <a href="/class11S" class="dropdown-item">Class 11 Science</a>
+                      <a href="/class12S" class="dropdown-item">Class 12 Science</a>
 				            </ul>
 			            </div>
                   <div class="col-sm-4">
 				            <ul class="multi-column-dropdown">
-                      <a href="#" class="dropdown-item">Class 11 Comm</a>
-                      <a href="#" class="dropdown-item">Class 12 Comm</a>
+                      <a href="/class11C" class="dropdown-item">Class 11 Comm</a>
+                      <a href="/class12C" class="dropdown-item">Class 12 Comm</a>
 				            </ul>
 			            </div>
 		            </div>
