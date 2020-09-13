@@ -18,7 +18,7 @@ import "./css/WhyMissionEdWorks.scss";
 import "./css/GetTheApp.scss";
 import "./css/Counselling.scss";
 import "./css/Counter.scss";
-
+import "./css/MediaQueries.scss";
 function AllImports() {
   return (
     <div>
