@@ -10,6 +10,8 @@ body {
 }
 /* Starts */
 
+
+
 .sticky {
   padding: 15px 100px;
   background-color: #fff5e5;
@@ -127,6 +129,7 @@ h1 {
     font-size: 50px;
     z-index: 1;
   }
+  
 }
 @media (max-width: 900px) {
   .tg2 {
@@ -143,10 +146,20 @@ h1 {
   .feature .main {
     margin-top: 1250px;
   }
+  
 }
 
 @media (max-width: 1320px) {
   .image_section img:first-child {
+    display: none;
+  }
+  
+}
+@media (max-width: 1220px) {
+  .img-right{
+    display: none;
+  }
+  .img-left{
     display: none;
   }
 }
