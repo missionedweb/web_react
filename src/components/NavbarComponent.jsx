@@ -23,7 +23,7 @@ function NavbarComponent({ currentUser }) {
   return (
     <>
     
-      <div id="header" className="fixed-top" style={{boxShadow:"1px 1px 10px 1px black"}}>
+      <div id="header" className="fixed-top" style={{boxShadow:"0.5px 0.5px 9px 0.5px #fff5e5"}}>
       <div class="row">
       <Navbar center bg="white" expand="xl" className="navbar-expand-xl ">
         <Navbar.Brand href="#home" className="ml-8">
