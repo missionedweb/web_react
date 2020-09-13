@@ -6,6 +6,9 @@ import Footer from "../../Footer";
 import NavbarComponent from "../../NavbarComponent";
 import cont1 from "../../../Images/cont1.png";
 import cont2 from "../../../Images/cont2.png";
+import place1 from "./Images/place1.png";
+import place2 from "./Images/place2.png";
+ 
 import { Link } from 'react-router-dom'
 
 import Creativity from "../../AboutUs/images/Creativity.png"
@@ -283,6 +286,14 @@ const AboutUs = () => {
                 </div>
         <br/>
         <br/>
+
+        <div>
+            <img src={place1} className = "img-right" alt="picture" />
+            </div>
+            <div >
+            <img src={place2} className = "img-left" alt="picture" />
+            </div>
+            <br /><br /><br />
         <div>
             {/* 2 Banners  part Here */}
         
@@ -526,6 +537,21 @@ const Wrapper = styled.div`
 }
 .how-img img{
     width: 40%;
+}
+
+.img-left{
+  float: left;
+  margin-top:-550px;
+  z-index:-1;
+  width:800px;
+  height:620px;
+}
+
+.img-right{
+  float: right;
+  margin-top: -700px;
+  height: 600px;
+  width: 750px;
 }
 
   .heading {

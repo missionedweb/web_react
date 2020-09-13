@@ -18,7 +18,7 @@ import $ from 'jquery';
 function NavbarComponent({ currentUser }) {
   window.addEventListener("scroll", function () {
     let header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 0);
+    
   });
   return (
     <>
@@ -44,26 +44,25 @@ function NavbarComponent({ currentUser }) {
 	            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> Classes <b class="caret"></b></a>
 	            <ul class="dropdown-menu multi-column columns-2">
 		            <div class="row">
-			            <div class="col-sm-3">
+			            <div class="col-sm-3 ml-2 " >
 				            <ul class="multi-column-dropdown">
                     <a href="/class8" class="dropdown-item">Class 8</a>
                     <a href="/class9" class="dropdown-item">Class 9</a>
+                    <a href="/class10" class="dropdown-item">Class 10</a>
+                    
 					            
 				            </ul>
 			            </div>
-			            <div class="col-sm-4">
+			            <div class="col-sm-4 ">
 				            <ul class="multi-column-dropdown">
-                      <a href="/class10" class="dropdown-item">Class 10</a>
+                      
                       <a href="/class11S" class="dropdown-item">Class 11 Science</a>
+                      <a href="/class11C" class="dropdown-item">Class 11 Commerce</a>
                       <a href="/class12S" class="dropdown-item">Class 12 Science</a>
+                      <a href="/class12C" class="dropdown-item">Class 12 Commerce</a>
 				            </ul>
 			            </div>
-                  <div class="col-sm-4">
-				            <ul class="multi-column-dropdown">
-                      <a href="/class11C" class="dropdown-item">Class 11 Comm</a>
-                      <a href="/class12C" class="dropdown-item">Class 12 Comm</a>
-				            </ul>
-			            </div>
+                  
 		            </div>
 	            </ul>
 	        </li>
