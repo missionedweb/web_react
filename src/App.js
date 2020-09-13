@@ -17,6 +17,8 @@ import contactUs from "./components/contactUs/contactUs";
 import Faq from "./pages/faq/faq";
 import Testim from "./components/Testim/Testim";
 import AllImports from "./components/AllImports";
+import cards from "./components/cards";
+
 import Addfeatures from "./components/FeatureComponents/Features/Addfeatures";
 import Class8 from "./components/Class/Class8/Class8"
 import Class9 from "./components/Class/Class9/Class9"
@@ -73,6 +75,7 @@ function App({ setCurrentUser, currentUser }) {
         <Route path="/features" component={Addfeatures} />
         <Route path="/pricing" component={Pricing} />
         <Route path="/counselling" component={Counselling} />
+        <Route path="/cards" component={cards} />
         <Route path="/contactus" component={contactUs} />
         <Route path="/faq" component={Faq} />
         <Route path="/testim" component={Testim} />

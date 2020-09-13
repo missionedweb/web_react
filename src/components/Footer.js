@@ -60,12 +60,12 @@ const Footer = () => {
                         <h3 >Useful Links</h3>
                       </div>
                       <ul >
-                              <li><a href="#" style={{cursor:"pointer"}}>Home</a></li>
-                              <li><a href="#" style={{cursor:"pointer"}}>About</a></li>
+                              <li><a href="/" style={{cursor:"pointer"}}>Home</a></li>
+                              <li><a href="/aboutus" style={{cursor:"pointer"}}>About</a></li>
                               <li><a href="/contactus" style={{cursor:"pointer"}}>Contact</a></li>
                               <li><a href="https://missioned.in/blog/" style={{cursor:"pointer"}}>Blogs</a></li>
                               <li><a href="/feature3" style={{cursor:"pointer"}}>Expert Team</a></li>
-                              <li><a href="/feature6" style={{cursor:"pointer"}}>Why MissionEd Works</a></li>
+                              <li><a href="/cards" style={{cursor:"pointer"}}>Why MissionEd Works</a></li>
                 
                       </ul>
                     </div>
@@ -76,15 +76,15 @@ const Footer = () => {
                         <h3>Classes </h3>
                       </div>
                       <ul >
-                        <li><a  href="#" style={{cursor:"pointer"}}>Class 8</a></li>
-                        <li><a  href="#" style={{cursor:"pointer"}}>Class 12 Science</a></li>
-                        <li><a  href="#" style={{cursor:"pointer"}}>Class 9</a></li>
-                        <li><a  href="#" style={{cursor:"pointer"}}>Class 12 Commerce</a></li>
-                        <li><a  href="#" style={{cursor:"pointer"}}>Class 10</a></li>
+                        <li><a  href="/class8" style={{cursor:"pointer"}}>Class 8</a></li>
+                        <li><a  href="/class12s" style={{cursor:"pointer"}}>Class 12 Science</a></li>
+                        <li><a  href="/class9" style={{cursor:"pointer"}}>Class 9</a></li>
+                        <li><a  href="/class12c" style={{cursor:"pointer"}}>Class 12 Commerce</a></li>
+                        <li><a  href="/class10" style={{cursor:"pointer"}}>Class 10</a></li>
                         <li><a  href="#" style={{cursor:"pointer"}}>CBSE Board</a></li>
-                        <li><a  href="#" style={{cursor:"pointer"}}>Class 11 Science</a></li>
+                        <li><a  href="class11s" style={{cursor:"pointer"}}>Class 11 Science</a></li>
                         <li><a  href="#" style={{cursor:"pointer"}}>ICSE Board</a></li>
-                        <li><a  href="#" style={{cursor:"pointer"}}>Class 11 Commerce</a></li>
+                        <li><a  href="class11c" style={{cursor:"pointer"}}>Class 11 Commerce</a></li>
                       </ul>
                     </div>
                   </div>
@@ -102,7 +102,7 @@ const Footer = () => {
                   <div className="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                     <div className="footer-menu">
                       <ul>
-                        <li><a href="#" style={{cursor:"pointer"}}>Home</a></li>
+                        <li><a href="/" style={{cursor:"pointer"}}>Home</a></li>
                         <li><a href="#" style={{cursor:"pointer"}}>Terms</a></li>
                         <li><a href="#" style={{cursor:"pointer"}}>Privacy</a></li>
                         <li><a href="#" style={{cursor:"pointer"}}>Policy</a></li>

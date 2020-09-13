@@ -26,7 +26,7 @@ function NavbarComponent({ currentUser }) {
       <div id="header" className="fixed-top" style={{boxShadow:"0.5px 0.5px 9px 0.5px #fff5e5"}}>
       <div class="row">
       <Navbar center bg="white" expand="xl" className="navbar-expand-xl ">
-        <Navbar.Brand href="#home" className="ml-8">
+        <Navbar.Brand href="/" className="ml-8">
           <img className="logo mt-n4 mr-auto" src={NavigationLogo} alt="logo" />
           <span className="missioned-nav font-weight-bold">
             Mission<span className="ed">Ed</span>
@@ -116,7 +116,7 @@ function NavbarComponent({ currentUser }) {
 			            <div class="col-sm-3">
 				            <ul class="multi-column-dropdown">
                     <a href="/aboutus" class="dropdown-item">About Us</a>
-                    <a href="#" class="dropdown-item">Testimonials</a>
+                    <a href="/testim" class="dropdown-item">Testimonials</a>
                     
 					            
 				            </ul>
@@ -129,12 +129,12 @@ function NavbarComponent({ currentUser }) {
 			            </div>
                   <div class="col-sm-3">
 				            <ul class="multi-column-dropdown">
-                    <a href="#" class="dropdown-item">Counselling</a>
+                    <a href="/counselling" class="dropdown-item">Counselling</a>
 				            </ul>
 			            </div>
                   <div class="col-sm-3">
 				            <ul class="multi-column-dropdown">
-                    <a href="#" class="dropdown-item">FAQ's</a>
+                    <a href="/faq" class="dropdown-item">FAQ's</a>
 				            </ul>
 			            </div>
 		            </div>
@@ -147,7 +147,7 @@ function NavbarComponent({ currentUser }) {
                   <a class="nav-link " href="/pricing">PRICING</a>
                 </li>
                 <li class="nav-item mr-auto ml-2">
-                  <a class="nav-link" href="/https://missioned.in/blog/">BLOG</a>
+                  <a class="nav-link" href="https://missioned.in/blog/">BLOG</a>
                 </li>
               </ul>
           </Nav>

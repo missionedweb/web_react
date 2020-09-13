@@ -543,15 +543,15 @@ const Wrapper = styled.div`
   float: left;
   margin-top:-550px;
   z-index:-1;
-  width:800px;
-  height:620px;
+  width:600px;
+  height:600px;
 }
 
 .img-right{
   float: right;
   margin-top: -700px;
   height: 600px;
-  width: 750px;
+  width: 600px;
 }
 
   .heading {
