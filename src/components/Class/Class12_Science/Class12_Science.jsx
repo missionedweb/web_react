@@ -415,7 +415,7 @@ const AboutUs = () => {
                         <div class="col-md-6 how-img">
                             <img src="https://image.ibb.co/dDW27U/Work_Section2_freelance_img1.png" class="rounded-circle img-fluid" alt=""/>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 ml-10">
                             <h4>Find rewarding projects</h4>
                                         <h4 class="subheading">GetLance is a great place to find more clients, and to run and grow your own freelance business.</h4>
                         <p class="text-muted">Freedom to work on ideal projects. On GetLance, you run your own business and choose your own clients and projects. Just complete your profile and we’ll highlight ideal jobs. Also search projects, and respond to client invitations.
