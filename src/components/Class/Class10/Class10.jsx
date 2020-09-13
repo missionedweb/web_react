@@ -67,7 +67,7 @@ const AboutUs = () => {
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
-                        Name
+                        Maths
                       </h4>
                     </div>
                   </div>
@@ -89,7 +89,7 @@ const AboutUs = () => {
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
-                        Name
+                        Biology
                       </h4>
                     </div>
                   </div>
@@ -111,7 +111,7 @@ const AboutUs = () => {
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
-                        Name
+                        Chemistry
                       </h4>
                     </div>
                   </div>
@@ -134,7 +134,7 @@ const AboutUs = () => {
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
-                        Name
+                        Civics
                       </h4>
                     </div>
                   </div>
@@ -157,7 +157,7 @@ const AboutUs = () => {
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
-                        Name
+                        Geography
                       </h4>
                     </div>
                   </div>
@@ -181,7 +181,7 @@ const AboutUs = () => {
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
-                        Name
+                        GK
                       </h4>
                     </div>
                   </div>
@@ -203,7 +203,7 @@ const AboutUs = () => {
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
-                        Name
+                        Physics
                       </h4>
                     </div>
                   </div>
@@ -225,7 +225,7 @@ const AboutUs = () => {
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
-                        Name
+                        History
                       </h4>
                     </div>
                   </div>
@@ -248,7 +248,7 @@ const AboutUs = () => {
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
-                        Name
+                        History
                       </h4>
                     </div>
                   </div>
@@ -271,7 +271,7 @@ const AboutUs = () => {
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
-                        Name
+                        English
                       </h4>
                     </div>
                   </div>
