@@ -22,7 +22,7 @@ const Pricing = () => {
       <Wrapper>
         <div>
           {/* <NavbarComponent/>*/}
-          <div className="jumbotron mt-5">
+          <div className="jumbotron ">
             <div
               className="heading mt-2"
               data-aos="zoom-in-up"
@@ -134,12 +134,13 @@ const Wrapper = styled.div`
   .jumbotron {
     background: #fff5e5;
     height: 200px;
+    padding-top:90px;
   }
 
   .heading {
     text-align: center;
     font-weight: bold;
-    font-size: 64px;
+    font-size: 60px;
     line-height: 80px;
     color: #202336;
   }

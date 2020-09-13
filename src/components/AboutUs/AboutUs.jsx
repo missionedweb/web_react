@@ -29,7 +29,7 @@ const AboutUs = () => {
         <div>
         
           {/* <NavbarComponent/>*/}
-          <div className="jumbotron mt-5">
+          <div className="jumbotron ">
           
             <div
               className="heading mt-2"
@@ -40,15 +40,10 @@ const AboutUs = () => {
             </div>
             
 
-          </div>
           
-        <div>
         <center>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        
+        
         <iframe
           className="img-section-left ml-auto"
           data-aos="fade-right"
@@ -383,10 +378,11 @@ const Wrapper = styled.div`
   .jumbotron {
     background: #fff5e5;
     height: 200px;
+    padding-top:100px;
     z-index : 1
   }
   .jumbotron1 {
-    height: 300px;
+    height: 200px;
   }
 
   .heading {

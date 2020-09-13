@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Footer from '../../components/Footer';
 import NavbarComponent from '../../components/NavbarComponent';
+//import GetTheApp from "../../GetTheApp";
 import Collapse from 'react-bootstrap/Collapse';
 import Button from 'react-bootstrap/Button';
 
@@ -277,6 +278,8 @@ const FAQ = () => {
             </div>
           </section>
         </div>
+                
+
         <Footer />
       </Wrapper>
     </div>
@@ -296,12 +299,13 @@ const Wrapper = styled.div`
   }
   .jumbotron {
     background: #fff5e5;
-    height: 237px;
+    height: 200px;
+    padding-top: 100px;
   }
   .heading {
     text-align: center;
     font-weight: bold;
-    font-size: 64px;
+    font-size: 60px;
     line-height: 80px;
     color: #202336;
   }

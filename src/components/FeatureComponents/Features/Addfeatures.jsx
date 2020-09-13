@@ -149,7 +149,7 @@ function Addfeatures() {
                 <div
             className="col-md-6"
             data-aos="zoom-in-up"
-            data-aos-duration="1500"
+            data-aos-duration="1500" btnl
           >
             {" "}
             <a href="/feature6">
@@ -339,6 +339,7 @@ const Wrapper = styled.div`
    .img-section-right {
     margin-right: -100px;
   }
+  
   
 
   .learning-text {

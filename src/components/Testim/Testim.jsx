@@ -221,12 +221,13 @@ const Wrapper = styled.div`
   }
   .jumbotron {
     background: #fff5e5;
-    height: 237px;
+    height: 200px;
+    padding-top:100px;
   }
   .heading {
     text-align: center;
     font-weight: bold;
-    font-size: 64px;
+    font-size: 60px;
     line-height: 80px;
     color: #202336;
   }

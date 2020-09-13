@@ -4,6 +4,7 @@ import Group67 from "../contactUs/Images/Group67.png";
 import Footer from "../Footer";
 import GetTheApp from "../GetTheApp";
 import NavbarComponent from "../NavbarComponent";
+import Testimonials from "../Testimonials";
 
 const Counselling = () => {
   return (
@@ -18,7 +19,7 @@ const Counselling = () => {
           </div>
           <p className=" center-text " data-aos="slide-left" data-aos-duration={1000}>
             Have a Doubt?{" "}
-          </p>
+          </p><br />
           <p className="center-text-1" data-aos="slide-right" data-aos-duration={1000}>
             We have a solution for you!
           </p>
@@ -32,8 +33,8 @@ const Counselling = () => {
                 <img src={Group67} className="right-img" alt="" />
               </div>
               <div className="form-display col-md-5" data-aos="zoom-in" data-aos-duration={1000}>
-                <h1 className="message">Get Free Counseling</h1>
-                <p className="head">We would contact you within 48 hours</p>
+                <h1 className="message">Get Free Counseling</h1><br />
+                <p className="head">We would contact you within 48 hours</p><br />
                 <div className="form">
                   <label htmlFor>Name</label>
                   <input type="text" className="form-control" placeholder="Name" />
@@ -58,6 +59,8 @@ const Counselling = () => {
             </div>
           </div>
         </div>
+        <br /><br />
+        <Testimonials />
         <GetTheApp />
         <Footer />
       </Wrapper>
@@ -78,7 +81,8 @@ const Wrapper = styled.div`
   }
   .jumbotron {
     background: #fff5e5;
-    height: 237px;
+    height: 200px;
+    
   }
   .heading {
     text-align: center;
@@ -86,6 +90,7 @@ const Wrapper = styled.div`
     font-size: 64px;
     line-height: 80px;
     color: #202336;
+    padding-top:100px;
   }
   .center-text {
     font-weight: bold;
@@ -111,7 +116,8 @@ const Wrapper = styled.div`
 
   .right-img {
     float: right;
-    margin-top: 100px;
+    margin-top: 10px;
+    margin-right: -200px;
   }
   .form-display {
     background: #ffffff;
@@ -121,6 +127,7 @@ const Wrapper = styled.div`
     margin-top: 50px;
     padding: 20px;
     padding-right: 30px;
+    margin-left: 150px;
   }
   .message {
     font-size: 34px;
@@ -147,6 +154,7 @@ const Wrapper = styled.div`
     color: white;
     box-shadow: 2px 2px 5px black;
   }
+  
   /* Testimonials*/
   .read-all {
     background: #fb8f1d;
@@ -208,6 +216,21 @@ const Wrapper = styled.div`
     padding: 40px 20px;
     margin: auto;
   }
+
+  .myCarousel {
+  background: #fafafa;
+  margin-top: -6%;
+  width: 54%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 1px solid #ddd;
+  height: 286px;
+}
+
 
   .testim .arrow {
     display: block;
