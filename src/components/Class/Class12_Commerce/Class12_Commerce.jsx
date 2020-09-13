@@ -52,18 +52,62 @@ const AboutUs = () => {
           <div className="container ">
               <div className="row ">
               
-                <div
-                  className="col-lg-2 offset-lg-1 center col-md-6 col-12 "
+                
+              <div
+                  className="col-lg-2 offset-lg-1 center col-md-6 col-12 mt-3"
                   data-aos="flip-right"
                   data-aos-duration={1500}
                 >
-                  <div className="card text-center h-80 border-0 image-background border border-warning"
-                  style = {{ borderRadius : "40px" }}
-                  >
+                  <div className="card text-center h-80 border-0 image-background">
                    <a href=""> <img
                       className="card-img-top img-fluid card01 mx-auto image-1 "
-                      src={cont2}
+                      src={cont1}
                       alt=""
+                      style = {{ width : "200px" }}
+                    />
+                    </a>
+                    <div className="card-block">
+                      <h4 className="card-title ct-1 card-three">
+                        Name
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <br />
+                <div
+                  className="col-lg-2 center col-md-6 col-12 mt-3"
+                  data-aos="flip-right"
+                  data-aos-duration={1500}
+                >
+                  <div className="card text-center h-80 border-0 image-background">
+                   <a href=""> <img
+                      className="card-img-top img-fluid card01 mx-auto image-1 "
+                      src={cont1}
+                      alt=""
+                      style = {{ width : "200px" }}
+                    />
+                    </a>
+                    <div className="card-block">
+                      <h4 className="card-title ct-1 card-three">
+                        Name
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <br />
+                <div
+                  className="col-lg-2 center col-md-6 col-12 mt-3"
+                  data-aos="flip-right"
+                  data-aos-duration={1500}
+                >
+                  <div className="card text-center h-80 border-0 image-background">
+                   <a href=""> <img
+                      className="card-img-top img-fluid card01 mx-auto image-1 "
+                      src={cont1}
+                      alt=""
+                      style = {{ width : "200px" }}
                     />
                     </a>
                     <div className="card-block">
@@ -77,15 +121,16 @@ const AboutUs = () => {
                 <br />
                 
                 <div
-                  className="col-lg-2 center col-md-6 col-12 "
+                  className="col-lg-2 center col-md-6 col-12 mt-3"
                   data-aos="flip-right"
                   data-aos-duration={1500}
                 >
                   <div className="card text-center h-80 border-0 image-background">
                    <a href=""> <img
                       className="card-img-top img-fluid card01 mx-auto image-1 "
-                      src={cont2}
+                      src={cont1}
                       alt=""
+                      style = {{ width : "200px" }}
                     />
                     </a>
                     <div className="card-block">
@@ -97,58 +142,18 @@ const AboutUs = () => {
                 </div>
                 <br />
                 <br />
+                
                 <div
-                  className="col-lg-2 center col-md-6 col-12 "
+                  className="col-lg-2 center col-md-6 col-12 mt-3 "
                   data-aos="flip-right"
                   data-aos-duration={1500}
                 >
                   <div className="card text-center h-80 border-0 image-background">
-                   <a href=""> <img
-                      className="card-img-top img-fluid card01 mx-auto image-1 "
-                      src={cont2}
+                    <a href=""><img
+                      className="card-img-top img-fluid  card01 mx-auto image-3"
+                      src={cont1}
                       alt=""
-                    />
-                    </a>
-                    <div className="card-block">
-                      <h4 className="card-title ct-1 card-three">
-                        Name
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <br />
-                <div
-                  className="col-lg-2 center col-md-6 col-12 "
-                  data-aos="flip-right"
-                  data-aos-duration={1500}
-                >
-                  <div className="card text-center h-80 border-0 image-background">
-                   <a href=""> <img
-                      className="card-img-top img-fluid card01 mx-auto image-1 "
-                      src={cont2}
-                      alt=""
-                    />
-                    </a>
-                    <div className="card-block">
-                      <h4 className="card-title ct-1 card-three">
-                        Name
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <br />
-                <div
-                  className="col-lg-2 center col-md-6 col-12 "
-                  data-aos="flip-right"
-                  data-aos-duration={1500}
-                >
-                  <div className="card text-center h-80 border-0 image-background">
-                   <a href=""> <img
-                      className="card-img-top img-fluid card01 mx-auto image-1 "
-                      src={cont2}
-                      alt=""
+                      style = {{ width : "200px" }}
                     />
                     </a>
                     <div className="card-block">
