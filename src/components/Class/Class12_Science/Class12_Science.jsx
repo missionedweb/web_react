@@ -49,7 +49,7 @@ const AboutUs = () => {
           
 
           </div>
-          <div className="container ">
+           <div className="container ">
               <div className="row ">
               
               <div

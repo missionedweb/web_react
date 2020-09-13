@@ -32,7 +32,7 @@ const AboutUs = () => {
           <div className="jumbotron mt-5">
           
             <div
-              className="heading"
+              className="heading mt-2"
               data-aos="zoom-in-up"
               data-aos-duration={2500}
             >
