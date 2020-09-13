@@ -122,7 +122,7 @@ export default function LearningModal() {
         variant="contained"
         color="secondary"
         type="button"
-        onClick={handleOpen}
+        //onClick={handleOpen}
         className={classes.button}
         style={{ outline: "none", marginLeft: "20px", background: "#FB8F1D", color: "white" }}>
         Register
