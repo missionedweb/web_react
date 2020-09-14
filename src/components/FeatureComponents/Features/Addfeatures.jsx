@@ -58,7 +58,7 @@ function Addfeatures() {
             toughest exams like JEE,NTSE  etc, so students would feel more connected and can ask doubts more freely
           </h6><br /><br />
                 <div
-            className="col-md-6"
+            className="col-md-6 b"
             data-aos="zoom-in-up"
             data-aos-duration="1500"
           >
@@ -95,7 +95,7 @@ function Addfeatures() {
           </h6><br /><br />
                   
                   <div
-            className="col-md-6"
+            className="col-md-6 b"
             data-aos="zoom-in-up"
             data-aos-duration="1500"
           >
@@ -147,9 +147,9 @@ function Addfeatures() {
             updated with the latest norms to ensure students are able to cope up with new challenges.
           </h6><br /><br />
                 <div
-            className="col-md-6"
+            className="col-md-6 b"
             data-aos="zoom-in-up"
-            data-aos-duration="1500" btnl
+            data-aos-duration="1500" 
           >
             {" "}
             <a href="/feature6">
@@ -181,7 +181,7 @@ function Addfeatures() {
             Provides students with an opportunity to study with the best mentors as well as gain insight on their performance. A study shows that 71.58% of students opt 
             for home tutors which proves the likeliness of students towards private mentors.          </h6><br /><br />
                 <div
-            className="col-md-6"
+            className="col-md-6 b"
             data-aos="zoom-in-up"
             data-aos-duration="1500"
           >
@@ -233,7 +233,7 @@ function Addfeatures() {
             with students where they can ask anything and everything, any number of times.
           </h6><br /><br />
                 <div
-            className="col-md-6"
+            className="col-md-6 b"
             data-aos="zoom-in-up"
             data-aos-duration="1500"
           >
@@ -268,7 +268,7 @@ function Addfeatures() {
             keep a track on their performance with the help of regular unbiased feedback.
           </h6><br /><br />
                 <div
-            className="col-md-6"
+            className="col-md-6 b"
             data-aos="zoom-in-up"
             data-aos-duration="1500"
           >
@@ -340,7 +340,13 @@ const Wrapper = styled.div`
     margin-right: -100px;
   }
   
-  
+  .b{
+    margin-left: -15px;
+  }
+
+  .learn-more-btn{
+    outline:none;
+  }
 
   .learning-text {
     margin-right:-200px;
@@ -394,6 +400,7 @@ const Wrapper = styled.div`
     margin-right: -60px;
 
   }
+   
 
    @media only screen and (max-width: 800px) {
 
@@ -407,12 +414,17 @@ const Wrapper = styled.div`
     }
 
     .learning-headingmain{
-      padding-top:10%;
+      padding-top:50px;
     }
 
 
   .counselling{
     margin-top: -200px;
+    margin-bottom:100px;
+  }
+
+  .get-app{
+    margin-top:200px;
   }
 }
 `

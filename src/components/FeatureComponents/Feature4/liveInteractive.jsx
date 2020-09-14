@@ -133,9 +133,7 @@ const liveInteractive=()=>{
     </div>
     <div className="w-100 d-none d-xl-block">{/* wrap every 5 on xl*/}</div>        
   </div>
-  <div className="col-lg-12 center col-md-6 col-12 mt-1 text-right explore-all">
-    <a href="/"><u>Explore more</u>  <i className="fas fa-arrow-right" /></a>
-  </div>
+  
 </div>
     <br />
     <br />
@@ -156,9 +154,22 @@ body{
     font-family: 'Playfair Display', serif;
     background-image: url("Images/bg.png");
   }
+
+  .jumbotron1{
+    background: #fff5e5;
+    height: 200px;
+    padding-top:110px;
+    }
+    .live {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 80px;
+    color: #202336;
+  }
   .jumbotron{
       
-      
+    padding-top:110px;
     /* padding-top: .5rem; */
     height: 200px;
     margin:0 auto;

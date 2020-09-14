@@ -112,8 +112,7 @@ const bestTeacher=()=>{
         </div>
       </div>
       <br />
-      <br /><br />
-      <br />
+      
       <div className="container-fluid banner" style={{backgroundColor: '#FFFBF0'}}>
         <div className="container">
           <div className="row" data-aos="fade-right" data-aos-duration={900}>
@@ -128,7 +127,6 @@ const bestTeacher=()=>{
         </div>
       </div>
       <br /><br /><br /><br />
-      <br /><br /><br />
       <div className="container banner">
         <div className="row" data-aos="fade-left" data-aos-duration={900}>
           <div className="col-md-8 col-12 women3" style={{margin: 'auto'}}>
@@ -140,7 +138,7 @@ const bestTeacher=()=>{
         </div>
       </div>
       <br />
-      <br /><br /><br /><br /><br />
+      <br /><br />
       <div className="card" style={{marginTop: '10%', background: 'linear-gradient(297.17deg, #FFEDBA 6.67%, #EE4D47 91.82%)', paddingBottom: '40px', height: '400px', border: 'none', boxShadow: 'none'}}>
         <br />
         <h1 style={{textAlign: 'center', color: 'black'}}>Why <span style={{color: 'aliceblue'}}>MissionEd </span>works?</h1>
@@ -185,9 +183,7 @@ const bestTeacher=()=>{
         </div>
         <div className="w-100 d-none d-xl-block">{/* wrap every 5 on xl*/}</div>        
       </div>
-      <div className="col-lg-12 center col-md-6 col-12 mt-1 text-right explore-all">
-        <a href="/"><u>Explore more</u>  <i className="fas fa-arrow-right" /></a>
-      </div>
+      
     </div>
         <br />
         <br />
@@ -208,18 +204,19 @@ body{
     background-image: url("Images/bg.png");
   }
   .jumbotron{
-      
-      
     /* padding-top: .5rem; */
     height: 200px;
     margin:0 auto;
-      top: 24.41%;
-      bottom: 51.17%;
-     text-align: center;
-      background:linear-gradient(297.17deg, #FFEDBA 6.67%, #EE4D47 91.82%);
-      mix-blend-mode: normal;
+    top: 24.41%;
+    bottom: 51.17%;
+    text-align: center;
+    background:linear-gradient(297.17deg, #FFEDBA 6.67%, #EE4D47 91.82%);
+    mix-blend-mode: normal;
+    padding-top:110px;
+
       
     }
+  
     h2{
       font-weight: 100px;
     }
@@ -268,16 +265,12 @@ body{
     box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.1);
   }
   
-  h1{
-    position: relative;
-    font-family: 'Playfair Display', serif;
+  .live {
+    text-align: center;
     font-weight: bold;
-  
-    letter-spacing: calc(0.5em+1vh);
-    line-height: calc(1em+0.75vh);
-    color: white;
-    padding-top: 2%;
-    font-size: 70px;
+    font-size: 60px;
+    line-height: 80px;
+    color: #202336;
   }
   h3{
     font-weight: bold;
@@ -355,7 +348,7 @@ body{
   
   .banner
   {
-    margin-top: 10%;
+    margin-top: 5%;
   }
   
   .live
@@ -380,7 +373,8 @@ body{
   
   .women3 img
   {
-    margin-left: -100px; 
+    margin-left: -100px;
+    width: 70%; 
   }
   
   /*flicker animation heading*/

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Footer from '../../components/Footer';
 import NavbarComponent from '../../components/NavbarComponent';
-//import GetTheApp from "../../GetTheApp";
+import GetTheApp from "../../components/GetTheApp";
 import Collapse from 'react-bootstrap/Collapse';
 import Button from 'react-bootstrap/Button';
 
@@ -279,7 +279,7 @@ const FAQ = () => {
           </section>
         </div>
                 
-
+        <GetTheApp />
         <Footer />
       </Wrapper>
     </div>
@@ -325,11 +325,14 @@ const Wrapper = styled.div`
     padding: 0;
     list-style: none;
   }
+
+  
   .faq {
     padding: 120px 0 90px;
 
     min-height: 100vh;
   }
+  
 
   .faq .section-title {
     margin-bottom: 54px;
@@ -490,15 +493,17 @@ const Wrapper = styled.div`
     border-radius: 8px;
     font-weight: 600;
     font-size: 16px;
-    padding: 10px;
+    padding-left: -200px;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     color: #ffffff;
   }
   .download:hover {
     box-shadow: 2px 2px 5px black;
     color: white;
   }
+
+  
   .books {
     float: right;
   }

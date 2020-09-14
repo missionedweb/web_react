@@ -209,9 +209,7 @@ const convenientSafe = () => {
             </div>
             <div className="w-100 d-none d-xl-block">{/* wrap every 5 on xl*/}</div>        
           </div>
-          <div className="col-lg-12 center col-md-6 col-12 mt-1 text-right explore-all">
-            <a href="/"><u>Explore more</u>  <i className="fas fa-arrow-right" /></a>
-          </div>
+          
         </div>
             <br />
             <br />
@@ -241,6 +239,20 @@ const Wrapper = styled.div`
     text-align: center;
     background: linear-gradient(297.17deg, #ffc3a0 6.67%, #ffafbd 91.82%);
     mix-blend-mode: normal;
+        padding-top:110px;
+
+  }
+  .jumbotron1{
+    background: #fff5e5;
+    height: 200px;
+    padding-top:110px;
+    }
+    .live {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 80px;
+    color: #202336;
   }
   h2 {
     font-weight: 100px;

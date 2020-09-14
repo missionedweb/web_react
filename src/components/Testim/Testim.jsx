@@ -6,6 +6,7 @@ import team2 from "./Images/team2.png";
 import team3 from "./Images/team3.png";
 import Testimonials from "../Testimonials";
 import NavbarComponent from "../NavbarComponent";
+import GetTheApp from "../GetTheApp"
 
 const Testim = () => {
   return (
@@ -202,6 +203,7 @@ const Testim = () => {
             </div>
           </div>
         </div>
+        <GetTheApp />
         <Footer />
       </Wrapper>
     </div>
@@ -230,6 +232,10 @@ const Wrapper = styled.div`
     font-size: 60px;
     line-height: 80px;
     color: #202336;
+  }
+
+  .testimonials-heading1 {
+    
   }
 
   .main {
@@ -908,10 +914,10 @@ const Wrapper = styled.div`
   }
   .testimonials-heading {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 45px;
     line-height: 53px;
     text-align: center;
-    color: #f2994a;
+    color: #ff6200;
     margin-top: 80px;
   }
   .wrapper {

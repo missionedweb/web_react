@@ -10,6 +10,8 @@ import convi_safe from "./Images/convi_safe.svg";
 import phone from "./Images/phone.svg";
 import expert_teac from "./Images/expert_teac.svg";
 import NavbarComponent from "../../NavbarComponent";
+import GetTheApp from "../../GetTheApp";
+
 import Footer from "../../Footer";
 
 const trustedContent = () => {
@@ -207,53 +209,15 @@ const trustedContent = () => {
             </div>
             <div className="w-100 d-none d-xl-block">{/* wrap every 5 on xl*/}</div>        
           </div>
-          <div className="col-lg-12 center col-md-6 col-12 mt-1 text-right explore-all">
-            <a href="/"><u>Explore more</u>  <i className="fas fa-arrow-right" /></a>
-          </div>
+          
         </div>
             <br />
             <br />
             <br />
           </div>
-          <div className="container-fluid">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-2 abc" />
-                <div
-                  className="col-md-5"
-                  style={{ margin: "auto" }}
-                  data-aos="flip-up"
-                  data-aos-duration={1000}
-                >
-                  <img className="phone" src={phone} alt="phone" />
-                </div>
-                <div
-                  className="col-md-5 col-12"
-                  style={{ textAlign: "center", margin: "auto" }}
-                >
-                  <h3 className=" above1">Get the app now!</h3>
-                  <br />
-                  <p>
-                    Get our wonderful Android Application right now to stay
-                    connected with us and unlock plethora of content and quality
-                    learning
-                  </p>
-                  <br />
-                  <p>Over 500+ installs already</p>
-                  <br />
-                  <a href="https://play.google.com/store/apps/details?id=com.missionedappdev.missoned">
-                    <button
-                      className="btn"
-                      style={{ background: "#FB8F1D", width: "200px" }}
-                    >
-                      <i className="fa fa-download" /> Download
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
+        <GetTheApp/>
         <Footer/>
       </Wrapper>
     </div>
@@ -276,6 +240,21 @@ const Wrapper = styled.div`
     text-align: center;
     background: linear-gradient(297.17deg, #b06ab3 6.67%, #4568dc 91.82%);
     mix-blend-mode: normal;
+        padding-top:110px;
+
+  }
+
+  .jumbotron1{
+    background: #fff5e5;
+    height: 200px;
+    padding-top:110px;
+    }
+    .live {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 80px;
+    color: #202336;
   }
   h2 {
     font-weight: 100px;
