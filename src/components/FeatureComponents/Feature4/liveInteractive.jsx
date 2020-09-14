@@ -16,7 +16,9 @@ import Footer from "../../Footer";
 const liveInteractive=()=>{
       return (
         <div>
-          <NavbarComponent />
+          <header>
+      <NavbarComponent />
+      </header>
         <Wrapper>
         <div>
   <div className="jumbotron">

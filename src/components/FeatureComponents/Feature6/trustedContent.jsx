@@ -17,7 +17,9 @@ import Footer from "../../Footer";
 const trustedContent = () => {
   return (
     <div>
+      <header>
       <NavbarComponent />
+      </header>
       <Wrapper>
         <div>
           <div className="jumbotron">

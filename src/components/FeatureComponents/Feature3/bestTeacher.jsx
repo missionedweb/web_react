@@ -18,7 +18,9 @@ import Footer from "../../Footer";
 const bestTeacher=()=>{
       return (
         <div>
-          <NavbarComponent />
+          <header>
+      <NavbarComponent />
+      </header>
         <Wrapper>
         <div className="jumbotron">
         <div className="container">

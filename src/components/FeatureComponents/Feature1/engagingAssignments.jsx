@@ -15,7 +15,9 @@ import Footer from "../../Footer";
 const engagingAssignments=()=>{
       return (
         <div>
-          <NavbarComponent />
+          <header>
+      <NavbarComponent />
+      </header>
         <Wrapper>
           <div className="jumbotron">
             <div className="container">

@@ -17,7 +17,9 @@ import GetTheApp from "../../GetTheApp";
 const personalizedLearning = () => {
   return (
     <div>
+      <header>
       <NavbarComponent />
+      </header>
       <Wrapper>
         <div>
           <div className="jumbotron">
