@@ -11,6 +11,8 @@ import { auth } from "../firebase/firebase.utils";
 import { createStructuredSelector } from "reselect";
 import { selectCurrentUser } from "../redux/user/user.selector";
 import Register from "../pages/auth/register/register";
+import Login from "../pages/auth/login/login";
+
 import $ from 'jquery';
 
 
@@ -162,16 +164,17 @@ function NavbarComponent({ currentUser }) {
           </Nav>
           <div class="ml-auto">
           {currentUser !== null ? (
-            <Link to="/login" >
+            <Link to="/" >
               <button className="btn login-btn mr-auto float-right ml-auto" onClick={() => auth.signOut()}>
                 SignOut
               </button>
             </Link>
           ) : (
             <Form inline className="mega-link p-2" >
-              <Link to="/login" className="btn login-btn mr-2" role="button" style={{  width: 110 , height: 46 , textDecoration: "none" , borderRadius: "10px"}}>
+              <Login/>
+              {/* <Link to="/login" className="btn login-btn mr-2" role="button" style={{  width: 110 , height: 46 , textDecoration: "none" , borderRadius: "10px"}}>
                 Login
-              </Link>
+              </Link> */}
               <Register className="btn register-btn pr-2" />
             </Form>
           )}
