@@ -32,7 +32,7 @@ const AboutUs = () => {
         <div>
         
           {/* <NavbarComponent/>*/}
-          <div className="jumbotron">
+          <div className="jumbotron text-uppercase">
           
             <div
               className="heading pt-2"

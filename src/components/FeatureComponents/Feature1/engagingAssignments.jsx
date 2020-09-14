@@ -19,11 +19,11 @@ const engagingAssignments=()=>{
       <NavbarComponent />
       </header>
         <Wrapper>
-          <div className="jumbotron">
+          <div className="jumbotron text-uppercase">
             <div className="container">
               <div className="row">
                 <div className="col-md-12">
-                  <h1 className="live"> Engaging Assignments</h1>
+                <h1 className="live "> Engaging Assignments</h1>
                 </div>
               </div>
             </div>

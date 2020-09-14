@@ -21,7 +21,7 @@ const convenientSafe = () => {
       </header>
       <Wrapper>
         <div>
-          <div className="jumbotron">
+          <div className="jumbotron text-uppercase">
             <div className="container">
               <div className="row">
                 <div className="col-md-12">

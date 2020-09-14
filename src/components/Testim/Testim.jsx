@@ -16,7 +16,7 @@ const Testim = () => {
       </header>
       <Wrapper>
         <div>
-          <div className="jumbotron">
+          <div className="jumbotron text-uppercase">
             <div
               className="heading"
               data-aos="zoom-in-up"

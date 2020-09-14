@@ -22,7 +22,7 @@ const Pricing = () => {
       <Wrapper>
         <div>
           {/* <NavbarComponent/>*/}
-          <div className="jumbotron ">
+          <div className="jumbotron text-uppercase ">
             <div
               className="heading mt-2"
               data-aos="zoom-in-up"
