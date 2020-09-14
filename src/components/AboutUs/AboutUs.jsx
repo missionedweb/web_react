@@ -148,7 +148,7 @@ const AboutUs = () => {
             >
               <img src={Excellence} style={{ width: "70%" }} alt="" />
               
-              <h3>
+              <h3 className="mb-4" style={{textAlign:"center" , marginBottom : "20px"}}>
               Excellence
               </h3>
             </div>

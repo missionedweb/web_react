@@ -51,8 +51,6 @@ function NavbarComponent({ currentUser }) {
                     <a href="/class8" class="dropdown-item">Class 8</a>
                     <a href="/class9" class="dropdown-item">Class 9</a>
                     <a href="/class10" class="dropdown-item">Class 10</a>
-                    
-					            
 				            </ul>
 			            </div>
 			            <div class="col-sm-7 ">
