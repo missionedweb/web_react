@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import live_inter from "../../Images/live_inter.svg";
+import engg_ass from "../../Images/engg_ass.svg";
+import expert_teac from "../../Images/expert_teac.svg";
 import Testimonials from "../Testimonials";
 import GetTheApp from "../GetTheApp";
 import Footer from "../Footer";
@@ -29,10 +32,10 @@ const AboutUs = () => {
         <div>
         
           {/* <NavbarComponent/>*/}
-          <div className="jumbotron ">
+          <div className="jumbotron">
           
             <div
-              className="heading mt-2"
+              className="heading pt-2"
               data-aos="zoom-in-up"
               data-aos-duration={2500}
             >
@@ -40,15 +43,15 @@ const AboutUs = () => {
             </div>
             
 
+          </div>
           
-        
+        <div>
+        <center>
         <br />
         <br />
         <br />
         <br />
         <br />
-        
-        
         <iframe
           className="img-section-left ml-auto"
           data-aos="fade-right"
@@ -68,8 +71,8 @@ const AboutUs = () => {
           <h6 className="learning-txt" style={{ margin: "auto" }}>
             {" "}
             The environment of learning we provide  is nurtured by the experts. The guidance that  
-            you are seeking is from the IITians. They will provide you the enhanced way of teaching 
-            You  will get the quality as well as playful atmosphere.
+            <br/>you are seeking is from the IITians. They will provide you the enhanced way of teaching 
+            <br/> You  will get the quality as well as playful atmosphere.
           </h6>
           <br />
           <br />
@@ -84,13 +87,13 @@ const AboutUs = () => {
             </a>
 
           </div>
-          
         </div>
         <br />
         <br />
         <br />
         <br />
         <br />
+        </center>
         </div>
         <br />
         <br />
@@ -383,11 +386,10 @@ const Wrapper = styled.div`
   .jumbotron {
     background: #fff5e5;
     height: 200px;
-    padding-top:100px;
     z-index : 1
   }
   .jumbotron1 {
-    height: 200px;
+    height: 300px;
   }
 
   .heading {
