@@ -17,7 +17,9 @@ const FAQ = () => {
   const [openEight, setOpenEight] = useState(false);
   return (
     <div>
+      <header>
       <NavbarComponent />
+      </header>
       <Wrapper>
         <div>
           <div className="jumbotron">
@@ -459,7 +461,7 @@ const Wrapper = styled.div`
 
   /* Get App */
   .get-app {
-    margin-top: 340px;
+    margin-top: 100px;
     width: 100%;
     height: 400px;
     background: #fff5e5;
@@ -537,7 +539,7 @@ const Wrapper = styled.div`
     width: 70px;
     height: 40px;
     color: white;
-    margin-top: -0.5px;
+    margin-top: -8px;
   }
   .textfield {
     width: 50%;

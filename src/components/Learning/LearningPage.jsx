@@ -20,9 +20,10 @@ const LearningPage = () => {
           }}>
           <p data-aos="zoom-in-down" data-aos-duration="1000">
             FREE <span>Coding</span> Certification | (Age 6-18){" "}
-            <i style={{ color: "pink", marginLeft: "20px" }} class="fas fa-arrow-right"></i>
+            <i style={{ color: "pink", marginLeft: "20px" }} class="fas fa-arrow-right"> </i>
+            <LearningModal />
           </p>
-          <LearningModal />
+          
         </div>
 
         <br />

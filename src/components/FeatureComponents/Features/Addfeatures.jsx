@@ -352,6 +352,10 @@ const Wrapper = styled.div`
     margin-right:-200px;
   }
 
+  .get-app {
+    margin-top:150px;
+  }
+
   @media (max-width: 495px) {
     .live {
       margin-top: 10px;

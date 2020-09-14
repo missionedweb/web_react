@@ -9,7 +9,9 @@ import Testimonials from "../Testimonials";
 const Counselling = () => {
   return (
     <div>
+      <header>
       <NavbarComponent />
+      </header>
       <Wrapper>
         <div>
           <div className="jumbotron">
@@ -154,6 +156,7 @@ const Wrapper = styled.div`
     color: white;
     box-shadow: 2px 2px 5px black;
   }
+
   
   /* Testimonials*/
   .read-all {
@@ -862,8 +865,21 @@ const Wrapper = styled.div`
     margin-left: 15%;
     color: #7d7987;
   }
+  .download {
+    background: #fb8f1d;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    padding-left: -200px;
+    align-items: center;
+    padding: 10px;
+    color: #ffffff;
+  }
+  
   .buttonIn {
     display: flex;
+    
   }
 
   #phone {
@@ -875,10 +891,18 @@ const Wrapper = styled.div`
     width: 70px;
     height: 40px;
     color: white;
-    margin-top: -0.5px;
+    margin-top: -20px;
+  }
+  .cta-text {
+    margin-left:20px;
   }
   .textfield {
     width: 50%;
+  }
+  .footer-section {
+    background: #151414;
+    position: relative;
+    padding-left: 200px;
   }
 
   /*MEDIA QUERIES*/
