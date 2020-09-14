@@ -37,6 +37,13 @@ const AboutUs = () => {
             
 
           </div>
+          <div className="heading2">
+            <a href="/class9" style = {{padding : "15px" , color : "black" , fontWeight : "bold" , fontSize : "29px" }}>CBSE</a>
+            <a href="/class9ICSE" style = {{padding : "15px" , color : "black" ,fontWeight : "none" , fontSize : "29px"}}>ICSE</a>
+          </div>
+          <br/>
+          <br/>
+          
           
         <div>
         
@@ -45,7 +52,7 @@ const AboutUs = () => {
               data-aos="zoom-in-up"
               data-aos-duration={2500}
             >
-              Class  9
+              Class  9 CBSE
              
             </div>
             
@@ -1836,5 +1843,8 @@ const Wrapper = styled.div`
     #phone {
       width: 200px;
     }
+  }
+  .heading2 {
+    text-align: center;
   }
 `;

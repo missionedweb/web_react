@@ -38,8 +38,8 @@ const AboutUs = () => {
 
           </div>
           <div className="heading2">
-            <a href="/class11C" style = {{padding : "15px" , color : "black" , fontWeight : "bold" , fontSize : "29px" }}>CBSE</a>
-            <a href="/class11CICSE" style = {{padding : "15px" , color : "black" ,fontWeight : "none" , fontSize : "29px"}}>ICSE</a>
+            <a href="/class11C" style = {{padding : "15px" , color : "black" , fontSize : "29px" }}>CBSE</a>
+            <a href="/class11CICSE" style = {{padding : "15px" , color : "black" ,fontWeight : "bold" , fontSize : "29px"}}>ICSE</a>
           </div>
           <br/>
           <br/>
@@ -51,7 +51,7 @@ const AboutUs = () => {
               data-aos="zoom-in-up"
               data-aos-duration={2500}
             >
-              Class  11 Commerce CBSE
+              Class  11 Commerce ICSE
              
             </div>
             

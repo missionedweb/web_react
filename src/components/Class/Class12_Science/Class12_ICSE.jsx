@@ -38,8 +38,8 @@ const AboutUs = () => {
 
           </div>
           <div className="heading2">
-            <a href="/class11C" style = {{padding : "15px" , color : "black" , fontWeight : "bold" , fontSize : "29px" }}>CBSE</a>
-            <a href="/class11CICSE" style = {{padding : "15px" , color : "black" ,fontWeight : "none" , fontSize : "29px"}}>ICSE</a>
+            <a href="/class12S" style = {{padding : "15px" , color : "black" , fontSize : "29px" }}>CBSE</a>
+            <a href="/class12SICSE" style = {{padding : "15px" , color : "black" ,fontWeight : "bold" , fontSize : "29px"}}>ICSE</a>
           </div>
           <br/>
           <br/>
@@ -51,14 +51,14 @@ const AboutUs = () => {
               data-aos="zoom-in-up"
               data-aos-duration={2500}
             >
-              Class  11 Commerce CBSE
+              Class  12 Science ICSE
              
             </div>
             
           
 
           </div>
-          <div className="container ">
+           <div className="container ">
               <div className="row ">
               
               <div
@@ -292,7 +292,6 @@ const AboutUs = () => {
                 </div>
         <br/>
         <br/>
-
         <div>
             <img src={place1} className = "img-right" alt="picture" />
             </div>
@@ -432,7 +431,7 @@ const AboutUs = () => {
                         <div class="col-md-6 how-img">
                             <img src="https://image.ibb.co/dDW27U/Work_Section2_freelance_img1.png" class="rounded-circle img-fluid" alt=""/>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 ml-10">
                             <h4>Find rewarding projects</h4>
                                         <h4 class="subheading">GetLance is a great place to find more clients, and to run and grow your own freelance business.</h4>
                         <p class="text-muted">Freedom to work on ideal projects. On GetLance, you run your own business and choose your own clients and projects. Just complete your profile and we’ll highlight ideal jobs. Also search projects, and respond to client invitations.
@@ -559,7 +558,6 @@ const Wrapper = styled.div`
   width: 600px;
 }
 
-
   .heading {
     text-align: center;
     font-weight: bold;
@@ -573,6 +571,9 @@ const Wrapper = styled.div`
     font-size: 69px;
     line-height: 80px;
     color: #202336;
+  }
+  .heading2 {
+    text-align: center;
   }
   a {
     cursor: pointer;
@@ -1843,8 +1844,5 @@ const Wrapper = styled.div`
     #phone {
       width: 200px;
     }
-  }
-  .heading2 {
-    text-align: center;
   }
 `;

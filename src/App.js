@@ -27,6 +27,15 @@ import Class11_Commerce from "./components/Class/Class11_Commerce/Class11_Commer
 import Class11_Science from "./components/Class/Class11_Science/Class11_Science"
 import Class12_Commerce from "./components/Class/Class12_Commerce/Class12_Commerce"
 import Class12_Science from "./components/Class/Class12_Science/Class12_Science"
+import Class12_ICSE from "./components/Class/Class12_Science/Class12_ICSE"
+import Class12_CICSE from "./components/Class/Class12_Commerce/Class12_CICSE"
+import Class11_SICSE from "./components/Class/Class11_Science/Class_11SICSE"
+import Class11_CICSE from "./components/Class/Class11_Commerce/Class11_CICSE"
+import Class10ICSE  from "./components/Class/Class10/Class10ICSE"
+import Class9ICSE  from "./components/Class/Class9/Class9ICSE"
+import Class8ICSE  from "./components/Class/Class8/Class8ICSE"
+
+ 
 
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
@@ -87,6 +96,13 @@ function App({ setCurrentUser, currentUser }) {
         <Route path="/class11S" component={Class11_Science} />
         <Route path="/class12C" component={Class12_Commerce} />
         <Route path="/class12S" component={Class12_Science} />
+        <Route path="/class12SICSE" component={Class12_ICSE} />
+        <Route path="/class12CICSE" component={Class12_CICSE} />
+        <Route path="/class11SICSE" component={Class11_SICSE} />
+        <Route path="/class11CICSE" component={Class11_CICSE} />
+        <Route path="/class10ICSE" component={Class10ICSE} />
+        <Route path="/class9ICSE" component={Class9ICSE} />
+        <Route path="/class8ICSE" component={Class8ICSE} />
       </Switch>
     </div>
   );

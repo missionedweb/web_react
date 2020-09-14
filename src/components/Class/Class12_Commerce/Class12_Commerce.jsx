@@ -39,13 +39,19 @@ const AboutUs = () => {
           </div>
           
         <div>
+        <div className="heading2">
+            <a href="/class12C" style = {{padding : "15px" , color : "black" , fontWeight : "bold" , fontSize : "29px" }}>CBSE</a>
+            <a href="/class12CICSE" style = {{padding : "15px" , color : "black" ,fontWeight : "none" , fontSize : "29px"}}>ICSE</a>
+          </div>
+          <br/>
+          <br/>
         
           <div
               className="heading"
               data-aos="zoom-in-up"
               data-aos-duration={2500}
             >
-              Class  12 Commerce
+              Class  12 Commerce CBSE
              
             </div>
             
@@ -1835,5 +1841,8 @@ const Wrapper = styled.div`
     #phone {
       width: 200px;
     }
+  }
+  .heading2 {
+    text-align: center;
   }
 `;

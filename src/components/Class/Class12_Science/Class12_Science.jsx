@@ -37,6 +37,12 @@ const AboutUs = () => {
             
 
           </div>
+          <div className="heading2">
+            <a href="/class12S" style = {{padding : "15px" , color : "black" , fontWeight : "bold" , fontSize : "29px" }}>CBSE</a>
+            <a href="/class12SICSE" style = {{padding : "15px" , color : "black" ,fontWeight : "none" , fontSize : "29px"}}>ICSE</a>
+          </div>
+          <br/>
+          <br/>
           
         <div>
         
@@ -45,7 +51,7 @@ const AboutUs = () => {
               data-aos="zoom-in-up"
               data-aos-duration={2500}
             >
-              Class  12 Science
+              Class  12 Science CBSE
              
             </div>
             
@@ -565,6 +571,9 @@ const Wrapper = styled.div`
     font-size: 69px;
     line-height: 80px;
     color: #202336;
+  }
+  .heading2 {
+    text-align: center;
   }
   a {
     cursor: pointer;
