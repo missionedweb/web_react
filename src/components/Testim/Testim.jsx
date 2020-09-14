@@ -11,7 +11,9 @@ import GetTheApp from "../GetTheApp"
 const Testim = () => {
   return (
     <div>
+      <header>
       <NavbarComponent />
+      </header>
       <Wrapper>
         <div>
           <div className="jumbotron">

@@ -9,7 +9,9 @@ import Testimonials from "../Testimonials";
 const Counselling = () => {
   return (
     <div>
+      <header>
       <NavbarComponent />
+      </header>
       <Wrapper>
         <div>
           <div className="jumbotron">

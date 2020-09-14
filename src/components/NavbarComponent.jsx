@@ -44,7 +44,7 @@ function NavbarComponent({ currentUser }) {
 	            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> Classes <b class="caret"></b></a>
 	            <ul class="dropdown-menu multi-column columns-2">
 		            <div class="row">
-			            <div class="col-sm-3 ml-2 " >
+			            <div class="col-sm-4 ml-2 " >
 				            <ul class="multi-column-dropdown">
                     <a href="/class8" class="dropdown-item">Class 8</a>
                     <a href="/class9" class="dropdown-item">Class 9</a>
@@ -53,7 +53,7 @@ function NavbarComponent({ currentUser }) {
 					            
 				            </ul>
 			            </div>
-			            <div class="col-sm-4 ">
+			            <div class="col-sm-7 ">
 				            <ul class="multi-column-dropdown">
                       
                       <a href="/class11S" class="dropdown-item">Class 11 Science</a>
@@ -113,28 +113,37 @@ function NavbarComponent({ currentUser }) {
 	            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> MORE <b class="caret"></b></a>
 	            <ul class="dropdown-menu multi-column columns-2">
 		            <div class="row">
-			            <div class="col-sm-3">
+			            
+                  <div class="col-sm-2">
 				            <ul class="multi-column-dropdown">
-                    <a href="/aboutus" class="dropdown-item">About Us</a>
-                    <a href="/testim" class="dropdown-item">Testimonials</a>
+                    <a href="/aboutus" class="dropdown-item">AboutUs</a>
+				            </ul>
+			            </div>
+                  
+                  <div class="col-sm-2">
+				            <ul class="multi-column-dropdown">
+                    <a href="/faq" class="dropdown-item">FAQ's</a>
+				            </ul>
+			            </div>
+                  <div class="col-sm-2">
+				            <ul class="multi-column-dropdown">
+                    <a href="/features" class="dropdown-item">Features</a>
+				            </ul>
+			            </div>
+                  <div class="col-sm-3">
+				            <ul class="multi-column-dropdown">
+                    <a href="/counselling" class="dropdown-item">Counselling</a>
+                    
+                    
                     
 					            
 				            </ul>
 			            </div>
 			            <div class="col-sm-3">
 				            <ul class="multi-column-dropdown">
-                    <a href="/features" class="dropdown-item">Features</a>
+                    <a href="/testim" class="dropdown-item">Testimonials</a>
+                    
                      
-				            </ul>
-			            </div>
-                  <div class="col-sm-3">
-				            <ul class="multi-column-dropdown">
-                    <a href="/counselling" class="dropdown-item">Counselling</a>
-				            </ul>
-			            </div>
-                  <div class="col-sm-3">
-				            <ul class="multi-column-dropdown">
-                    <a href="/faq" class="dropdown-item">FAQ's</a>
 				            </ul>
 			            </div>
 		            </div>
