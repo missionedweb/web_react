@@ -74,15 +74,17 @@ function NavbarComponent({ currentUser }) {
 		            <div class="row">
 			            <div class="col-sm-3">
 				            <ul class="multi-column-dropdown">
-                    <a href="#" class="dropdown-item">NEET</a>
+                   
+                    <a href="#" class="dropdown-item">InCHO</a>
                        <a href="#" class="dropdown-item">NTSE</a>
                        <a href="#" class="dropdown-item">CBSE</a>
-                       <a href="#" class="dropdown-item">ICSE</a>
+                       
                        <a href="#" class="dropdown-item">BITSAT</a>
+                       <a href="#" class="dropdown-item">NSTSE</a>
 					            
 				            </ul>
 			            </div>
-			            <div class="col-sm-3">
+			            <div class="col-sm-4">
 				            <ul class="multi-column-dropdown">
                     <a href="#" class="dropdown-item">JEE MAINS</a>
                       <a href="#" class="dropdown-item">JEE ADVANCED</a>
@@ -91,20 +93,23 @@ function NavbarComponent({ currentUser }) {
                       <a href="#" class="dropdown-item">SRMJEE</a>
 				            </ul>
 			            </div>
+                  
+                  <div class="col-sm-2">
+				            <ul class="multi-column-dropdown">
+                    
+                      <a href="#" class="dropdown-item">RMO</a>
+                      <a href="#" class="dropdown-item">NSO</a>
+                      <a href="#" class="dropdown-item">ICSE</a>
+                      <a href="#" class="dropdown-item">NEET</a>
+                      
+				            </ul>
+			            </div>
                   <div class="col-sm-3">
 				            <ul class="multi-column-dropdown">
                     <a href="#" class="dropdown-item">KVPY</a>
                       <a href="#" class="dropdown-item">NSEJS</a>
                       <a href="#" class="dropdown-item">NSO</a>
                       <a href="#" class="dropdown-item">InPHO</a>
-				            </ul>
-			            </div>
-                  <div class="col-sm-3">
-				            <ul class="multi-column-dropdown">
-                    <a href="#" class="dropdown-item">InCHO</a>
-                      <a href="#" class="dropdown-item">RMO</a>
-                      <a href="#" class="dropdown-item">NSO</a>
-                      <a href="#" class="dropdown-item">NSTSE</a>
 				            </ul>
 			            </div>
 		            </div>
