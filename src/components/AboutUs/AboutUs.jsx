@@ -41,7 +41,12 @@ const AboutUs = () => {
             
 
           
-        <center>
+        
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         
         
         <iframe
@@ -63,8 +68,8 @@ const AboutUs = () => {
           <h6 className="learning-txt" style={{ margin: "auto" }}>
             {" "}
             The environment of learning we provide  is nurtured by the experts. The guidance that  
-            <br/>you are seeking is from the IITians. They will provide you the enhanced way of teaching 
-            <br/> You  will get the quality as well as playful atmosphere.
+            you are seeking is from the IITians. They will provide you the enhanced way of teaching 
+            You  will get the quality as well as playful atmosphere.
           </h6>
           <br />
           <br />
@@ -79,13 +84,13 @@ const AboutUs = () => {
             </a>
 
           </div>
+          
         </div>
         <br />
         <br />
         <br />
         <br />
         <br />
-        </center>
         </div>
         <br />
         <br />

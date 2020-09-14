@@ -18,14 +18,14 @@ import $ from 'jquery';
 function NavbarComponent({ currentUser }) {
   window.addEventListener("scroll", function () {
     let header = document.querySelector("header");
-    
+    header.classList.toggle("sticky", window.scrollY > 150);
   });
   return (
     <>
     
       <div id="header" className="fixed-top" style={{boxShadow:"0.5px 0.5px 9px 0.5px #fff5e5"}}>
       <div class="row">
-      <Navbar center bg="white" expand="xl" className="navbar-expand-xl ">
+      <Navbar center bg="transparent" expand="xl" className="navbar-expand-xl ">
         <Navbar.Brand href="/" className="ml-8">
           <img className="logo mt-n4 mr-auto" src={NavigationLogo} alt="logo" />
           <span className="missioned-nav font-weight-bold">
