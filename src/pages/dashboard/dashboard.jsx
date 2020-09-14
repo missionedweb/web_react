@@ -1,12 +1,13 @@
 import React from 'react';
 import './dashboard.styles.scss';
+import SideBar from '../../components/Sidebar/Sidebar';
 
 function Dashboard() {
   return (
-    <React.Fragment>
-      <h1>Dashboard</h1>
-    </React.Fragment>
-  );
-}
+      <>
+        <SideBar />
+      </>
+    );
+  }
 
 export default Dashboard;
