@@ -93,7 +93,7 @@ const GetTheApp = () => {
                 Join
               </button>
 
-              <br />
+              
             </div>
           </div>
           <img

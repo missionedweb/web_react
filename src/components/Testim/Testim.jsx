@@ -233,7 +233,7 @@ const Wrapper = styled.div`
     line-height: 80px;
     color: #202336;
   }
-
+  
   .testimonials-heading1 {
     
   }
@@ -996,6 +996,7 @@ const Wrapper = styled.div`
     width: 100%;
     height: 400px;
     background: #fff5e5;
+    margin-top:150px;
   }
   .app {
     margin-top: 20px;
@@ -1026,9 +1027,8 @@ const Wrapper = styled.div`
     border-radius: 8px;
     font-weight: 600;
     font-size: 16px;
-    padding: 10px;
+    padding: 8px 15;
     align-items: center;
-    padding: 20px;
     color: #ffffff;
   }
   .download:hover {
@@ -1068,7 +1068,7 @@ const Wrapper = styled.div`
     width: 70px;
     height: 40px;
     color: white;
-    margin-top: -0.5px;
+    margin-top: -8px;
   }
   .textfield {
     width: 50%;

@@ -124,7 +124,7 @@ export default function LearningModal() {
         type="button"
         //onClick={handleOpen}
         className={classes.button}
-        style={{ outline: "none", marginLeft: "20px", background: "#FB8F1D", color: "white" }}>
+        style={{ outline: "none", marginLeft: "20px", background: "#FB8F1D", color: "white", marginTop: "-10px" }}>
         Register
       </Button>
 
