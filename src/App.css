@@ -33,11 +33,13 @@ body {
   z-index: 1;
   background: #ffffff00;
 } */
+
 .navbar-default{
   transition:500ms ease;
   background:transparent;
   width: 100%;
 }
+
 .navbar-default.scrolled{
   background: lightyellow;
   width: 100%;

@@ -365,7 +365,7 @@ const AboutUs = () => {
               <br />
               <br />
               <div
-                className="col-lg-4 center col-md-6 col-12 "
+                className="col-lg-4 center col-md-6 col-12  "
                 data-aos="flip-right"
                 data-aos-duration={1500}
               >

@@ -177,10 +177,11 @@ function NavbarComponent({ currentUser }) {
             </Link>
           ) : (
             <Form inline className="mega-link p-2" >
-              <Login className="btn login-btn mr-2"/>
+              <Login/>
               {/* <Link to="/login" className="btn login-btn mr-2" role="button" style={{  width: 110 , height: 46 , textDecoration: "none" , borderRadius: "10px"}}>
                 Login
               </Link> */}
+
               <Register className="btn register-btn pr-2" />
             </Form>
           )}

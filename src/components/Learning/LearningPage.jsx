@@ -10,7 +10,7 @@ AOS.init();
 const LearningPage = () => {
   return (
     <div>
-      <div>
+      <div className="container-fluid" style={{width : "100%"}}>
         <div
           className="text-center teach"
           style={{
@@ -18,12 +18,23 @@ const LearningPage = () => {
             flexDirection: "row",
             justifyContent: "center",
           }}>
+            
+          
+          <div className="row">
           <p data-aos="zoom-in-down" data-aos-duration="1000">
             FREE <span>Coding</span> Certification | (Age 6-18){" "}
-            <i style={{ color: "pink", marginLeft: "20px" }} class="fas fa-arrow-right"> </i>
-            <LearningModal />
+            
+            
           </p>
-          
+            </div>
+          <div className="row text-center">
+            <div className="col-sm-3"><i style={{ color: "pink", marginLeft: "20px" }} class="fas fa-arrow-right"> </i>
+            
+            </div>
+            <div className="col-sm-3">
+            <LearningModal />
+            </div>
+            </div>
         </div>
 
         <br />
