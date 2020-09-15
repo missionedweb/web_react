@@ -26,7 +26,7 @@ const trustedContent = () => {
             <div className="container">
               <div className="row">
                 <div className="col-md-12">
-                  <h1 className="live">Trusted Content</h1>
+                  <h1 className="live" style = {{ fontSize : "33px" }}>Trusted Content</h1>
                 </div>
               </div>
             </div>
@@ -257,6 +257,7 @@ const Wrapper = styled.div`
     font-size: 60px;
     line-height: 80px;
     color: #202336;
+    
   }
   h2 {
     font-weight: 100px;
@@ -473,9 +474,7 @@ const Wrapper = styled.div`
       padding-top: 10%;
       font-size: calc(2rem + 3vw);
     }
-    .live {
-      margin-top: 15px;
-    }
+    
     #h1 {
       height: 20vh;
     }

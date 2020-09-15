@@ -25,7 +25,7 @@ const liveInteractive=()=>{
     <div className="container">
       <div className="row">
         <div className="col-md-12">
-          <h1 className="live">Live and Interactive</h1>
+          <h1 className="live" style = {{ fontSize : "33px" }}>Live and Interactive</h1>
         </div>
       </div>
     </div>
@@ -412,10 +412,7 @@ body{
     padding-top: 10%;
     font-size: calc(2rem + 3vw);
   }
-  .live
-  {
-    margin-top: 15px;
-  }
+ 
   #h1{
       height: 20vh;
   }

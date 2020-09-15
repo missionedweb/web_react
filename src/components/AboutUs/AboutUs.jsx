@@ -399,6 +399,9 @@ const Wrapper = styled.div`
     line-height: 80px;
     color: #202336;
   }
+   h3 {
+     margin-top:-30px;
+   }
   .heading1 {
     text-align: center;
     font-weight: bold;
@@ -419,6 +422,23 @@ const Wrapper = styled.div`
   .link:hover {
     color: #ffeba7;
   }
+  .download {
+    background: #fb8f1d;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    padding-left: -200px;
+    align-items: center;
+    padding: 10px;
+    color: #ffffff;
+  }
+  .download:hover {
+    box-shadow: 2px 2px 5px black;
+    color: white;
+  }
+
+  
   .over-hide {
     overflow: hidden;
   }
@@ -1471,19 +1491,13 @@ const Wrapper = styled.div`
     padding: 40px;
   }
 
-  .download {
-    background: #fb8f1d;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 10px;
-    align-items: center;
-    padding: 20px;
-    color: #ffffff;
-  }
-  .download:hover {
-    box-shadow: 2px 2px 5px black;
+    .joins {
+    background: #fa9917;
+    border-radius: 0 5px 5px 0;
+    width: 70px;
+    height: 40px;
+    color: white;
+    margin-top: -8px;
   }
   .books {
     float: right;
@@ -1500,7 +1514,7 @@ const Wrapper = styled.div`
     width: 70px;
     height: 40px;
     color: white;
-    margin-top: -0.5px;
+    margin-top: -8px;
   }
 
   .counselling {

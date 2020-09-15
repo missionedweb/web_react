@@ -32,7 +32,7 @@ const LearningPage = () => {
               <div className="row"
               >
                 <div className="col-sm-3">
-                <i style={{ color: "pink", marginLeft: "20px" }} class="fas fa-arrow-right"> </i>
+                <i style={{ color: "pink", marginLeft: "30px" }} class="fas fa-arrow-right"> </i>
                 
             
             </div>

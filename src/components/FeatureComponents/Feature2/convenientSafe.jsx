@@ -25,7 +25,7 @@ const convenientSafe = () => {
             <div className="container">
               <div className="row">
                 <div className="col-md-12">
-                  <h1 className="live"> Convinient and Safe</h1>
+                  <h1 className="live" style = {{ fontSize : "33px" }}> Convinient and Safe</h1>
                 </div>
               </div>
             </div>
@@ -471,9 +471,7 @@ const Wrapper = styled.div`
       padding-top: 10%;
       font-size: calc(2rem + 3vw);
     }
-    .live {
-      margin-top: 15px;
-    }
+    
     #h1 {
       height: 20vh;
     }
