@@ -12,7 +12,7 @@ const LearningPage = () => {
     <div>
       <div className="" style={{width : "100%"}}>
         <div
-          className="text-center teach"
+          className="row text-center teach"
           style={{
             display: "flex",
             flexDirection: "row",
@@ -28,12 +28,25 @@ const LearningPage = () => {
           </p>
             </div>
           <div className="row text-center">
-            <div className="col-sm-3"><i style={{ color: "pink", marginLeft: "20px" }} class="fas fa-arrow-right"> </i>
+            <div className="col-sm-6">
+              <div className="row"
+              >
+                <div className="col-sm-3">
+                <i style={{ color: "pink", marginLeft: "20px" }} class="fas fa-arrow-right"> </i>
+                
             
             </div>
+            
             <div className="col-sm-3">
             <LearningModal />
             </div>
+                    
+                    
+              </div>
+              
+            
+            </div>
+            
             </div>
         </div>
 
