@@ -203,10 +203,8 @@ h1 {
     font-size: 5vw;
   }
 }
-@media (max-width: 1414px) {
-  .img-section-left {
-    display: none;
-  }
+@media (max-width: 700px) {
+  
 }
 @media (max-width: 1414px) {
   .learning-page {
@@ -230,8 +228,11 @@ h1 {
     margin-top: 170px;
   }
 }
-@media (max-width: 1414px) {
+@media (max-width: 500px) {
   .img-section-right {
+    display: none;
+  }
+  .img-section-left {
     display: none;
   }
 }

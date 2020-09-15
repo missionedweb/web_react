@@ -29,9 +29,9 @@ const Counselling = () => {
           <br />
           <br />
           <br />
-          <div className="container">
+          <div className="container ml-auto mr-auto">
             <div>
-              <div data-aos="fade-down" data-aos-duration={1000} style={{ margin: "auto" }}>
+              <div data-aos="fade-down" data-aos-duration={1000}>
                 <img src={Group67} className="right-img" alt="" />
               </div>
               <div className="form-display col-md-5" data-aos="zoom-in" data-aos-duration={1000}>

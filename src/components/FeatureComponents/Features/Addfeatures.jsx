@@ -43,7 +43,7 @@ function Addfeatures() {
                 data-aos-duration={1000}
                 style={{ margin: "auto" }}
               >
-                <img src={img1} style ={{marginRight: "600px"}} className = "img-section-left" alt="picture" />
+                <img src={img1} style ={{marginRight: "600px" , width : "50%"}} className = "img-section-left" alt="picture" />
               </div>
               <div
                 className="col-md-5 col-12"
@@ -429,6 +429,14 @@ const Wrapper = styled.div`
 
   .get-app{
     margin-top:200px;
+  }
+  @media (max-width: 500px) {
+    .img-section-right {
+      display: none;
+    }
+    .img-section-left {
+      display: none;
+    }
   }
 }
 `
