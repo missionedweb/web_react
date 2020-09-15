@@ -119,7 +119,6 @@ const Wrapper = styled.div`
   .right-img {
     float: right;
     margin-top: 10px;
-    margin-right: -200px;
   }
   .form-display {
     background: #ffffff;
@@ -129,7 +128,6 @@ const Wrapper = styled.div`
     margin-top: 50px;
     padding: 20px;
     padding-right: 30px;
-    margin-left: 150px;
   }
   .message {
     font-size: 34px;

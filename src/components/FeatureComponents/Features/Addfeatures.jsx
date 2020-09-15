@@ -430,7 +430,7 @@ const Wrapper = styled.div`
   .get-app{
     margin-top:200px;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 900px) {
     .img-section-right {
       display: none;
     }
