@@ -10,7 +10,7 @@ AOS.init();
 const LearningPage = () => {
   return (
     <div>
-      <div className="container-fluid" style={{width : "100%"}}>
+      <div className="" style={{width : "100%"}}>
         <div
           className="text-center teach"
           style={{

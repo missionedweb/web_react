@@ -360,10 +360,6 @@ const AboutUs = () => {
               </div>
               <br />
               <br />
-              <br />
-              <br />
-              <br />
-              <br />
               <div
                 className="col-lg-4 center col-md-6 col-12 "
                 data-aos="flip-right"
