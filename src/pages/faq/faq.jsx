@@ -27,6 +27,7 @@ const FAQ = () => {
               className="heading"
               data-aos="zoom-in-up"
               data-aos-duration={2500}
+              style = {{ fontSize : "33px" }}
             >
               Frequently Asked Questions(FAQ)
             </div>
@@ -301,7 +302,7 @@ const Wrapper = styled.div`
   }
   .jumbotron {
     background: #fff5e5;
-    height: 200px;
+    height: 300px;
     padding-top: 100px;
   }
   .heading {
