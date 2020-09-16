@@ -124,7 +124,7 @@ export default function LearningModal() {
         type="button"
         data-aos="zoom-in-up"
         data-aos-duration="1500"
-        //onClick={handleOpen}
+        // onClick={handleOpen}
         className={classes.button}
         style={{ outline: "none", borderRadius: "8px" , paddingTop: "13px", paddingBottom: "13px" , marginLeft: "20px", background: "#FB8F1D", color: "white", marginTop: "3px" }}>
         Register

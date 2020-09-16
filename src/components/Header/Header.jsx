@@ -119,7 +119,7 @@ function Header() {
           <div
             className=" contact d-flex justify-content-center"
             style={{ marginLeft: "5%", marginRight: "5%" }}>
-            <div className="buttonIn " data-aos="zoom-out" data-aos-duration="500">
+            <div className="buttonIn " data-aos="zoom-out" data-aos-duration="500" style={{ height : "33px", width :"300px", borderRadius : "5px"}}>
               <MuiPhoneNumber
                 defaultCountry={"in"}
                 fullWidth
@@ -128,6 +128,7 @@ function Header() {
                 id="phone"
                 name="phone"
                 value={value}
+                style={{border : "1px solid black" , borderRadius : "5px 0px 0px 5px"}}
               />
 
               <button className="joins" onClick={alertModal}>
