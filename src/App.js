@@ -11,7 +11,7 @@ import liveInteractive from "./components/FeatureComponents/Feature4/liveInterac
 import personalizedLearning from "./components/FeatureComponents/Feature5/personalizedLearning";
 import trustedContent from "./components/FeatureComponents/Feature6/trustedContent";
 import Pricing from "./components/Price/Pricing";
-import AboutUs from "./components/AboutUs/AboutUs"
+import AboutUs from "./components/AboutUs/AboutUs";
 import Counselling from "./components/Counselling/counselling";
 import contactUs from "./components/contactUs/contactUs";
 import Faq from "./pages/faq/faq";
@@ -20,23 +20,20 @@ import AllImports from "./components/AllImports";
 import cards from "./components/cards";
 
 import Addfeatures from "./components/FeatureComponents/Features/Addfeatures";
-import Class8 from "./components/Class/Class8/Class8"
-import Class9 from "./components/Class/Class9/Class9"
-import Class10 from "./components/Class/Class10/Class10"
-import Class11_Commerce from "./components/Class/Class11_Commerce/Class11_Commerce"
-import Class11_Science from "./components/Class/Class11_Science/Class11_Science"
-import Class12_Commerce from "./components/Class/Class12_Commerce/Class12_Commerce"
-import Class12_Science from "./components/Class/Class12_Science/Class12_Science"
-import Class12_ICSE from "./components/Class/Class12_Science/Class12_ICSE"
-import Class12_CICSE from "./components/Class/Class12_Commerce/Class12_CICSE"
-import Class11_SICSE from "./components/Class/Class11_Science/Class_11SICSE"
-import Class11_CICSE from "./components/Class/Class11_Commerce/Class11_CICSE"
-import Class10ICSE  from "./components/Class/Class10/Class10ICSE"
-import Class9ICSE  from "./components/Class/Class9/Class9ICSE"
-import Class8ICSE  from "./components/Class/Class8/Class8ICSE"
-
- 
-
+import Class8 from "./components/Class/Class8/Class8";
+import Class9 from "./components/Class/Class9/Class9";
+import Class10 from "./components/Class/Class10/Class10";
+import Class11_Commerce from "./components/Class/Class11_Commerce/Class11_Commerce";
+import Class11_Science from "./components/Class/Class11_Science/Class11_Science";
+import Class12_Commerce from "./components/Class/Class12_Commerce/Class12_Commerce";
+import Class12_Science from "./components/Class/Class12_Science/Class12_Science";
+import Class12_ICSE from "./components/Class/Class12_Science/Class12_ICSE";
+import Class12_CICSE from "./components/Class/Class12_Commerce/Class12_CICSE";
+import Class11_SICSE from "./components/Class/Class11_Science/Class_11SICSE";
+import Class11_CICSE from "./components/Class/Class11_Commerce/Class11_CICSE";
+import Class10ICSE from "./components/Class/Class10/Class10ICSE";
+import Class9ICSE from "./components/Class/Class9/Class9ICSE";
+import Class8ICSE from "./components/Class/Class8/Class8ICSE";
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 
@@ -72,8 +69,16 @@ function App({ setCurrentUser, currentUser }) {
   return (
     <div>
       <Switch>
-        <Route exact path="/" component={AllImports} />
-
+        <Route
+          exact
+          path="/"
+          render={() => (currentUser ? <Redirect to="/dashboard" /> : <AllImports />)}
+        />
+        <Route
+          exact
+          path="/dashboard"
+          render={() => (currentUser ? <Dashboard /> : <Redirect to="/" />)}
+        />
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/feature1" component={engagingAssignments} />
         <Route path="/feature2" component={convenientSafe} />

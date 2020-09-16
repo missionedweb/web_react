@@ -25,6 +25,8 @@ import CustomButton from "./CustomButton";
 import CenteredGrid from "../Cards/index";
 import Course from "../Course/course";
 
+import { auth } from "../../firebase/firebase.utils";
+import { Button } from "react-bootstrap";
 const drawerWidth = 180;
 
 const useStyles = makeStyles((theme) => ({
@@ -142,6 +144,7 @@ function SideBar(props) {
 
   const drawer = (
     <div className={classes.sidebar}>
+      <Button onClick={() => auth.signOut()}>Sign Out</Button>
       <div className={classes.logo}>
         <div className={classes.title}>
           <div className={classes.design}>0</div>
