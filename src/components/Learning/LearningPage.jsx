@@ -32,14 +32,21 @@ const LearningPage = () => {
               <div className="row"
               >
                 <div className="col-sm-3">
-                <i style={{ color: "pink", marginLeft: "30px" }} class="fas fa-arrow-right"> </i>
+                <i style={{ color: "pink", marginLeft: "30px" , marginTop: "12px"}} class="fas fa-arrow-right"> </i>
                 
             
             </div>
             
             <div className="col-sm-3">
             <LearningModal />
+            
             </div>
+            <div className="col-md-6" data-aos="zoom-in-up" data-aos-duration="1500" >
+            {" "}
+            <a href="/">
+              <button className="border-0 learn-more-btn" style={{ width: "150px", paddingTop:"1px" , paddingBottom:"1px" ,marginLeft: "80px" , marginBottom: "1px"}}>Learn More</button>{" "}
+            </a>
+          </div>
                     
                     
               </div>

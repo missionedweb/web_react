@@ -122,9 +122,11 @@ export default function LearningModal() {
         variant="contained"
         color="secondary"
         type="button"
+        data-aos="zoom-in-up"
+        data-aos-duration="1500"
         //onClick={handleOpen}
         className={classes.button}
-        style={{ outline: "none", marginLeft: "40px", background: "#FB8F1D", color: "white", marginTop: "-10px" }}>
+        style={{ outline: "none", borderRadius: "8px" , paddingTop: "13px", paddingBottom: "13px" , marginLeft: "20px", background: "#FB8F1D", color: "white", marginTop: "3px" }}>
         Register
       </Button>
 
