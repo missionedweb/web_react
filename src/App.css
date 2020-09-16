@@ -41,7 +41,7 @@ body {
 }
 
 .navbar-default.scrolled{
-  background: lightyellow;
+  background: #FFF5E5;
   width: 100%;
 }
 
@@ -57,7 +57,7 @@ body {
   position: static;
 }
 .row .dropdown-item:hover{
-  background-color: lightgrey;
+  background-color: rgb(247, 247, 247);
 }
 .mega-area{
   position: absolute;

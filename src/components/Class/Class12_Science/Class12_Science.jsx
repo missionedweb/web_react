@@ -58,7 +58,7 @@ const AboutUs = () => {
           
 
           </div>
-           <div className="container ">
+           <div className="container-fluid">
               <div className="row ">
               
               <div
@@ -481,7 +481,7 @@ const AboutUs = () => {
         
         <hr/>
 
-        <div className="mt-5">
+        <div className="">
           <br></br>
           {/* <h1 class="main" data-aos="zoom-in-down" data-aos-duration="1500">
             <b>Testimonials</b>

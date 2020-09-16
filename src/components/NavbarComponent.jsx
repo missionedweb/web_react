@@ -28,7 +28,7 @@ function NavbarComponent({ currentUser }) {
   return (
     <>
     
-      <div id="header" className="fixed-top" style={{boxShadow:"0.5px 0.5px 9px 0.5px #fff5e5"}}>
+      <div id="header" className="fixed-top" >
       <div class="row">
       <Navbar center  expand="xl" className="navbar-expand-xl navbar-default" >
         <Navbar.Brand href="/" className="ml-8">

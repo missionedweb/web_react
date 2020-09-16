@@ -116,7 +116,7 @@ function Addfeatures() {
               </div>
             </div>
           </div>
-          <br />
+          <br /> 
           <br />
           <br />
           <br />
@@ -253,7 +253,7 @@ function Addfeatures() {
           <br />
           <br />
 
-        <div className="container ctcon">
+        <div className="container ml-auto mr-auto ctcon">
             <div className="row">
               <div
                 className="col-md-5 col-12"

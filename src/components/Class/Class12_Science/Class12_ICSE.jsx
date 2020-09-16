@@ -58,7 +58,7 @@ const AboutUs = () => {
           
 
           </div>
-           <div className="container ">
+           <div className="container-fluid">
               <div className="row ">
               
               <div
