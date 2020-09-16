@@ -117,47 +117,19 @@ function NavbarComponent({ currentUser }) {
 	            </ul>
 	        </li>
 
-          <li class="nav-item mr-auto ml-2">
-	            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> MORE <b class="caret"></b></a>
-	            <ul class="dropdown-menu multi-column columns-2">
-		            <div class="row">
-			            
-                  <div class="col-sm-2">
-				            <ul class="multi-column-dropdown">
-                    <a href="/aboutus" class="dropdown-item">AboutUs</a>
-				            </ul>
-			            </div>
-                  
-                  <div class="col-sm-2">
-				            <ul class="multi-column-dropdown">
-                    <a href="/faq" class="dropdown-item">FAQ's</a>
-				            </ul>
-			            </div>
-                  <div class="col-sm-2">
-				            <ul class="multi-column-dropdown">
-                    <a href="/features" class="dropdown-item">Features</a>
-				            </ul>
-			            </div>
-                  <div class="col-sm-3">
-				            <ul class="multi-column-dropdown">
-                    <a href="/counselling" class="dropdown-item">Counselling</a>
-                    
-                    
-                    
-					            
-				            </ul>
-			            </div>
-			            <div class="col-sm-3">
-				            <ul class="multi-column-dropdown">
-                    <a href="/testim" class="dropdown-item">Testimonials</a>
-                    
-                     
-				            </ul>
-			            </div>
-		            </div>
-	            </ul>
-	        </li>
-                
+          
+                <li class="nav-item">
+                <div class="dropdown">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> MORE <b class="caret"></b></a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a href="/aboutus" class="dropdown-item">AboutUs</a>
+                <a href="/faq" class="dropdown-item">FAQ's</a>
+                <a href="/features" class="dropdown-item">Features</a>
+                <a href="/counselling" class="dropdown-item">Counselling</a>
+                <a href="/testim" class="dropdown-item">Testimonials</a>
+                </div>
+                </div>
+                </li>
                 
                
                 <li class="nav-item mr-auto ml-2">
