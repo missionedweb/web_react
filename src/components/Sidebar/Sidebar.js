@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Drawer,
   Hidden,
@@ -9,48 +9,49 @@ import {
   ListItemText,
   Toolbar,
   Divider,
-} from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
-import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
-import { SideBarData } from './SideBarData';
-import { Dashboard as Dash } from './Dashboard';
+} from "@material-ui/core";
+import MenuIcon from "@material-ui/icons/Menu";
+import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
+import { makeStyles } from "@material-ui/core/styles";
+import { SideBarData } from "./SideBarData";
+import { Dashboard as Dash } from "./Dashboard";
 // import Courses from './Courses';
-import Resources from './Resources';
-import Referals from './Referals';
-import { Chat as Chats } from './Chat';
-import { Settings as Setting } from './Settings';
-import Upgrade from './Upgrade';
-import CustomButton from './CustomButton';
-import CenteredGrid from '../Cards/index';
+import Resources from "./Resources";
+import Referals from "./Referals";
+import { Chat as Chats } from "./Chat";
+import { Settings as Setting } from "./Settings";
+import Upgrade from "./Upgrade";
+import CustomButton from "./CustomButton";
+import CenteredGrid from "../Cards/index";
+import Course from "../Course/course";
 
 const drawerWidth = 180;
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
+    display: "flex",
   },
   drawer: {
-    marginLeft: '10px',
+    marginLeft: "10px",
 
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up("sm")]: {
       width: drawerWidth,
-      height: '100vh',
+      height: "100vh",
       flexShrink: 0,
     },
   },
   appBar: {
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up("sm")]: {
       width: `calc(100% - ${drawerWidth}px)`,
       marginLeft: drawerWidth,
     },
   },
   menuButton: {
-    [theme.breakpoints.up('md')]: {
-      display: 'none',
+    [theme.breakpoints.up("md")]: {
+      display: "none",
     },
-    position: 'fixed',
-    top: '10px',
+    position: "fixed",
+    top: "10px",
   },
   // necessary for content to be below app bar
   toolbar: theme.mixins.toolbar,
@@ -62,72 +63,72 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(3),
   },
   sidebar: {
-    display: 'flex',
-    flexDirection: 'column',
-    height: '100vh',
-    alignItems: 'center',
-    marginLeft: '0',
-    justifyContent: 'space-between',
+    display: "flex",
+    flexDirection: "column",
+    height: "100vh",
+    alignItems: "center",
+    marginLeft: "0",
+    justifyContent: "space-between",
   },
   logo: {
-    display: 'flex',
-    flexDirection: 'column',
-    flex: '0.4',
-    alignContent: 'center',
-    justifyContent: 'space-around',
-    marginBottom: '0px',
+    display: "flex",
+    flexDirection: "column",
+    flex: "0.4",
+    alignContent: "center",
+    justifyContent: "space-around",
+    marginBottom: "0px",
   },
   first: {
-    flex: '0.3',
+    flex: "0.3",
   },
   second: {
-    flex: '0.3',
-    paddingBottom: '8px',
+    flex: "0.3",
+    paddingBottom: "8px",
   },
   link: {
-    width: '100vh',
-    textDecoration: 'none',
-    padding: '10px',
-    paddingLeft: '0px',
+    width: "100vh",
+    textDecoration: "none",
+    padding: "10px",
+    paddingLeft: "0px",
     color: theme.palette.text.primary,
-    '&:hover': {
-      color: '#5E81F4',
+    "&:hover": {
+      color: "#5E81F4",
     },
   },
   title: {
-    display: 'flex',
-    padding: '16px',
+    display: "flex",
+    padding: "16px",
   },
   design: {
-    backgroundColor: '#5E81F4',
-    fontFamily: 'Playfair Display',
-    color: '#fff',
-    height: '48px',
-    width: '48px',
-    borderRadius: '12px',
-    paddingTop: '0px',
-    marginTop: '0px',
-    fontSize: '24px',
-    lineHeight: '32px',
-    fontStyle: 'normal',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#5E81F4",
+    fontFamily: "Playfair Display",
+    color: "#fff",
+    height: "48px",
+    width: "48px",
+    borderRadius: "12px",
+    paddingTop: "0px",
+    marginTop: "0px",
+    fontSize: "24px",
+    lineHeight: "32px",
+    fontStyle: "normal",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   },
   text: {
-    display: 'flex',
-    color: '#5E81F4',
-    fontFamily: 'Inter',
-    fontSize: '22px',
-    lineHeight: '27px',
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: '12px',
+    display: "flex",
+    color: "#5E81F4",
+    fontFamily: "Inter",
+    fontSize: "22px",
+    lineHeight: "27px",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: "12px",
   },
   button: {
-    display: 'flex',
-    justifyContent: 'center',
-    marginTop: '0px',
+    display: "flex",
+    justifyContent: "center",
+    marginTop: "0px",
   },
 }));
 
@@ -179,9 +180,8 @@ function SideBar(props) {
           color="inherit"
           edge="start"
           onClick={handleDrawerToggle}
-          className={classes.menuButton}
-        >
-          <MenuIcon style={{ fontSize: '30px' }} />
+          className={classes.menuButton}>
+          <MenuIcon style={{ fontSize: "30px" }} />
         </IconButton>
       </Toolbar>
       <Router>
@@ -194,8 +194,7 @@ function SideBar(props) {
               onClose={handleDrawerToggle}
               classes={{
                 paper: classes.drawerPaper,
-              }}
-            >
+              }}>
               {drawer}
             </Drawer>
           </Hidden>
@@ -205,8 +204,7 @@ function SideBar(props) {
                 paper: classes.drawerPaper,
               }}
               variant="permanent"
-              open
-            >
+              open>
               {drawer}
             </Drawer>
           </Hidden>
@@ -217,8 +215,11 @@ function SideBar(props) {
             <Route exact path="/dashboard">
               <Dash />
             </Route>
-            <Route path="/dashboard/courses">
+            <Route exact path="/dashboard/courses">
               <CenteredGrid />
+            </Route>
+            <Route path="/dashboard/courses/:courseid">
+              <Course />
             </Route>
             <Route path="/dashboard/resources">
               <Resources />
