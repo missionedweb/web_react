@@ -15,7 +15,7 @@ import Button from "@material-ui/core/Button";
 import logo from "../../../Images/logo.svg";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
-
+import { Link } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   button: {},
   modal: {
@@ -121,22 +121,25 @@ export default function Login() {
 
   return (
     <div>
-      <Button
+      <Link
         variant="outlined"
         type="button"
         onClick={handleOpen}
-        className={classes.button}
+        className="btn login-btn mr-2"
         style={{
-          outline: "none",
-          color: "#fb8f1d",
-          borderColor: "#fb8f1d",
-          width: 100,
-          height: 44,
-          marginRight: "10px",
-          fontWeight: "600",
+          width: 110,
+          height: 46,
+          textDecoration: "none",
+          borderRadius: "10px",
+          borderColor: "orange",
+
+          "&:hover": {
+            background: "orange",
+            color: "white !important",
+          },
         }}>
         Login
-      </Button>
+      </Link>
 
       <Modal
         aria-labelledby="spring-modal-title"

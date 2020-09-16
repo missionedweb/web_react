@@ -143,15 +143,22 @@ export default function Register() {
 
   return (
     <div>
-      <Button
-        variant="contained"
-        color="secondary"
+      <Link
+        variant="outlined"
         type="button"
         onClick={handleOpen}
-        className={classes.button}
-        style={{ outline: " none" ,  background:"#fb8f1d" , width: 100 , height: 44 , borderRadius: "10px" }}>
+        className="btn login-btn mr-2"
+        style={{
+          width: 110,
+          height: 46,
+          textDecoration: "none",
+          borderRadius: "10px",
+          borderColor: "orange",
+          background: "orange",
+          color: "white ",
+        }}>
         Register
-      </Button>
+      </Link>
 
       <Modal
         aria-labelledby="spring-modal-title"
@@ -175,7 +182,6 @@ export default function Register() {
                   <h2>Join MissionEd</h2>
                 </Grid>
 
-              
                 <Grid item xs={12} sm={6}>
                   <TextField
                     onChange={handleChange}
