@@ -47,9 +47,11 @@ const GetTheApp = () => {
               <br />
               <a href="https://play.google.com/store/apps/details?id=com.missionedappdev.missoned">
                 <button
-                  className="download border-0"
+                  className="download border-0 pb-2"
                   data-aos="zoom-in-up"
-                  data-aos-duration="1000">
+                  data-aos-duration="1000"
+                  style={{ height : "50px" }}
+                  >
                   Download
                 </button>
               </a>
@@ -79,7 +81,7 @@ const GetTheApp = () => {
             <br />
             <br />
             <p />
-            <div className="buttonIn " data-aos="zoom-out" data-aos-duration="500">
+            <div className="buttonIn" data-aos="zoom-out" data-aos-duration="500" style={{ height : "33px", width :"300px" , border : "1px solid black" , borderRadius : "5px"}}>
               <MuiPhoneNumber
                 defaultCountry={"in"}
                 onChange={handleOnChange}
@@ -87,9 +89,10 @@ const GetTheApp = () => {
                 id="phone"
                 name="phone"
                 value={value}
+                
               />
-
-              <button className="joins" onClick={alertModal}>
+              {/* <MuiPhoneNumber defaultCountry={'in'} onChange={handleOnChange} borderBottom={1} border={1}/> */}
+              <button className="joins" onClick={alertModal} style={{ height : "32px" }}>
                 Join
               </button>
 
@@ -109,3 +112,4 @@ const GetTheApp = () => {
 };
 
 export default GetTheApp;
+

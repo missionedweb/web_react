@@ -128,7 +128,7 @@ const Cards = () => {
             </div>
           </div>
           <div className="col-lg-12 center col-md-6 col-12 mt-1 text-right explore-all">
-            <a href="/feature6">
+            <a href="/features">
               <u>Explore more</u> <i className="fas fa-arrow-right" />
             </a>
           </div>
