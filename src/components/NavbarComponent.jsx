@@ -73,7 +73,7 @@ function NavbarComponent({ currentUser }) {
 	            <a href="#" class="dropdown-toggle nav-link mr-auto" data-toggle="dropdown"> STUDY MATERIALS <b class="caret"></b></a>
 	            <ul class="dropdown-menu multi-column columns-2">
 		            <div class="row">
-			            <div class="col-sm-3">
+			            <div class="col-sm-4">
 				            <ul class="multi-column-dropdown">
                    
                     <a href="#" class="dropdown-item">InCHO</a>
@@ -82,35 +82,39 @@ function NavbarComponent({ currentUser }) {
                        
                        <a href="#" class="dropdown-item">BITSAT</a>
                        <a href="#" class="dropdown-item">NSTSE</a>
+                       <a href="#" class="dropdown-item">NSO</a>
+                      
 					            
 				            </ul>
 			            </div>
-			            <div class="col-sm-4">
+			            <div class="col-sm-5">
 				            <ul class="multi-column-dropdown">
                     <a href="#" class="dropdown-item">JEE MAINS</a>
                       <a href="#" class="dropdown-item">JEE ADVANCED</a>
                       <a href="#" class="dropdown-item">NCERT SOL</a>
                       <a href="#" class="dropdown-item">IMO</a>
                       <a href="#" class="dropdown-item">SRMJEE</a>
+                      <a href="#" class="dropdown-item">NSEJS</a>
+                      
+                      
 				            </ul>
 			            </div>
                   
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
 				            <ul class="multi-column-dropdown mr-1">
                     
                       <a href="#" class="dropdown-item">RMO</a>
                       <a href="#" class="dropdown-item">NSO</a>
                       <a href="#" class="dropdown-item">ICSE</a>
                       <a href="#" class="dropdown-item">NEET</a>
+                      <a href="#" class="dropdown-item">KVPY</a>
+                      <a href="#" class="dropdown-item">InPHO</a>
                       
 				            </ul>
 			            </div>
                   <div class="col-sm-3">
 				            <ul class="multi-column-dropdown">
-                    <a href="#" class="dropdown-item">KVPY</a>
-                      <a href="#" class="dropdown-item">NSEJS</a>
-                      <a href="#" class="dropdown-item">NSO</a>
-                      <a href="#" class="dropdown-item">InPHO</a>
+                    
 				            </ul>
 			            </div>
 		            </div>
@@ -118,7 +122,7 @@ function NavbarComponent({ currentUser }) {
 	        </li>
 
           
-                <li class="nav-item">
+                <li class="nav-item mr-auto ml-2">
                 <div class="dropdown">
                 <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> MORE <b class="caret"></b></a>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -140,7 +144,7 @@ function NavbarComponent({ currentUser }) {
                 </li>
               </ul>
           </Nav>
-          <div class="ml-auto">
+          <div class="ml-auto mr-auto">
           {currentUser !== null ? (
             <Link to="/" >
               <button className="btn login-btn mr-auto float-right ml-auto" onClick={() => auth.signOut()}>
