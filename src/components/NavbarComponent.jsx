@@ -144,7 +144,7 @@ function NavbarComponent({ currentUser }) {
                 </li>
               </ul>
           </Nav>
-          <div class="ml-auto mr-auto">
+          <div class="Changealign">
           {currentUser !== null ? (
             <Link to="/" >
               <button className="btn login-btn mr-auto float-right ml-auto" onClick={() => auth.signOut()}>
