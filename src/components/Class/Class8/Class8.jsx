@@ -216,21 +216,26 @@ const AboutUs = () => {
                 Buy
               </Link>
                 </div>
-               
+                
                  
                 </div>
+                
+
               </div>
               <br />
               <br />
+              {/* <br />
               <br />
               <br />
               <br />
               <br />
+              <br /> */}
               <div
                 className="col-lg-4 center col-md-6 col-12 "
                 data-aos="flip-right"
                 data-aos-duration={1500}
               >
+                
                 <div className="card text-center h-100 border-0 image-background" style = {{ borderRadius :"50%" , borderColor: "orange"}}>
                 <div class="card-header" style = {{ background : "orange" , color : "white" , fontSize : "20px", borderRadius :"20px 20px 0 0" , textTransform : "uppercase"}}>
                 Individual Module

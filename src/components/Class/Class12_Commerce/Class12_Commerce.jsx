@@ -62,7 +62,7 @@ const AboutUs = () => {
               <div className="row ">
               
               <div
-                  className="col-lg-2 offset-lg-2 center col-md-6 col-12 mt-3"
+                  className="col-lg-2 offset-lg-3 center col-md-6 col-12 mt-3"
                   data-aos="flip-right"
                   data-aos-duration={1500}
                 >
@@ -98,7 +98,7 @@ const AboutUs = () => {
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
-                        Biology
+                        Accountancy
                       </h4>
                     </div>
                   </div>
@@ -120,7 +120,7 @@ const AboutUs = () => {
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
-                        Chemistry
+                        Economics
                       </h4>
                     </div>
                   </div>
@@ -128,28 +128,7 @@ const AboutUs = () => {
                 <br />
                 <br />
                 
-                <div
-                  className="col-lg-2 center col-md-6 col-12 mt-3"
-                  data-aos="flip-right"
-                  data-aos-duration={1500}
-                >
-                  <div className="card text-center h-80 border-0 image-background">
-                   <a href=""> <img
-                      className="card-img-top img-fluid card01 mx-auto image-1 "
-                      src={cont1}
-                      alt=""
-                      style = {{ width : "200px" }}
-                    />
-                    </a>
-                    <div className="card-block">
-                      <h4 className="card-title ct-1 card-three">
-                        Physics
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <br />
+                
                 
                 
                 
