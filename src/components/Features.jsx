@@ -32,7 +32,7 @@ const Features = () => {
                   className="col-lg-3 center col-md-6 col-12 mt-3"
                   data-aos="flip-right"
                   data-aos-duration={1500}
-                ><a href="/feature3">
+                ><a href="/feature3" style={{ textDecoration: 'none' }}>
                   <div className="card text-center h-100 border-0 image-background">
                    <a href="/feature3"> <img
                       className="card-img-top img-fluid card01 mx-auto image-1 "
@@ -42,8 +42,8 @@ const Features = () => {
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-one">
-                      <a href="/feature3">
-                        Expert Teachers </a>
+                      
+                        Expert Teachers 
                       </h4>
                     </div>
                   </div>
@@ -55,7 +55,7 @@ const Features = () => {
                   className="col-lg-3 center col-md-6 col-12 mt-3 "
                   data-aos="flip-right"
                   data-aos-duration={1500}
-                ><a href="/feature1"> 
+                ><a href="/feature1" style={{ textDecoration: 'none' }}> 
                   <div className="card text-center h-100 border-0 image-background">
                    <a href="/feature1"> <img
                       className="card-img-top img-fluid  card01 mx-auto image-2 "
@@ -65,8 +65,8 @@ const Features = () => {
                     </a>
                     <div className="card-block ">
                       <h4 className="card-title ct-1 card-two">
-                      <a href="/feature1">
-                        Engaging Assignments </a>
+                      
+                        Engaging Assignments 
                       </h4>
                     </div>
                   </div>
@@ -78,7 +78,7 @@ const Features = () => {
                   className="col-lg-3 center col-md-6 col-12 mt-3 "
                   data-aos="flip-right"
                   data-aos-duration={1500}
-                ><a href="/feature4">
+                ><a href="/feature4" style={{ textDecoration: 'none' }}>
                   <div className="card text-center h-100 border-0 image-background">
                     <a href="/feature4"><img
                       className="card-img-top img-fluid  card01 mx-auto image-3"
@@ -88,8 +88,8 @@ const Features = () => {
                     </a>
                     <div className="card-block ">
                       <h4 className="card-title ct-1 card-three">
-                      <a href="/feature4">
-                        Live and Interactive</a>
+                      
+                        Live and Interactive
                       </h4>
                     </div>
                   </div>
@@ -101,7 +101,7 @@ const Features = () => {
                   className="col-lg-3 center col-md-6 col-12 mt-3 "
                   data-aos="flip-right"
                   data-aos-duration={1500}
-                ><a href="/feature5">
+                ><a href="/feature5" style={{ textDecoration: 'none' }}>
                   <div className="card text-center h-100 border-0 image-background">
                    <a href="/feature5"> <img
                       className="card-img-top img-fluid card01 mx-auto image-4 "
@@ -110,8 +110,7 @@ const Features = () => {
                     /></a>
                     <div className="card-block ">
                       <h4 className="card-title ct-1 card-four">
-                      <a href="/feature5">
-                        Personalised <br></br>Learning </a>
+                        Personalised <br></br>Learning 
                       </h4>
                     </div>
                   </div>
