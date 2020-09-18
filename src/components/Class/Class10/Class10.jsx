@@ -62,7 +62,7 @@ const AboutUs = () => {
               <div className="row ">
               
               <div
-                  className="col-lg-2 offset-lg-1 center col-md-6 col-12 mt-3"
+                  className="col-lg-2 offset-lg-2 center col-md-6 col-12 mt-3"
                   data-aos="flip-right"
                   data-aos-duration={1500}
                 >
@@ -143,75 +143,6 @@ const AboutUs = () => {
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
-                        Civics
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <br />
-                
-                <div
-                  className="col-lg-2 center col-md-6 col-12 mt-3 "
-                  data-aos="flip-right"
-                  data-aos-duration={1500}
-                >
-                  <div className="card text-center h-80 border-0 image-background">
-                    <a href=""><img
-                      className="card-img-top img-fluid  card01 mx-auto image-3"
-                      src={cont1}
-                      alt=""
-                      style = {{ width : "200px" }}
-                    />
-                    </a>
-                    <div className="card-block">
-                      <h4 className="card-title ct-1 card-three">
-                        Geography
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <br />
-                </div>
-                <div className="row ">
-                <div
-                  className="col-lg-2 offset-lg-1 center col-md-6 col-12 mt-3"
-                  data-aos="flip-right"
-                  data-aos-duration={1500}
-                >
-                  <div className="card text-center h-80 border-0 image-background">
-                   <a href=""> <img
-                      className="card-img-top img-fluid card01 mx-auto image-1 "
-                      src={cont1}
-                      alt=""
-                      style = {{ width : "200px" }}
-                    />
-                    </a>
-                    <div className="card-block">
-                      <h4 className="card-title ct-1 card-three">
-                        GK
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <br />
-                <div
-                  className="col-lg-2 center col-md-6 col-12 mt-3"
-                  data-aos="flip-right"
-                  data-aos-duration={1500}
-                >
-                  <div className="card text-center h-80 border-0 image-background">
-                   <a href=""> <img
-                      className="card-img-top img-fluid card01 mx-auto image-1 "
-                      src={cont1}
-                      alt=""
-                      style = {{ width : "200px" }}
-                    />
-                    </a>
-                    <div className="card-block">
-                      <h4 className="card-title ct-1 card-three">
                         Physics
                       </h4>
                     </div>
@@ -219,74 +150,8 @@ const AboutUs = () => {
                 </div>
                 <br />
                 <br />
-                <div
-                  className="col-lg-2 center col-md-6 col-12 mt-3"
-                  data-aos="flip-right"
-                  data-aos-duration={1500}
-                >
-                  <div className="card text-center h-80 border-0 image-background">
-                   <a href=""> <img
-                      className="card-img-top img-fluid card01 mx-auto image-1 "
-                      src={cont1}
-                      alt=""
-                      style = {{ width : "200px" }}
-                    />
-                    </a>
-                    <div className="card-block">
-                      <h4 className="card-title ct-1 card-three">
-                        History
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <br />
                 
-                <div
-                  className="col-lg-2 center col-md-6 col-12 mt-3"
-                  data-aos="flip-right"
-                  data-aos-duration={1500}
-                >
-                  <div className="card text-center h-80 border-0 image-background">
-                   <a href=""> <img
-                      className="card-img-top img-fluid card01 mx-auto image-1 "
-                      src={cont1}
-                      alt=""
-                      style = {{ width : "200px" }}
-                    />
-                    </a>
-                    <div className="card-block">
-                      <h4 className="card-title ct-1 card-three">
-                        History
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <br />
                 
-                <div
-                  className="col-lg-2 center col-md-6 col-12 mt-3 "
-                  data-aos="flip-right"
-                  data-aos-duration={1500}
-                >
-                  <div className="card text-center h-80 border-0 image-background">
-                    <a href=""><img
-                      className="card-img-top img-fluid  card01 mx-auto image-3"
-                      src={cont1}
-                      alt=""
-                      style = {{ width : "200px" }}
-                    />
-                    </a>
-                    <div className="card-block">
-                      <h4 className="card-title ct-1 card-three">
-                        English
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <br />
                 
                 </div>
                 </div>
