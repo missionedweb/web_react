@@ -42,7 +42,8 @@ const Features = () => {
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-one">
-                        Expert Teachers
+                      <a href="/feature3">
+                        Expert Teachers </a>
                       </h4>
                     </div>
                   </div>
@@ -63,7 +64,8 @@ const Features = () => {
                     </a>
                     <div className="card-block ">
                       <h4 className="card-title ct-1 card-two">
-                        Engaging Assignments
+                      <a href="/feature1">
+                        Engaging Assignments </a>
                       </h4>
                     </div>
                   </div>
@@ -84,7 +86,8 @@ const Features = () => {
                     </a>
                     <div className="card-block ">
                       <h4 className="card-title ct-1 card-three">
-                        Live and Interactive
+                      <a href="/feature4">
+                        Live and Interactive</a>
                       </h4>
                     </div>
                   </div>
@@ -104,7 +107,8 @@ const Features = () => {
                     /></a>
                     <div className="card-block ">
                       <h4 className="card-title ct-1 card-four">
-                        Personalised <br></br>Learning
+                      <a href="/feature5">
+                        Personalised <br></br>Learning </a>
                       </h4>
                     </div>
                   </div>
