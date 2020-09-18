@@ -32,7 +32,7 @@ const Features = () => {
                   className="col-lg-3 center col-md-6 col-12 mt-3"
                   data-aos="flip-right"
                   data-aos-duration={1500}
-                >
+                ><a href="/feature3">
                   <div className="card text-center h-100 border-0 image-background">
                    <a href="/feature3"> <img
                       className="card-img-top img-fluid card01 mx-auto image-1 "
@@ -47,6 +47,7 @@ const Features = () => {
                       </h4>
                     </div>
                   </div>
+                  </a>
                 </div>
                 <br />
                 <br />
@@ -54,7 +55,7 @@ const Features = () => {
                   className="col-lg-3 center col-md-6 col-12 mt-3 "
                   data-aos="flip-right"
                   data-aos-duration={1500}
-                >
+                ><a href="/feature1"> 
                   <div className="card text-center h-100 border-0 image-background">
                    <a href="/feature1"> <img
                       className="card-img-top img-fluid  card01 mx-auto image-2 "
@@ -69,6 +70,7 @@ const Features = () => {
                       </h4>
                     </div>
                   </div>
+                  </a>
                 </div>
                 <br />
                 <br />
@@ -76,7 +78,7 @@ const Features = () => {
                   className="col-lg-3 center col-md-6 col-12 mt-3 "
                   data-aos="flip-right"
                   data-aos-duration={1500}
-                >
+                ><a href="/feature4">
                   <div className="card text-center h-100 border-0 image-background">
                     <a href="/feature4"><img
                       className="card-img-top img-fluid  card01 mx-auto image-3"
@@ -91,6 +93,7 @@ const Features = () => {
                       </h4>
                     </div>
                   </div>
+                 </a>
                 </div>
                 <br />
                 <br />
@@ -98,7 +101,7 @@ const Features = () => {
                   className="col-lg-3 center col-md-6 col-12 mt-3 "
                   data-aos="flip-right"
                   data-aos-duration={1500}
-                >
+                ><a href="/feature5">
                   <div className="card text-center h-100 border-0 image-background">
                    <a href="/feature5"> <img
                       className="card-img-top img-fluid card01 mx-auto image-4 "
@@ -112,6 +115,7 @@ const Features = () => {
                       </h4>
                     </div>
                   </div>
+                  </a>
                 </div>
                 <div className="space" />
                 <div className="col-lg-12 center col-md-6 col-12 mt-1 text-right explore-all">
