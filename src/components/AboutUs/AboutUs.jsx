@@ -361,7 +361,7 @@ const AboutUs = () => {
           <br></br>
           <br></br>
           <Testimonials />
-          <GetTheApp />
+          <GetTheApp/>
           <Footer />
         </div>
         </div>

@@ -88,10 +88,16 @@ const GetTheApp = () => {
                 id="phone"
                 name="phone"
                 value={value}
-                style={{border : "1px solid black" , borderRadius : "5px 0px 0px 5px"}}
+                
+                style={{border : "1px solid black" ,height : "32px", borderRadius : "5px 0px 0px 5px"}}
               />
               {/* <MuiPhoneNumber defaultCountry={'in'} onChange={handleOnChange} borderBottom={1} border={1}/> */}
-              <button className="joins" onClick={alertModal} style={{ height : "32px" }}>
+              <button 
+              
+              //className="joins" 
+              onClick={alertModal} 
+              style={{ background : "orange" , border : "none" , width : "75px" , borderRadius : "0px 5px 5px 0px" }}
+              >
                 Join
               </button>
 

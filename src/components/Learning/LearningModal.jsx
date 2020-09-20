@@ -130,7 +130,7 @@ export default function LearningModal() {
       </Button>
 
        <a
-        href="/feature3"
+        href="/features"
         className="btn"
         data-aos="zoom-in-up" data-aos-duration="1500"
         style={{
