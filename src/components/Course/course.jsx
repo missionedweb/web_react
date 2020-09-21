@@ -5,20 +5,18 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { selectCurrentUser } from "../../redux/user/user.selector";
 import firebase from "firebase";
-function Course({ match, currentUser }) {
-  useEffect(() => {}, []);
-  function get() {
-    var frankDocRef = firestore.doc(
-      "/users/tAjwDa7wirZkmPoLMmgVmfHeqvR2/course/apxBcj6Lr7sSV9HjO3XJ"
-    );
-    frankDocRef.onSnapshot((doc) => {
-      console.log(doc.data());
-    });
-  }
+import ChatApp from "./ChatApp";
+import { useParams } from "react-router-dom";
+
+function Course({ currentUser }) {
+  const { courseid } = useParams();
+
   return (
     <React.Fragment>
-      <h1 style={{ color: "black" }}>{match.params.courseid}</h1>
-      <button onClick={get}></button>
+      <div>
+        <h1 style={{ color: "black" }}>{courseid}</h1>
+        <ChatApp />
+      </div>
     </React.Fragment>
   );
 }
