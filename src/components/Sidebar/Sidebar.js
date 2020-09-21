@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Drawer,
   Hidden,
@@ -24,9 +24,128 @@ import Upgrade from "./Upgrade";
 import CustomButton from "./CustomButton";
 import CenteredGrid from "../Cards/index";
 import Course from "../Course/course";
+import { firestore } from "../../firebase/firebase.utils";
 
-import { auth } from "../../firebase/firebase.utils";
-import { Button } from "react-bootstrap";
+function SideBar(props) {
+  const classes = useStyles();
+  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [courses, setCourses] = useState([]);
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
+  };
+  // useEffect(() => {
+  //   firestore.collection("course").onSnapshot((snapshot) => {
+  //     setCourses(
+  //       snapshot.docs.map((doc) => ({
+  //         id: doc.id,
+  //         name: doc.data().name,
+  //       }))
+  //     );
+  //   });
+  // }, []);
+
+  const drawer = (
+    <div className={classes.sidebar}>
+      <div className={classes.logo}>
+        <div className={classes.title}>
+          <div className={classes.design}>0</div>
+          <div className={classes.text}>MissionEd</div>
+        </div>
+        <div className={classes.button}>
+          <CustomButton>Join a course</CustomButton>
+        </div>
+      </div>
+      <Divider />
+      <div className={classes.first}>
+        <List>
+          {SideBarData.map((item, index) => {
+            return (
+              <Link to={item.path} className={classes.link} key={index}>
+                <ListItem button>
+                  <ListItemIcon>{item.icon}</ListItemIcon>
+                  <ListItemText primary={item.title} />
+                </ListItem>
+              </Link>
+            );
+          })}
+        </List>
+      </div>
+      <Divider />
+      <div className={classes.second}>
+        <Upgrade />
+      </div>
+    </div>
+  );
+
+  return (
+    <div className={classes.root}>
+      <Toolbar>
+        <IconButton
+          color="inherit"
+          edge="start"
+          onClick={handleDrawerToggle}
+          className={classes.menuButton}>
+          <MenuIcon style={{ fontSize: "30px" }} />
+        </IconButton>
+      </Toolbar>
+      <Router>
+        <nav className={classes.drawer}>
+          {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
+          <Hidden smUp implementation="css">
+            <Drawer
+              variant="temporary"
+              open={mobileOpen}
+              onClose={handleDrawerToggle}
+              classes={{
+                paper: classes.drawerPaper,
+              }}>
+              {drawer}
+            </Drawer>
+          </Hidden>
+          <Hidden xsDown implementation="css">
+            <Drawer
+              classes={{
+                paper: classes.drawerPaper,
+              }}
+              variant="permanent"
+              open>
+              {drawer}
+            </Drawer>
+          </Hidden>
+        </nav>
+        <main className={classes.content}>
+          {/*switch*/}
+          <Switch>
+            <Route exact path="/dashboard">
+              <Dash />
+            </Route>
+            <Route exact path="/dashboard/courses">
+              <CenteredGrid />
+            </Route>
+            <Route path="/dashboard/courses/:courseid">
+              <Course />
+            </Route>
+            <Route path="/dashboard/resources">
+              <Resources />
+            </Route>
+            <Route path="/dashboard/referals">
+              <Referals />
+            </Route>
+            <Route path="/dashboard/chats">
+              <Chats />
+            </Route>
+            <Route path="/dashboard/settings">
+              <Setting />
+            </Route>
+          </Switch>
+        </main>
+      </Router>
+    </div>
+  );
+}
+
+export default SideBar;
+
 const drawerWidth = 180;
 
 const useStyles = makeStyles((theme) => ({
@@ -133,114 +252,3 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "0px",
   },
 }));
-
-function SideBar(props) {
-  const classes = useStyles();
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
-
-  const drawer = (
-    <div className={classes.sidebar}>
-      <Button onClick={() => auth.signOut()}>Sign Out</Button>
-      <div className={classes.logo}>
-        <div className={classes.title}>
-          <div className={classes.design}>0</div>
-          <div className={classes.text}>MissionEd</div>
-        </div>
-        <div className={classes.button}>
-          <CustomButton>Join a course</CustomButton>
-        </div>
-      </div>
-      <Divider />
-      <div className={classes.first}>
-        <List>
-          {SideBarData.map((item, index) => {
-            return (
-              <Link to={item.path} className={classes.link} key={index}>
-                <ListItem button>
-                  <ListItemIcon>{item.icon}</ListItemIcon>
-                  <ListItemText primary={item.title} />
-                </ListItem>
-              </Link>
-            );
-          })}
-        </List>
-      </div>
-      <Divider />
-      <div className={classes.second}>
-        <Upgrade />
-      </div>
-    </div>
-  );
-
-  return (
-    <div className={classes.root}>
-      <Toolbar>
-        <IconButton
-          color="inherit"
-          edge="start"
-          onClick={handleDrawerToggle}
-          className={classes.menuButton}>
-          <MenuIcon style={{ fontSize: "30px" }} />
-        </IconButton>
-      </Toolbar>
-      <Router>
-        <nav className={classes.drawer}>
-          {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-          <Hidden smUp implementation="css">
-            <Drawer
-              variant="temporary"
-              open={mobileOpen}
-              onClose={handleDrawerToggle}
-              classes={{
-                paper: classes.drawerPaper,
-              }}>
-              {drawer}
-            </Drawer>
-          </Hidden>
-          <Hidden xsDown implementation="css">
-            <Drawer
-              classes={{
-                paper: classes.drawerPaper,
-              }}
-              variant="permanent"
-              open>
-              {drawer}
-            </Drawer>
-          </Hidden>
-        </nav>
-        <main className={classes.content}>
-          {/*switch*/}
-          <Switch>
-            <Route exact path="/dashboard">
-              <Dash />
-            </Route>
-            <Route exact path="/dashboard/courses">
-              <CenteredGrid />
-            </Route>
-            <Route path="/dashboard/courses/:courseid">
-              <Course />
-            </Route>
-            <Route path="/dashboard/resources">
-              <Resources />
-            </Route>
-            <Route path="/dashboard/referals">
-              <Referals />
-            </Route>
-            <Route path="/dashboard/chats">
-              <Chats />
-            </Route>
-            <Route path="/dashboard/settings">
-              <Setting />
-            </Route>
-          </Switch>
-        </main>
-      </Router>
-    </div>
-  );
-}
-
-export default SideBar;
