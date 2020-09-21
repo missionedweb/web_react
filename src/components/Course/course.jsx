@@ -24,4 +24,4 @@ const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
 });
 
-export default withRouter(connect(mapStateToProps, null)(Course));
+export default connect(mapStateToProps, null)(Course);

@@ -74,7 +74,7 @@ export default function Card(props) {
       </div>
       <div className={classes.container1}>
         <Link to={`/dashboard/courses/${id}`}>
-          <Button className={classes.button} squared>
+          <Button className={classes.button}>
             <PlayArrowIcon style={{ color: "white", fontSize: "24px" }} />
           </Button>
         </Link>
