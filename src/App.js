@@ -77,7 +77,7 @@ function App({ setCurrentUser, currentUser }) {
         <Route
           exact
           path="/dashboard"
-          render={() => (currentUser ? <Dashboard /> : <Redirect to="/" />)}
+          render={() => (currentUser === null ? <Redirect to="/" /> : <Dashboard />)}
         />
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/feature1" component={engagingAssignments} />

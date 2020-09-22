@@ -24,7 +24,7 @@ import Upgrade from "./Upgrade";
 import CustomButton from "./CustomButton";
 import CenteredGrid from "../Cards/index";
 import Course from "../Course/course";
-import { firestore } from "../../firebase/firebase.utils";
+import { auth } from "../../firebase/firebase.utils";
 
 function SideBar(props) {
   const classes = useStyles();
@@ -33,16 +33,6 @@ function SideBar(props) {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
-  // useEffect(() => {
-  //   firestore.collection("course").onSnapshot((snapshot) => {
-  //     setCourses(
-  //       snapshot.docs.map((doc) => ({
-  //         id: doc.id,
-  //         name: doc.data().name,
-  //       }))
-  //     );
-  //   });
-  // }, []);
 
   const drawer = (
     <div className={classes.sidebar}>
@@ -74,6 +64,8 @@ function SideBar(props) {
       <div className={classes.second}>
         <Upgrade />
       </div>
+
+      <button onClick={() => auth.signOut()}>Sign Out</button>
     </div>
   );
 
