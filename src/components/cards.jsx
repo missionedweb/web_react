@@ -1,11 +1,9 @@
 import React from "react";
 import per_learn from "../Images/per_learn.svg";
 import live_inter from "../Images/live_inter.svg";
-import engg_ass from "../Images/engg_ass.svg";
 import convi_safe from "../Images/convi_safe.svg";
 import expert_teac from "../Images/expert_teac.svg";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 const Cards = () => {
   return (

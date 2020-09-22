@@ -1,8 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import live_inter from "../../Images/live_inter.svg";
-import engg_ass from "../../Images/engg_ass.svg";
-import expert_teac from "../../Images/expert_teac.svg";
 import Testimonials from "../Testimonials";
 import GetTheApp from "../GetTheApp";
 import Footer from "../Footer";
@@ -18,9 +15,7 @@ import Empathy from "./images/Empathy.png"
 import Excellence from "./images/Excellence.png"
 
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
 
 const AboutUs = () => {
   return (

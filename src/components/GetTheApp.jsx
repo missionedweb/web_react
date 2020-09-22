@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Group52 from "../Images/Group52.png";
 import books from "../Images/books.png";
 import counsellingImg from "../Images/counsellingImg.png";
-import PhoneInput from "react-phone-number-input";
 import swal from "sweetalert";
 import AOS from "aos";
 import MuiPhoneNumber from "material-ui-phone-number";
@@ -109,6 +108,7 @@ const GetTheApp = () => {
             src={counsellingImg}
             data-aos="fade-left"
             data-aos-duration="1000"
+            alt=""
           />
         </div>
       </div>

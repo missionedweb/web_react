@@ -81,9 +81,9 @@ const Footer = () => {
                         <li><a  href="/class9" style={{cursor:"pointer"}}>Class 9</a></li>
                         <li><a  href="/class12c" style={{cursor:"pointer"}}>Class 12 Commerce</a></li>
                         <li><a  href="/class10" style={{cursor:"pointer"}}>Class 10</a></li>
-                        <li><a  href="#" style={{cursor:"pointer"}}>CBSE Board</a></li>
+                        <li><a  href="/" style={{cursor:"pointer"}}>CBSE Board</a></li>
                         <li><a  href="class11s" style={{cursor:"pointer"}}>Class 11 Science</a></li>
-                        <li><a  href="#" style={{cursor:"pointer"}}>ICSE Board</a></li>
+                        <li><a  href="/" style={{cursor:"pointer"}}>ICSE Board</a></li>
                         <li><a  href="class11c" style={{cursor:"pointer"}}>Class 11 Commerce</a></li>
                       </ul>
                     </div>

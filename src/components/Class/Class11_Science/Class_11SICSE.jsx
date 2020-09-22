@@ -5,23 +5,11 @@ import GetTheApp from "../../GetTheApp";
 import Footer from "../../Footer";
 import NavbarComponent from "../../NavbarComponent";
 import cont1 from "../../../Images/cont1.png";
-import cont2 from "../../../Images/cont2.png";
 import place1 from "./Images/place1.png";
 import place2 from "./Images/place2.png";
  
 import { Link } from 'react-router-dom'
 
-import Creativity from "../../AboutUs/images/Creativity.png"
-import Curiosity from "../../AboutUs/images/Curiosity.png"
-import Passion from "../../AboutUs/images/Passion.png"
-import Efficiency from "../../AboutUs/images/Efficiency.png"
-import Empathy from "../../AboutUs/images/Empathy.png"
-import Excellence from "../../AboutUs/images/Excellence.png"
-
-
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 const AboutUs = () => {
   return (
@@ -67,7 +55,7 @@ const AboutUs = () => {
                   data-aos-duration={1500}
                 >
                   <div className="card text-center h-80 border-0 image-background">
-                   <a href=""> <img
+                   <a href="/"> <img
                       className="card-img-top img-fluid card01 mx-auto image-1 "
                       src={cont1}
                       alt=""
@@ -90,7 +78,7 @@ const AboutUs = () => {
                   data-aos-duration={1500}
                 >
                   <div className="card text-center h-80 border-0 image-background">
-                   <a href=""> <img
+                   <a href="/"> <img
                       className="card-img-top img-fluid card01 mx-auto image-1 "
                       src={cont1}
                       alt=""
@@ -113,7 +101,7 @@ const AboutUs = () => {
                   data-aos-duration={1500}
                 >
                   <div className="card text-center h-80 border-0 image-background">
-                   <a href=""> <img
+                   <a href="/"> <img
                       className="card-img-top img-fluid card01 mx-auto image-1 "
                       src={cont1}
                       alt=""
