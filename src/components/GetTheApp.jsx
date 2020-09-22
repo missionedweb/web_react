@@ -71,7 +71,6 @@ const GetTheApp = () => {
               </span>
               <br />
             </p>
-            <h6 />
             Talk to our experts online and get free counselling whenever you
             <br /> needs and learn how MissionEd can help you in overcoming <br />
             all your academic challenges.

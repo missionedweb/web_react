@@ -284,11 +284,9 @@ const AboutUs = () => {
           <div class="how-section1">
 <div class="row">
 <div class="col-md-8">
-                            <h4>Find rewarding projects</h4>
-                                        <h4 class="subheading">GetLance is a great place to find more clients, and to run and grow your own freelance business.</h4>
-                        <p class="text-muted">Freedom to work on ideal projects. On GetLance, you run your own business and choose your own clients and projects. Just complete your profile and we’ll highlight ideal jobs. Also search projects, and respond to client invitations.
-                                            Wide variety and high pay. Clients are now posting jobs in hundreds of skill categories, paying top price for great work.
-                                            More and more success. The greater the success you have on projects, the more likely you are to get hired by clients that use GetLance.</p>
+                            <h4>Go through the entire Syllabus Once Again</h4>
+                                        <h4 class="subheading">Students must have completed the syllabus along with the classroom. But they need to go through it once again by themselves.</h4>
+                        <p class="text-muted"> This will be a kind of revision for themselves and they get to know on which topic they have to put extra effort. Accordingly, they can formulate an effective study plan and work on those areas. Along with the revision, it will be better if they solve the  textbook questions once again.</p>
                         </div>
                         <div class="col-md-4 how-img">
                             <img src="https://image.ibb.co/dDW27U/Work_Section2_freelance_img1.png" class="rounded-circle img-fluid" style={{width : "70%"}} alt=""/>
@@ -297,11 +295,9 @@ const AboutUs = () => {
                     </div>
                     <div class="row">
                         <div class="col-md-8">
-                            <h4>Get hired quickly</h4>
-                                        <h4 class="subheading">GetLance makes it easy to connect with clients and begin doing great work.</h4>
-                                        <p class="text-muted">Streamlined hiring. GetLance’s sophisticated algorithms highlight projects you’re a great fit for.
-                                            Top Rated and Rising Talent programs. Enjoy higher visibility with the added status of prestigious programs.
-                                            Do substantial work with top clients. GetLance pricing encourages freelancers to use GetLance for repeat relationships with their clients.</p>
+                            <h4>Sufficient time should be devoted to self study</h4>
+                                        <h4 class="subheading">You must spare enough time so that you are able to achieve some prefixed study targets</h4>
+                                        <p class="text-muted">After school or coaching classes, every student must take out some time which he/she can devote completely to self studies so as to analyse and practice the topics learned in school or coaching class.</p>
                         </div>
                         <div class="col-md-4 how-img">
                             <img src="https://image.ibb.co/cHgKnU/Work_Section2_freelance_img2.png" class="rounded-circle img-fluid" style={{width : "70%"}} alt=""/>
@@ -309,11 +305,9 @@ const AboutUs = () => {
                     </div>
                     <div class="row">
                     <div class="col-md-8">
-                            <h4>Work efficiently, effectively.</h4>
-                                        <h4 class="subheading">With GetLance, you have the freedom and flexibility to control when, where, and how you work. Each project includes an online workspace shared by you and your client, allowing you to:</h4>
-                                        <p class="text-muted">Send and receive files. Deliver digital assets in a secure environment.
-                                            Share feedback in real time. Use GetLance Messages to communicate via text, chat, or video.
-                                            Use our mobile app. Many features can be accessed on your mobile phone when on the go.</p>
+                            <h4>Select the right time to start preparing for board exams</h4>
+                                        <h4 class="subheading">Those who are not done with the revision of the whole syllabus or have not started yet, can start now to ignore the disappointment at the time of exam results.</h4>
+                                        <p class="text-muted">Though, every student has different learning capabilities so we can’t decide when each students should start preparing for the exams. Still, there is a common approach to the exam preparation which needs to be followed. </p>
                         </div>
                         <div class="col-md-4 how-img">
                              <img src="https://image.ibb.co/ctSLu9/Work_Section2_freelance_img3.png" class="rounded-circle img-fluid" style={{width : "70%"}} alt=""/>
@@ -322,11 +316,9 @@ const AboutUs = () => {
                     </div>
                     <div class="row">
                         <div class="col-md-8">
-                            <h4>Get paid on time</h4>
-                                        <h4 class="subheading">All projects include GetLance Payment Protection — helping ensure that you get paid for all work successfully completed through the freelancing website.</h4>
-                                        <p class="text-muted">All invoices and payments happen through GetLance. Count on a simple and streamlined process.
-                                            Hourly and fixed-price projects. For hourly work, submit timesheets through GetLance. For fixed-price jobs, set milestones and funds are released via GetLance escrow features.
-                                            Multiple payment options. Choose a payment method that works best for you, from direct deposit or PayPal to wire transfer and more.</p>
+                            <h4>Previous Question Papers</h4>
+                                        <h4 class="subheading">By solving papers, you also get an idea about how many ways the same question has appeared, and what are the different ways to answer it.</h4>
+                                        <p class="text-muted">Try to solve as many previous years question papers, it helps you get to know which question has been asked how many times, along with the marks allotted to that particular question. It also gives an idea about the required minimum length of the answer.</p>
                         </div>
                         <div class="col-md-4 how-img">
                             <img src="https://image.ibb.co/gQ9iE9/Work_Section2_freelance_img4.png" class="rounded-circle img-fluid" style={{width : "70%"}} alt=""/>
