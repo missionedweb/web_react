@@ -55,6 +55,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Card(props) {
   const classes = useStyles();
 
+  const { id, title } = props;
   return (
     <Paper
       style={{
@@ -65,15 +66,15 @@ export default function Card(props) {
       elevation={5}>
       <div className={classes.container}>
         <div className={classes.sub}>
-          <h3>{props.subject} </h3>
+          <h3>{title} </h3>
 
           <p>{props.les} Lessons</p>
         </div>
         <div className={classes.time}> {props.time}</div>
       </div>
       <div className={classes.container1}>
-        <Link to={`/dashboard/courses/${props.subject}`}>
-          <Button className={classes.button} squared>
+        <Link to={`/dashboard/courses/${id}`}>
+          <Button className={classes.button}>
             <PlayArrowIcon style={{ color: "white", fontSize: "24px" }} />
           </Button>
         </Link>

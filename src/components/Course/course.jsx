@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { withRouter } from "react-router-dom";
-function Course({ match }) {
+import { firestore } from "../../firebase/firebase.utils";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectCurrentUser } from "../../redux/user/user.selector";
+import firebase from "firebase";
+import ChatApp from "./ChatApp";
+import { useParams } from "react-router-dom";
+
+function Course({ currentUser }) {
+  const { courseid } = useParams();
+
   return (
     <React.Fragment>
-      <h1 style={{ color: "black" }}>{match.params.courseid}</h1>
+      <div>
+        <h1 style={{ color: "black" }}>{courseid}</h1>
+        <ChatApp />
+      </div>
     </React.Fragment>
   );
 }
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
+});
 
-export default withRouter(Course);
+export default connect(mapStateToProps, null)(Course);
