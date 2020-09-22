@@ -26,7 +26,7 @@ const Testim = () => {
             </div>
           </div>
 
-          <Testimonials />
+          {/* <Testimonials /> */}
 
           <p
             className="testimonials-heading"
