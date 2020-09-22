@@ -64,17 +64,14 @@ const FAQ = () => {
                                 aria-expanded={openOne}
                                 className="btn btn-link collapsed"
                               >
-                                What is Lorem Ipsum?
+                                What is a typical schedule for an online class?
                               </Button>
                             </h5>
                           </div>
                           <Collapse in={openOne}>
                             <div className="example-collapse-text">
                               <div className="card-body px-3 py-2">
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since
-                                the 1500s, when an unknown printer.
+                              We conduct classes 5 times a week.
                               </div>
                             </div>
                           </Collapse>
@@ -92,18 +89,15 @@ const FAQ = () => {
                                 aria-expanded={openTwo}
                                 className="btn btn-link collapsed"
                               >
-                                Where does it come from?
+                                How is the material available online?
                               </Button>
                             </h5>
                           </div>
                           <Collapse in={openTwo}>
                             <div className="example-collapse-text">
                               <div className="card-body px-3 py-2">
-                                Contrary to popular belief, Lorem Ipsum is not
-                                simply random text. It has roots in a piece of
-                                classical Latin literature from 45 BC, making it
-                                over 2000 years old.
-                              </div>
+                                Students can log in and can select their courses. 
+                                Once a student is in their course site, they can access study materials.                              </div>
                             </div>
                           </Collapse>
                         </div>
@@ -120,16 +114,14 @@ const FAQ = () => {
                                 aria-expanded={openThree}
                                 className="btn btn-link collapsed"
                               >
-                                Why do we use it?
+                                 Do you provide any assistance to help students complete their homework?
                               </Button>
                             </h5>
                           </div>
                           <Collapse in={openThree}>
                             <div className="example-collapse-text">
                               <div className="card-body px-3 py-2">
-                                It is a long established fact that a reader will
-                                be distracted by the readable content of a page
-                                when looking at its layout.
+                                Yes
                               </div>
                             </div>
                           </Collapse>
@@ -147,16 +139,16 @@ const FAQ = () => {
                                 aria-expanded={openFour}
                                 className="btn btn-link collapsed"
                               >
-                                Where can I get some?
+                                 How do I select my teacher?
                               </Button>
                             </h5>
                           </div>
                           <Collapse in={openFour}>
                             <div className="example-collapse-text">
                               <div className="card-body px-3 py-2">
-                                There are many variations of passages of Lorem
-                                Ipsum available, but the majority have suffered
-                                alteration in some form, by injected humour
+                                You can select from list of teachers available for each subject, 
+                                you can select a teacher 
+                                suitable as per your requirements.
                               </div>
                             </div>
                           </Collapse>
@@ -176,17 +168,14 @@ const FAQ = () => {
                                 aria-expanded={openFive}
                                 className="btn btn-link collapsed"
                               >
-                                What is Lorem Ipsum?
+                                Is there a webinar that can explain the program to me?
                               </Button>
                             </h5>
                           </div>
                           <Collapse in={openFive}>
                             <div className="example-collapse-text">
                               <div className="card-body px-3 py-2">
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since
-                                the 1500s, when an unknown printer.
+                                Yes, We provide a webinar.
                               </div>
                             </div>
                           </Collapse>
@@ -204,17 +193,17 @@ const FAQ = () => {
                                 aria-expanded={openSix}
                                 className="btn btn-link collapsed"
                               >
-                                Where does it come from?
+                               How do I get homework assignments, tests, etc.?
                               </Button>
                             </h5>
                           </div>
                           <Collapse in={openSix}>
                             <div className="example-collapse-text">
                               <div className="card-body px-3 py-2">
-                                Contrary to popular belief, Lorem Ipsum is not
-                                simply random text. It has roots in a piece of
-                                classical Latin literature from 45 BC, making it
-                                over 2000 years old.
+                                Homework, tests, paper assignments, 
+                                and more will be clearly communicated 
+                                on the class website as well as directly 
+                                by the teacher.
                               </div>
                             </div>
                           </Collapse>
@@ -232,16 +221,19 @@ const FAQ = () => {
                                 aria-expanded={openSeven}
                                 className="btn btn-link collapsed"
                               >
-                                Why do we use it?
+                                How can my child clear his/her doubts instantly during the online class?
+
                               </Button>
                             </h5>
                           </div>
                           <Collapse in={openSeven}>
                             <div className="example-collapse-text">
                               <div className="card-body px-3 py-2">
-                                It is a long established fact that a reader will
-                                be distracted by the readable content of a page
-                                when looking at its layout.
+                                While attending a class, 
+                                you can ask via a live chatbox. 
+                                Our specially assigned teachers will instantly assist and solve your 
+                                child's doubts.
+
                               </div>
                             </div>
                           </Collapse>
@@ -259,16 +251,16 @@ const FAQ = () => {
                                 aria-expanded={openEight}
                                 className="btn btn-link collapsed"
                               >
-                                Where can I get some?
+                                How are parents made aware of their children’s progress?
                               </Button>
                             </h5>
                           </div>
                           <Collapse in={openEight}>
                             <div className="example-collapse-text">
                               <div className="card-body px-3 py-2">
-                                There are many variations of passages of Lorem
-                                Ipsum available, but the majority have suffered
-                                alteration in some form, by injected humour
+                                
+                                We schedule regular parent-teacher conferences during 
+                                which we review and discuss children’s progress.
                               </div>
                             </div>
                           </Collapse>

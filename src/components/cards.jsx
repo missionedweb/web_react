@@ -4,10 +4,21 @@ import live_inter from "../Images/live_inter.svg";
 import convi_safe from "../Images/convi_safe.svg";
 import expert_teac from "../Images/expert_teac.svg";
 import styled from "styled-components";
+import NavbarComponent from "./NavbarComponent";
+import GetTheApp from "./GetTheApp";
+import Footer from "./Footer";
+
 
 const Cards = () => {
   return (
     <div>
+    <header>
+          <NavbarComponent className="ml-2"/>
+      </header>
+      <br />
+      <br />
+      <br />
+      <br />
       <Wrapper>
         <h1 style={{ textAlign: "center", color: "black" }}>
           Why <span style={{ color: "orange" }}>MissionEd </span>works?
@@ -29,7 +40,7 @@ const Cards = () => {
               style={{ borderRadius: "30px" }}
               data-aos="zoom-in-up"
               data-aos-duration={1500}
-            >
+            ><a href="/feature4" style={{ textDecoration: 'none' }}>
               <img
                 className="card-img-top  mx-auto image-4 "
                 style={{
@@ -41,10 +52,11 @@ const Cards = () => {
                 alt=""
               />
               <div className="card-block ">
-                <h4 className="card-title text-center card-two  ct-1">
+                <h4 className="card-title text-center card-two  ct-1" style={{color: "#eb5757"}}>
                   Live and Interactive
                 </h4>
               </div>
+              </a>
             </div>
             <div className="w-100 d-none d-md-block d-lg-none">
               {/* wrap every 3 on md*/}
@@ -54,7 +66,7 @@ const Cards = () => {
               style={{ borderRadius: "30px" }}
               data-aos="zoom-in-up"
               data-aos-duration={2000}
-            >
+            >  <a href="/feature5" style={{ textDecoration: 'none' }}>
               <img
                 className="card-img-top  mx-auto image-4 "
                 style={{
@@ -66,10 +78,11 @@ const Cards = () => {
                 alt=""
               />
               <div className="card-block ">
-                <h4 className="card-title text-center  card-three  ct-1">
+                <h4 className="card-title text-center  card-three  ct-1" style={{paddingTop: "35px" , color: "#2f80ed"}}>
                   Personalised Learning
                 </h4>
               </div>
+              </a>
             </div>
             <div className="w-100 d-none d-sm-block d-md-none">
               {/* wrap every 2 on sm*/}
@@ -82,7 +95,7 @@ const Cards = () => {
               style={{ borderRadius: "30px" }}
               data-aos="zoom-in-up"
               data-aos-duration={2500}
-            >
+            ><a href="/feature3" style={{ textDecoration: 'none' }}>
               <img
                 className="card-img-top  mx-auto image-4 "
                 style={{
@@ -94,10 +107,11 @@ const Cards = () => {
                 alt=""
               />
               <div className="card-block ">
-                <h4 className="card-title text-center card-four  ct-1">
+                <h4 className="card-title text-center card-four  ct-1" style={{color: "#f2c94c"}}>
                   Expert Teacher
                 </h4>
               </div>
+              </a>
             </div>
             <div
               className="card mb-4 col-lg-3 center col-md-6 col-12 mt-4 "
@@ -105,6 +119,7 @@ const Cards = () => {
               data-aos="zoom-in-up"
               data-aos-duration={3000}
             >
+            <a href="/feature2" style={{ textDecoration: 'none' }}>
               <img
                 className="card-img-top  mx-auto image-4 "
                 style={{
@@ -116,10 +131,11 @@ const Cards = () => {
                 alt=""
               />
               <div className="card-block ">
-                <h4 className="card-title text-center card-five ct-1">
+                <h4 className="card-title text-center card-five ct-1" style={{color: "#6fcf97"}}>
                   Convinent and Safe
                 </h4>
               </div>
+              </a>
             </div>
             <div className="w-100 d-none d-xl-block">
               {/* wrap every 5 on xl*/}
@@ -135,6 +151,9 @@ const Cards = () => {
         <br />
         <br />
         <br />
+        
+        <GetTheApp />
+        <Footer />
       </Wrapper>
     </div>
   );
