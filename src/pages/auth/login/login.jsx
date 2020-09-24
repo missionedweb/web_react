@@ -16,78 +16,12 @@ import logo from "../../../Images/logo.svg";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
 import { Link } from "react-router-dom";
-const useStyles = makeStyles((theme) => ({
-  button: {},
-  modal: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    overflow: "scroll",
-    margin: theme.spacing(2, 0, 2),
-  },
-  paper: {
-    backgroundColor: theme.palette.background.paper,
-    border: "1px solid #000",
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(4, 4),
-    height: "100%",
-    [theme.breakpoints.down("lg")]: {
-      width: "30vw",
-    },
-    [theme.breakpoints.down("sm")]: {
-      width: "80vw",
-    },
-    borderRadius: "5px",
-  },
-
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
-  },
-  form: {
-    width: "100%", // Fix IE 11 issue.
-    marginTop: theme.spacing(3),
-  },
-  submit: {
-    padding: theme.spacing(1.5, 0),
-    fontSize: "16px",
-  },
-}));
-
-const Fade = React.forwardRef(function Fade(props, ref) {
-  const { in: open, children, onEnter, onExited, ...other } = props;
-  const style = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: open ? 1 : 0 },
-    onStart: () => {
-      if (open && onEnter) {
-        onEnter();
-      }
-    },
-    onRest: () => {
-      if (!open && onExited) {
-        onExited();
-      }
-    },
-  });
-
-  return (
-    <animated.div ref={ref} style={style} {...other}>
-      {children}
-    </animated.div>
-  );
-});
-
-Fade.propTypes = {
-  children: PropTypes.element,
-  in: PropTypes.bool.isRequired,
-  onEnter: PropTypes.func,
-  onExited: PropTypes.func,
-};
+import CircularProgress from "@material-ui/core/CircularProgress";
 
 export default function Login() {
+  const [clicked, setClicked] = useState(false);
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
     setOpen(true);
@@ -106,6 +40,7 @@ export default function Login() {
     setDetails((prevState) => ({ ...prevState, [name]: value }));
   };
   const handleSubmit = async (e) => {
+    setClicked(true);
     e.preventDefault();
     const { email, password } = details;
 
@@ -115,6 +50,7 @@ export default function Login() {
       setDetails({ email: "", password: "" });
     } catch (err) {
       //error handling
+      setClicked(false);
       console.log(err.message);
     }
   };
@@ -197,14 +133,25 @@ export default function Login() {
                 control={<Checkbox value="remember" color="primary" />}
                 label="Remember me"
               />
-              <Button
-                type="submit"
-                fullWidth
-                variant="contained"
-                color="primary"
-                className={classes.submit}>
-                Sign In
-              </Button>
+              {clicked ? (
+                <Button
+                  type="submit"
+                  fullWidth
+                  variant="contained"
+                  color="primary"
+                  className={classes.submit}>
+                  <CircularProgress size={24} color="orange" />
+                </Button>
+              ) : (
+                <Button
+                  type="submit"
+                  fullWidth
+                  variant="contained"
+                  color="primary"
+                  className={classes.submit}>
+                  Sign In
+                </Button>
+              )}
             </form>
           </div>
         </Fade>
@@ -212,3 +159,72 @@ export default function Login() {
     </div>
   );
 }
+
+const useStyles = makeStyles((theme) => ({
+  button: {},
+  modal: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    overflow: "scroll",
+    margin: theme.spacing(2, 0, 2),
+  },
+  paper: {
+    backgroundColor: theme.palette.background.paper,
+    border: "1px solid #000",
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing(4, 4),
+    height: "100%",
+    [theme.breakpoints.down("lg")]: {
+      width: "30vw",
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "80vw",
+    },
+    borderRadius: "5px",
+  },
+
+  avatar: {
+    margin: theme.spacing(1),
+    backgroundColor: theme.palette.secondary.main,
+  },
+  form: {
+    width: "100%", // Fix IE 11 issue.
+    marginTop: theme.spacing(3),
+  },
+  submit: {
+    padding: theme.spacing(1.5, 0),
+    fontSize: "16px",
+  },
+}));
+
+const Fade = React.forwardRef(function Fade(props, ref) {
+  const { in: open, children, onEnter, onExited, ...other } = props;
+  const style = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: open ? 1 : 0 },
+    onStart: () => {
+      if (open && onEnter) {
+        onEnter();
+      }
+    },
+    onRest: () => {
+      if (!open && onExited) {
+        onExited();
+      }
+    },
+  });
+
+  return (
+    <animated.div ref={ref} style={style} {...other}>
+      {children}
+    </animated.div>
+  );
+});
+
+Fade.propTypes = {
+  children: PropTypes.element,
+  in: PropTypes.bool.isRequired,
+  onEnter: PropTypes.func,
+  onExited: PropTypes.func,
+};
