@@ -24,11 +24,11 @@ function Addfeatures() {
         
          <Wrapper>
           <div>
-           <div className="jumbotron text-uppercase">
+           <div className="jumbotron">
             <div className="container">
               <div className="row">
                 <div className="col-md-12">
-                  <p className="learning-headingmain">Features</p>
+                  <p className="learning-headingmain">FEATURES</p>
                 </div>
               </div>
             </div>
@@ -43,7 +43,7 @@ function Addfeatures() {
                 data-aos-duration={1000}
                 style={{ margin: "auto" }}
               >
-                <img src={img1} style ={{marginRight: "600px" , width : "50%"}} className = "img-section-left" alt="picture" />
+                <img src={img1} style ={{marginRight: "600px" }} className = "img-section-left" alt="picture" />
               </div>
               <div
                 className="col-md-5 col-12"
@@ -330,7 +330,7 @@ const Wrapper = styled.div`
     font-family: Playfair Display;
     font-style: normal;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 55px;
     padding-top: 20px;
     
   }

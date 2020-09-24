@@ -26,7 +26,7 @@ const Testim = () => {
             </div>
           </div>
 
-          <Testimonials />
+          {/* <Testimonials /> */}
 
           <p
             className="testimonials-heading"
@@ -49,12 +49,11 @@ const Testim = () => {
                 >
                   <img src={team1} alt="Team_image" />
                 </div>
-                <h3>XYZ</h3>
+                <h3>Piya</h3>
                 <p className="role">Student</p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                  quaerat tempora, voluptatum quas facere dolorum aut cumque
-                  nihil nulla harum nemo distinctio quam blanditiis dignissimos.
+                  “I am very happy to be a part of MissionEd. 
+                  I thank MissionEd for helping me secure high grades.” 
                 </p>
               </div>
               <br />
@@ -70,12 +69,13 @@ const Testim = () => {
                 >
                   <img src={team2} alt="Team_image" />
                 </div>
-                <h3>XYZ</h3>
+                <h3>Samiksha</h3>
                 <p className="role">Parent</p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                  quaerat tempora, voluptatum quas facere dolorum aut cumque
-                  nihil nulla harum nemo distinctio quam blanditiis dignissimos.
+                   “It has been an absolutely wonderful experience for all of us! 
+                   His teacher pays great attention to every child in the 
+                   class and encourages them to speak. The classes are more of 
+                   interactive sessions where Reyan feels very comfortable to express himself.” 
                 </p>
               </div>
               <br />
@@ -91,13 +91,10 @@ const Testim = () => {
                 >
                   <img src={team3} alt="Team_image" />
                 </div>
-                <h3>XYZ</h3>
+                <h3>Neha</h3>
                 <p className="role">Student</p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                  quaerat tempora, voluptatum quas facere dolorum aut cumque
-                  nihil nulla harum nemo distinctio quam blanditiis dignissimos.
-                </p>
+                  “Beautifully explained. Simple language & taught in easy way.”   </p>
               </div>
               <div
                 className="team_member"
@@ -111,12 +108,18 @@ const Testim = () => {
                 >
                   <img src={team1} alt="Team_image" />
                 </div>
-                <h3>XYZ</h3>
+                <h3>Soham</h3>
                 <p className="role">Student</p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                  quaerat tempora, voluptatum quas facere dolorum aut cumque
-                  nihil nulla harum nemo distinctio quam blanditiis dignissimos.
+                  “MissionEd  has been an excellent experience for me, 
+                  The constant support and 
+                  guidance from the teachers have helped me develop confidence 
+                  to do my best. The teachers are 
+                  very friendly, approachable and always available for any sort of help. 
+                  Their unique style of teaching and explaining the subject, 
+                  makes understanding any concept simple and easy.”
+
+
                 </p>
               </div>
               <br />
@@ -132,12 +135,12 @@ const Testim = () => {
                 >
                   <img src={team1} alt="Team_image" />
                 </div>
-                <h3>XYZ</h3>
+                <h3>Susan</h3>
                 <p className="role">Student</p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                  quaerat tempora, voluptatum quas facere dolorum aut cumque
-                  nihil nulla harum nemo distinctio quam blanditiis dignissimos.
+                  “Overall, I thought the course was great. 
+                  I did get tons of useful experience from the 
+                  course and the instructor was great.”
                 </p>
               </div>
               <br />
@@ -153,12 +156,13 @@ const Testim = () => {
                 >
                   <img src={team1} alt="Team_image" />
                 </div>
-                <h3>XYZ</h3>
+                <h3>Amyra</h3>
                 <p className="role">Student</p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                  quaerat tempora, voluptatum quas facere dolorum aut cumque
-                  nihil nulla harum nemo distinctio quam blanditiis dignissimos.
+                  “One thing that impressed me about Online-Learning 
+                  is if I have a question, 
+                  there is always a quick response. This is critical when distance is involved. 
+                  This helped getting me through difficult issues and keeping in touch with the class.”
                 </p>
               </div>
               <br />
@@ -174,12 +178,11 @@ const Testim = () => {
                 >
                   <img src={team1} alt="Team_image" />
                 </div>
-                <h3>XYZ</h3>
+                <h3>Sonam</h3>
                 <p className="role">Student</p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                  quaerat tempora, voluptatum quas facere dolorum aut cumque
-                  nihil nulla harum nemo distinctio quam blanditiis dignissimos.
+                  “Excellent content and assignments that build 
+                  on your knowledge, reinforce, and then expand.”
                 </p>
               </div>
               <div
@@ -194,12 +197,10 @@ const Testim = () => {
                 >
                   <img src={team1} alt="Team_image" />
                 </div>
-                <h3>XYZ</h3>
+                <h3>Rahul</h3>
                 <p className="role">Student</p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                  quaerat tempora, voluptatum quas facere dolorum aut cumque
-                  nihil nulla harum nemo distinctio quam blanditiis dignissimos.
+                  “Course materials were good, the mentoring approach was good.”   
                 </p>
               </div>
             </div>

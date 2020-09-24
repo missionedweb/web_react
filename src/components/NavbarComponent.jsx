@@ -1,7 +1,6 @@
 import React from "react";
 import NavigationLogo from "../Images/NavigationLogo.svg";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
@@ -76,25 +75,25 @@ function NavbarComponent({ currentUser }) {
 			            <div class="col-sm-4">
 				            <ul class="multi-column-dropdown">
                    
-                    <a href="#" class="dropdown-item">InCHO</a>
-                       <a href="#" class="dropdown-item">NTSE</a>
-                       <a href="#" class="dropdown-item">CBSE</a>
+                    <a href="/" class="dropdown-item">InCHO</a>
+                       <a href="/" class="dropdown-item">NTSE</a>
+                       <a href="/" class="dropdown-item">CBSE</a>
                        
-                       <a href="#" class="dropdown-item">BITSAT</a>
-                       <a href="#" class="dropdown-item">NSTSE</a>
-                       <a href="#" class="dropdown-item">NSO</a>
+                       <a href="/" class="dropdown-item">BITSAT</a>
+                       <a href="/" class="dropdown-item">NSTSE</a>
+                       <a href="/" class="dropdown-item">NSO</a>
                       
 					            
 				            </ul>
 			            </div>
 			            <div class="col-sm-5">
 				            <ul class="multi-column-dropdown">
-                    <a href="#" class="dropdown-item">JEE MAINS</a>
-                      <a href="#" class="dropdown-item">JEE ADVANCED</a>
-                      <a href="#" class="dropdown-item">NCERT SOL</a>
-                      <a href="#" class="dropdown-item">IMO</a>
-                      <a href="#" class="dropdown-item">SRMJEE</a>
-                      <a href="#" class="dropdown-item">NSEJS</a>
+                    <a href="/" class="dropdown-item">JEE MAINS</a>
+                      <a href="/" class="dropdown-item">JEE ADVANCED</a>
+                      <a href="/" class="dropdown-item">NCERT SOL</a>
+                      <a href="/" class="dropdown-item">IMO</a>
+                      <a href="/" class="dropdown-item">SRMJEE</a>
+                      <a href="/" class="dropdown-item">NSEJS</a>
                       
                       
 				            </ul>
@@ -103,12 +102,12 @@ function NavbarComponent({ currentUser }) {
                   <div class="col-sm-3">
 				            <ul class="multi-column-dropdown mr-1">
                     
-                      <a href="#" class="dropdown-item">RMO</a>
-                      <a href="#" class="dropdown-item">NSO</a>
-                      <a href="#" class="dropdown-item">ICSE</a>
-                      <a href="#" class="dropdown-item">NEET</a>
-                      <a href="#" class="dropdown-item">KVPY</a>
-                      <a href="#" class="dropdown-item">InPHO</a>
+                      <a href="/" class="dropdown-item">RMO</a>
+                      <a href="/" class="dropdown-item">NSO</a>
+                      <a href="/" class="dropdown-item">ICSE</a>
+                      <a href="/" class="dropdown-item">NEET</a>
+                      <a href="/" class="dropdown-item">KVPY</a>
+                      <a href="/" class="dropdown-item">InPHO</a>
                       
 				            </ul>
 			            </div>

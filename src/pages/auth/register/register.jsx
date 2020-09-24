@@ -14,85 +14,34 @@ import TextField from "@material-ui/core/TextField";
 import Link from "@material-ui/core/Link";
 import Grid from "@material-ui/core/Grid";
 import MuiPhoneNumber from "material-ui-phone-number";
+import Visibility from "@material-ui/icons/Visibility";
+import VisibilityOff from "@material-ui/icons/VisibilityOff";
+import InputAdornment from "@material-ui/core/InputAdornment";
+import InputLabel from "@material-ui/core/InputLabel";
+import OutlinedInput from "@material-ui/core/OutlinedInput";
+import IconButton from "@material-ui/core/IconButton";
+import FormControl from "@material-ui/core/FormControl";
 
-const useStyles = makeStyles((theme) => ({
-  button: {},
-  modal: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    overflow: "scroll",
-    margin: theme.spacing(2, 0, 2),
-  },
-  paper: {
-    backgroundColor: theme.palette.background.paper,
-    border: "1px solid #000",
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(3, 3),
-    height: "100%",
-    [theme.breakpoints.down("lg")]: {
-      width: "50vw",
-    },
-    [theme.breakpoints.down("sm")]: {
-      width: "80vw",
-    },
-    borderRadius: "5px",
-  },
-
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
-  },
-  form: {
-    width: "100%", // Fix IE 11 issue.
-    marginTop: theme.spacing(3),
-  },
-  submit: {
-    margin: theme.spacing(3, 0, 2),
-    padding: theme.spacing(1.5, 0),
-    fontSize: "16px",
-  },
-}));
-
-const Fade = React.forwardRef(function Fade(props, ref) {
-  const { in: open, children, onEnter, onExited, ...other } = props;
-  const style = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: open ? 1 : 0 },
-    onStart: () => {
-      if (open && onEnter) {
-        onEnter();
-      }
-    },
-    onRest: () => {
-      if (!open && onExited) {
-        onExited();
-      }
-    },
-  });
-
-  return (
-    <animated.div ref={ref} style={style} {...other}>
-      {children}
-    </animated.div>
-  );
-});
-
-Fade.propTypes = {
-  children: PropTypes.element,
-  in: PropTypes.bool.isRequired,
-  onEnter: PropTypes.func,
-  onExited: PropTypes.func,
-};
+import CircularProgress from "@material-ui/core/CircularProgress";
 
 export default function Register() {
-  const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
+  const [clicked, setClicked] = useState(false);
 
+  // Toggle Password View
+  const [values, setValues] = useState({
+    showPassword: false,
+  });
+  const handleClickShowPassword = () => {
+    setValues({ ...values, showPassword: !values.showPassword });
+  };
+  const handleMouseDownPassword = (event) => {
+    event.preventDefault();
+  };
+  //Modal Component
+  const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
     setOpen(true);
   };
-
   const handleClose = () => {
     setOpen(false);
   };
@@ -103,27 +52,32 @@ export default function Register() {
     email: "",
     password: "",
     phone: "",
+    confirmpassword: "",
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
     setDetails((prevState) => ({ ...prevState, [name]: value }));
   };
+  const handleOnChange = (value) => {
+    setDetails((prevState) => ({ ...prevState, phone: value }));
+  };
+
+  //Submit form
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const { firstName, lastName, email, password, phone } = details;
+    setClicked(true);
+    const { firstName, lastName, email, password, phone, confirmpassword } = details;
+    // check if passwords are equal
+    if (password !== confirmpassword) {
+      setClicked(false);
 
-    //check if passwords are equal
-    // if (password !== confirmpassword) {
-    //   alert("Passwords Donot Match");
-    //   return;
-    // }
-
-    //createUserWithEmailAndPassword
+      alert("Passwords Donot Match");
+      return;
+    }
     try {
       const { user } = await auth.createUserWithEmailAndPassword(email, password);
       let displayName = firstName + " " + lastName;
       console.log(displayName);
-      //createUserProfileDocument
       await createUserProfileDocument(user, { displayName, phone });
       setDetails({
         firstName: "",
@@ -134,13 +88,14 @@ export default function Register() {
       });
     } catch (err) {
       console.error(err.message);
+      setClicked(false);
     }
   };
-
-  const handleOnChange = (value) => {
-    setDetails((prevState) => ({ ...prevState, phone: value }));
-  };
-
+  const [errors, setErrors] = useState({
+    email: "",
+    password: "",
+  });
+  const classes = useStyles();
   return (
     <div>
       <Link
@@ -235,29 +190,64 @@ export default function Register() {
                   />
                 </Grid>
 
-                <Grid item xs={12}>
+                <Grid item xs={6}>
+                  <FormControl style={{ width: "100%" }} variant="outlined">
+                    <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
+                    <OutlinedInput
+                      id="outlined-adornment-password"
+                      type={values.showPassword ? "text" : "password"}
+                      value={details.password}
+                      onChange={handleChange}
+                      name="password"
+                      required
+                      endAdornment={
+                        <InputAdornment position="end">
+                          <IconButton
+                            aria-label="toggle password visibility"
+                            onClick={handleClickShowPassword}
+                            onMouseDown={handleMouseDownPassword}
+                            edge="end">
+                            {values.showPassword ? <Visibility /> : <VisibilityOff />}
+                          </IconButton>
+                        </InputAdornment>
+                      }
+                      labelWidth={70}
+                    />
+                  </FormControl>
+                </Grid>
+                <Grid item xs={6}>
                   <TextField
                     onChange={handleChange}
                     variant="outlined"
                     required
                     fullWidth
-                    name="password"
-                    label="Password"
-                    type="password"
                     id="password"
-                    value={details.password}
-                    autoComplete="current-password"
+                    label="Confirm Password"
+                    name="confirmpassword"
+                    value={details.confirmpassword}
+                    type="password"
                   />
                 </Grid>
               </Grid>
-              <Button
-                type="submit"
-                fullWidth
-                variant="contained"
-                color="primary"
-                className={classes.submit}>
-                Sign Up
-              </Button>
+              {clicked ? (
+                <Button
+                  type="submit"
+                  fullWidth
+                  variant="contained"
+                  color="primary"
+                  className={classes.submit}>
+                  <CircularProgress size={24} color="orange" />
+                </Button>
+              ) : (
+                <Button
+                  type="submit"
+                  fullWidth
+                  variant="contained"
+                  color="primary"
+                  className={classes.submit}>
+                  Sign Up
+                </Button>
+              )}
             </form>
           </div>
         </Fade>
@@ -265,3 +255,77 @@ export default function Register() {
     </div>
   );
 }
+
+// Styles
+const useStyles = makeStyles((theme) => ({
+  button: {},
+  modal: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    overflow: "scroll",
+    margin: theme.spacing(2, 0, 2),
+  },
+  paper: {
+    backgroundColor: theme.palette.background.paper,
+    border: "1px solid #000",
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing(3, 3),
+    height: "100%",
+    [theme.breakpoints.down("lg")]: {
+      width: "45vw",
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "65vw",
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: "80vw",
+    },
+    borderRadius: "5px",
+  },
+
+  avatar: {
+    margin: theme.spacing(1),
+    backgroundColor: theme.palette.secondary.main,
+  },
+  form: {
+    width: "100%", // Fix IE 11 issue.
+    marginTop: theme.spacing(3),
+  },
+  submit: {
+    margin: theme.spacing(3, 0, 2),
+    padding: theme.spacing(1.5, 0),
+    fontSize: "16px",
+  },
+}));
+
+const Fade = React.forwardRef(function Fade(props, ref) {
+  const { in: open, children, onEnter, onExited, ...other } = props;
+  const style = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: open ? 1 : 0 },
+    onStart: () => {
+      if (open && onEnter) {
+        onEnter();
+      }
+    },
+    onRest: () => {
+      if (!open && onExited) {
+        onExited();
+      }
+    },
+  });
+
+  return (
+    <animated.div ref={ref} style={style} {...other}>
+      {children}
+    </animated.div>
+  );
+});
+
+Fade.propTypes = {
+  children: PropTypes.element,
+  in: PropTypes.bool.isRequired,
+  onEnter: PropTypes.func,
+  onExited: PropTypes.func,
+};

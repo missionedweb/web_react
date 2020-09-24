@@ -5,23 +5,12 @@ import GetTheApp from "../../GetTheApp";
 import Footer from "../../Footer";
 import NavbarComponent from "../../NavbarComponent";
 import cont1 from "../../../Images/cont1.png";
-import cont2 from "../../../Images/cont2.png";
 import place1 from "./Images/place1.png";
 import place2 from "./Images/place2.png";
  
 import { Link } from 'react-router-dom'
 
-import Creativity from "../../AboutUs/images/Creativity.png"
-import Curiosity from "../../AboutUs/images/Curiosity.png"
-import Passion from "../../AboutUs/images/Passion.png"
-import Efficiency from "../../AboutUs/images/Efficiency.png"
-import Empathy from "../../AboutUs/images/Empathy.png"
-import Excellence from "../../AboutUs/images/Excellence.png"
 
-
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 const AboutUs = () => {
   return (
@@ -67,7 +56,7 @@ const AboutUs = () => {
                   data-aos-duration={1500}
                 >
                   <div className="card text-center h-80 border-0 image-background">
-                   <a href=""> <img
+                   <a href="/"> <img
                       className="card-img-top img-fluid card01 mx-auto image-1 "
                       src={cont1}
                       alt=""
@@ -89,7 +78,7 @@ const AboutUs = () => {
                   data-aos-duration={1500}
                 >
                   <div className="card text-center h-80 border-0 image-background">
-                   <a href=""> <img
+                   <a href="/"> <img
                       className="card-img-top img-fluid card01 mx-auto image-1 "
                       src={cont1}
                       alt=""
@@ -111,7 +100,7 @@ const AboutUs = () => {
                   data-aos-duration={1500}
                 >
                   <div className="card text-center h-80 border-0 image-background">
-                   <a href=""> <img
+                   <a href="/"> <img
                       className="card-img-top img-fluid card01 mx-auto image-1 "
                       src={cont1}
                       alt=""
@@ -273,11 +262,11 @@ const AboutUs = () => {
           <div class="how-section1">
 <div class="row">
 <div class="col-md-8">
-                            <h4>Find rewarding projects</h4>
-                                        <h4 class="subheading">GetLance is a great place to find more clients, and to run and grow your own freelance business.</h4>
-                        <p class="text-muted">Freedom to work on ideal projects. On GetLance, you run your own business and choose your own clients and projects. Just complete your profile and we’ll highlight ideal jobs. Also search projects, and respond to client invitations.
-                                            Wide variety and high pay. Clients are now posting jobs in hundreds of skill categories, paying top price for great work.
-                                            More and more success. The greater the success you have on projects, the more likely you are to get hired by clients that use GetLance.</p>
+                            <h4> Don’t have too much on your plate</h4>
+                                        <h4 class="subheading">Make realistic targets for a day. Even Rome was not built in a day. Do not overdo things.</h4>
+                        <p class="text-muted">Exercise you brain in a constructive way, and do not clutter it with a lot of thoughts. Be clear in your mind and do not pressure yourself to cover things that are beyond your reach.
+                        Of the 5 or 6 subjects, pick up 2 or a maximum of 3 subjects and pick up a topic or two from each and go into the depths of the topics, instead of skimming 8-10 topics.
+                        </p>
                         </div>
                         <div class="col-md-4 how-img">
                             <img src="https://image.ibb.co/dDW27U/Work_Section2_freelance_img1.png" class="rounded-circle img-fluid" style={{width : "70%"}} alt=""/>
@@ -286,23 +275,19 @@ const AboutUs = () => {
                     </div>
                     <div class="row">
                         <div class="col-md-8">
-                            <h4>Get hired quickly</h4>
-                                        <h4 class="subheading">GetLance makes it easy to connect with clients and begin doing great work.</h4>
-                                        <p class="text-muted">Streamlined hiring. GetLance’s sophisticated algorithms highlight projects you’re a great fit for.
-                                            Top Rated and Rising Talent programs. Enjoy higher visibility with the added status of prestigious programs.
-                                            Do substantial work with top clients. GetLance pricing encourages freelancers to use GetLance for repeat relationships with their clients.</p>
+                            <h4> Follow a proper schedule</h4>
+                                        <h4 class="subheading">Sleep early, get up early in the morning, have a proper breakfast and then study</h4>
+                                        <p class="text-muted">Do not stay up late or waste time doing something that is counter productive like worrying about what might happen. Take out an hour or two to relax and not think about the exams. Read, sleep, play or do whatever you think diverts your attention away from exams.</p>
                         </div>
                         <div class="col-md-4 how-img">
                             <img src="https://image.ibb.co/cHgKnU/Work_Section2_freelance_img2.png" class="rounded-circle img-fluid" style={{width : "70%"}} alt=""/>
                         </div>
                     </div>
                     <div class="row">
-                    <div class="col-md-8">
-                            <h4>Work efficiently, effectively.</h4>
-                                        <h4 class="subheading">With GetLance, you have the freedom and flexibility to control when, where, and how you work. Each project includes an online workspace shared by you and your client, allowing you to:</h4>
-                                        <p class="text-muted">Send and receive files. Deliver digital assets in a secure environment.
-                                            Share feedback in real time. Use GetLance Messages to communicate via text, chat, or video.
-                                            Use our mobile app. Many features can be accessed on your mobile phone when on the go.</p>
+                        <div class="col-md-8">
+                            <h4>Previous Question Papers</h4>
+                                        <h4 class="subheading">By solving papers, you also get an idea about how many ways the same question has appeared, and what are the different ways to answer it.</h4>
+                                        <p class="text-muted">Try to solve as many previous years question papers, it helps you get to know which question has been asked how many times, along with the marks allotted to that particular question. It also gives an idea about the required minimum length of the answer.</p>
                         </div>
                         <div class="col-md-4 how-img">
                              <img src="https://image.ibb.co/ctSLu9/Work_Section2_freelance_img3.png" class="rounded-circle img-fluid" style={{width : "70%"}} alt=""/>
@@ -311,18 +296,15 @@ const AboutUs = () => {
                     </div>
                     <div class="row">
                         <div class="col-md-8">
-                            <h4>Get paid on time</h4>
-                                        <h4 class="subheading">All projects include GetLance Payment Protection — helping ensure that you get paid for all work successfully completed through the freelancing website.</h4>
-                                        <p class="text-muted">All invoices and payments happen through GetLance. Count on a simple and streamlined process.
-                                            Hourly and fixed-price projects. For hourly work, submit timesheets through GetLance. For fixed-price jobs, set milestones and funds are released via GetLance escrow features.
-                                            Multiple payment options. Choose a payment method that works best for you, from direct deposit or PayPal to wire transfer and more.</p>
+                            <h4>Mix and match</h4>
+                                        <h4 class="subheading">Study that for 2 hours or so and gradually increase the level of preparation</h4>
+                                        <p class="text-muted">Plan your day well. Like a good meal, it is important to have all the essential ingredients while studying as well. Do not have all easy subjects/topics in a day or do not over burden yourself with topics that you find difficult. To maximize your output, start your “study day” with a light subject for an hour or so, once you get warmed up, take up a heavy subject or a topic.</p>
                         </div>
                         <div class="col-md-4 how-img">
                             <img src="https://image.ibb.co/gQ9iE9/Work_Section2_freelance_img4.png" class="rounded-circle img-fluid" style={{width : "70%"}} alt=""/>
                         </div>
                     </div>
                 </div>
-        
         <div></div>
         
         <hr/>

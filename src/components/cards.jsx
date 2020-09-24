@@ -1,14 +1,13 @@
 import React from "react";
 import per_learn from "../Images/per_learn.svg";
 import live_inter from "../Images/live_inter.svg";
-import engg_ass from "../Images/engg_ass.svg";
 import convi_safe from "../Images/convi_safe.svg";
 import expert_teac from "../Images/expert_teac.svg";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import NavbarComponent from "./NavbarComponent";
 import GetTheApp from "./GetTheApp";
 import Footer from "./Footer";
+
 
 const Cards = () => {
   return (
@@ -41,8 +40,7 @@ const Cards = () => {
               style={{ borderRadius: "30px" }}
               data-aos="zoom-in-up"
               data-aos-duration={1500}
-            >
-            <a href="/feature4" style={{ textDecoration: 'none' }}>
+            ><a href="/feature4" style={{ textDecoration: 'none' }}>
               <img
                 className="card-img-top  mx-auto image-4 "
                 style={{
@@ -54,7 +52,7 @@ const Cards = () => {
                 alt=""
               />
               <div className="card-block ">
-                <h4 className="card-title text-center card-two  ct-1"style={{color: "#eb5757"}}>
+                <h4 className="card-title text-center card-two  ct-1" style={{color: "#eb5757"}}>
                   Live and Interactive
                 </h4>
               </div>
@@ -68,8 +66,7 @@ const Cards = () => {
               style={{ borderRadius: "30px" }}
               data-aos="zoom-in-up"
               data-aos-duration={2000}
-            >
-            <a href="/feature5" style={{ textDecoration: 'none' }}>
+            >  <a href="/feature5" style={{ textDecoration: 'none' }}>
               <img
                 className="card-img-top  mx-auto image-4 "
                 style={{
@@ -98,8 +95,7 @@ const Cards = () => {
               style={{ borderRadius: "30px" }}
               data-aos="zoom-in-up"
               data-aos-duration={2500}
-            >
-            <a href="/feature3" style={{ textDecoration: 'none' }}>
+            ><a href="/feature3" style={{ textDecoration: 'none' }}>
               <img
                 className="card-img-top  mx-auto image-4 "
                 style={{
@@ -154,6 +150,8 @@ const Cards = () => {
         {/* </div> */}
         <br />
         <br />
+        <br />
+        
         <GetTheApp />
         <Footer />
       </Wrapper>
