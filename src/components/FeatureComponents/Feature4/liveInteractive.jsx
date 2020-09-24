@@ -100,38 +100,48 @@ const liveInteractive=()=>{
   <div className="container">
   <div className="card-deck">
     <div className="card mb-4 col-lg-3 center col-md-6 col-12 mt-4" style={{borderRadius: '30px'}} data-aos="zoom-in-up" data-aos-duration={1000}>
+     <a href="/feature3" style={{ textDecoration: 'none' }}>
      <a href="/feature3"> <img className="card-img-top  mx-auto image-4 " style={{paddingTop: '10px', marginTop: '50px', marginBottom: '70px'}} src={expert_teac} alt="" /></a>
       <div className="card-block ">
         <h4 className="card-title text-center card-one  ct-1" style={{marginTop:"-30px"}}>Expert Teacher</h4>
       </div>
+      </a>
     </div>
     <div className="w-100 d-none d-sm-block d-md-none">{/* wrap every 2 on sm*/}</div>
     <div className="card mb-4 col-lg-3 center col-md-6 col-12 mt-4 " style={{borderRadius: '30px'}} data-aos="zoom-in-up" data-aos-duration={1500}>
+     <a href="/feature1" style={{ textDecoration: 'none' }}>
      <a href="/feature1" ><img className="card-img-top  mx-auto image-4 " style={{paddingTop: '10px', marginTop: '50px', marginBottom: '70px'}} src={engg_ass} alt="" /></a>
       <div className="card-block ">
-        <h4 className="card-title text-center card-two  ct-1" >Engaging Assignments</h4>
+        <h4 className="card-title text-center card-two  ct-1" style={{marginTop: "5px"}}>Engaging Assignments</h4>
       </div>
+      </a>
     </div>
     <div className="w-100 d-none d-md-block d-lg-none">{/* wrap every 3 on md*/}</div>
     <div className="card mb-4 col-lg-3 center col-md-6 col-12 mt-4" style={{borderRadius: '30px'}} data-aos="zoom-in-up" data-aos-duration={2000}>
+     <a href="/feature5" style={{ textDecoration: 'none' }}>
      <a href="/feature5"> <img className="card-img-top  mx-auto image-4 " style={{paddingTop: '30px', marginTop: '50px', marginBottom: '70px'}} src={per_learn} alt="" /></a>
       <div className="card-block ">
-        <h4 className="card-title text-center  card-three  ct-1">Personalised Learning</h4>
+        <h4 className="card-title text-center  card-three  ct-1" style={{marginTop: "55px"}}>Personalised Learning</h4>
       </div>
+      </a>
     </div>
     <div className="w-100 d-none d-sm-block d-md-none">{/* wrap every 2 on sm*/}</div>
     <div className="w-100 d-none d-lg-block d-xl-none">{/* wrap every 4 on lg*/}</div>
     <div className="card mb-4 col-lg-3 center col-md-6 col-12 mt-4" style={{borderRadius: '30px'}} data-aos="zoom-in-up" data-aos-duration={2500}>
+      <a href="/feature6" style={{ textDecoration: 'none' }}>
       <a href="/feature6"><img className="card-img-top  mx-auto image-4 " style={{paddingTop: '30px', marginTop: '20px', marginBottom: '70px'}} src={trust_con} alt="" /></a>
       <div className="card-block ">
         <h4 className="card-title text-center card-four  ct-1">Trusted Content</h4>
       </div>
+      </a>
     </div>
     <div className="card mb-4 col-lg-3 center col-md-6 col-12 mt-4 " style={{borderRadius: '30px'}} data-aos="zoom-in-up" data-aos-duration={3000}>
+      <a href="/feature2" style={{ textDecoration: 'none' }}>
       <a href="/feature2"><img className="card-img-top  mx-auto image-4 " style={{paddingTop: '10px', marginTop: '50px', marginBottom: '70px'}} src={convi_safe} alt="" /></a>
       <div className="card-block ">
         <h4 className="card-title text-center card-five ct-1">Convinent and Safe</h4>
       </div>
+      </a>
     </div>
     <div className="w-100 d-none d-xl-block">{/* wrap every 5 on xl*/}</div>        
   </div>
