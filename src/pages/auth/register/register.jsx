@@ -22,29 +22,26 @@ import OutlinedInput from "@material-ui/core/OutlinedInput";
 import IconButton from "@material-ui/core/IconButton";
 import FormControl from "@material-ui/core/FormControl";
 
+import CircularProgress from "@material-ui/core/CircularProgress";
+
 export default function Register() {
-  const [values, setValues] = React.useState({
-    amount: "",
-    password: "",
-    weight: "",
-    weightRange: "",
+  const [clicked, setClicked] = useState(false);
+
+  // Toggle Password View
+  const [values, setValues] = useState({
     showPassword: false,
   });
-
   const handleClickShowPassword = () => {
     setValues({ ...values, showPassword: !values.showPassword });
   };
-
   const handleMouseDownPassword = (event) => {
     event.preventDefault();
   };
-  const classes = useStyles();
+  //Modal Component
   const [open, setOpen] = React.useState(false);
-
   const handleOpen = () => {
     setOpen(true);
   };
-
   const handleClose = () => {
     setOpen(false);
   };
@@ -61,22 +58,26 @@ export default function Register() {
     const { name, value } = e.target;
     setDetails((prevState) => ({ ...prevState, [name]: value }));
   };
+  const handleOnChange = (value) => {
+    setDetails((prevState) => ({ ...prevState, phone: value }));
+  };
+
+  //Submit form
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setClicked(true);
     const { firstName, lastName, email, password, phone, confirmpassword } = details;
-
     // check if passwords are equal
     if (password !== confirmpassword) {
+      setClicked(false);
+
       alert("Passwords Donot Match");
       return;
     }
-
-    //createUserWithEmailAndPassword
     try {
       const { user } = await auth.createUserWithEmailAndPassword(email, password);
       let displayName = firstName + " " + lastName;
       console.log(displayName);
-      //createUserProfileDocument
       await createUserProfileDocument(user, { displayName, phone });
       setDetails({
         firstName: "",
@@ -87,13 +88,14 @@ export default function Register() {
       });
     } catch (err) {
       console.error(err.message);
+      setClicked(false);
     }
   };
-
-  const handleOnChange = (value) => {
-    setDetails((prevState) => ({ ...prevState, phone: value }));
-  };
-
+  const [errors, setErrors] = useState({
+    email: "",
+    password: "",
+  });
+  const classes = useStyles();
   return (
     <div>
       <Link
@@ -227,14 +229,25 @@ export default function Register() {
                   />
                 </Grid>
               </Grid>
-              <Button
-                type="submit"
-                fullWidth
-                variant="contained"
-                color="primary"
-                className={classes.submit}>
-                Sign Up
-              </Button>
+              {clicked ? (
+                <Button
+                  type="submit"
+                  fullWidth
+                  variant="contained"
+                  color="primary"
+                  className={classes.submit}>
+                  <CircularProgress size={24} color="orange" />
+                </Button>
+              ) : (
+                <Button
+                  type="submit"
+                  fullWidth
+                  variant="contained"
+                  color="primary"
+                  className={classes.submit}>
+                  Sign Up
+                </Button>
+              )}
             </form>
           </div>
         </Fade>
@@ -243,6 +256,7 @@ export default function Register() {
   );
 }
 
+// Styles
 const useStyles = makeStyles((theme) => ({
   button: {},
   modal: {
