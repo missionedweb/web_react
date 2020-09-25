@@ -11,7 +11,7 @@
     font-family: "Playfair Display", serif;
     font-weight: bold;
 
-    letter-spacing: calc(0.5em+1vh);
+    /* letter-spacing: calc(0.5em+1vh); */
     line-height: calc(1em+0.75vh);
     color: white;
     padding-top: 2%;
