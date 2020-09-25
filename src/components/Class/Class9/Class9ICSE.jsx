@@ -4,9 +4,12 @@ import Testimonials from "../../Testimonials";
 import GetTheApp from "../../GetTheApp";
 import Footer from "../../Footer";
 import NavbarComponent from "../../NavbarComponent";
-import cont1 from "../../../Images/cont1.png";
 import place1 from "./Images/place1.png";
 import place2 from "./Images/place2.png";
+import func from "../../../Images/function.png";
+import molecule from "../../../Images/molecule.png";
+import relativity from "../../../Images/relativity.png";
+import micro from "../../../Images/microorganisms.png";
  
 import { Link } from 'react-router-dom'
 
@@ -59,7 +62,7 @@ const AboutUs = () => {
                   <div className="card text-center h-80 border-0 image-background">
                    <a href="/"> <img
                       className="card-img-top img-fluid card01 mx-auto image-1 "
-                      src={cont1}
+                      src={func}
                       alt=""
                       style = {{ width : "200px" }}
                     />
@@ -81,7 +84,7 @@ const AboutUs = () => {
                   <div className="card text-center h-80 border-0 image-background">
                    <a href="/"> <img
                       className="card-img-top img-fluid card01 mx-auto image-1 "
-                      src={cont1}
+                      src={micro}
                       alt=""
                       style = {{ width : "200px" }}
                     />
@@ -103,7 +106,7 @@ const AboutUs = () => {
                   <div className="card text-center h-80 border-0 image-background">
                    <a href="/"> <img
                       className="card-img-top img-fluid card01 mx-auto image-1 "
-                      src={cont1}
+                      src={molecule}
                       alt=""
                       style = {{ width : "200px" }}
                     />
@@ -126,7 +129,7 @@ const AboutUs = () => {
                   <div className="card text-center h-80 border-0 image-background">
                    <a href="/"> <img
                       className="card-img-top img-fluid card01 mx-auto image-1 "
-                      src={cont1}
+                      src={relativity}
                       alt=""
                       style = {{ width : "200px" }}
                     />
