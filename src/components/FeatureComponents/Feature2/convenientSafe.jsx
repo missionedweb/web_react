@@ -179,7 +179,7 @@ const convenientSafe = () => {
              <a href="/feature3" style={{ textDecoration: 'none' }}>
              <a href="/feature3"> <img className="card-img-top  mx-auto image-4 " style={{paddingTop: '10px', marginTop: '50px', marginBottom: '70px'}} src={expert_teac} alt="" /></a>
               <div className="card-block ">
-                <h4 className="card-title text-center card-one  ct-1" style={{marginTop:"-30px"}}>Expert Teacher</h4>
+                <h4 className="card-title text-center card-one  ct-1" style={{marginTop:"-30px" , color: "#eb5757"}}>Expert Teacher</h4>
               </div>
               </a>
             </div>
@@ -188,7 +188,7 @@ const convenientSafe = () => {
              <a href="/feature4" style={{ textDecoration: 'none' }}>
              <a href="/feature4" ><img className="card-img-top  mx-auto image-4 " style={{paddingTop: '10px', marginTop: '50px', marginBottom: '70px'}} src={live_inter} alt="" /></a>
               <div className="card-block ">
-                <h4 className="card-title text-center card-two  ct-1">Live and Interactive</h4>
+                <h4 className="card-title text-center card-two  ct-1" style={{ color: "#2f80ed"}}>Live and Interactive</h4>
               </div>
               </a>
             </div>
@@ -197,7 +197,7 @@ const convenientSafe = () => {
              <a href="/feature5" style={{ textDecoration: 'none' }}>
              <a href="/feature5"> <img className="card-img-top  mx-auto image-4 " style={{paddingTop: '30px', marginTop: '50px', marginBottom: '70px'}} src={per_learn} alt="" /></a>
               <div className="card-block ">
-                <h4 className="card-title text-center  card-three  ct-1" style={{marginTop:"40px"}}>Personalised Learning</h4>
+                <h4 className="card-title text-center  card-three  ct-1" style={{marginTop:"40px" , color: "#f2c94c"}}>Personalised Learning</h4>
               </div>
               </a>
             </div>
@@ -215,7 +215,7 @@ const convenientSafe = () => {
               <a href="/feature1" style={{ textDecoration: 'none' }}>
               <a href="/feature1"><img className="card-img-top  mx-auto image-4 " style={{paddingTop: '10px', marginTop: '50px', marginBottom: '70px'}} src={engg_ass} alt="" /></a>
               <div className="card-block ">
-                <h4 className="card-title text-center card-five ct-1" style={{marginTop:"-10px"}}>Engaging Assignments</h4>
+                <h4 className="card-title text-center card-five ct-1" style={{marginTop:"-10px" , color: "#6fcf97"}}>Engaging Assignments</h4>
               </div>
               </a>
             </div>
