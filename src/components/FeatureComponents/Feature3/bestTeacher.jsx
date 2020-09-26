@@ -120,6 +120,7 @@ const bestTeacher=()=>{
           <div className="row" data-aos="fade-right" data-aos-duration={900}>
             <div className="col-md-4 col-12" style={{margin: 'auto'}}>
               <h3 className=" above">Study from your home with the best Educators </h3>
+              <br />
               <p className=" abovep">MissionEd makes it possible for you to get your syllabus done and prepare for All India Level Exams with the help of Educators from Top-Notch Premier Institutes while staying at your home in the time of this pandemic </p>
             </div>
             <div className="col-md-8 col-12 women2 ">
@@ -135,6 +136,7 @@ const bestTeacher=()=>{
             <img src={p6} alt="picture" /></div>
           <div className="col-md-4 col-12" style={{margin: 'auto'}}>
             <h3 className=" above1">Learn Multi-tasking and prepare for upcoming challenges</h3>
+            <br />
             <p className=" abovep">MissionEd isn’t all about one way Learning, students can ask for a more personalized learning experience whenever they want the need of. We teach our students multi-tasking and strategy building techniques too hence preparing them for becoming Future Leaders </p>
           </div>
         </div>
@@ -376,6 +378,7 @@ body{
   .abovep
   {
     text-align: justify;
+    font-size: 19px;
   }
   
   .women2 img

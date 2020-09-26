@@ -62,7 +62,7 @@ const FAQ = () => {
                                 onClick={() => setOpenOne(!openOne)}
                                 aria-controls="example-collapse-text"
                                 aria-expanded={openOne}
-                                className="btn btn-link collapsed"
+                                className="btn btn-link collapsed" style={{fontSize: "20px"}}
                               >
                                 What is a typical schedule for an online class?
                               </Button>
@@ -70,7 +70,7 @@ const FAQ = () => {
                           </div>
                           <Collapse in={openOne}>
                             <div className="example-collapse-text">
-                              <div className="card-body px-3 py-2">
+                              <div className="card-body px-3 py-2" style={{fontSize: "19px"}}>
                               We conduct classes 5 times a week.
                               </div>
                             </div>
@@ -87,7 +87,7 @@ const FAQ = () => {
                                 onClick={() => setOpenTwo(!openTwo)}
                                 aria-controls="example-collapse-text"
                                 aria-expanded={openTwo}
-                                className="btn btn-link collapsed"
+                                className="btn btn-link collapsed" style={{fontSize: "20px"}}
                               >
                                 How is the material available online?
                               </Button>
@@ -95,7 +95,7 @@ const FAQ = () => {
                           </div>
                           <Collapse in={openTwo}>
                             <div className="example-collapse-text">
-                              <div className="card-body px-3 py-2">
+                              <div className="card-body px-3 py-2" style={{fontSize: "19px"}}>
                                 Students can log in and can select their courses. 
                                 Once a student is in their course site, they can access study materials.                              </div>
                             </div>
@@ -112,7 +112,7 @@ const FAQ = () => {
                                 onClick={() => setOpenThree(!openThree)}
                                 aria-controls="example-collapse-text"
                                 aria-expanded={openThree}
-                                className="btn btn-link collapsed"
+                                className="btn btn-link collapsed" style={{fontSize: "20px"}}
                               >
                                  Do you provide any assistance to help students complete their homework?
                               </Button>
@@ -120,7 +120,7 @@ const FAQ = () => {
                           </div>
                           <Collapse in={openThree}>
                             <div className="example-collapse-text">
-                              <div className="card-body px-3 py-2">
+                              <div className="card-body px-3 py-2" style={{fontSize: "19px"}}>
                                 Yes
                               </div>
                             </div>
@@ -137,7 +137,7 @@ const FAQ = () => {
                                 onClick={() => setOpenFour(!openFour)}
                                 aria-controls="example-collapse-text"
                                 aria-expanded={openFour}
-                                className="btn btn-link collapsed"
+                                className="btn btn-link collapsed" style={{fontSize: "20px"}}
                               >
                                  How do I select my teacher?
                               </Button>
@@ -145,7 +145,7 @@ const FAQ = () => {
                           </div>
                           <Collapse in={openFour}>
                             <div className="example-collapse-text">
-                              <div className="card-body px-3 py-2">
+                              <div className="card-body px-3 py-2" style={{fontSize: "19px"}}>
                                 You can select from list of teachers available for each subject, 
                                 you can select a teacher 
                                 suitable as per your requirements.
@@ -166,7 +166,7 @@ const FAQ = () => {
                                 onClick={() => setOpenFive(!openFive)}
                                 aria-controls="example-collapse-text"
                                 aria-expanded={openFive}
-                                className="btn btn-link collapsed"
+                                className="btn btn-link collapsed" style={{fontSize: "20px"}}
                               >
                                 Is there a webinar that can explain the program to me?
                               </Button>
@@ -174,7 +174,7 @@ const FAQ = () => {
                           </div>
                           <Collapse in={openFive}>
                             <div className="example-collapse-text">
-                              <div className="card-body px-3 py-2">
+                              <div className="card-body px-3 py-2"style={{fontSize: "19px"}}>
                                 Yes, We provide a webinar.
                               </div>
                             </div>
@@ -191,7 +191,7 @@ const FAQ = () => {
                                 onClick={() => setOpenSix(!openSix)}
                                 aria-controls="example-collapse-text"
                                 aria-expanded={openSix}
-                                className="btn btn-link collapsed"
+                                className="btn btn-link collapsed" style={{fontSize: "20px"}}
                               >
                                How do I get homework assignments, tests, etc.?
                               </Button>
@@ -199,7 +199,7 @@ const FAQ = () => {
                           </div>
                           <Collapse in={openSix}>
                             <div className="example-collapse-text">
-                              <div className="card-body px-3 py-2">
+                              <div className="card-body px-3 py-2" style={{fontSize: "19px"}}>
                                 Homework, tests, paper assignments, 
                                 and more will be clearly communicated 
                                 on the class website as well as directly 
@@ -219,7 +219,7 @@ const FAQ = () => {
                                 onClick={() => setOpenSeven(!openSeven)}
                                 aria-controls="example-collapse-text"
                                 aria-expanded={openSeven}
-                                className="btn btn-link collapsed"
+                                className="btn btn-link collapsed" style={{fontSize: "20px"}}
                               >
                                 How can my child clear his/her doubts instantly during the online class?
 
@@ -228,7 +228,7 @@ const FAQ = () => {
                           </div>
                           <Collapse in={openSeven}>
                             <div className="example-collapse-text">
-                              <div className="card-body px-3 py-2">
+                              <div className="card-body px-3 py-2" style={{fontSize: "19px"}}>
                                 While attending a class, 
                                 you can ask via a live chatbox. 
                                 Our specially assigned teachers will instantly assist and solve your 
@@ -249,7 +249,7 @@ const FAQ = () => {
                                 onClick={() => setOpenEight(!openEight)}
                                 aria-controls="example-collapse-text"
                                 aria-expanded={openEight}
-                                className="btn btn-link collapsed"
+                                className="btn btn-link collapsed" style={{fontSize: "20px"}}
                               >
                                 How are parents made aware of their children’s progress?
                               </Button>
@@ -257,7 +257,7 @@ const FAQ = () => {
                           </div>
                           <Collapse in={openEight}>
                             <div className="example-collapse-text">
-                              <div className="card-body px-3 py-2">
+                              <div className="card-body px-3 py-2" style={{fontSize: "19px"}}>
                                 
                                 We schedule regular parent-teacher conferences during 
                                 which we review and discuss children’s progress.

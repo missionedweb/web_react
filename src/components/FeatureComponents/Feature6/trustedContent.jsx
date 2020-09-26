@@ -74,6 +74,7 @@ const trustedContent = () => {
                 style={{ margin: "auto" }}
               >
                 <h3 className=" above1">Quality Content</h3>
+                <br />
                 <p className=" abovep">
                   All the notes and videos which are provided are entrusted. We
                   go through all the readings, availability and changes made
@@ -97,6 +98,7 @@ const trustedContent = () => {
                 style={{ margin: "auto" }}
               >
                 <h3 className=" above ">Flexible Sessions</h3>
+                <br />
                 <p className=" abovep">
                   There is no rigidness to sit and learn at a particular place
                   or at particular time. We work according to the student's
@@ -136,6 +138,7 @@ const trustedContent = () => {
                 style={{ margin: "auto" }}
               >
                 <h3 className=" above1">Lectures</h3>
+                <br />
                 <p className=" abovep">
                   Classes provided to the students are prepared keeping things
                   in mind to provide the essentials and latest in the topic. We
@@ -411,6 +414,7 @@ const Wrapper = styled.div`
 
   .abovep {
     text-align: justify;
+    font-size: 19px;
   }
 
   .women1 img {

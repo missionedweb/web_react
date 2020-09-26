@@ -73,6 +73,7 @@ const convenientSafe = () => {
                 style={{ margin: "auto" }}
               >
                 <h3 className=" above1">Affordable</h3>
+                <br />
                 <p className=" abovep">
                   In this covid-19 situation when everyone is stuck in their
                   home. Schools, colleges and other educational institutions.
@@ -99,6 +100,7 @@ const convenientSafe = () => {
                 style={{ margin: "auto" }}
               >
                 <h3 className=" above ">Cross-Platform Support</h3>
+                <br />
                 <p className=" abovep">
                   MissionEd services can be accessed through via both PC and
                   mobile app, enabling students to learn from anywhere anytime.
@@ -137,6 +139,7 @@ const convenientSafe = () => {
                 style={{ margin: "auto" }}
               >
                 <h3 className=" above1">Study from your home</h3>
+                <br />
                 <p className=" abovep">
                   It is convenient and safe as everyone is sitting in their
                   home. It follows the norms of social distancing. As well as it
@@ -408,6 +411,7 @@ const Wrapper = styled.div`
 
   .abovep {
     text-align: justify;
+    font-size: 19px;
   }
 
   .women1 img {

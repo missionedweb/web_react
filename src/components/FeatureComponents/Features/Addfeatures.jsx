@@ -389,9 +389,9 @@ const Wrapper = styled.div`
   
  font-style: normal;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 19px;
   line-height: 30px;
-  color: #7d7987;
+  color: #000000;
   text-align: justify;
   text-justify: inter-word;
   

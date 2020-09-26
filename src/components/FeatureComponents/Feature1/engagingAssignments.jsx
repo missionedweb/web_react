@@ -58,6 +58,7 @@ const engagingAssignments=()=>{
                 <img src={banner_one} alt="picture" /></div>
               <div className="col-md-4 col-12" data-aos="fade-up" data-aos-duration={1500} style={{margin: 'auto'}}>
                 <h3 className=" above1">Activity based Assignments</h3>
+                <br />
                 <p className=" abovep">Daily tasks could be dull and difficult. Sometimes students get bored by lethargic work. The assignments which are given are based on activities so that a child can understand the tough topics in an easy and relevant way.</p>
               </div>
             </div>
@@ -68,6 +69,7 @@ const engagingAssignments=()=>{
             <div className="row">
               <div className="col-md-4 col-12" data-aos="fade-right" data-aos-duration={1000} style={{margin: 'auto'}}>
                 <h3 className=" above ">Learning through videos</h3>
+                <br />
                 <p className=" abovep">Understanding any concept through videos is more worthwhile than reading or listening. Things which we see remain in our memory for longtime. MissionEd has come up with learning through videos which can make children's minds understand topics enthusiastically.</p>
               </div>
               <div className="col-md-8 col-12 women2 " data-aos="fade-left" data-aos-duration={1500}>
@@ -83,6 +85,7 @@ const engagingAssignments=()=>{
                 <img src={banner_three} alt="picture" /></div>
               <div className="col-md-4 col-12" data-aos="fade-up" data-aos-duration={1500} style={{margin: 'auto'}}>
                 <h3 className=" above1">Quality notes and questions</h3>
+                <br />
                 <p className=" abovep">We lend students plenty of notes and topic related questions which will help them to prepare theories and emphasize their answer writing skill.  This will help them to write down the exam in an efficient manner.</p>
               </div>
             </div>
@@ -333,6 +336,7 @@ body{
   .abovep
   {
     text-align: justify;
+    font-size: 19px;
   }
   
   

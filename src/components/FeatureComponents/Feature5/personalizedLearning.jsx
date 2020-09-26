@@ -74,6 +74,7 @@ const personalizedLearning = () => {
                 style={{ margin: "auto" }}
               >
                 <h3 className=" above1">Mentorship</h3>
+                <br />
                 <p className=" abovep">
                   We focus on students individually as well as we provide group
                   studies. In individual sessions, the teacher is able to focus
@@ -100,6 +101,7 @@ const personalizedLearning = () => {
                 style={{ margin: "auto" }}
               >
                 <h3 className=" above ">Conceptual clarity</h3>
+                <br />
                 <p className=" abovep">
                   We are a team of IITians who are experienced and have command
                   in our subjects. We tend to believe that the concepts should
@@ -141,6 +143,7 @@ const personalizedLearning = () => {
                 style={{ margin: "auto" }}
               >
                 <h3 className=" above1">Mock tests</h3>
+                <br />
                 <p className=" abovep">
                   To assure that the student is understanding the concepts,
                   weekly tests are taken. This would generate a habit for a
@@ -414,6 +417,7 @@ const Wrapper = styled.div`
 
   .abovep {
     text-align: justify;
+    font-size: 19px;
   }
 
   .women1 img {

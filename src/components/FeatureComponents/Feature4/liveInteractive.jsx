@@ -60,6 +60,7 @@ const liveInteractive=()=>{
         <img src={banner_one} alt="picture" /></div>
       <div className="col-md-4 col-12" data-aos="fade-up" data-aos-duration={1500} style={{margin: 'auto'}}>
         <h3 className=" above1">Live classes</h3>
+        <br />
         <p className=" abovep">Sessions and classes provided to the student are live. This helps to clear the on spot doubts and interaction made between a student and a teacher makes the communication healthy and interactive. This creates a bond between them which easily lets one clarify their doubts.</p>
       </div>
     </div>
@@ -70,6 +71,7 @@ const liveInteractive=()=>{
     <div className="row">
       <div className="col-md-4 col-12" data-aos="fade-right" data-aos-duration={1000} style={{margin: 'auto'}}>
         <h3 className=" above ">Doubt session</h3>
+        <br />
         <p className=" abovep">It happens often that the topic you learnt in class was understandable but when you again read that you get stuck. We provide doubt sessions so that students can individually clear their doubts.</p>
       </div>
       <div className="col-md-8 col-12 women2 " data-aos="fade-left" data-aos-duration={1500}>
@@ -85,6 +87,7 @@ const liveInteractive=()=>{
         <img src={banner_three} alt="picture" /></div>
       <div className="col-md-4 col-12" data-aos="fade-up" data-aos-duration={1500} style={{margin: 'auto'}}>
         <h3 className=" above1">24/7 availability</h3>
+        <br />
         <p className=" abovep">Solving questions at midnight and stuck in between. No one is there to help you. No worries we are available 24/7 to help you out anytime. To solve your queries and this would not let you wait for longtime to ask and understand.</p>
       </div>
     </div>
@@ -343,6 +346,7 @@ body{
   .abovep
   {
     text-align: justify;
+    font-size: 19px;
   }
   
   
