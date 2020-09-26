@@ -60,6 +60,7 @@ const liveInteractive=()=>{
         <img src={banner_one} alt="picture" /></div>
       <div className="col-md-4 col-12" data-aos="fade-up" data-aos-duration={1500} style={{margin: 'auto'}}>
         <h3 className=" above1">Live classes</h3>
+        <br />
         <p className=" abovep">Sessions and classes provided to the student are live. This helps to clear the on spot doubts and interaction made between a student and a teacher makes the communication healthy and interactive. This creates a bond between them which easily lets one clarify their doubts.</p>
       </div>
     </div>
@@ -70,6 +71,7 @@ const liveInteractive=()=>{
     <div className="row">
       <div className="col-md-4 col-12" data-aos="fade-right" data-aos-duration={1000} style={{margin: 'auto'}}>
         <h3 className=" above ">Doubt session</h3>
+        <br />
         <p className=" abovep">It happens often that the topic you learnt in class was understandable but when you again read that you get stuck. We provide doubt sessions so that students can individually clear their doubts.</p>
       </div>
       <div className="col-md-8 col-12 women2 " data-aos="fade-left" data-aos-duration={1500}>
@@ -85,6 +87,7 @@ const liveInteractive=()=>{
         <img src={banner_three} alt="picture" /></div>
       <div className="col-md-4 col-12" data-aos="fade-up" data-aos-duration={1500} style={{margin: 'auto'}}>
         <h3 className=" above1">24/7 availability</h3>
+        <br />
         <p className=" abovep">Solving questions at midnight and stuck in between. No one is there to help you. No worries we are available 24/7 to help you out anytime. To solve your queries and this would not let you wait for longtime to ask and understand.</p>
       </div>
     </div>
@@ -103,7 +106,7 @@ const liveInteractive=()=>{
      <a href="/feature3" style={{ textDecoration: 'none' }}>
      <a href="/feature3"> <img className="card-img-top  mx-auto image-4 " style={{paddingTop: '10px', marginTop: '50px', marginBottom: '70px'}} src={expert_teac} alt="" /></a>
       <div className="card-block ">
-        <h4 className="card-title text-center card-one  ct-1" style={{marginTop:"-30px"}}>Expert Teacher</h4>
+        <h4 className="card-title text-center card-one  ct-1" style={{marginTop:"-30px" , color: "#eb5757"}}>Expert Teacher</h4>
       </div>
       </a>
     </div>
@@ -112,7 +115,7 @@ const liveInteractive=()=>{
      <a href="/feature1" style={{ textDecoration: 'none' }}>
      <a href="/feature1" ><img className="card-img-top  mx-auto image-4 " style={{paddingTop: '10px', marginTop: '50px', marginBottom: '70px'}} src={engg_ass} alt="" /></a>
       <div className="card-block ">
-        <h4 className="card-title text-center card-two  ct-1" style={{marginTop: "5px"}}>Engaging Assignments</h4>
+        <h4 className="card-title text-center card-two  ct-1" style={{marginTop: "5px" , color: "#2f80ed"}}>Engaging Assignments</h4>
       </div>
       </a>
     </div>
@@ -121,7 +124,7 @@ const liveInteractive=()=>{
      <a href="/feature5" style={{ textDecoration: 'none' }}>
      <a href="/feature5"> <img className="card-img-top  mx-auto image-4 " style={{paddingTop: '30px', marginTop: '50px', marginBottom: '70px'}} src={per_learn} alt="" /></a>
       <div className="card-block ">
-        <h4 className="card-title text-center  card-three  ct-1" style={{marginTop: "55px"}}>Personalised Learning</h4>
+        <h4 className="card-title text-center  card-three  ct-1" style={{marginTop: "55px" , color: "#f2c94c"}}>Personalised Learning</h4>
       </div>
       </a>
     </div>
@@ -139,7 +142,7 @@ const liveInteractive=()=>{
       <a href="/feature2" style={{ textDecoration: 'none' }}>
       <a href="/feature2"><img className="card-img-top  mx-auto image-4 " style={{paddingTop: '10px', marginTop: '50px', marginBottom: '70px'}} src={convi_safe} alt="" /></a>
       <div className="card-block ">
-        <h4 className="card-title text-center card-five ct-1">Convinent and Safe</h4>
+        <h4 className="card-title text-center card-five ct-1" style={{color: "#6fcf97"}}>Convinent and Safe</h4>
       </div>
       </a>
     </div>
@@ -343,6 +346,7 @@ body{
   .abovep
   {
     text-align: justify;
+    font-size: 19px;
   }
   
   
@@ -428,6 +432,9 @@ body{
   }
   .women2, .women3, .women1{
    display: none;
+  }
+  .abovep {
+    font-size: 23px;
   }
   
   .abc{

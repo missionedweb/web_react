@@ -74,6 +74,7 @@ const trustedContent = () => {
                 style={{ margin: "auto" }}
               >
                 <h3 className=" above1">Quality Content</h3>
+                <br />
                 <p className=" abovep">
                   All the notes and videos which are provided are entrusted. We
                   go through all the readings, availability and changes made
@@ -97,6 +98,7 @@ const trustedContent = () => {
                 style={{ margin: "auto" }}
               >
                 <h3 className=" above ">Flexible Sessions</h3>
+                <br />
                 <p className=" abovep">
                   There is no rigidness to sit and learn at a particular place
                   or at particular time. We work according to the student's
@@ -136,6 +138,7 @@ const trustedContent = () => {
                 style={{ margin: "auto" }}
               >
                 <h3 className=" above1">Lectures</h3>
+                <br />
                 <p className=" abovep">
                   Classes provided to the students are prepared keeping things
                   in mind to provide the essentials and latest in the topic. We
@@ -179,7 +182,7 @@ const trustedContent = () => {
              <a href="/feature3" style={{ textDecoration: 'none' }}>
              <a href="/feature3"> <img className="card-img-top  mx-auto image-4 " style={{paddingTop: '10px', marginTop: '50px', marginBottom: '70px'}} src={expert_teac} alt="" /></a>
               <div className="card-block ">
-                <h4 className="card-title text-center card-one  ct-1" style={{marginTop:"-30px"}}>Expert Teacher</h4>
+                <h4 className="card-title text-center card-one  ct-1" style={{marginTop:"-30px" , color: "#eb5757"}}>Expert Teacher</h4>
               </div>
               </a>
             </div>
@@ -188,7 +191,7 @@ const trustedContent = () => {
              <a href="/feature4" style={{ textDecoration: 'none' }}>
              <a href="/feature4" ><img className="card-img-top  mx-auto image-4 " style={{paddingTop: '10px', marginTop: '50px', marginBottom: '70px'}} src={live_inter} alt="" /></a>
               <div className="card-block ">
-                <h4 className="card-title text-center card-two  ct-1">Live and Interactive</h4>
+                <h4 className="card-title text-center card-two  ct-1" style={{color: "#2f80ed"}}>Live and Interactive</h4>
               </div>
               </a>
             </div>
@@ -197,7 +200,7 @@ const trustedContent = () => {
              <a href="/feature5" style={{ textDecoration: 'none' }}>
              <a href="/feature5"> <img className="card-img-top  mx-auto image-4 " style={{paddingTop: '30px', marginTop: '50px', marginBottom: '70px'}} src={per_learn} alt="" /></a>
               <div className="card-block ">
-                <h4 className="card-title text-center  card-three  ct-1" style={{paddingTop: "10px"}}>Personalised Learning</h4>
+                <h4 className="card-title text-center  card-three  ct-1" style={{paddingTop: "10px" , color: "#f2c94c"}}>Personalised Learning</h4>
               </div>
               </a>
             </div>
@@ -215,7 +218,7 @@ const trustedContent = () => {
               <a href="/feature2" style={{ textDecoration: 'none' }}>
               <a href="/feature2"><img className="card-img-top  mx-auto image-4 " style={{paddingTop: '10px', marginTop: '50px', marginBottom: '70px'}} src={convi_safe} alt="" /></a>
               <div className="card-block ">
-                <h4 className="card-title text-center card-five ct-1">Convinent and Safe</h4>
+                <h4 className="card-title text-center card-five ct-1" style={{color: "#6fcf97"}}>Convinent and Safe</h4>
               </div>
               </a>
             </div>
@@ -411,6 +414,7 @@ const Wrapper = styled.div`
 
   .abovep {
     text-align: justify;
+    font-size: 19px;
   }
 
   .women1 img {
@@ -493,7 +497,9 @@ const Wrapper = styled.div`
     .women1 {
       display: none;
     }
-
+    .abovep {
+    font-size: 23px;
+  }
     .abc {
       display: none;
     }

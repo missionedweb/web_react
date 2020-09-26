@@ -63,7 +63,7 @@ const AboutUs = () => {
           data-aos-duration="1500"
         >
           <p className="learning-heading">What we believe in?</p>
-          <h6 className="learning-txt" style={{ margin: "auto" }}>
+          <h6 className="learning-txt1" style={{ margin: "auto" }}>
             {" "}
             The environment of learning we provide  is nurtured by the experts. The guidance that  
             <br/>you are seeking is from the IITians. They will provide you the enhanced way of teaching 
@@ -404,6 +404,17 @@ const Wrapper = styled.div`
     line-height: 80px;
     color: #202336;
   }
+
+  .learning-txt1{
+  
+ font-style: normal;
+  font-size: 19px;
+  line-height: 30px;
+  color: #000000;
+  text-align: justify;
+  text-justify: inter-word;
+  
+}
   a {
     cursor: pointer;
     transition: all 200ms linear;

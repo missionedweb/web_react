@@ -120,6 +120,7 @@ const bestTeacher=()=>{
           <div className="row" data-aos="fade-right" data-aos-duration={900}>
             <div className="col-md-4 col-12" style={{margin: 'auto'}}>
               <h3 className=" above">Study from your home with the best Educators </h3>
+              <br />
               <p className=" abovep">MissionEd makes it possible for you to get your syllabus done and prepare for All India Level Exams with the help of Educators from Top-Notch Premier Institutes while staying at your home in the time of this pandemic </p>
             </div>
             <div className="col-md-8 col-12 women2 ">
@@ -135,6 +136,7 @@ const bestTeacher=()=>{
             <img src={p6} alt="picture" /></div>
           <div className="col-md-4 col-12" style={{margin: 'auto'}}>
             <h3 className=" above1">Learn Multi-tasking and prepare for upcoming challenges</h3>
+            <br />
             <p className=" abovep">MissionEd isn’t all about one way Learning, students can ask for a more personalized learning experience whenever they want the need of. We teach our students multi-tasking and strategy building techniques too hence preparing them for becoming Future Leaders </p>
           </div>
         </div>
@@ -153,7 +155,7 @@ const bestTeacher=()=>{
          <a href="/feature1" style={{ textDecoration: 'none' }}>
          <a href="/feature1"> <img className="card-img-top  mx-auto image-4 " style={{paddingTop: '10px', marginTop: '50px', marginBottom: '70px'}} src={engg_ass} alt="" /></a>
           <div className="card-block ">
-            <h4 className="card-title text-center card-one  ct-1" style={{marginTop:"-30px"}}>Engaging Assignments</h4>
+            <h4 className="card-title text-center card-one  ct-1" style={{marginTop:"-30px" , color: "#eb5757"}}>Engaging Assignments</h4>
           </div>
           </a>
         </div>
@@ -162,7 +164,7 @@ const bestTeacher=()=>{
          <a href="/feature4" style={{ textDecoration: 'none' }}>
          <a href="/feature4" ><img className="card-img-top  mx-auto image-4 " style={{paddingTop: '10px', marginTop: '50px', marginBottom: '70px'}} src={live_inter} alt="" /></a>
           <div className="card-block ">
-            <h4 className="card-title text-center card-two  ct-1">Live and Interactive</h4>
+            <h4 className="card-title text-center card-two  ct-1" style={{ color: "#2f80ed"}}>Live and Interactive</h4>
           </div>
           </a>
         </div>
@@ -171,7 +173,7 @@ const bestTeacher=()=>{
          <a href="/feature5" style={{ textDecoration: 'none' }}>
          <a href="/feature5"> <img className="card-img-top  mx-auto image-4 " style={{paddingTop: '30px', marginTop: '50px', marginBottom: '70px'}} src={per_learn} alt="" /></a>
           <div className="card-block ">
-            <h4 className="card-title text-center  card-three  ct-1">Personalised Learning</h4>
+            <h4 className="card-title text-center  card-three  ct-1" style={{ color: "#f2c94c"}}>Personalised Learning</h4>
           </div>
           </a>
         </div>
@@ -189,7 +191,7 @@ const bestTeacher=()=>{
           <a href="/feature2" style={{ textDecoration: 'none' }}>
           <a href="/feature2"><img className="card-img-top  mx-auto image-4 " style={{paddingTop: '10px', marginTop: '50px', marginBottom: '70px'}} src={convi_safe} alt="" /></a>
           <div className="card-block ">
-            <h4 className="card-title text-center card-five ct-1">Convinent and Safe</h4>
+            <h4 className="card-title text-center card-five ct-1" style={{ color: "#6fcf97"}}>Convinent and Safe</h4>
           </div>
           </a>
         </div>
@@ -376,6 +378,7 @@ body{
   .abovep
   {
     text-align: justify;
+    font-size: 19px;
   }
   
   .women2 img
@@ -452,6 +455,9 @@ body{
   }
   .women3{
    display: none;
+  }
+  .abovep {
+    font-size: 23px;
   }
   
   .abc{

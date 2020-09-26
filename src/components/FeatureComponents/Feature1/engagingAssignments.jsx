@@ -58,6 +58,7 @@ const engagingAssignments=()=>{
                 <img src={banner_one} alt="picture" /></div>
               <div className="col-md-4 col-12" data-aos="fade-up" data-aos-duration={1500} style={{margin: 'auto'}}>
                 <h3 className=" above1">Activity based Assignments</h3>
+                <br />
                 <p className=" abovep">Daily tasks could be dull and difficult. Sometimes students get bored by lethargic work. The assignments which are given are based on activities so that a child can understand the tough topics in an easy and relevant way.</p>
               </div>
             </div>
@@ -68,6 +69,7 @@ const engagingAssignments=()=>{
             <div className="row">
               <div className="col-md-4 col-12" data-aos="fade-right" data-aos-duration={1000} style={{margin: 'auto'}}>
                 <h3 className=" above ">Learning through videos</h3>
+                <br />
                 <p className=" abovep">Understanding any concept through videos is more worthwhile than reading or listening. Things which we see remain in our memory for longtime. MissionEd has come up with learning through videos which can make children's minds understand topics enthusiastically.</p>
               </div>
               <div className="col-md-8 col-12 women2 " data-aos="fade-left" data-aos-duration={1500}>
@@ -83,6 +85,7 @@ const engagingAssignments=()=>{
                 <img src={banner_three} alt="picture" /></div>
               <div className="col-md-4 col-12" data-aos="fade-up" data-aos-duration={1500} style={{margin: 'auto'}}>
                 <h3 className=" above1">Quality notes and questions</h3>
+                <br />
                 <p className=" abovep">We lend students plenty of notes and topic related questions which will help them to prepare theories and emphasize their answer writing skill.  This will help them to write down the exam in an efficient manner.</p>
               </div>
             </div>
@@ -101,7 +104,7 @@ const engagingAssignments=()=>{
                   <a href="/feature3" style={{ textDecoration: 'none' }}>
                   <a href="/feature3"> <img className="card-img-top  mx-auto image-4 " style={{paddingTop: '10px', marginTop: '50px', marginBottom: '70px'}} src={expert_teac} alt="" /></a>
                   <div className="card-block ">
-                    <h4 className="card-title text-center card-one  ct-1" style={{marginTop:"-30px"}}>Expert Teacher</h4>
+                    <h4 className="card-title text-center card-one  ct-1" style={{marginTop:"-30px" , color: "#eb5757"}}>Expert Teacher</h4>
                   </div>
                   </a>
                 </div>
@@ -110,7 +113,7 @@ const engagingAssignments=()=>{
                  <a href="/feature4" style={{ textDecoration: 'none' }}>
                  <a href="/feature4" ><img className="card-img-top  mx-auto image-4 " style={{paddingTop: '10px', marginTop: '50px', marginBottom: '70px'}} src={live_inter} alt="" /></a>
                   <div className="card-block ">
-                    <h4 className="card-title text-center card-two  ct-1">Live and Interactive</h4>
+                    <h4 className="card-title text-center card-two  ct-1" style={{ color: "#2f80ed"}}>Live and Interactive</h4>
                   </div>
                   </a>
                 </div>
@@ -119,7 +122,7 @@ const engagingAssignments=()=>{
                  <a href="/feature5" style={{ textDecoration: 'none' }}>
                  <a href="/feature5"> <img className="card-img-top  mx-auto image-4 " style={{paddingTop: '30px', marginTop: '50px', marginBottom: '70px'}} src={per_learn} alt="" /></a>
                   <div className="card-block ">
-                    <h4 className="card-title text-center  card-three  ct-1" style={{paddingTop: "10px"}}>Personalised Learning</h4>
+                    <h4 className="card-title text-center  card-three  ct-1" style={{paddingTop: "10px" , color: "#f2c94c"}}>Personalised Learning</h4>
                   </div>
                   </a>
                 </div>
@@ -137,7 +140,7 @@ const engagingAssignments=()=>{
                   <a href="/feature2" style={{ textDecoration: 'none' }}>
                   <a href="/feature2"><img className="card-img-top  mx-auto image-4 " style={{paddingTop: '10px', marginTop: '50px', marginBottom: '70px'}} src={convi_safe} alt="" /></a>
                   <div className="card-block ">
-                    <h4 className="card-title text-center card-five ct-1">Convinent and Safe</h4>
+                    <h4 className="card-title text-center card-five ct-1" style={{ color: "#6fcf97"}}>Convinent and Safe</h4>
                   </div>
                   </a>
                 </div>
@@ -333,6 +336,7 @@ body{
   .abovep
   {
     text-align: justify;
+    font-size: 19px;
   }
   
   
@@ -407,6 +411,10 @@ body{
     h1{
     padding-top: 10%;
     font-size: calc(2rem + 3vw);
+  }
+
+  .abovep {
+    font-size: 23px;
   }
  
   #h1{
