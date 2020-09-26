@@ -35,15 +35,15 @@ function Addfeatures() {
           </div>
 <br /><br /><br /><br />
           
-          <div className="container ct">
+           <div className="container ct">
             <div className="row">
               <div
-                className="col-md-7 col-12"
+                className="col-md-7 col-12 women1"
                 data-aos="fade-down"
                 data-aos-duration={1000}
                 style={{ margin: "auto" }}
               >
-                <img src={img1} style ={{marginRight: "600px" }} className = "img-section-left" alt="picture" />
+                <img src={img1} className="img-section-left" alt="picture" />
               </div>
               <div
                 className="col-md-5 col-12"
@@ -54,13 +54,14 @@ function Addfeatures() {
                 <p className="learning-heading">Expert Teachers</p>                
                 <h6 className="learning-txt1" style={{ margin: "auto" }}>
             {" "}
+            
             Our tier 1 Faculty who have experience of cracking one of the 
-            toughest exams like JEE,NTSE  etc, so students would feel more connected and can ask doubts more freely
+            toughest exams like JEE,NTSE  etc, so students would feel more connected and can ask doubts more freely.
           </h6><br /><br />
                 <div
             className="col-md-6 b"
             data-aos="zoom-in-up"
-            data-aos-duration="1500"
+            data-aos-duration="1500" 
           >
             {" "}
             <a href="/feature3">
@@ -82,13 +83,13 @@ function Addfeatures() {
           <div className="container ct">
             <div className="row">
               <div
-                className="col-md-5 col-12 women1"
+                className="col-md-5 col-12"
                 data-aos="fade-right"
                 data-aos-duration={1000}
                 style={{ margin: "auto" }}
               >
                 <p className="learning-heading">Engaging Assignments</p>                
-                <h6 className="learning-txt" style={{ margin: "auto" }}>
+                <h6 className="learning-txt1" style={{ margin: "auto" }}>
             {" "}
             Daily package of randomly selected questions to test the student’s knowledge
             and polish the understanding of various concepts posted on the app for classes 8-12th.
@@ -127,7 +128,7 @@ function Addfeatures() {
           <div className="container ct">
             <div className="row">
               <div
-                className="col-md-7 col-12 women3"
+                className="col-md-7 col-12 women1"
                 data-aos="fade-down"
                 data-aos-duration={1000}
                 style={{ margin: "auto" }}
@@ -141,7 +142,7 @@ function Addfeatures() {
                 style={{ margin: "auto" }}
               >
                 <p className="learning-heading">Trusted Content</p>                
-                <h6 className="learning-txt" style={{ margin: "auto" }}>
+                <h6 className="learning-txt1" style={{ margin: "auto" }}>
             {" "}
             We make learning a fun session by not just involving the students in the course content but also, by allowing them to open their horizons and be aware about the world. The content is always 
             updated with the latest norms to ensure students are able to cope up with new challenges.
@@ -176,7 +177,7 @@ function Addfeatures() {
                 style={{ margin: "auto" }}
               >
                 <p className="learning-heading">Personalized Learning</p>                
-                <h6 className="learning-txt" style={{ margin: "auto" }}>
+                <h6 className="learning-txt1" style={{ margin: "auto" }}>
             {" "}
             Provides students with an opportunity to study with the best mentors as well as gain insight on their performance. A study shows that 71.58% of students opt 
             for home tutors which proves the likeliness of students towards private mentors.          </h6><br /><br />
@@ -227,7 +228,7 @@ function Addfeatures() {
               >
                 <p className="learning-heading">Live and Interactive</p>                
 
-                <h6 className="learning-txt" style={{ margin: "auto" }}>
+                <h6 className="learning-txt1" style={{ margin: "auto" }}>
             {" "}
             Provides personalised attention by organising one-to-one doubt clearing sessions for the students which ensures a long term relationship 
             with students where they can ask anything and everything, any number of times.
@@ -262,7 +263,7 @@ function Addfeatures() {
                 style={{ margin: "auto" }}
               >
                 <p className="learning-heading">Convinient and Safe </p>                
-                <h6 className="learning-txt" style={{ margin: "auto" }}>
+                <h6 className="learning-txt1" style={{ margin: "auto" }}>
             {" "}
             Providing education to the students at nominal price and at their comforts. The students can also 
             keep a track on their performance with the help of regular unbiased feedback.
@@ -388,7 +389,6 @@ const Wrapper = styled.div`
 .learning-txt1{
   
  font-style: normal;
-  font-weight: 300;
   font-size: 19px;
   line-height: 30px;
   color: #000000;
@@ -403,6 +403,15 @@ const Wrapper = styled.div`
     width: 500px;
     margin-right: -60px;
 
+  }
+
+  @media (max-width: 900px) {
+    .img-section-right {
+      display: none;
+    }
+    .img-section-left {
+      display: none;
+    }
   }
    
 
@@ -430,14 +439,11 @@ const Wrapper = styled.div`
   .get-app{
     margin-top:200px;
   }
-  @media (max-width: 900px) {
-    .img-section-right {
-      display: none;
-    }
-    .img-section-left {
-      display: none;
-    }
+
+  .learning-txt1 {
+    font-size: 21px;
   }
+  
 }
 `
 

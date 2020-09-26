@@ -497,7 +497,9 @@ const Wrapper = styled.div`
     .women1 {
       display: none;
     }
-
+    .abovep {
+    font-size: 23px;
+  }
     .abc {
       display: none;
     }
