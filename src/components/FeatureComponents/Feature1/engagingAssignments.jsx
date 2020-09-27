@@ -412,6 +412,10 @@ body{
     padding-top: 10%;
     font-size: calc(2rem + 3vw);
   }
+
+  .abovep {
+    font-size: 23px;
+  }
  
   #h1{
       height: 20vh;

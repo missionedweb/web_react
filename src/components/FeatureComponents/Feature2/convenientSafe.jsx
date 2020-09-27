@@ -495,6 +495,10 @@ const Wrapper = styled.div`
       display: none;
     }
 
+    .abovep {
+    font-size: 23px;
+  }
+
     .abc {
       display: none;
     }

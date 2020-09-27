@@ -433,6 +433,9 @@ body{
   .women2, .women3, .women1{
    display: none;
   }
+  .abovep {
+    font-size: 23px;
+  }
   
   .abc{
     display: none;

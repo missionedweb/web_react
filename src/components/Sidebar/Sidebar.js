@@ -25,6 +25,8 @@ import CustomButton from "./CustomButton";
 import CenteredGrid from "../Cards/index";
 import Course from "../Course/course";
 import { auth } from "../../firebase/firebase.utils";
+import NavigationLogo from "../../Images/NavigationLogo.svg";
+import { Directions } from "@material-ui/icons";
 
 function SideBar(props) {
   const classes = useStyles();
@@ -38,8 +40,14 @@ function SideBar(props) {
     <div className={classes.sidebar}>
       <div className={classes.logo}>
         <div className={classes.title}>
-          <div className={classes.design}>0</div>
-          <div className={classes.text}>MissionEd</div>
+          <img style={{ display: "block" }} src={NavigationLogo} alt="logo" />
+          <br />
+          <span style={{ fontSize: "20px" }} className="missioned-nav font-weight-bold">
+            Mission
+            <span style={{ fontSize: "20px" }} className="ed">
+              Ed
+            </span>
+          </span>
         </div>
         <div className={classes.button}>
           <CustomButton>Join a course</CustomButton>
@@ -146,7 +154,6 @@ const useStyles = makeStyles((theme) => ({
   },
   drawer: {
     marginLeft: "10px",
-
     [theme.breakpoints.up("sm")]: {
       width: drawerWidth,
       height: "100vh",
@@ -211,6 +218,8 @@ const useStyles = makeStyles((theme) => ({
   title: {
     display: "flex",
     padding: "16px",
+    flexDirection: "column",
+    textAlign: "center",
   },
   design: {
     backgroundColor: "#5E81F4",
