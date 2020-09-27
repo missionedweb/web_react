@@ -1,4 +1,4 @@
-import React from "react";
+import React , { useState }from "react";
 import styled from "styled-components";
 import Group67 from "../contactUs/Images/Group 1.png";
 import Footer from "../Footer";
@@ -7,6 +7,20 @@ import NavbarComponent from "../NavbarComponent";
 import Testimonials from "../Testimonials";
 
 const Counselling = () => {
+  const [details, setDetails] = useState({
+    Name: "",
+    PhoneNumber: "",
+    Marks: "",
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setDetails((prevState) => ({ ...prevState, [name]: value }));
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const { firstName, lastName, email, standard } = details;
+    console.log(firstName, lastName, email, standard);
+  };
   return (
     <div>
       <header>
