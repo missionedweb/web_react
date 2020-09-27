@@ -16,7 +16,7 @@ const LearningPage = () => {
         <br/>
         <div className="jumbotron"  style = {{ backgroundImage : "linear-gradient(#457fca,#5691c8)" }}>
           <div className="row">
-            <div className="col col-md-6 offset-md-1 ">
+            <div className="col col-md-6 offset-md-1 " data-aos="zoom-in-up" data-aos-duration="1500">
             <svg viewBox="0 0 1500 100">
               {/* Symbol*/}
               <symbol id="s-text">
