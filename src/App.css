@@ -287,7 +287,7 @@ h1 {
     margin-top: 170px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 1600px) {
   .img-section-right {
     display: none;
   }
