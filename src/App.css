@@ -11,9 +11,9 @@ body {
 /* Starts */
 
 .btn-outlined.btn-theme {
-  background: none;
-  color: #fb8f1d;
-border-color: #fb8f1d;
+  color: #FFF;
+  background: #fb8f1d;
+  border-color: #fb8f1d;
 }
 
 .btn-outlined.btn-theme:hover,
