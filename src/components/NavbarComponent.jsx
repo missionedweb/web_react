@@ -130,6 +130,7 @@ function NavbarComponent({ currentUser }) {
                 <a href="/features" class="dropdown-item">Features</a>
                 <a href="/counselling" class="dropdown-item">Counselling</a>
                 <a href="/testim" class="dropdown-item">Testimonials</a>
+                <a href="/rankpredictor" class="dropdown-item">RankPredictor</a>
                 </div>
                 </div>
                 </li>
