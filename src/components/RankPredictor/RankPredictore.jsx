@@ -1,11 +1,11 @@
-import React , { useState }from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Group67 from "../contactUs/Images/Group 1.png";
 import Footer from "../Footer";
 import GetTheApp from "../GetTheApp";
 import NavbarComponent from "../NavbarComponent";
 import Testimonials from "../Testimonials";
-
+import { apiClass } from "./flask";
 const Counselling = () => {
   const [details, setDetails] = useState({
     Name: "",
@@ -18,13 +18,14 @@ const Counselling = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
+    apiClass.getRank();
     const { firstName, lastName, email, standard } = details;
     console.log(firstName, lastName, email, standard);
   };
   return (
     <div>
       <header>
-      <NavbarComponent />
+        <NavbarComponent />
       </header>
       <Wrapper>
         <div>
@@ -34,9 +35,14 @@ const Counselling = () => {
             </div>
           </div>
           <br />
-          <p className=" center-text " data-aos="slide-left" data-aos-duration={1000} style={{ fontSize : "57px" , fontWeight : "bold" }}>
+          <p
+            className=" center-text "
+            data-aos="slide-left"
+            data-aos-duration={1000}
+            style={{ fontSize: "57px", fontWeight: "bold" }}>
             Want to Know your expected Rank?{" "}
-          </p><br />
+          </p>
+          <br />
           <br />
           <p className="center-text-1" data-aos="slide-right" data-aos-duration={1000}>
             We have something special for you!
@@ -44,39 +50,55 @@ const Counselling = () => {
           <br />
           <br />
           <br />
-          <p className=" center-text " data-aos="slide-left" data-aos-duration={1000} style={{ fontSize : "57px" , fontWeight : "bold" }}>
-          This is the first 100% AI based Rank predictor in the EDTech Sphere{" "}
-          </p><br />
+          <p
+            className=" center-text "
+            data-aos="slide-left"
+            data-aos-duration={1000}
+            style={{ fontSize: "57px", fontWeight: "bold" }}>
+            This is the first 100% AI based Rank predictor in the EDTech Sphere{" "}
+          </p>
           <br />
-          <div className="container p-10 ml-auto mr-auto" >
+          <br />
+          <div className="container p-10 ml-auto mr-auto">
             <div>
               <div data-aos="fade-down" data-aos-duration={1000}>
-                <img src={Group67} className="right-img" alt="" style = {{ width : "500px" }} />
+                <img src={Group67} className="right-img" alt="" style={{ width: "500px" }} />
               </div>
               <div className="form-display col-md-5" data-aos="zoom-in" data-aos-duration={1000}>
-                <center><h2 style = {{ fontFamily: " sans-serif "}}> Jee Advanced Rank</h2></center>
+                <center>
+                  <h2 style={{ fontFamily: " sans-serif " }}> Jee Advanced Rank</h2>
+                </center>
                 <br />
-                <br/>
-                <center><p className="head ml-auto mr-auto">Know your rank and possible college</p></center>
                 <br />
-                <div className="form" >
+                <center>
+                  <p className="head ml-auto mr-auto">Know your rank and possible college</p>
+                </center>
+                <br />
+                <div className="form">
                   <label htmlFor>Name</label>
-                  <input type="text" className="form-control" placeholder="Name"/>
+                  <input type="text" className="form-control" placeholder="Name" />
                   <br />
                   <label htmlFor>Phone Number</label>
-                  <input type="tel" className="form-control" placeholder="Phone Number" required></input>
+                  <input
+                    type="tel"
+                    className="form-control"
+                    placeholder="Phone Number"
+                    required></input>
                   <br />
                   <label htmlFor>Marks</label>
-                  <input type="text" className="form-control" placeholder="Marks" required/>
+                  <input type="text" className="form-control" placeholder="Marks" required />
                   <br />
-                  
-                  <button className=" col-md-12 border-0 btn submit ">Submit</button>
+
+                  <button className=" col-md-12 border-0 btn submit " onClick={handleSubmit}>
+                    Submit
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <br /><br />
+        <br />
+        <br />
         <Testimonials />
         <GetTheApp />
         <Footer />
@@ -99,7 +121,6 @@ const Wrapper = styled.div`
   .jumbotron {
     background: #fff5e5;
     height: 200px;
-    
   }
   .heading {
     text-align: center;
@@ -107,7 +128,7 @@ const Wrapper = styled.div`
     font-size: 64px;
     line-height: 80px;
     color: #202336;
-    padding-top:100px;
+    padding-top: 100px;
   }
   .center-text {
     font-weight: bold;
@@ -170,7 +191,6 @@ const Wrapper = styled.div`
     box-shadow: 2px 2px 5px black;
   }
 
-  
   /* Testimonials*/
   .read-all {
     background: #fb8f1d;
@@ -234,19 +254,18 @@ const Wrapper = styled.div`
   }
 
   .myCarousel {
-  background: #fafafa;
-  margin-top: -6%;
-  width: 54%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 6%;
-  padding-bottom: 8%;
-  padding-left: 5%;
-  padding-right: 5%;
-  border: 1px solid #ddd;
-  height: 286px;
-}
-
+    background: #fafafa;
+    margin-top: -6%;
+    width: 54%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6%;
+    padding-bottom: 8%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 1px solid #ddd;
+    height: 286px;
+  }
 
   .testim .arrow {
     display: block;
@@ -889,10 +908,9 @@ const Wrapper = styled.div`
     padding: 10px;
     color: #ffffff;
   }
-  
+
   .buttonIn {
     display: flex;
-    
   }
 
   #phone {
@@ -907,7 +925,7 @@ const Wrapper = styled.div`
     margin-top: -20px;
   }
   .cta-text {
-    margin-left:20px;
+    margin-left: 20px;
   }
   .textfield {
     width: 50%;

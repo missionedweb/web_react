@@ -5,7 +5,6 @@ function DashNavbar() {
   return (
     <React.Fragment>
       <div className="dashnav__main">
-        {" "}
         <Avatar>N</Avatar>
       </div>
     </React.Fragment>
