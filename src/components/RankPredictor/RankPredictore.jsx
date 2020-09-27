@@ -10,7 +10,7 @@ const Counselling = () => {
   const [details, setDetails] = useState({
     Name: "",
     PhoneNumber: "",
-    Marks: "",
+    marks: "",
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,9 +18,7 @@ const Counselling = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    apiClass.getRank();
-    const { firstName, lastName, email, standard } = details;
-    console.log(firstName, lastName, email, standard);
+    apiClass.getRank(details.marks);
   };
   return (
     <div>
@@ -86,7 +84,14 @@ const Counselling = () => {
                     required></input>
                   <br />
                   <label htmlFor>Marks</label>
-                  <input type="text" className="form-control" placeholder="Marks" required />
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Marks"
+                    name="marks"
+                    onChange={handleChange}
+                    required
+                  />
                   <br />
 
                   <button className=" col-md-12 border-0 btn submit " onClick={handleSubmit}>
