@@ -5,20 +5,35 @@ import Footer from "../Footer";
 import GetTheApp from "../GetTheApp";
 import NavbarComponent from "../NavbarComponent";
 import Testimonials from "../Testimonials";
-import { apiClass } from "./flask";
+import axios from "axios";
+import swal from "sweetalert";
+import CircularProgress from "@material-ui/core/CircularProgress";
 const Counselling = () => {
   const [details, setDetails] = useState({
     Name: "",
     PhoneNumber: "",
     marks: "",
   });
+  const [loading, setLoading] = useState(false);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setDetails((prevState) => ({ ...prevState, [name]: value }));
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    apiClass.getRank(details.marks);
+    let FLASK_URL = "https://rankbackend.herokuapp.com";
+    setLoading(true);
+    await axios
+      .get(FLASK_URL + `/rank/${details.marks}`)
+      .then((res) =>
+        swal({
+          title: `Your Predicted Rank is : `,
+          text: `${Math.round(res.data)}`,
+          icon: "success",
+        })
+      )
+      .catch((err) => console.log(err));
+    setLoading(false);
   };
   return (
     <div>
@@ -93,10 +108,15 @@ const Counselling = () => {
                     required
                   />
                   <br />
-
-                  <button className=" col-md-12 border-0 btn submit " onClick={handleSubmit}>
-                    Submit
-                  </button>
+                  {loading ? (
+                    <button className=" col-md-12 border-0 btn submit ">
+                      <CircularProgress size={24} />
+                    </button>
+                  ) : (
+                    <button className=" col-md-12 border-0 btn submit " onClick={handleSubmit}>
+                      Submit
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
