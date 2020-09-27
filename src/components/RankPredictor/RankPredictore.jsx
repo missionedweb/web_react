@@ -30,6 +30,9 @@ const Counselling = () => {
           <br />
           <br />
           <br />
+          <p className=" center-text " data-aos="slide-left" data-aos-duration={1000} style={{ fontSize : "57px" , fontWeight : "bold" }}>
+          This is the first 100% AI based Rank predictor in the EDTech Sphere{" "}
+          </p><br />
           <br />
           <div className="container p-10 ml-auto mr-auto" >
             <div>
@@ -43,32 +46,16 @@ const Counselling = () => {
                 <center><p className="head ml-auto mr-auto">Know your rank and possible college</p></center>
                 <br />
                 <div className="form" >
-                  <label htmlFor>EXPECTED MARKS</label>
-                  <input type="text" className="form-control" placeholder="Name" />
+                  <label htmlFor>Name</label>
+                  <input type="text" className="form-control" placeholder="Name"/>
                   <br />
-                  <label htmlFor>CATEGORY</label>
-                  <select name="classes" id="classes" className="form-control">
-                    <option value="class-8">SC</option>
-                    <option value="class-9">ST</option>
-                    <option value="class-10">OBC</option>
-                    <option value="class-11-science">General</option>
-                    <option value="class-11-commerce">OTHER</option>
-                  </select>
+                  <label htmlFor>Phone Number</label>
+                  <input type="tel" className="form-control" placeholder="Phone Number" required></input>
                   <br />
-                  <label htmlFor>PWD STATUS</label>
+                  <label htmlFor>Marks</label>
+                  <input type="text" className="form-control" placeholder="Marks" required/>
+                  <br />
                   
-                  <select name="classes" id="classes" className="form-control">
-                    <option value="class-8">PWD STATUS - NO</option>
-                    <option value="class-9">PWD STATUS - YES</option>
-                  </select>
-                  <br />
-                  <label htmlFor>SEX</label>
-                  <select name="classes" id="classes" className="form-control">
-                    <option value="class-8">MALE</option>
-                    <option value="class-9">FEMALE</option>
-                    <option value="class-9">OTHER</option>
-                  </select>
-                  <br />
                   <button className=" col-md-12 border-0 btn submit ">Submit</button>
                 </div>
               </div>
