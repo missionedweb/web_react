@@ -10,7 +10,18 @@ body {
 }
 /* Starts */
 
+.btn-outlined.btn-theme {
+  background: none;
+  color: #6f5499;
+border-color: #6f5499;
+}
 
+.btn-outlined.btn-theme:hover,
+.btn-outlined.btn-theme:active {
+  color: #FFF;
+  background: #6f5499;
+  border-color: #6f5499;
+}
 /* .sticky {
   padding: 15px 100px;
   background: back;

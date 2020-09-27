@@ -137,6 +137,13 @@ const LearningPage = () => {
   return (
     <div>
       <div>
+        <br/>
+        <br/>
+        <div className="jumbotron"  style = {{ background : "#fff5e5" }}>
+          <h1 style={{ color : "black" , fontSize : "50px" }}>RANK PREDICTOR</h1>
+          <h3>Find out about your rank from here</h3>
+          <a href="#" class="btn btn-outlined btn-theme btn-lg" data-wow-delay="0.7s">Purchase Now</a>
+        </div>
         <div
           className="text-center teach"
           style={{
@@ -148,14 +155,20 @@ const LearningPage = () => {
             FREE <span>Coding</span> Certification | (Age 6-18){" "}
             <i style={{ color: "pink", marginLeft: "20px" ,paddingRight: "25px" , marginTop: "10px"}} class="fas fa-arrow-right"></i>
           </p>
+          
+
+
+
+
           <LearningModal />
         </div>
-
+          
         <br />
         <br />
         <br />
         <br />
         <br />
+        
         <img
           className="img-section-left"
           data-aos="fade-right"
@@ -211,6 +224,7 @@ const LearningPage = () => {
             </a>
           </div>
         </div>
+        
       </div>
     </div>
   );
