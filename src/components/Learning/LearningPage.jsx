@@ -142,7 +142,7 @@ const LearningPage = () => {
         <div className="jumbotron"  style = {{ background : "#fff5e5" }}>
           <h1 style={{ color : "black" , fontSize : "50px" }}>RANK PREDICTOR</h1>
           <h3>Find out about your rank from here</h3>
-          <a href="#" class="btn btn-outlined btn-theme btn-lg" data-wow-delay="0.7s">Purchase Now</a>
+          <a href="/rankpredictor" class="btn btn-outlined btn-theme btn-lg" data-wow-delay="0.7s">CHECK IT OUT</a>
         </div>
         <div
           className="text-center teach"
