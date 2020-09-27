@@ -53,7 +53,7 @@ const Counselling = () => {
             data-aos="slide-left"
             data-aos-duration={1000}
             style={{ fontSize: "57px", fontWeight: "bold" }}>
-            This is the first 100% AI based Rank predictor in the EDTech Sphere{" "}
+            The first 100% AI based Rank predictor.{" "}
           </p>
           <br />
           <br />
@@ -64,12 +64,12 @@ const Counselling = () => {
               </div>
               <div className="form-display col-md-5" data-aos="zoom-in" data-aos-duration={1000}>
                 <center>
-                  <h2 style={{ fontFamily: " sans-serif " }}> Jee Advanced Rank</h2>
+                  <h2 style={{ fontFamily: " sans-serif " }}> Expected Jee Advanced Rank</h2>
                 </center>
                 <br />
                 <br />
                 <center>
-                  <p className="head ml-auto mr-auto">Know your rank and possible college</p>
+                  <p className="head ml-auto mr-auto"> Enter total marks out of 396</p>
                 </center>
                 <br />
                 <div className="form">
