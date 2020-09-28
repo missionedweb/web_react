@@ -18,6 +18,7 @@ const Counselling = () => {
     contact: "",
     marks: "",
   });
+  const [rank, setRank] = useState("");
   const [loading, setLoading] = useState(false);
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -30,19 +31,22 @@ const Counselling = () => {
     setLoading(true);
     await axios
       .get(FLASK_URL + `/rank/${details.marks}`)
-      .then((res) =>
+      .then((res) => {
         swal({
           title: `Your Predicted Rank is : `,
           text: `${Math.round(res.data)}`,
           icon: "success",
-        })
-      )
+        });
+
+        firestore.collection("jeeadv").add({
+          name: details.user,
+          contact: details.contact,
+          marks: details.marks,
+          rank: Math.round(res.data),
+        });
+      })
       .catch((err) => console.log(err));
 
-    firestore.collection("jeeadv").add({
-      name: details.user,
-      contact: details.contact,
-    });
     setLoading(false);
   };
   return (
@@ -58,7 +62,7 @@ const Counselling = () => {
             </div>
           </div>
           <br />
-          <br/>
+          <br />
           <p
             className=" center-text "
             data-aos="slide-left"
@@ -77,7 +81,6 @@ const Counselling = () => {
           <p
             className=" center-text "
             data-aos="slide-left"
-            data-aos-duration={1000}
             style={{ fontSize: "57px", fontWeight: "bold" }}>
             The first 100% AI based Rank predictor.{" "}
           </p>
@@ -88,9 +91,15 @@ const Counselling = () => {
               <div data-aos="fade-down" data-aos-duration={1000}>
                 <img src={Group67} className="right-img" alt="" style={{ width: "500px" }} />
               </div>
-              <div className="form-display col-md-5" data-aos="zoom-in" data-aos-duration={1000}>
+              <div className="form-display col-md-5" data-aos="zoom-in" data-aos-duration={600}>
                 <center>
-                  <h2 style={{ fontFamily: " sans-serif " }}> Expected Jee Advanced Rank</h2>
+                  <h2
+                    style={{
+                      fontFamily: " sans-serif ",
+                    }}>
+                    {" "}
+                    Expected Jee Advanced Rank
+                  </h2>
                 </center>
                 <br />
                 <br />
@@ -98,18 +107,20 @@ const Counselling = () => {
                   <p className="head ml-auto mr-auto"> Enter total marks out of 396</p>
                 </center>
                 <br />
-                <div className="form">
-                  <label htmlFor>Name</label>
+                <form className="form" onSubmit={handleSubmit}>
+                  <label htmlFor>Name*</label>
                   <input
                     type="text"
                     className="form-control"
                     placeholder="Name"
                     name="user"
                     onChange={handleChange}
+                    required
+                    autoComplete="name"
                   />
 
                   <br />
-                  <label htmlFor>Phone Number</label>
+                  <label htmlFor>Contact*</label>
                   <input
                     type="tel"
                     className="form-control"
@@ -117,9 +128,10 @@ const Counselling = () => {
                     name="contact"
                     onChange={handleChange}
                     required
+                    autoComplete="tel"
                   />
                   <br />
-                  <label htmlFor>Marks</label>
+                  <label htmlFor>Marks*</label>
                   <input
                     type="text"
                     className="form-control"
@@ -134,11 +146,11 @@ const Counselling = () => {
                       <CircularProgress size={24} />
                     </button>
                   ) : (
-                    <button className=" col-md-12 border-0 btn submit " onClick={handleSubmit}>
+                    <button className=" col-md-12 border-0 btn submit " type="submit">
                       Submit
                     </button>
                   )}
-                </div>
+                </form>
               </div>
             </div>
           </div>
@@ -163,6 +175,10 @@ const Wrapper = styled.div`
   html,
   body {
     overflow-x: hidden;
+  }
+  .form-control {
+    padding: 10px;
+    margin-top: 5px;
   }
   .jumbotron {
     background: #fff5e5;
