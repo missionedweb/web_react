@@ -124,11 +124,11 @@ const Counselling = () => {
                   <input
                     type="tel"
                     className="form-control"
-                    placeholder="Phone Number"
+                    placeholder="Email / Phone No."
                     name="contact"
                     onChange={handleChange}
                     required
-                    autoComplete="tel"
+                    autoComplete="email"
                   />
                   <br />
                   <label htmlFor>Marks*</label>
