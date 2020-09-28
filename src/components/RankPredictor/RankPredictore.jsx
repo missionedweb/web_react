@@ -15,10 +15,10 @@ import { TextField } from "@material-ui/core";
 const Counselling = () => {
   const [details, setDetails] = useState({
     user: "",
-    contact: "",
+    phone: "",
+    email: "",
     marks: "",
   });
-  const [rank, setRank] = useState("");
   const [loading, setLoading] = useState(false);
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -40,7 +40,8 @@ const Counselling = () => {
 
         firestore.collection("jeeadv").add({
           name: details.user,
-          contact: details.contact,
+          phone: details.phone,
+          email: details.email,
           marks: details.marks,
           rank: Math.round(res.data),
         });
@@ -68,7 +69,7 @@ const Counselling = () => {
             data-aos="slide-left"
             data-aos-duration={1000}
             style={{ fontSize: "57px", fontWeight: "bold" }}>
-            Want to Know your expected Rank?{" "}
+            Want to Know your expected Rank?
           </p>
           <br />
           <br />
@@ -82,7 +83,7 @@ const Counselling = () => {
             className=" center-text "
             data-aos="slide-left"
             style={{ fontSize: "57px", fontWeight: "bold" }}>
-            The first 100% AI based Rank predictor.{" "}
+            The first 100% AI based Rank predictor.
           </p>
           <br />
           <br />
@@ -97,7 +98,6 @@ const Counselling = () => {
                     style={{
                       fontFamily: " sans-serif ",
                     }}>
-                    {" "}
                     Expected Jee Advanced Rank
                   </h2>
                 </center>
@@ -112,7 +112,7 @@ const Counselling = () => {
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="Name"
+                    placeholder="Your Full Name"
                     name="user"
                     onChange={handleChange}
                     required
@@ -120,16 +120,33 @@ const Counselling = () => {
                   />
 
                   <br />
-                  <label htmlFor>Contact*</label>
-                  <input
-                    type="tel"
-                    className="form-control"
-                    placeholder="Email / Phone No."
-                    name="contact"
-                    onChange={handleChange}
-                    required
-                    autoComplete="email"
-                  />
+                  <div style={{ display: "flex", justifyContent: "space-between" }}>
+                    <div>
+                      <label htmlFor>Phone No.*</label>
+                      <input
+                        type="tel"
+                        className="form-control"
+                        placeholder="Phone No."
+                        name="phone"
+                        onChange={handleChange}
+                        required
+                        autoComplete="tel"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor>Email*</label>
+                      <input
+                        type="email"
+                        className="form-control"
+                        placeholder="Email"
+                        name="email"
+                        onChange={handleChange}
+                        required
+                        autoComplete="email"
+                      />
+                    </div>
+                  </div>
+
                   <br />
                   <label htmlFor>Marks*</label>
                   <input
