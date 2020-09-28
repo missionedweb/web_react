@@ -217,12 +217,12 @@ const AboutUs = () => {
                       className="card-img-top img-fluid card01 mx-auto image-1 "
                       src={cont1}
                       alt=""
-                      style = {{ width : "200px" }}
+                      style = {{ width : "200px" , height : "230px"}}
                     />
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
-                        Name
+                        
                       </h4>
                     </div>
                   </div>
@@ -239,12 +239,12 @@ const AboutUs = () => {
                       className="card-img-top img-fluid card01 mx-auto image-1 "
                       src={cont2}
                       alt=""
-                      style = {{ width : "200px" }}
+                      style = {{ width : "200px" , height : "230px"}}
                     />
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
-                        Name
+                        
                       </h4>
                     </div>
                   </div>
@@ -261,12 +261,12 @@ const AboutUs = () => {
                       className="card-img-top img-fluid  card01 mx-auto image-3"
                       src={cont1}
                       alt=""
-                      style = {{ width : "200px" }}
+                      style = {{ width : "200px" , height : "230px"}}
                     />
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
-                        Name
+                        
                       </h4>
                     </div>
                   </div>
@@ -286,12 +286,12 @@ const AboutUs = () => {
                       className="card-img-top img-fluid card01 mx-auto image-1 "
                       src={cont1}
                       alt=""
-                      style = {{ width : "200px" }}
+                      style = {{ width : "200px" , height : "230px"}}
                     />
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
-                        Name
+                        
                       </h4>
                     </div>
                   </div>
@@ -308,12 +308,12 @@ const AboutUs = () => {
                       className="card-img-top img-fluid card01 mx-auto image-1 "
                       src={cont2}
                       alt=""
-                      style = {{ width : "200px" }}
+                      style = {{ width : "200px" , height : "230px"}}
                     />
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
-                        Name
+                        
                       </h4>
                     </div>
                   </div>
@@ -330,12 +330,12 @@ const AboutUs = () => {
                       className="card-img-top img-fluid  card01 mx-auto image-3"
                       src={cont1}
                       alt=""
-                      style = {{ width : "200px" }}
+                      style = {{ width : "200px" , height : "230px"}}
                     />
                     </a>
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-three">
-                        Name
+                        
                       </h4>
                     </div>
                   </div>
