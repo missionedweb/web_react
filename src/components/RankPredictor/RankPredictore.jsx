@@ -8,10 +8,14 @@ import Testimonials from "../Testimonials";
 import axios from "axios";
 import swal from "sweetalert";
 import CircularProgress from "@material-ui/core/CircularProgress";
+import { firestore } from "../../firebase/firebase.utils";
+import { firebase } from "firebase";
+import { TextField } from "@material-ui/core";
+
 const Counselling = () => {
   const [details, setDetails] = useState({
-    Name: "",
-    PhoneNumber: "",
+    user: "",
+    contact: "",
     marks: "",
   });
   const [loading, setLoading] = useState(false);
@@ -22,6 +26,7 @@ const Counselling = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     let FLASK_URL = "https://rankbackend.herokuapp.com";
+
     setLoading(true);
     await axios
       .get(FLASK_URL + `/rank/${details.marks}`)
@@ -33,6 +38,11 @@ const Counselling = () => {
         })
       )
       .catch((err) => console.log(err));
+
+    firestore.collection("jeeadv").add({
+      name: details.user,
+      contact: details.contact,
+    });
     setLoading(false);
   };
   return (
@@ -42,7 +52,7 @@ const Counselling = () => {
       </header>
       <Wrapper>
         <div>
-          <div className="jumbotron text-uppercase">
+          <div>
             <div className="heading" data-aos="zoom-in-up" data-aos-duration={2500}>
               Rank Predictor
             </div>
@@ -89,14 +99,24 @@ const Counselling = () => {
                 <br />
                 <div className="form">
                   <label htmlFor>Name</label>
-                  <input type="text" className="form-control" placeholder="Name" />
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Name"
+                    name="user"
+                    onChange={handleChange}
+                  />
+
                   <br />
                   <label htmlFor>Phone Number</label>
                   <input
                     type="tel"
                     className="form-control"
                     placeholder="Phone Number"
-                    required></input>
+                    name="contact"
+                    onChange={handleChange}
+                    required
+                  />
                   <br />
                   <label htmlFor>Marks</label>
                   <input
