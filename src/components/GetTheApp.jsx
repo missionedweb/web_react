@@ -137,7 +137,7 @@ const GetTheApp = () => {
             <br />
             <p />
             <div className="buttonIn" data-aos="zoom-out" data-aos-duration="500" style={{ height : "33px", width :"300px", borderRadius : "5px"}}>
-              <MuiPhoneNumber
+              {/* <MuiPhoneNumber
                 defaultCountry={"in"}
                 onChange={handleOnChange}
                 required
@@ -146,7 +146,7 @@ const GetTheApp = () => {
                 value={value}
                 
                 style={{border : "1px solid black" ,height : "32px", borderRadius : "5px 0px 0px 5px"}}
-              />
+              /> */}
               {/* <MuiPhoneNumber defaultCountry={'in'} onChange={handleOnChange} borderBottom={1} border={1}/> */}
               {/* <button 
               
@@ -156,7 +156,7 @@ const GetTheApp = () => {
               >
                 Join
               </button> */}
-      <Button style={{ background : "orange" , border : "none" , width : "75px" , borderRadius : "0px 5px 5px 0px" }}  onClick={handleShow}>
+      <Button style={{ background : "orange" , border : "none" , width : "100px" , height : "50px", borderRadius : "10px 10px 10px 10px" }}  onClick={handleShow}>
         Join
       </Button>
 
