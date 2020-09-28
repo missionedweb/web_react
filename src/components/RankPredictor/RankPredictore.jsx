@@ -133,12 +133,14 @@ const Counselling = () => {
                   <br />
                   <label htmlFor>Marks*</label>
                   <input
-                    type="text"
+                    type="number"
                     className="form-control"
                     placeholder="Marks"
                     name="marks"
                     onChange={handleChange}
                     required
+                    max="396"
+                    min="0"
                   />
                   <br />
                   {loading ? (
