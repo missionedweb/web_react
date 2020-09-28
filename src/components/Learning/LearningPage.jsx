@@ -45,7 +45,7 @@ const LearningPage = () => {
         <div
           className="text-center teach"
           style={{
-            display: "flex",
+            //display: "flex",
             flexDirection: "row",
             justifyContent: "center",
           }}>
