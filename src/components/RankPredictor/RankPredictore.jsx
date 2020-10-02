@@ -198,6 +198,7 @@ const Wrapper = styled.div`
   .form-control {
     padding: 10px;
     margin-top: 5px;
+    
   }
   .jumbotron {
     background: #fff5e5;
