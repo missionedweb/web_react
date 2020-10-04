@@ -34,7 +34,7 @@ import Class11_CICSE from "./components/Class/Class11_Commerce/Class11_CICSE";
 import Class10ICSE from "./components/Class/Class10/Class10ICSE";
 import Class9ICSE from "./components/Class/Class9/Class9ICSE";
 import Class8ICSE from "./components/Class/Class8/Class8ICSE";
-import RankPredictore from './components/RankPredictor/RankPredictore'
+import RankPredictore from "./components/RankPredictor/RankPredictore";
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 
@@ -75,10 +75,16 @@ function App({ setCurrentUser, currentUser }) {
           path="/"
           render={() => (currentUser ? <Redirect to="/dashboard" /> : <AllImports />)}
         />
+        {console.log(currentUser)}
         <Route
           exact
           path="/dashboard"
           render={() => (currentUser === null ? <Redirect to="/" /> : <Dashboard />)}
+        />
+        <Route
+          exact
+          path="/dashboard/:id"
+          render={() => currentUser === null && <Redirect to="/" />}
         />
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/feature1" component={engagingAssignments} />
