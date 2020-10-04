@@ -17,7 +17,6 @@ import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
 import { Link } from "react-router-dom";
 import CircularProgress from "@material-ui/core/CircularProgress";
-import swal from "sweetalert";
 import Alert from "@material-ui/lab/Alert";
 export default function Login() {
   const [clicked, setClicked] = useState(false);
@@ -55,12 +54,7 @@ export default function Login() {
       setErrorMsg(err.message);
       setError(true);
 
-      // swal({
-      //   icon: "warning",
-      //   text: err.message,
-      // });
       setClicked(false);
-      console.log(err.message);
     }
   };
 

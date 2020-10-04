@@ -23,6 +23,7 @@ import IconButton from "@material-ui/core/IconButton";
 import FormControl from "@material-ui/core/FormControl";
 
 import CircularProgress from "@material-ui/core/CircularProgress";
+import Alert from "@material-ui/lab/Alert";
 
 export default function Register() {
   const [clicked, setClicked] = useState(false);
@@ -71,13 +72,13 @@ export default function Register() {
     if (password !== confirmpassword) {
       setClicked(false);
 
-      alert("Passwords Donot Match");
+      setError(true);
+      setErrorMsg("Passwords Don't Match !");
       return;
     }
     try {
       const { user } = await auth.createUserWithEmailAndPassword(email, password);
       let displayName = firstName + " " + lastName;
-      console.log(displayName);
       await createUserProfileDocument(user, { displayName, phone });
       setDetails({
         firstName: "",
@@ -87,14 +88,13 @@ export default function Register() {
         phone: "",
       });
     } catch (err) {
-      console.error(err.message);
+      setError(true);
+      setErrorMsg(err.message);
       setClicked(false);
     }
   };
-  const [errors, setErrors] = useState({
-    email: "",
-    password: "",
-  });
+  const [error, setError] = useState(false);
+  const [errormsg, setErrorMsg] = useState("");
   const classes = useStyles();
   return (
     <div>
@@ -128,7 +128,7 @@ export default function Register() {
         }}>
         <Fade in={open}>
           <div>
-            <form onSubmit={handleSubmit} className={classes.paper} noValidate>
+            <form onSubmit={handleSubmit} className={classes.paper}>
               <Grid container spacing={2}>
                 <Grid item xs={12} style={{ textAlign: "center" }}>
                   <img src={logo} alt="logo" />
@@ -247,6 +247,16 @@ export default function Register() {
                   className={classes.submit}>
                   Sign Up
                 </Button>
+              )}
+              {error && (
+                <Alert
+                  style={{ marginTop: "5px" }}
+                  onClose={() => {
+                    setError(false);
+                  }}
+                  severity="error">
+                  {errormsg}
+                </Alert>
               )}
             </form>
           </div>
