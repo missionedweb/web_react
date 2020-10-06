@@ -44,7 +44,7 @@ import { createStructuredSelector } from "reselect";
 import { setCurrentUser } from "./redux/user/user.actions";
 import { selectCurrentUser } from "./redux/user/user.selector";
 import Dashboard from "./pages/dashboard/dashboard";
-
+import Price from "./pages/pricing/pricing";
 function App({ setCurrentUser, currentUser }) {
   useEffect(() => {
     //check Auth
@@ -87,6 +87,8 @@ function App({ setCurrentUser, currentUser }) {
           render={() => currentUser === null && <Redirect to="/" />}
         />
         <Route path="/dashboard" component={Dashboard} />
+        <Route path="/price" component={Price} />
+
         <Route path="/feature1" component={engagingAssignments} />
         <Route path="/feature2" component={convenientSafe} />
         <Route path="/feature3" component={bestTeacher} />
