@@ -14,6 +14,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Footer from "../../components/Footer";
 import NavbarComponent from "../../components/NavbarComponent";
+import FormControl from "@material-ui/core/FormControl";
+import Select from "@material-ui/core/Select";
+import InputLabel from "@material-ui/core/InputLabel";
+import MenuItem from "@material-ui/core/MenuItem";
 
 const useStyles = makeStyles((theme) => ({
   "@global": {
@@ -24,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   cardContainer: {
-    marginTop: "30px",
+    marginTop: "20px",
 
     marginBottom: "100px",
   },
@@ -42,8 +46,11 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "50px",
   },
   cardHeader: {
-    backgroundColor:
-      theme.palette.type === "light" ? theme.palette.grey[200] : theme.palette.grey[700],
+    background: "orange",
+    color: "white",
+  },
+  cardFooter: {
+    textAlign: "center",
   },
   cardPricing: {
     display: "flex",
@@ -107,6 +114,59 @@ export default function Pricing() {
       </Container>
       {/* End hero unit */}
       <Container maxWidth="md" component="main" className={classes.cardContainer}>
+        <Grid container spacing={2} style={{ marginBottom: "50px" }}>
+          <Grid item xs={6} style={{ textAlign: "center" }}>
+            <FormControl fullWidth>
+              <InputLabel variant="outlined" id="demo-simple-select-label">
+                Course
+              </InputLabel>
+              <Select
+                labelId="demo-simple-select-outlined-label"
+                id="demo-simple-select-outlined"
+                name="standard"
+                label="Class"
+                variant="outlined"
+                fullWidth>
+                <MenuItem value="">
+                  <em>None</em>
+                </MenuItem>
+                <MenuItem value={10}>ICSE</MenuItem>
+                <MenuItem value={20}>CBSE</MenuItem>
+                <MenuItem value={30}>JEE</MenuItem>
+                <MenuItem value={40}>NEET</MenuItem>
+                <MenuItem value={50}>BITSAT</MenuItem>
+                <MenuItem value={60}>NSO</MenuItem>
+                <MenuItem value={70}>KVPY</MenuItem>
+              </Select>
+            </FormControl>
+          </Grid>
+          <Grid item xs={6} style={{ textAlign: "center" }}>
+            <FormControl fullWidth>
+              <InputLabel variant="outlined" id="demo-simple-select-label">
+                Class
+              </InputLabel>
+              <Select
+                labelId="demo-simple-select-outlined-label"
+                id="demo-simple-select-outlined"
+                name="standard"
+                label="Class"
+                variant="outlined"
+                fullWidth>
+                <MenuItem value="">
+                  <em>None</em>
+                </MenuItem>
+                <MenuItem value={10}>8</MenuItem>
+                <MenuItem value={20}>9</MenuItem>
+                <MenuItem value={30}>10</MenuItem>
+                <MenuItem value={40}>11 Science</MenuItem>
+                <MenuItem value={50}>11 Commerce</MenuItem>
+                <MenuItem value={60}>12 Science</MenuItem>
+                <MenuItem value={70}>12 Commerce</MenuItem>
+              </Select>
+            </FormControl>
+          </Grid>
+        </Grid>
+
         <Grid container spacing={5} alignItems="flex-end">
           {tiers.map((tier) => (
             // Enterprise card is full width at sm breakpoint
@@ -116,7 +176,7 @@ export default function Pricing() {
                   title={tier.title}
                   subheader={tier.subheader}
                   titleTypographyProps={{ align: "center" }}
-                  subheaderTypographyProps={{ align: "center" }}
+                  subheaderTypographyProps={{ align: "center", color: "white" }}
                   action={tier.title === "Pro" ? <StarIcon /> : null}
                   className={classes.cardHeader}
                 />
@@ -138,9 +198,29 @@ export default function Pricing() {
                   </ul>
                 </CardContent>
                 <CardActions>
-                  <Button fullWidth variant={tier.buttonVariant} color="primary">
-                    {tier.buttonText}
-                  </Button>
+                  {
+                    // <Button fullWidth variant={tier.buttonVariant} color="primary"></Button>
+                  }
+                  <Container maxWidth="md" component="main" className={classes.cardFooter}>
+                    {" "}
+                    <Link
+                      variant="outlined"
+                      type="button"
+                      className="btn login-btn mr-2"
+                      style={{
+                        width: "100%",
+                        textDecoration: "none",
+                        borderRadius: "10px",
+                        borderColor: "orange",
+                        alignSelf: "center",
+                        "&:hover": {
+                          background: "orange",
+                          color: "white !important",
+                        },
+                      }}>
+                      {tier.buttonText}
+                    </Link>
+                  </Container>
                 </CardActions>
               </Card>
             </Grid>
