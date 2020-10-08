@@ -75,7 +75,9 @@ function App({ setCurrentUser, currentUser }) {
           path="/"
           render={() => (currentUser ? <Redirect to="/dashboard" /> : <AllImports />)}
         />
-        {console.log(currentUser)}
+        {
+          // console.log(currentUser)
+        }
         <Route
           exact
           path="/dashboard"
