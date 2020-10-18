@@ -6,6 +6,7 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -13,7 +14,7 @@
     "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
     "disable-browser-back-navigation": "^0.1.0",
-    "firebase": "^7.19.0",
+    "firebase": "^7.23.0",
     "jquery": "^3.5.1",
     "material-ui-phone-number": "^2.2.6",
     "mdbreact": "^4.27.0",

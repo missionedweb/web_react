@@ -20,17 +20,18 @@ import Excellence from "./images/Excellence.png"
 const AboutUs = () => {
   return (
     <div>
-      <header>
+      <header >
       <NavbarComponent />
       </header>
       <Wrapper>
+
         <div>
         
           {/* <NavbarComponent/>*/}
           <div className="jumbotron text-uppercase">
           
             <div
-              className="heading pt-2"
+              className="heading about-us pt-4"
               data-aos="zoom-in-up"
               data-aos-duration={2500}
             >
@@ -39,14 +40,11 @@ const AboutUs = () => {
             
 
           </div>
+          <br/>
           
-        <div>
+        <div >
         <center>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        
         <iframe
           className="img-section-left ml-auto"
           data-aos="fade-right"
@@ -58,7 +56,7 @@ const AboutUs = () => {
         />
         
         <div
-          className="learning-page "
+          className="learning-page  "
           data-aos="fade-left"
           data-aos-duration="1500"
         >
@@ -109,7 +107,7 @@ const AboutUs = () => {
               data-aos="zoom-in-up"
               data-aos-duration={2500}
             >
-              Our Values
+              <p>Our Values</p>
             </div>
             
             <div>
@@ -1539,7 +1537,7 @@ const Wrapper = styled.div`
     margin-left: 15%;
     color: #7d7987;
   }
-
+  
   @media (max-width: 400px) {
     .missioned-nav {
       font-size: 30px;

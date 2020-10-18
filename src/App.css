@@ -173,6 +173,11 @@ h1 {
     font-size: 30px;
   }
 } */
+@media (max-width : 673px){
+  .faq-head{
+    font-size: 26px !important;
+  }
+}
 @media (max-width: 754px) {
   .counters {
     width: 60%;
@@ -182,10 +187,18 @@ h1 {
 }
 @media (max-width: 595px) {
   .heading {
-    margin-top: 50px;
+    font-size: 35px !important;
+    text-align: center !important;
+  }
+  .faq-head{
+    font-size: 22px !important;
   }
 }
-
+@media  (max-width : 1020px){
+  .image_section{
+    display: none;
+  }
+}
 /* @media (max-width: 400px) {
   .ed {
     font-size: 30px;
@@ -212,6 +225,7 @@ h1 {
 .image_section img {
   display: block;
   margin: 70px 100px;
+  max-width: 100% !important;
 }
 
 @media (max-width: 1408px) {
@@ -221,12 +235,7 @@ h1 {
   
 }
 
-@media (max-width: 1320px) {
-  .image_section img:first-child {
-    display: none;
-  }
-  
-}
+
 
 @media (max-width: 1220px) {
   .img-right{
@@ -273,7 +282,9 @@ h1 {
     width: 50%;
   }
 }
-
+.navbar-nav li a{
+  font-size: 17px !important;
+}
 @media (max-width: 1414px) {
   .learning-page-2 {
     display: block;
@@ -337,6 +348,21 @@ h1 {
 @media (max-width: 1396px) {
   .learning-heading-2 {
     margin-top: 80px;
+  }
+}
+
+
+@media screen and (max-width : 1254px){
+  .login-btn{
+    width: 90px !important;
+    height: 35px !important;
+    font-size: 15px !important;
+  }
+  .missioned-nav{
+    font-size: 35px !important;
+  }
+  .missioned-nav span{
+font-size: 35px !important;
   }
 }
 
