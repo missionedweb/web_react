@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import gapp from "../Images/gapp.png";
+import coun from "../Images/coun.png";
 import books from "../Images/books.png";
 import counsellingImg from "../Images/counsellingImg.png";
 import swal from "sweetalert";
@@ -117,20 +118,15 @@ const GetTheApp = () => {
                 </button>
               </a>
 
-              <img
-                className="books"
-                src={books}
-                alt=""
-                data-aos="flip-up"
-                data-aos-duration="2000"
-              />
+              
             </p>
                                 </div>
           </div>
         </div>
           </div>
         <div className="container-fluid counselling">
-          <div className="counselling-left" data-aos="zoom-out" data-aos-duration="1000">
+            <div className="row">
+          <div className="col-md-6" data-aos="zoom-out" data-aos-duration="1000">
             <p className="app">
               <span data-aos="zoom-out" data-aos-duration="1000">
                 Get a free counselling today!
@@ -167,6 +163,19 @@ const GetTheApp = () => {
       <Button style={{ background : "orange" , border : "none" , width : "100px" , height : "50px", borderRadius : "10px 10px 10px 10px" }}  onClick={handleShow}>
         Join
       </Button>
+              </div>
+                </div>
+                <div className="col-md-6" >
+                
+                <center> <img
+              className="img-fluid bh" 
+              src={coun}
+              alt=""
+              data-aos="flip-up"
+              data-aos-duration={1500}
+                        /></center>
+                </div>
+            
 
       <Modal show={show} onHide={handleClose}
       className={classes.modal}
@@ -237,7 +246,7 @@ const GetTheApp = () => {
       </Modal>
 
               
-            </div>
+            
           </div>
           <img
             className="counselling-img"
