@@ -23,6 +23,17 @@
   border-bottom-right-radius: 0;
 }
 
+        @media (max-width:481px)
+    {
+.bg{
+    
+    background-image: url(../../Images/responsive-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+        }
+
 .play {
   margin-top: 20px;
 }

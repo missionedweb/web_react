@@ -6,20 +6,16 @@ import expert_teac from "../Images/expert_teac.svg";
 import styled from "styled-components";
 import NavbarComponent from "./NavbarComponent";
 import GetTheApp from "./GetTheApp";
+import "./css/crs.scss";
 import Footer from "./Footer";
 
 
 const Cards = () => {
   return (
     <div>
-    <header>
-          <NavbarComponent className="ml-2"/>
-      </header>
-      <br />
-      <br />
-      <br />
-      <br />
+   
       <Wrapper>
+          <section style={{ background: 'aliceblue' }} >
         <h1 style={{ textAlign: "center", color: "black" }}>
           Why <span style={{ color: "orange" }}>MissionEd </span>works?
         </h1>
@@ -28,7 +24,7 @@ const Cards = () => {
           platforms in India
         </p>
         {/* </div> */}
-        <div className="container">
+        <div className="container bg21" >
           <div className="card-deck">
             {/* <Link to="/feature1"> */}
             {/* <div> */}
@@ -151,7 +147,7 @@ const Cards = () => {
         <br />
         <br />
         <br />
-        
+          </section>
         <GetTheApp />
         <Footer />
       </Wrapper>

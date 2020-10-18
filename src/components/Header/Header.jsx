@@ -24,9 +24,12 @@ function Header() {
   return (
     <div>
       <div>
+          <section className="bg">
         <div className="header mx-auto">
+
           <div className=" image_section " style={{ float: "right" }}>
             <img  data-aos="zoom-in " src={NewImg} />
+
           </div>
           <div className="headerButtons ">
             <h1 className="tagline text-center" data-aos="fade-down" data-aos-duration="3000">
@@ -132,6 +135,7 @@ function Header() {
             <br />
           </div>
         </b>
+              </section>
       </div>
     </div>
   );
