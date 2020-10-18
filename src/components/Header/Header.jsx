@@ -5,6 +5,7 @@ import appstore from "../../Images/appstore.png";
 import Typical from "react-typical";
 import swal from "sweetalert";
 import MuiPhoneNumber from "material-ui-phone-number";
+import { Input, TextField } from "@material-ui/core";
 function Header() {
   const [value, setValue] = useState("");
   const alertModal = () => {
@@ -17,18 +18,18 @@ function Header() {
   };
 
   const handleOnChange = (value) => {
-    setValue((prevState) => ({ ...prevState, phone: value }));
+    setValue((prevState) => ({ ...prevState, phone: value}));
   };
 
   return (
     <div>
       <div>
         <div className="header mx-auto">
-          <div className=" image_section" style={{ float: "right" }}>
-            <img data-aos="zoom-in" src={NewImg} />
+          <div className=" image_section " style={{ float: "right" }}>
+            <img  data-aos="zoom-in " src={NewImg} />
           </div>
-          <div className="headerButtons">
-            <h1 className="tagline " data-aos="fade-down" data-aos-duration="3000">
+          <div className="headerButtons ">
+            <h1 className="tagline text-center" data-aos="fade-down" data-aos-duration="3000">
               <br />
               <b>
                 Learn From The <br />
@@ -45,7 +46,7 @@ function Header() {
               </b>
             </h1>
             <b>
-              <h6 className="tg2" data-aos="fade-right" data-aos-duration="500">
+              <h6 className="tg2 text-center" data-aos="fade-right" data-aos-duration="500">
                 Learning app for class 8-12{" "}
               </h6>{" "}
               <br />
@@ -117,23 +118,13 @@ function Header() {
             or <br /> Get the app on your phone now
           </p>
           <div
-            className=" contact d-flex justify-content-center"
+            className=" contact  d-flex justify-content-center"
             style={{ marginLeft: "5%", marginRight: "5%" }}>
-            <div className="buttonIn " data-aos="zoom-out" data-aos-duration="500" style={{ height : "33px", width :"300px", borderRadius : "5px"}}>
-              <MuiPhoneNumber
-                defaultCountry={"in"}
-                fullWidth
-                onChange={handleOnChange}
-                required
-                id="phone"
-                name="phone"
-                value={value}
-                style={{border : "1px solid black" , borderRadius : "5px 0px 0px 5px"}}
-              />
-
-              <button className="joins" onClick={alertModal}>
-                Join
-              </button>
+            <div className="buttonIn " data-aos="zoom-out" data-aos-duration="500" style={{border : "none" ,height : "38px", width :"300px", }}>
+            
+             
+           <MuiPhoneNumber defaultCountry={"in"} value={value} onChange={handleOnChange} className="" style={{ border : "1px solid black" ,width:"100%",borderRadius : "30px", padding : "3px"}}/>
+           <button className="joins" onClick={alertModal} style={{position : "absolute", top:"2px", right : "4px", borderRadius : "30px", }} onClick={alertModal}>Join</button>
 
               <br />
             </div>

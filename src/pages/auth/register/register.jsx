@@ -104,10 +104,10 @@ export default function Register() {
         onClick={handleOpen}
         className="btn login-btn mr-2"
         style={{
-          width: 110,
-          height: 46,
+          width: 100,
+          height: 43,
           textDecoration: "none",
-          borderRadius: "10px",
+          borderRadius: "5px",
           borderColor: "orange",
           background: "orange",
           color: "white ",

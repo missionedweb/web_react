@@ -64,13 +64,17 @@ export default function Login() {
         variant="outlined"
         type="button"
         onClick={handleOpen}
-        className="btn login-btn mr-2"
+        className="btn login-btn mr-3"
         style={{
-          width: 110,
-          height: 46,
+          width: 100,
+          height: 43,
+          display: "flex",
+          justifyContent : "center",
+          alignItems : "center",
           textDecoration: "none",
-          borderRadius: "10px",
+          borderRadius: "5px",
           borderColor: "orange",
+          transition : "0.2s ease",
 
           "&:hover": {
             background: "orange",

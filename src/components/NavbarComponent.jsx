@@ -22,7 +22,7 @@ function NavbarComponent({ currentUser }) {
   //   header.classList.toggle("sticky", window.scrollY > 150);
   // });
   $(window).scroll(function(){
-    $('nav').toggleClass('scrolled', $(this).scrollTop() > 200);
+    $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
   });
   return (
     <>
@@ -36,16 +36,16 @@ function NavbarComponent({ currentUser }) {
             Mission<span className="ed">Ed</span>
           </span>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="mr-2" />
         <Navbar.Collapse id="basic-navbar-nav navbar-left">
           <Nav className="navbar transparent ml-auto mr-auto">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item mr-auto ml-2">
-                  <a href="/" class="nav-link">Home</a>
+                  <a href="/" class="nav-link">HOME</a>
         
                  </li>
                  <li class="nav-item mr-auto ml-2">
-	            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> Classes <b class="caret"></b></a>
+	            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> CLASSES <b class="caret"></b></a>
 	            <ul class="dropdown-menu multi-column columns-2">
 		            <div class="row">
 			            <div class="col-sm-4 ml-2 " >
