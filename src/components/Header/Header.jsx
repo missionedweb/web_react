@@ -27,8 +27,12 @@ function Header() {
           <section className="bg">
         <div className="header mx-auto">
 
-          <div className=" image_section " style={{ float: "right" }}>
-            <img  data-aos="zoom-in " src={NewImg} />
+          <div  style={{ float: "right" }}>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+            <img data-aos="fade-left" className="img-fluid" src={NewImg} />
 
           </div>
           <div className="headerButtons ">
