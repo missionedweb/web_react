@@ -99,7 +99,8 @@ export default function Register() {
   return (
     <div>
       <Link
-        variant="outlined"
+        to="#"
+        
         type="button"
         onClick={handleOpen}
         className="btn login-btn mr-2"

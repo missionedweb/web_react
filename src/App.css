@@ -177,6 +177,9 @@ h1 {
   .faq-head{
     font-size: 26px !important;
   }
+  .image_section img{
+    max-width: 100%;
+  }
 }
 @media (max-width: 754px) {
   .counters {
@@ -196,7 +199,7 @@ h1 {
 }
 @media  (max-width : 1020px){
   .image_section{
-    display: none;
+    display: none ;
   }
 }
 /* @media (max-width: 400px) {
@@ -211,7 +214,7 @@ h1 {
 }
 @media (max-width: 900px) {
   .tagline {
-    font-size: 50px;
+    font-size: 45px;
     z-index: 1;
   }
   

@@ -24,18 +24,18 @@ function Header() {
   return (
     <div>
       <div>
-          <section className="bg">
-        <div className="header mx-auto">
+          <section className="bg" >
+        <div className="header" >
 
-          <div  style={{ float: "right" }}>
+          <div className="image-section  " style={{ float: "right" }}>
               <br/>
               <br/>
               <br/>
               <br/>
-            <img data-aos="fade-left" className="img-fluid" src={NewImg} />
+            <img data-aos="fade-left" style={{maxWidth : "100% !important"}} className="img-fluid mr-5" src={NewImg} />
 
           </div>
-          <div className="headerButtons ">
+          <div className="headerButtons "  >
             <h1 className="tagline text-center" data-aos="fade-down" data-aos-duration="3000">
               <br />
               <b>
@@ -76,7 +76,7 @@ function Header() {
                 </a>
                 <a
                   href="#"
-                  className="mt-2 btn btn-lg btn-white "
+                  className="mt-2 btn btn-lg btn-white join-btn"
                   style={{
                     background: "#2F80ED",
                     borderRadius: "8px",
@@ -91,10 +91,10 @@ function Header() {
                 className="play  d-flex justify-content-center"
                 data-aos="zoom-out"
                 data-aos-duration="1000">
-                <a href="https://play.google.com/store/apps/details?id=com.missionedappdev.missoned">
+                <a href="https://play.google.com/store/apps/details?id=com.missionedappdev.missoned" target="_black">
                   <img
-                    onClick="redirect()"
-                    className="store img-fluid"
+                    
+                    className="store mr-3 img-fluid"
                     src={playstore}
                     width="200"
                     height="40"
@@ -103,7 +103,7 @@ function Header() {
                 </a>
                 {/* <a href="https://play.google.com/store/apps/details?id=com.missionedappdev.missoned"> */}
                 <img
-                  onClick="redirect()"
+                  
                   className="store img-fluid"
                   src={appstore}
                   width="200"
@@ -113,31 +113,31 @@ function Header() {
                 {/* </a> */}
               </div>
             </b>
+            <div className="gettheapp" style={{display : "flex", width : "62%", justifyContent : "center"}}>
+            <p className="text-center getapp " data-aos="zoom-out" data-aos-duration="1000">
+            {" "}
+            or <br /> Get the app on your phone now
+          </p>
+            </div>
+          <div className="phonenum " style={{width : "63%", display:"flex", justifyContent : "center"}}>
+          <div className="buttonIn  " data-aos="zoom-out" data-aos-duration="500" style={{border : "none" ,height : "38px", width :"300px", }}>
+            
+             
+            <MuiPhoneNumber defaultCountry={"in"} value={value} onChange={handleOnChange} className="" style={{ border : "1px solid black" ,width:"100%",borderRadius : "30px", padding : "3px"}}/>
+            <button className="joins" onClick={alertModal} style={{position : "absolute", top:"2px", right : "4px", borderRadius : "30px", }} onClick={alertModal}>Join</button>
+ 
+               <br />
+             </div>
+          </div>
           </div>
           <b>
-            <div className="secondtagline" style={{ maxWidth: "auto" }}></div>
+            
           </b>
         </div>
         <b>
           <br />
-          <p className="text-center getapp " data-aos="zoom-out" data-aos-duration="1000">
-            {" "}
-            or <br /> Get the app on your phone now
-          </p>
-          <div
-            className=" contact  d-flex justify-content-center"
-            style={{ marginLeft: "5%", marginRight: "5%" }}>
-            <div className="buttonIn " data-aos="zoom-out" data-aos-duration="500" style={{border : "none" ,height : "38px", width :"300px", }}>
-            
-             
-           <MuiPhoneNumber defaultCountry={"in"} value={value} onChange={handleOnChange} className="" style={{ border : "1px solid black" ,width:"100%",borderRadius : "30px", padding : "3px"}}/>
-           <button className="joins" onClick={alertModal} style={{position : "absolute", top:"2px", right : "4px", borderRadius : "30px", }} onClick={alertModal}>Join</button>
-
-              <br />
-            </div>
-            <br />
-            <br />
-          </div>
+          
+         
         </b>
               </section>
       </div>

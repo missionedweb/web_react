@@ -61,6 +61,7 @@ export default function Login() {
   return (
     <div>
       <Link
+        to="#"
         variant="outlined"
         type="button"
         onClick={handleOpen}

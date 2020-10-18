@@ -33,7 +33,7 @@ const LearningPage = () => {
           <h1 style={{ color : "#fb8f1d" , fontSize : "50px" }}>JEE RANK PREDICTOR</h1>
           <h4 style={{ color : "white" }}>If you are confused with what rank you will get with your predicted marks , here is a soltuion given by MissionED. One can use this predictor to find his/her rank based on the data from previous year exams.</h4>
           <br/>
-          <a href="/rankpredictor" class="btn btn-outlined btn-theme btn-lg" data-wow-delay="0.7s">CHECK IT OUT</a>
+          <a href="/rankpredictor" className="btn btn-outlined btn-theme btn-lg" data-wow-delay="0.7s">CHECK IT OUT</a>
         </div>
         <div className="col col-md-4">
         <div data-aos="fade-down" data-aos-duration={1000}>
@@ -51,7 +51,7 @@ const LearningPage = () => {
           }}>
           <p data-aos="zoom-in-down" data-aos-duration="1000">
             FREE <span>Coding</span> Certification | (Age 6-18){" "}
-            <i style={{ color: "pink", marginLeft: "20px" ,paddingRight: "25px" , marginTop: "10px"}} class="fas fa-arrow-right"></i>
+            <i style={{ color: "pink", marginLeft: "20px" ,paddingRight: "25px" , marginTop: "10px"}} className="fas fa-arrow-right"></i>
           </p>
           
 
