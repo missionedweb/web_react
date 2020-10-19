@@ -117,13 +117,7 @@ const GetTheApp = () => {
                 </button>
               </a>
 
-              <img
-                className="books"
-                src={books}
-                alt=""
-                data-aos="flip-up"
-                data-aos-duration="2000"
-              />
+              
             </p>
                                 </div>
           </div>
@@ -240,7 +234,7 @@ const GetTheApp = () => {
             </div>
           </div>
           <img
-            className="counselling-img"
+            className="img-fluid"
             src={counsellingImg}
             data-aos="fade-left"
             data-aos-duration="1000"

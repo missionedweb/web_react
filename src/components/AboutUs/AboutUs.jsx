@@ -187,7 +187,7 @@ const AboutUs = () => {
             
 
           </div>
-          <div>
+         {/* <div>
             <br/>
             <br/>
             <br/>
@@ -202,8 +202,8 @@ const AboutUs = () => {
             
           
 
-          </div>
-          <div className="container ">
+          </div>*/}
+         {/* <div className="container ">
               <div className="row ">
                 <div
                   className="col-lg-4 center col-md-6 col-12 mt-3"
@@ -342,7 +342,7 @@ const AboutUs = () => {
                 <br />
                 
                 </div>
-                </div>
+                </div>*/}
         
           
         
