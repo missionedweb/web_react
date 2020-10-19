@@ -102,16 +102,7 @@ const LearningPage = () => {
         <br />
         <br />
         {/* Learning Page 2  */}
-                        <div className="col-md-6" >
-        <img
-          className="img-fluid"
-          data-aos="fade-left"
-          data-aos-duration="2500"
-          src={Right}
-          alt=""
-         
-        />
-              </div>
+                        
                <div className="col-md-6" >
         <div className="learning-page-2" data-aos="fade-left" data-aos-duration="1500">
           <p className="learning-heading-2">Let’s fall in love with learning</p>
@@ -130,6 +121,16 @@ const LearningPage = () => {
             </a>
           </div>
         </div>
+              <div className="col-md-6" >
+        <img
+          className="img-fluid"
+          data-aos="fade-left"
+          data-aos-duration="2500"
+          src={Right}
+          alt=""
+         
+        />
+              </div>
         
       </div>
     </div>
