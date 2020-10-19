@@ -27,7 +27,7 @@ import Course from "../Course/course";
 import { auth } from "../../firebase/firebase.utils";
 import NavigationLogo from "../../Images/NavigationLogo.svg";
 import { Directions } from "@material-ui/icons";
-
+import Pricing from './Pricing';
 function SideBar(props) {
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -136,6 +136,9 @@ function SideBar(props) {
             </Route>
             <Route path="/dashboard/settings">
               <Setting />
+            </Route>
+            <Route path="/dashboard/pricing" component={Pricing}>
+              
             </Route>
           </Switch>
         </main>
