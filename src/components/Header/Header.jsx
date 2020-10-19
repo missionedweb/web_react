@@ -4,6 +4,7 @@ import playstore from "../../Images/playstore.png";
 import appstore from "../../Images/appstore.png";
 import Typical from "react-typical";
 import swal from "sweetalert";
+import Owldemo from '../Owldemo'
 import MuiPhoneNumber from "material-ui-phone-number";
 import { Input, TextField } from "@material-ui/core";
 function Header() {
@@ -140,6 +141,7 @@ function Header() {
          
         </b>
               </section>
+          <Owldemo/>  
       </div>
     </div>
   );
