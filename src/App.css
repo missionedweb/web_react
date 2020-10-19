@@ -214,7 +214,7 @@ h1 {
 }
 @media (max-width: 900px) {
   .tagline {
-    font-size: 45px;
+    font-size: 44px !important;
     z-index: 1;
   }
   

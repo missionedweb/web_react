@@ -40,16 +40,17 @@ function Header() {
               <br />
               <b>
                 Learn From The <br />
-                Best{" "}
+                Best <span>{" "}
                 <Typical
                   loop={Infinity}
                   wrapper="b"
                   steps={["Tutors", 3000, "Guides", 3000, "Experts", 3000]}
                 />
                 <span
-                  className="typewriter-text"
+                  className="typewriter-text" 
                   data-text='[ "Experts. ", "Tutors. ", "Guides. " ]'
                 />
+                </span>
               </b>
             </h1>
             <b>

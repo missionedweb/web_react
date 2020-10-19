@@ -30,13 +30,13 @@ function NavbarComponent({ currentUser }) {
       <div id="header" className="fixed-top" >
       <div className="row">
       <Navbar   expand="xl" className="navbar-expand-xl bg-light navbar-default" >
-        <Navbar.Brand href="/" className="ml-2">
+        <Navbar.Brand href="/" className="ml-3">
           <img className="logo mt-n4 mr-auto" src={NavigationLogo} alt="logo" />
           <span className="missioned-nav  font-weight-bold">
             Mission<span className="ed">Ed</span>
           </span>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" className="mr-2" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="mr-3" />
         <Navbar.Collapse id="basic-navbar-nav navbar-left">
           <Nav className="navbar transparent ml-auto mr-auto">
               <ul className="navbar-nav mr-auto">

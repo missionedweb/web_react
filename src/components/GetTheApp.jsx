@@ -81,13 +81,13 @@ const GetTheApp = () => {
   return (
     <div>
       <div>
-        <div className="container-fluid get-app">
+        <div className="container-fluid  get-app">
             
-          <div className="text-block">
+          <div className="text-block ">
               <div className="row">
               <div className="col-md-6">
            <center> <img
-              className="img-fluid bh" 
+              className="img-fluid bh " 
               src={gapp}
               alt=""
               data-aos="flip-up"
