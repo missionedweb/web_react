@@ -40,4 +40,9 @@
   .books {
     float: right;
   }
+  @media (max-width : 792px){
+    .counseling-img{
+      display: none !important;
+    }
+  }
   

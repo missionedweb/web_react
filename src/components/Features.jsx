@@ -10,7 +10,7 @@ const Features = () => {
     <div>
       <div>
         <section
-          className="feature"
+          className="feature "
           
         >
           <h1 className="main text-center"

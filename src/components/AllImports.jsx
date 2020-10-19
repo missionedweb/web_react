@@ -27,7 +27,6 @@ function AllImports() {
       </header>
       <Header />
       <LearningPage />
-
       <Features />
       <Testimonials />
       <Counter />

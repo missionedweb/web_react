@@ -123,8 +123,10 @@ const GetTheApp = () => {
           </div>
         </div>
           </div>
-        <div className="container-fluid counselling">
-          <div className="counselling-left" data-aos="zoom-out" data-aos-duration="1000">
+        <div className="container-fluid  counselling">
+          <div className="row">
+            <div className="col-md-6 ">
+            <div className="counselling-left " data-aos="zoom-out" data-aos-duration="1000">
             <p className="app">
               <span data-aos="zoom-out" data-aos-duration="1000">
                 Get a free counselling today!
@@ -233,13 +235,15 @@ const GetTheApp = () => {
               
             </div>
           </div>
-          <img
-            className="img-fluid"
-            src={counsellingImg}
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            alt=""
-          />
+            </div>
+            <div className="col-md-6 ">
+                <div className="counseling-img" style={{display : "flex", justifyContent : "center"}}>
+                  <img data-aos={2000} src={counsellingImg} style={{maxWidth : "100%", height:"auto"}}
+                  data-aos="fade-left"
+                  data-aos-duration="1000" />
+                </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

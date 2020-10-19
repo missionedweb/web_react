@@ -85,6 +85,11 @@ letter-spacing: 4px;
   line-height: 28px;
   margin-top: 20px;
 }
+@media (max-width : 800px){
+  .headerButtons{
+    display: block;
+  }
+}
 
 .headerButtons {
   margin-top: 3%;

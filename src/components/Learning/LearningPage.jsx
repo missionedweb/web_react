@@ -66,7 +66,7 @@ const LearningPage = () => {
         <br />
         <br />
         <br />
-          <div className="row">
+          <div className="row ">
         <div className="col-md-6 ">
         <img
           className="img-fluid"
@@ -114,14 +114,14 @@ const LearningPage = () => {
           <br />
           <br />
                    </div>
-          <div className="col-md-6" data-aos="zoom-in-up" data-aos-duration="1500">
+          <div className="col-md-6 " data-aos="zoom-in-up" data-aos-duration="1500">
             {" "}
             <center><a type="button" href="/feature2">
               <button style={{outline: "none"}} className="border-0 learn-more-btn">Learn More</button>{" "}
                 </a></center>
           </div>
         </div>
-              <div className="col-md-6" >
+              <div className="col-md-6 " >
         <img
           className="img-fluid"
           data-aos="fade-left"

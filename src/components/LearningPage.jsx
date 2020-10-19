@@ -197,7 +197,7 @@ const LearningPage = () => {
           <br />
           <br />
           <div
-            className="col-md-6"
+            className="col-md-6 "
             data-aos="zoom-in-up"
             data-aos-duration="1500"
           >
@@ -211,7 +211,7 @@ const LearningPage = () => {
         <br />
         <br />
         <br />
-        <br />
+        
         {/* Learning Page 2  */}
         <img
           className="img-section-right"
