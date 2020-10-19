@@ -1,6 +1,7 @@
 import React from "react";
 import Left from "../../Images/left.png";
 import Right from "../../Images/Right.png";
+import lcerti from "../../Images/lcerti.png";
 import AOS from "aos";
 import Group67 from "../contactUs/Images/Group 1.png";
 
@@ -14,7 +15,8 @@ const LearningPage = () => {
       <div>
         <br/>
         <br/>
-        <div className="jumbotron"  style = {{ backgroundImage : "linear-gradient(#457fca,#5691c8)" }}>
+        
+        <div className="jumbotron"  style = {{ backgroundImage : "linear,left top,left bottom,from(#fff),to(#d6effa)" }}>
           <div className="row">
             <div className="col col-md-6 offset-md-1 " data-aos="zoom-in-up" data-aos-duration="1500">
             {/* <svg viewBox="0 0 1500 100">
@@ -30,10 +32,10 @@ const LearningPage = () => {
           <br/>
           <br/>
           <br/>
-          <h1 style={{ color : "#fb8f1d" , fontSize : "50px" }}>JEE RANK PREDICTOR</h1>
+          <h1 style={{ color : "#000000" , fontSize : "50px" }}>JEE RANK PREDICTOR</h1>
           <h4 style={{ color : "white" }}>If you are confused with what rank you will get with your predicted marks , here is a soltuion given by MissionED. One can use this predictor to find his/her rank based on the data from previous year exams.</h4>
           <br/>
-          <a href="/rankpredictor" className="btn btn-outlined btn-theme btn-lg" data-wow-delay="0.7s">CHECK IT OUT</a>
+          <a href="/rankpredictor" className="btn btn-outlined btn-theme btn-lg" data-wow-delay="0.7s" style={{ background: "rgb(47, 128, 237)"}}>CHECK IT OUT</a>
         </div>
         <div className="col col-md-4">
         <div data-aos="fade-down" data-aos-duration={1000}>
@@ -50,6 +52,13 @@ const LearningPage = () => {
             justifyContent: "center",
           }}>
           <p data-aos="zoom-in-down" data-aos-duration="1000">
+             <center> <img
+          className="img-fluid"
+        
+          src={lcerti}
+          alt=""
+         
+                          /></center>
             FREE <span>Coding</span> Certification | (Age 6-18){" "}
             <i style={{ color: "pink", marginLeft: "20px" ,paddingRight: "25px" , marginTop: "10px"}} className="fas fa-arrow-right"></i>
           </p>
