@@ -234,7 +234,7 @@ const GetTheApp = () => {
             </div>
           </div>
           <img
-            className="counselling-img"
+            className="img-fluid"
             src={counsellingImg}
             data-aos="fade-left"
             data-aos-duration="1000"
