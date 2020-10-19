@@ -1,12 +1,20 @@
 /* Header */
-.tagline {
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;500&family=Cantarell&family=PT+Sans+Caption&display=swap');.tagline {
   color: #202336;
   font-size: 60px;
-  font-family: Playfair Display;
-  line-height: 80px;
+font-family: 'Barlow Semi Condensed', sans-serif; 
+letter-spacing: 4px;
+ line-height: 80px;
   padding-top: 50px;
 }
+.join-btn{
+  font-family: 'Barlow Semi Condensed', sans-serif !important;
+  letter-spacing: 2px !important; 
 
+}
+.img-fluid{
+  max-width: 100%;
+}
 .intl-tel-input {
   display: table-cell;
 }
@@ -23,12 +31,39 @@
   border-bottom-right-radius: 0;
 }
 
+@media (max-width : 1004px){
+  .phonenum{
+    width: 100% !important;
+  }
+  .gettheapp{
+    width: 100% !important;
+  }
+}
+
+        @media (max-width:681px)
+    {
+.bg{
+    
+  background-image: url(../../Images/responsive-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+    
+    
+}
+.tagline{
+  font-size: 30px;
+}
+        }
+
 .play {
   margin-top: 20px;
 }
 .s0 {
   width: auto;
   height: auto;
+}
+.x1 a{
+  transition: 0.2s ease;
 }
 .x1 a:hover {
   box-shadow: 2px 2px 5px black;
@@ -53,7 +88,7 @@
 
 .headerButtons {
   margin-top: 3%;
-  margin-left: 5%;
+  
 }
 .headerButtons .btn {
   border-radius: 25px;
@@ -76,7 +111,7 @@
 }
 .getapp {
   color: #b8becd;
-  margin-left: 60px;
+  margin-left: 10px;
 }
 
 .contact {

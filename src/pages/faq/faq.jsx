@@ -24,7 +24,7 @@ const FAQ = () => {
         <div>
           <div className="jumbotron text-uppercase">
             <div
-              className="heading"
+              className="heading faq-head"
               data-aos="zoom-in-up"
               data-aos-duration={2500}
               style = {{ fontSize : "33px" }}

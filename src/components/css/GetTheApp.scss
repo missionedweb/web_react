@@ -1,8 +1,8 @@
 /* Get App */
 .get-app {
-    margin-top: 250px;
+
     width: 100%;
-    height: 400px;
+    height: auto;
     background: #fff5e5;
   }
   .app {
@@ -11,16 +11,12 @@
     font-weight: bold;
     color: black;
   }
-  .img-mobile {
-    width: auto;
+  .bh{
     height: 500px;
-    margin-top: -170px;
-    margin-left: 15%;
-    border-radius: 8px;
+      width: 300px;
+    
   }
   .app-txt {
-    float: right;
-    margin-right: 25%;
     font-style: normal;
     color: #7d7987;
     font-size: 20px;

@@ -1,6 +1,7 @@
 import React from "react";
 import Left from "../../Images/left.png";
 import Right from "../../Images/Right.png";
+import lcerti from "../../Images/lcerti.png";
 import AOS from "aos";
 import Group67 from "../contactUs/Images/Group 1.png";
 
@@ -14,7 +15,8 @@ const LearningPage = () => {
       <div>
         <br/>
         <br/>
-        <div className="jumbotron"  style = {{ backgroundImage : "linear-gradient(#457fca,#5691c8)" }}>
+        
+        <div className="jumbotron"  style = {{ backgroundImage : "linear,left top,left bottom,from(#fff),to(#d6effa)" }}>
           <div className="row">
             <div className="col col-md-6 offset-md-1 " data-aos="zoom-in-up" data-aos-duration="1500">
             {/* <svg viewBox="0 0 1500 100">
@@ -30,10 +32,10 @@ const LearningPage = () => {
           <br/>
           <br/>
           <br/>
-          <h1 style={{ color : "#fb8f1d" , fontSize : "50px" }}>JEE RANK PREDICTOR</h1>
+          <h1 style={{ color : "#000000" , fontSize : "50px" }}>JEE RANK PREDICTOR</h1>
           <h4 style={{ color : "white" }}>If you are confused with what rank you will get with your predicted marks , here is a soltuion given by MissionED. One can use this predictor to find his/her rank based on the data from previous year exams.</h4>
           <br/>
-          <a href="/rankpredictor" class="btn btn-outlined btn-theme btn-lg" data-wow-delay="0.7s">CHECK IT OUT</a>
+          <a href="/rankpredictor" className="btn btn-outlined btn-theme btn-lg" data-wow-delay="0.7s" style={{ background: "rgb(47, 128, 237)"}}>CHECK IT OUT</a>
         </div>
         <div className="col col-md-4">
         <div data-aos="fade-down" data-aos-duration={1000}>
@@ -50,8 +52,15 @@ const LearningPage = () => {
             justifyContent: "center",
           }}>
           <p data-aos="zoom-in-down" data-aos-duration="1000">
+             <center> <img
+          className="img-fluid"
+        
+          src={lcerti}
+          alt=""
+         
+                          /></center>
             FREE <span>Coding</span> Certification | (Age 6-18){" "}
-            <i style={{ color: "pink", marginLeft: "20px" ,paddingRight: "25px" , marginTop: "10px"}} class="fas fa-arrow-right"></i>
+            <i style={{ color: "pink", marginLeft: "20px" ,paddingRight: "25px" , marginTop: "10px"}} className="fas fa-arrow-right"></i>
           </p>
           
 
@@ -66,15 +75,18 @@ const LearningPage = () => {
         <br />
         <br />
         <br />
-        
+          <div className="row">
+        <div className="col-md-6 ">
         <img
-          className="img-section-left"
+          className="img-fluid"
           data-aos="fade-right"
           data-aos-duration="1500"
           src={Left}
           alt=""
-          style={{ marginTop: "20px", width: "42%" }}
+         
         />
+              </div>
+              <div className="col-md-6">
         <div className="learning-page " data-aos="fade-left" data-aos-duration="1500">
           <p className="learning-heading">A new way to explore the learning</p>
           <h6 className="learning-txt">
@@ -86,11 +98,12 @@ const LearningPage = () => {
           </h6>
           <br />
           <br />
+                  </div>
           <div className="col-md-6" data-aos="zoom-in-up" data-aos-duration="1500">
             {" "}
-            <a href="/feature1">
+            <center><a href="/feature1">
               <button className="border-0 learn-more-btn" style={{outline: "none"}}>Learn More</button>{" "}
-            </a>
+            </a></center>
           </div>
         </div>
         <br />
@@ -98,14 +111,8 @@ const LearningPage = () => {
         <br />
         <br />
         {/* Learning Page 2  */}
-        <img
-          className="img-section-right"
-          data-aos="fade-left"
-          data-aos-duration="2500"
-          src={Right}
-          alt=""
-          style={{ marginTop: "20px", width: "45%" }}
-        />
+                        
+               <div className="col-md-6" >
         <div className="learning-page-2" data-aos="fade-left" data-aos-duration="1500">
           <p className="learning-heading-2">Let’s fall in love with learning</p>
           <h6 className="learning-txt-2">
@@ -115,16 +122,28 @@ const LearningPage = () => {
           </h6>
           <br />
           <br />
+                   </div>
           <div className="col-md-6" data-aos="zoom-in-up" data-aos-duration="1500">
             {" "}
-            <a type="button" href="/feature2">
+            <center><a type="button" href="/feature2">
               <button style={{outline: "none"}} className="border-0 learn-more-btn">Learn More</button>{" "}
-            </a>
+                </a></center>
           </div>
         </div>
+              <div className="col-md-6" >
+        <img
+          className="img-fluid"
+          data-aos="fade-left"
+          data-aos-duration="2500"
+          src={Right}
+          alt=""
+         
+        />
+              </div>
         
       </div>
     </div>
+              </div>
   );
 };
 

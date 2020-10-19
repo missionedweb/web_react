@@ -24,10 +24,10 @@ function Addfeatures() {
         
          <Wrapper>
           <div>
-           <div className="jumbotron">
+           <div className="jumbotron ">
             <div className="container">
               <div className="row">
-                <div className="col-md-12">
+                <div className="col-md-12 " style={{display : "flex", justifyContent : "center", alignItems : "center"}}>
                   <p className="learning-headingmain">FEATURES</p>
                 </div>
               </div>
