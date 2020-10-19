@@ -20,7 +20,7 @@ import Excellence from "./images/Excellence.png"
 const AboutUs = () => {
   return (
     <div>
-      <header >
+      <header className="">
       <NavbarComponent />
       </header>
       <Wrapper>
@@ -28,7 +28,7 @@ const AboutUs = () => {
         <div>
         
           {/* <NavbarComponent/>*/}
-          <div className="jumbotron text-uppercase">
+          <div className="jumbotron bg-dark text-uppercase">
           
             <div
               className="heading about-us pt-4"
@@ -56,14 +56,14 @@ const AboutUs = () => {
         />
         
         <div
-          className="learning-page  "
+          className="learning-page bg-dark "
           data-aos="fade-left"
           data-aos-duration="1500"
         >
           <p className="learning-heading">What we believe in?</p>
           <h6 className="learning-txt1" style={{ margin: "auto" }}>
             {" "}
-            The environment of learning we provide  is nurtured by the experts. The guidance that  
+            The environment of learning we provide is nurtured by the experts. The guidance that  
             <br/>you are seeking is from the IITians. They will provide you the enhanced way of teaching 
             <br/> You  will get the quality as well as playful atmosphere.
           </h6>
@@ -1469,7 +1469,7 @@ const Wrapper = styled.div`
   .get-app {
     margin-top: 340px;
     width: 100%;
-    height: 400px;
+    
     background: #fff5e5;
   }
   .app {

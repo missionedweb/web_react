@@ -18,7 +18,7 @@ const LearningPage = () => {
         
         <div className="jumbotron"  style = {{ backgroundImage : "linear,left top,left bottom,from(#fff),to(#d6effa)" }}>
           <div className="row">
-            <div className="col col-md-6 offset-md-1 " data-aos="zoom-in-up" data-aos-duration="1500">
+            <div className="col col-md-6 offset-md-1 rankpredict" data-aos="zoom-in-up" data-aos-duration="1500">
             {/* <svg viewBox="0 0 1500 100">
               <symbol id="s-text">
                 <text textAnchor="middle" x="50%" y="70%" dy=".35em" font-size="1em">JEE RANK PREDICTOR</text>
@@ -32,7 +32,7 @@ const LearningPage = () => {
           <br/>
           <br/>
           <br/>
-          <h1 style={{ color : "#000000" , fontSize : "50px" }}>JEE RANK PREDICTOR</h1>
+          <h1 className="mb-2" style={{ color : "#000000" , fontSize : "50px" ,}}>JEE RANK PREDICTOR</h1>
           <h4 style={{ color : "white" }}>If you are confused with what rank you will get with your predicted marks , here is a soltuion given by MissionED. One can use this predictor to find his/her rank based on the data from previous year exams.</h4>
           <br/>
           <a href="/rankpredictor" className="btn btn-outlined btn-theme btn-lg" data-wow-delay="0.7s" style={{ background: "rgb(47, 128, 237)"}}>CHECK IT OUT</a>
@@ -45,29 +45,36 @@ const LearningPage = () => {
         </div>
         </div>
         <div
-          className="text-center teach"
-          style={{
-            //display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-          }}>
-          <p data-aos="zoom-in-down" data-aos-duration="1000">
-             <center> <img
-          className="img-fluid"
+          className="text-center  teach"
+          >
+            <div className="container">
+            <div className="row">
+              <div className="col-md-6 mb-2 pb-3">
+              <img
+          className="img-fluid "
         
           src={lcerti}
           alt=""
          
-                          /></center>
-            FREE <span>Coding</span> Certification | (Age 6-18){" "}
-            <i style={{ color: "pink", marginLeft: "20px" ,paddingRight: "25px" , marginTop: "10px"}} className="fas fa-arrow-right"></i>
-          </p>
+                          />
+              </div>
+         <div className="col-md-6 mt-2" style={{display : "flex", flexDirection : "column", justifyContent : "center"}}> 
+         <p data-aos="zoom-in-down" data-aos-duration="1000">
+             
+             FREE <span>Coding</span> Certification | (Age 6-18){" "}
+             <i style={{ color: "pink", marginLeft: "20px" ,paddingRight: "25px" , marginTop: "10px"}} className="fas fa-arrow-right"></i>
+           </p>
+           <div>
+           <LearningModal />
+           </div>
+           </div>
           
 
+          </div>
+            </div>
 
 
-
-          <LearningModal />
+          
         </div>
           
         <br />

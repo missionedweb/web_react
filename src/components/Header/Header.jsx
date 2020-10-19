@@ -9,7 +9,7 @@ import { Input, TextField } from "@material-ui/core";
 function Header() {
   const [value, setValue] = useState("");
   const alertModal = () => {
-    if (value.phone) {
+    if (value) {
       swal({
         text: "Stay connected someone from MissionEd team will reach out soon",
         icon: "success",
@@ -17,8 +17,8 @@ function Header() {
     }
   };
 
-  const handleOnChange = (value) => {
-    setValue((prevState) => ({ ...prevState, phone: value}));
+  const handleOnChange = (e) => {
+    setValue(e.target.value);
   };
 
   return (
@@ -123,9 +123,8 @@ function Header() {
           <div className="phonenum " style={{width : "63%", display:"flex", justifyContent : "center"}}>
           <div className="buttonIn  " data-aos="zoom-out" data-aos-duration="500" style={{border : "none" ,height : "38px", width :"300px", }}>
             
-             
-            <MuiPhoneNumber defaultCountry={"in"} value={value} onChange={handleOnChange} className="" style={{ border : "1px solid black" ,width:"100%",borderRadius : "30px", padding : "3px"}}/>
-            <button className="joins" onClick={alertModal} style={{position : "absolute", top:"2px", right : "4px", borderRadius : "30px", }} onClick={alertModal}>Join</button>
+             <input className="form-control" onChange={handleOnChange} placeholder = "Enter your mobile number"  style={{ height : "45px", borderRadius : "30px", boxShadow : ""}} />
+            <button className="joins" onClick={alertModal} style={{position : "absolute", top:"6px", right : "4px", borderRadius : "30px", }} onClick={alertModal}>Join</button>
  
                <br />
              </div>
