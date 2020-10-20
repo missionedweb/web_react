@@ -11,6 +11,12 @@ body {
 }
 .navbar-toggler{
   border: none !important;
+  border-radius: 50% !important;
+  
+}
+.navbar-toggler:active{
+  background-color:white !important;
+  transition: 0.3s ease;
 
 }
 .navbar-toggler:focus{

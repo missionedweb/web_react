@@ -17,14 +17,14 @@ export class OwlDemo extends Component {
         {      
           return (  
               <div>  
-            <div class='container-fluid' >      
+            <div className='container-fluid' >      
             <div className="row title" style={{marginBottom: "20px"}} >      
-            <div class="col-sm-12">      
+            <div className="col-sm-12">      
                 <center><h2 style={{color: '#ff6200'}} >500+ students improved test scores in some of the toughest exams in the world</h2>   </center>
             </div>      
             </div>  
         </div>  
-        <div class='container-fluid' >   
+        <div className='container-fluid' >   
           <OwlCarousel items={3} margin={10} autoplay ={true} >  
         <div ><img  className="imgo" src= {jeemain} alt="cara1"/></div>  
            <div><img  className="imgo" src= {jeeadv} alt="cara1"/></div>  

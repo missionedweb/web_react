@@ -127,7 +127,7 @@ export default function Register() {
         BackdropProps={{
           timeout: 500,
         }}>
-        <Fade in={open}>
+        
           <div>
             <form onSubmit={handleSubmit} className={classes.paper}>
               <Grid container spacing={2}>
@@ -261,7 +261,7 @@ export default function Register() {
               )}
             </form>
           </div>
-        </Fade>
+      
       </Modal>
     </div>
   );

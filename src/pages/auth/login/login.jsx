@@ -96,7 +96,7 @@ export default function Login() {
         BackdropProps={{
           timeout: 500,
         }}>
-        <Fade in={open}>
+        
           <div>
             <form onSubmit={handleSubmit} className={classes.paper} noValidate>
               <Grid container spacing={2}>
@@ -172,7 +172,7 @@ export default function Login() {
               )}
             </form>
           </div>
-        </Fade>
+        
       </Modal>
     </div>
   );
