@@ -1,4 +1,4 @@
-import React,{ useState } from "react";
+import React,{ useState,useEffect } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 import Card from "@material-ui/core/Card";
@@ -86,7 +86,7 @@ function getSteps() {
   return ['Select course', 'Select Plan', 'Pay'];
 }
 
-function getStepContent(step,classes,paymentHandler) {
+function getStepContent(step,classes,paymentHandler,course,setCourse,classStu,setClassStu,plan,setPlan) {
   
   switch (step) {
     case 0:
@@ -105,7 +105,8 @@ function getStepContent(step,classes,paymentHandler) {
                 label="Class"
                 variant="outlined"
                 fullWidth
-               
+                value={course}
+                onChange={e => setCourse(e.target.value)}
                 >
                 <MenuItem value="">
                   <em>None</em>
@@ -132,7 +133,8 @@ function getStepContent(step,classes,paymentHandler) {
                 label="Class"
                 variant="outlined"
                 fullWidth
-                
+                value={classStu}
+                onChange={e => setClassStu(e.target.value)}
                 >
                 <MenuItem value="">
                   <em>None</em>
@@ -153,10 +155,11 @@ function getStepContent(step,classes,paymentHandler) {
     case 1:
       return (
         <Grid container spacing={5} alignItems="flex-end">
-          {tiers.map((tier) => (
+          {((classStu==10||classStu==20||classStu==30)?tiers8:tiers11).map((tier) => (
             // Enterprise card is full width at sm breakpoint
-            <Grid item key={tier.title} xs={12} sm={tier.title === "Enterprise" ? 12 : 6} md={4}>
-              <Card>
+            <Grid item key={tier.title} xs={12} sm={tier.title === "Enterprise" ? 12 : 6} md={3}>
+              
+              <Card style={{borderColor:plan===tier.title?'green':'white', borderStyle:'solid'}}>
                 <CardHeader
                   title={tier.title}
                   subheader={tier.subheader}
@@ -202,7 +205,10 @@ function getStepContent(step,classes,paymentHandler) {
                           background: "orange",
                           color: "white !important",
                         },
-                      }}>
+                      }}
+                      value={plan}
+                      onClick={e => setPlan(tier.title)}
+                      >
                       {tier.buttonText}
                     </Link>
                   </Container>
@@ -221,8 +227,8 @@ function getStepContent(step,classes,paymentHandler) {
   }
 }
 
-const tiers = [
-  {
+const tiers8 = [
+  /*{
     title: "Free",
     price: "0",
     description: ["10 users included", "2 GB of storage", "Help center access", "Email support"],
@@ -239,7 +245,7 @@ const tiers = [
       "Help center access",
       "Priority email support",
     ],
-    buttonText: "Get started",
+    buttonText: "Select",
     buttonVariant: "contained",
   },
   {
@@ -251,18 +257,108 @@ const tiers = [
       "Help center access",
       "Phone & email support",
     ],
-    buttonText: "Contact us",
+    buttonText: "Select",
+    buttonVariant: "outlined",
+  },*/
+  {
+    title: "Basic",
+    price: "10",
+    description: [
+      "50 users included",
+      "30 GB of storage",
+      
+    ],
+    buttonText: "Select",
     buttonVariant: "outlined",
   },
+  {
+    title: "Advanced",
+    price: "20",
+    description: [
+      "50 users included",
+      "30 GB of storage",
+      
+    ],
+    buttonText: "Select",
+    buttonVariant: "outlined",
+  },
+  {
+    title: "Competitive",
+    price: "30",
+    description: [
+      "Modules related to",
+      "KVPY,NTSE,NSEJS"
+    ],
+    buttonText: "Select",
+    buttonVariant: "outlined",
+  },
+  {
+    title: "Premium",
+    price: "30",
+    description: [
+      "Everything related",
+      "to class"
+    ],
+    buttonText: "Select",
+    buttonVariant: "outlined",
+  }
+
 ];
 
+const tiers11 = [
+  {
+    title: "Basic",
+    price: "10",
+    description: [
+      "Only study material",
+      "No live classes",
+      
+    ],
+    buttonText: "Select",
+    buttonVariant: "outlined",
+  },
+  {
+    title: "Advanced",
+    price: "20",
+    description: [
+      "Live classes related to",
+      "JEE,NEET,BOARDS",
+      
+    ],
+    buttonText: "Select",
+    buttonVariant: "outlined",
+  },
+  {
+    title: "Competitive",
+    price: "30",
+    description: [
+      "Modules related to",
+      "NSEP,NSEC"
+    ],
+    buttonText: "Select",
+    buttonVariant: "outlined",
+  },
+  {
+    title: "Premium",
+    price: "30",
+    description: [
+      "Everything related",
+      "to class"
+    ],
+    buttonText: "Select",
+    buttonVariant: "outlined",
+  }
+]
 const Pricing = () => {
   const classes = useStyles();
   const [course,setCourse] = useState("");
   const [classStu,setClassStu] = useState(""); 
-  const [activeStep, setActiveStep] = React.useState(0);
+  const [activeStep, setActiveStep] = useState(0);
+  const [plan,setPlan] = useState("");
   const steps = getSteps();
-
+  useEffect(() => {
+    console.log(course);
+  },[course]);
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
@@ -442,7 +538,7 @@ const Pricing = () => {
           <Step key={label}>
             <StepLabel>{label}</StepLabel>
             <StepContent>
-              <Typography className={classes.active}>{getStepContent(index,classes,paymentHandler)}</Typography>
+              <Typography className={classes.active}>{getStepContent(index,classes,paymentHandler,course,setCourse,classStu,setClassStu,plan,setPlan)}</Typography>
               <div className={classes.actionsContainer}>
                 <div>
                   <Button
