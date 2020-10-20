@@ -9,6 +9,8 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import jeemain from "../Images/jeemain.png";
 import jeeadv from "../Images/jeeadv.png";
 import kvpy from "../Images/kvpy.png";
+import neet from "../Images/neet.png";
+import bitsat from "../Images/bitsat.png";
 
 export class OwlDemo extends Component {  
         render()  
@@ -23,12 +25,12 @@ export class OwlDemo extends Component {
             </div>  
         </div>  
         <div class='container-fluid' >   
-          <OwlCarousel items={3} margin={8} autoplay ={true} >  
+          <OwlCarousel items={3} margin={10} autoplay ={true} >  
         <div ><img  className="imgo" src= {jeemain} alt="cara1"/></div>  
            <div><img  className="imgo" src= {jeeadv} alt="cara1"/></div>  
            <div><img  className="imgo" src= {kvpy} alt="cara1"/></div>  
-           <div><img  className="imgo" src= {jeemain} alt="cara1"/></div>  
-           <div><img className="imgo" src= {jeeadv} alt="cara1"/></div>  
+           <div><img  className="imgo" src= {neet} alt="cara1"/></div>  
+           <div><img className="imgo" src= {bitsat} alt="cara1"/></div>  
            <div><img className="imgo" src= {kvpy} alt="cara1"/></div>  
            <div><img className="imgo" src= {jeemain} alt="cara1"/></div>  
       </OwlCarousel>  
