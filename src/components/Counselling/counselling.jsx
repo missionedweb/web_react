@@ -86,6 +86,18 @@ const Wrapper = styled.div`
     height: 200px;
     
   }
+  .footer-section {
+    background: #151414;
+    display : flex;
+    justify-content : "center";
+    flex-direction : column;
+    align-items : center;
+  }
+  .copyright-area{
+    width : 100%;
+    display : flex;
+    justify-content : center;
+  }
   .heading {
     text-align: center;
     font-weight: bold;
@@ -802,7 +814,7 @@ const Wrapper = styled.div`
   .get-app {
     margin-top: 340px;
     width: 100%;
-    height: 400px;
+    
     background: #fff5e5;
   }
   .app {
@@ -836,7 +848,7 @@ const Wrapper = styled.div`
     font-size: 16px;
     padding: 10px;
     align-items: center;
-    padding: 20px;
+    
     color: #ffffff;
   }
   .download:hover {
@@ -897,11 +909,8 @@ const Wrapper = styled.div`
   .textfield {
     width: 50%;
   }
-  .footer-section {
-    background: #151414;
-    position: relative;
-    padding-left: 200px;
-  }
+
+ 
 
   /*MEDIA QUERIES*/
   @media (max-width: 992px) {

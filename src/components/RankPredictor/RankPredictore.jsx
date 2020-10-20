@@ -918,7 +918,7 @@ const Wrapper = styled.div`
   .get-app {
     margin-top: 340px;
     width: 100%;
-    height: 400px;
+    
     background: #fff5e5;
   }
   .app {
@@ -1014,8 +1014,10 @@ const Wrapper = styled.div`
   }
   .footer-section {
     background: #151414;
-    position: relative;
-    padding-left: 200px;
+    display : flex;
+    justify-content : "center";
+    flex-direction : column;
+    align-items : center;
   }
 
   /*MEDIA QUERIES*/

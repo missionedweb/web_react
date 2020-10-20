@@ -15,13 +15,16 @@ body {
 }
 .navbar-toggler:focus{
   border: none !important;
+  outline: none !important;
 }
 .navbar-toggler:active{
   border: none !important;
+  outline: none !important;
 }
 
 .navbar-toggler-icon{
   border: none !important;
+  
 }
 
 /* Starts */

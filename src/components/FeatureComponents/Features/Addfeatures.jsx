@@ -432,7 +432,7 @@ const Wrapper = styled.div`
 
 
   .counselling{
-    margin-top: -200px;
+    
     margin-bottom:100px;
   }
 

@@ -28,14 +28,14 @@ const AboutUs = () => {
         <div>
         
           {/* <NavbarComponent/>*/}
-          <div className="jumbotron mt-5 text-uppercase">
+          <div className="jumbotron mt-5 ">
           
             <div
               className="heading about-us pt-4"
               data-aos="zoom-in-up"
               data-aos-duration={2500}
             >
-              About Us
+              Who We Are ?
             </div>
             
 

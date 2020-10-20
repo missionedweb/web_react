@@ -21,7 +21,7 @@ const Counter = () => {
             >
               <img src={cont1} style={{ width: "70%" }} alt="" />
               <div className="counter font-weight-bold">
-              <CountUp end={1000} />
+              <CountUp end={5000} />
               </div>
               <h3 className="tx7">Registered Students</h3>
             </div>

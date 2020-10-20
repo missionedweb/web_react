@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="container" >
               <div className="footer-cta pt-5 pb-5">
                 <div className="row">
-                  <div className="col-xl-5 col-md-4 mb-30 footer-info ">
+                  <div className="col-xl-4  col-md-4 mb-30 footer-info ">
                     <div className="single-cta">
                       <i className="fas fa-map-marker-alt" />
                       <div className="cta-text" >
@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
                   </div>
                   <div className="col-xl-4 col-md-4 mb-30 footer-info">
-                    <div className="single-cta" >
+                    <div className="single-cta pl-4" >
                       <i className="fas fa-phone" />
                       <div className="cta-text">
                         <h4>Call us</h4>
@@ -31,7 +31,7 @@ const Footer = () => {
                     </div>
                   </div>
                   <div className="col-xl-3 col-md-4 mb-30 ">
-                    <div className="single-cta" >
+                    <div className="single-cta pl-4" >
                       <i className="far fa-envelope-open" />
                       <div className="cta-text">
                         <h4>Mail us</h4>
