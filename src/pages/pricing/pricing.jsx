@@ -307,7 +307,7 @@ const Pricing = () => {
       <CssBaseline />
       {/*<NavbarComponent />*/}
       {/* Hero unit */}
-      <Container maxWidth="sm" component="main" className={classes.heroContent}>
+      <Container maxWidth="sm" component="main" >
         <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
           Pricing
         </Typography>
