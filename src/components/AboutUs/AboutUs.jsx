@@ -28,7 +28,7 @@ const AboutUs = () => {
         <div>
         
           {/* <NavbarComponent/>*/}
-          <div className="jumbotron bg-dark text-uppercase">
+          <div className="jumbotron mt-5 text-uppercase">
           
             <div
               className="heading about-us pt-4"
@@ -53,10 +53,10 @@ const AboutUs = () => {
           alt=""
           style={{ marginTop: "180px", width: "23%" , height : "300px" , marginLeft : "50px" }}
           
-        />
+        >Hello</iframe>
         
         <div
-          className="learning-page bg-dark "
+          className="learning-page  "
           data-aos="fade-left"
           data-aos-duration="1500"
         >
@@ -1621,7 +1621,7 @@ const Wrapper = styled.div`
     .learning-page {
       display: block;
       /*float: none;*/
-      margin: -50px 20% 5%;
+      margin: 50px 20% 5%;
       width: 50%;
     }
   }
@@ -1631,7 +1631,7 @@ const Wrapper = styled.div`
       display: block;
       /*float: none;*/
       margin: 3% 30% 5%;
-      width: 50%;
+      width: 60%;
     }
   }
   @media (max-width: 1386px) {

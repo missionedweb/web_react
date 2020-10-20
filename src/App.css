@@ -9,6 +9,21 @@ body {
   background-size: cover;
   overflow-x: hidden !important;
 }
+.navbar-toggler{
+  border: none !important;
+
+}
+.navbar-toggler:focus{
+  border: none !important;
+}
+.navbar-toggler:active{
+  border: none !important;
+}
+
+.navbar-toggler-icon{
+  border: none !important;
+}
+
 /* Starts */
 .rankpredict h1{
   font-family: 'Source Sans Pro', sans-serif !important;
@@ -284,7 +299,7 @@ h1 {
   .learning-page {
     display: block;
     /*float: none;*/
-    margin: -50px 20% 5%;
+    margin: 50px 20% 5%;
     width: 50%;
   }
 }
