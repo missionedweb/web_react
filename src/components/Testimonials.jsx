@@ -8,7 +8,9 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import cont1 from "../Images/cont1.png";
 import team2 from "../Images/team2.png";
 import team3 from "../Images/team3.png";
-
+import playstore from "../Images/playstore.png";
+import appstore from "../Images/appstore.png";
+import altab from "../Images/altab.png";
 
 export class Testimonials extends Component {  
         render()  
@@ -140,8 +142,54 @@ One thing that impressed me about Online-Learning
               
 
       </OwlCarousel>  
-      </div>  
-      </div>  
+      </div>
+                  <br/><br/>
+                  <div className="container">
+                      <div className="row">
+                          <div className="col-md-6">
+                              <center>  <h1 className="fff"  style={{color:"#fa9917"}}><span syle={{color:"#ff6200"}}>Mission</span><span syle={{color:"#fa9917"}}>Ed</span> is available in all platforms</h1></center><br/><br/>
+                              <br/><br/><br/>
+                              <div
+                className="play  d-flex justify-content-center"
+                data-aos="zoom-out"
+                data-aos-duration="1000">
+                <a href="https://play.google.com/store/apps/details?id=com.missionedappdev.missoned" target="_black">
+                  <img
+                    
+                    className="store mr-3 img-fluid"
+                    src={playstore}
+                    width="200"
+                    height="40"
+                    alt=""
+                  />
+                </a>
+                {/* <a href="https://play.google.com/store/apps/details?id=com.missionedappdev.missoned"> */}
+                <img
+                  
+                  className="store img-fluid"
+                  src={appstore}
+                  width="200"
+                  height="40"
+                  alt=""
+                />
+                {/* </a> */}
+              </div>
+                               <br/><br/><br/>
+                          
+                          </div>
+                          <div  className="col-md-6">
+                          
+                          <img className="img-fluid"  src= {altab} alt="cara1"/>
+                          
+                          </div>
+                      
+                      </div>
+                  
+                  
+                  
+                  </div>
+      </div>
+              
           )  
         }  
       }  
