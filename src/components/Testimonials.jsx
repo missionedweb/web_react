@@ -5,7 +5,7 @@ import React,{Component} from 'react';
 
 import 'owl.carousel/dist/assets/owl.carousel.css';  
 import 'owl.carousel/dist/assets/owl.theme.default.css';  
-import team1 from "../Images/team1.png";
+import cont1 from "../Images/cont1.png";
 import team2 from "../Images/team2.png";
 import team3 from "../Images/team3.png";
 
@@ -31,11 +31,11 @@ export class Testimonials extends Component {
               
                         <div class="testimonial-item">
 
-                            <img  className="testimonial-img" src= {team1} alt="cara1"/>
-            <h3>Piya</h3>
-            <h4>Student</h4>
-            <p>
-              <i class="fas fa-quote-left"></i>&nbsp;
+                            <img  className="testimonial-img" src= {cont1} alt="cara1"/>
+            <h3 style={{color:"black"}}>Piya</h3>
+            <h4 className="fff" style={{color:"black"}}>Student</h4>
+            <p className="fff" style={{color:"#666"}}>
+              <i class="fa fa-quote-left"></i>&nbsp;
             I am very happy to be a part of MissionEd. 
               I thank MissionEd for helping me secure high grades.&nbsp;
               <i class="fas fa-quote-right"></i>
@@ -43,10 +43,10 @@ export class Testimonials extends Component {
           </div>
               <div class="testimonial-item">
 
-                            <img  className="testimonial-img" src= {team1} alt="cara1"/>
-            <h3>Samiksha</h3>
-            <h4>Parent</h4>
-            <p>
+                            <img  className="testimonial-img" src= {cont1} alt="cara1"/>
+            <h3 style={{color:"black"}}>Samiksha</h3>
+            <h4 className="fff" style={{color:"black"}}>Parent</h4>
+            <p className="fff" style={{color:"#666"}}>
               <i class="fas fa-quote-left"></i>
              &nbsp; It has been an absolutely wonderful experience for all of us! 
                His teacher pays great attention to every child in the 
@@ -57,10 +57,10 @@ export class Testimonials extends Component {
           </div>
               <div class="testimonial-item">
 
-                            <img  className="testimonial-img" src= {team1} alt="cara1"/>
-            <h3>Neha</h3>
-            <h4>Student</h4>
-            <p>
+                            <img  className="testimonial-img" src= {cont1} alt="cara1"/>
+            <h3 style={{color:"black"}}>Neha</h3>
+            <h4 className="fff" style={{color:"black"}}>Student</h4>
+            <p className="fff" style={{color:"#666"}}>
               <i class="fas fa-quote-left"></i>
               &nbsp;Beautifully explained. Simple language &amp; taught in easy way.&nbsp;
               <i class="fas fa-quote-right"></i>
@@ -68,10 +68,10 @@ export class Testimonials extends Component {
           </div>
               <div class="testimonial-item">
 
-                            <img  className="testimonial-img" src= {team1} alt="cara1"/>
-            <h3>Soham</h3>
-            <h4>Student</h4>
-            <p>
+                            <img  className="testimonial-img" src= {cont1} alt="cara1"/>
+            <h3 style={{color:"black"}}>Soham</h3>
+            <h4 className="fff" style={{color:"black"}}>Student</h4>
+            <p className="fff" style={{color:"#666"}}>
               <i class="fas fa-quote-left"></i>
 &nbsp;MissionEd  has been an excellent experience for me, 
                   The constant support and 
@@ -85,10 +85,10 @@ export class Testimonials extends Component {
           </div>
               <div class="testimonial-item">
 
-                            <img  className="testimonial-img" src= {team1} alt="cara1"/>
-            <h3>Susan</h3>
-            <h4>Student</h4>
-            <p>
+                            <img  className="testimonial-img" src= {cont1} alt="cara1"/>
+            <h3 style={{color:"black"}}>Susan</h3>
+            <h4 className="fff" style={{color:"black"}}>Student</h4>
+            <p className="fff" style={{color:"#666"}}>
               <i class="fas fa-quote-left"></i>
 &nbsp;Overall, I thought the course was great. 
                   I did get tons of useful experience from the 
@@ -98,10 +98,10 @@ export class Testimonials extends Component {
           </div>
               <div class="testimonial-item">
 
-                            <img  className="testimonial-img" src= {team1} alt="cara1"/>
-            <h3>Amyra</h3>
-            <h4>Student</h4>
-            <p>
+                            <img  className="testimonial-img" src= {cont1} alt="cara1"/>
+            <h3 style={{color:"black"}}>Amyra</h3>
+            <h4 className="fff" style={{color:"black"}}>Student</h4>
+            <p className="fff" style={{color:"#666"}}>
               <i class="fas fa-quote-left"></i>&nbsp;
 One thing that impressed me about Online-Learning 
                   is if I have a question , 
@@ -112,10 +112,10 @@ One thing that impressed me about Online-Learning
           </div>
               <div class="testimonial-item">
 
-                            <img  className="testimonial-img" src= {team1} alt="cara1"/>
-            <h3>Sonam</h3>
-            <h4>Student</h4>
-            <p>
+                            <img  className="testimonial-img" src= {cont1} alt="cara1"/>
+            <h3 style={{color:"black"}}>Sonam</h3>
+            <h4 className="fff" style={{color:"black"}}>Student</h4>
+            <p className="fff" style={{color:"#666"}}>
               <i class="fas fa-quote-left"></i>
 &nbsp;Excellent content and assignments that build 
                   on your knowledge, reinforce, and then expand.&nbsp;
@@ -124,10 +124,10 @@ One thing that impressed me about Online-Learning
           </div>
               <div class="testimonial-item">
 
-                            <img  className="testimonial-img" src= {team1} alt="cara1"/>
-            <h3>Rahul</h3>
-            <h4>Student</h4>
-            <p>
+                            <img  className="testimonial-img" src= {cont1} alt="cara1"/>
+            <h3 style={{color:"black"}}>Rahul</h3>
+            <h4 className="fff" style={{color:"black"}}>Student</h4>
+            <p className="fff" style={{color:"#666"}}>
               <i class="fas fa-quote-left"></i>
               &nbsp;Course materials were good, the mentoring approach was good.&nbsp;
               <i class="fas fa-quote-right"></i>
