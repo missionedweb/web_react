@@ -36,17 +36,17 @@ function Addfeatures() {
 <br /><br /><br /><br />
           
            <div className="container ct">
-            <div className="row">
+            <div className="row ">
               <div
-                className="col-md-7 col-12 women1"
+                className="col-md-6 col-12"
                 data-aos="fade-down"
                 data-aos-duration={1000}
                 style={{ margin: "auto" }}
               >
-                <img src={img1} className="img-section-left" alt="picture" />
+                <img src={img1} className="img-fluid" alt="picture" />
               </div>
               <div
-                className="col-md-5 col-12"
+                className="col-md-6 col-12"
                 data-aos="fade-up"
                 data-aos-duration={1500}
                 style={{ margin: "auto" }}
@@ -81,9 +81,9 @@ function Addfeatures() {
 
           
           <div className="container ct">
-            <div className="row">
+            <div className="row flex-column-reverse flex-md-row">
               <div
-                className="col-md-5 col-12"
+                className="col-md-6 col-12"
                 data-aos="fade-right"
                 data-aos-duration={1000}
                 style={{ margin: "auto" }}
@@ -109,11 +109,11 @@ function Addfeatures() {
                 
               </div>
               <div
-                className="col-md-7 col-12 women2 "
+                className="col-md-6 col-12"
                 data-aos="fade-left"
                 data-aos-duration={1500}
               >
-                <img src={img2} className="img-section-right" alt="picture" />
+                <img src={img2} className="img-fluid" alt="picture" />
               </div>
             </div>
           </div>
@@ -126,17 +126,17 @@ function Addfeatures() {
           <br />
 
           <div className="container ct">
-            <div className="row">
+            <div className="row ">
               <div
-                className="col-md-7 col-12 women1"
+                className="col-md-6 col-12"
                 data-aos="fade-down"
                 data-aos-duration={1000}
                 style={{ margin: "auto" }}
               >
-                <img src={img3} className="img-section-left" alt="picture" />
+                <img src={img3} className="img-fluid" alt="picture" />
               </div>
               <div
-                className="col-md-5 col-12"
+                className="col-md-6 col-12"
                 data-aos="fade-up"
                 data-aos-duration={1500}
                 style={{ margin: "auto" }}
@@ -169,9 +169,9 @@ function Addfeatures() {
           <br />
 
           <div className="container ct">
-            <div className="row">
+            <div className="row flex-column-reverse flex-md-row">
               <div
-                className="col-md-5 col-12"
+                className="col-md-6 col-12"
                 data-aos="fade-right"
                 data-aos-duration={1000}
                 style={{ margin: "auto" }}
@@ -194,11 +194,11 @@ function Addfeatures() {
           </div>
               </div>
               <div
-                className="col-md-7 col-12 women2 "
+                className="col-md-6 col-12"
                 data-aos="fade-left"
                 data-aos-duration={1500}
               >
-                <img src={img4} className="img-section-right" alt="picture" />
+                <img src={img4} className="img-fluid" alt="picture" />
               </div>
             </div>
           </div>
@@ -211,17 +211,17 @@ function Addfeatures() {
           <br />
 
           <div className="container ct">
-            <div className="row">
+            <div className="row ">
               <div
-                className="col-md-7 col-12 women1"
+                className="col-md-6 col-12"
                 data-aos="fade-down"
                 data-aos-duration={1000}
                 style={{ margin: "auto" }}
               >
-                <img src={img5} alt="picture" className="img-section-left"/>
+                <img src={img5} alt="picture" className="img-fluid"/>
               </div>
               <div
-                className="col-md-5 col-12"
+                className="col-md-6 col-12"
                 data-aos="fade-up"
                 data-aos-duration={1500}
                 style={{ margin: "auto" }}
@@ -255,9 +255,9 @@ function Addfeatures() {
           <br />
 
         <div className="container ml-auto mr-auto ctcon">
-            <div className="row">
+            <div className="row flex-column-reverse flex-md-row">
               <div
-                className="col-md-5 col-12"
+                className="col-md-6 col-12"
                 data-aos="fade-right"
                 data-aos-duration={1000}
                 style={{ margin: "auto" }}
@@ -281,11 +281,11 @@ function Addfeatures() {
           </div>
               </div>
               <div
-                className="col-md-7 col-12 women2 "
+                className="col-md-6 col-12"
                 data-aos="fade-left"
                 data-aos-duration={1500}
               >
-                <img src={img6} className="img-section-right" alt="picture" />
+                <img src={img6} className="img-fluid" alt="picture" />
               </div>
             </div>
           </div>
