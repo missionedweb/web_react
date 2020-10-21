@@ -28,6 +28,7 @@ import { auth } from "../../firebase/firebase.utils";
 import NavigationLogo from "../../Images/NavigationLogo.svg";
 import { Directions } from "@material-ui/icons";
 import Pricing from './Pricing';
+import Enroll from "./Enroll";
 function SideBar(props) {
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -49,9 +50,9 @@ function SideBar(props) {
             </span>
           </span>
         </div>
-        <div className={classes.button}>
+        <Link className={classes.button} to='/dashboard/enroll'>
           <CustomButton>Join a course</CustomButton>
-        </div>
+        </Link>
       </div>
       <Divider />
       <div className={classes.first}>
@@ -140,6 +141,7 @@ function SideBar(props) {
             <Route path="/dashboard/pricing" component={Pricing}>
               
             </Route>
+            <Route path='/dashboard/enroll' component={Enroll}></Route>
           </Switch>
         </main>
       </Router>
