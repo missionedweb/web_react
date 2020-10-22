@@ -123,9 +123,13 @@ function Header() {
             </div>
           <div className="phonenum " style={{width : "63%", display:"flex", justifyContent : "center"}}>
           <div className="buttonIn  " data-aos="zoom-out" data-aos-duration="500" style={{border : "none" ,height : "38px", width :"300px", }}>
+              <form class="gform" method="post" data-email="patelaryan7751@gmail.com" action="https://script.google.com/macros/s/AKfycbwcJ9HpreX73Ze6dqz0pTn8ONQDLweP8tWqq2NqwAYxBdCV7Nw/exec">
             
-             <input className="form-control" onChange={handleOnChange} placeholder = "Enter your mobile number"  style={{ height : "45px", borderRadius : "30px", boxShadow : ""}} />
-            <button className="joins" onClick={alertModal} style={{position : "absolute", top:"6px", right : "4px", borderRadius : "30px", }} onClick={alertModal}>Join</button>
+             <input required className="form-control" name="phn" onChange={handleOnChange} placeholder = "Enter your mobile number"  style={{ width :"300px", height : "45px", borderRadius : "30px", boxShadow : ""}} />
+            <button className="joins"  style={{position : "absolute", top:"6px", right : "4px", borderRadius : "30px", }} onClick={alertModal}>Join</button>
+                  <div style={{display:"none"}} className="thankyou_message">
+</div>
+              </form>
  
                <br />
              </div>
