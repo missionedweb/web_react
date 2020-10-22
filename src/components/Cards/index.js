@@ -17,12 +17,15 @@ function CenteredGrid({ currentUser }) {
   const classes = useStyles();
   useEffect(() => {
     var courseRef = firestore.collection("course");
+    console.log({userId});
     //query if course contains auth user.
     var query = courseRef.where("users", "array-contains", `${userId}`);
     query
       .get()
       .then(function (querySnapshot) {
+        
         querySnapshot.forEach(function (doc) {
+          
           setCourses((course) => [
             ...course,
             {
@@ -39,6 +42,7 @@ function CenteredGrid({ currentUser }) {
 
   return (
     <div className={classes.root}>
+    
       <Grid container spacing={3}>
         {courses &&
           courses.map((course) => (

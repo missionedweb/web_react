@@ -29,6 +29,7 @@ import NavigationLogo from "../../Images/NavigationLogo.svg";
 import { Directions } from "@material-ui/icons";
 import Pricing from './Pricing';
 import Enroll from "./Enroll";
+import Coursses from './Courses';
 function SideBar(props) {
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -121,7 +122,7 @@ function SideBar(props) {
               <Dash />
             </Route>
             <Route exact path="/dashboard/courses">
-              <CenteredGrid />
+              <Coursses/>
             </Route>
             <Route path="/dashboard/courses/:courseid">
               <Course />
