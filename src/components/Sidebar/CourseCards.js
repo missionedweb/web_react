@@ -33,6 +33,7 @@ function CourseCards(props){
         var arrUnion = await refre.update({
           users: firebase.firestore.FieldValue.arrayUnion(props.user.currentUser.id)
         });
+        alert( `Successfully enrolled to ${props.title} course`);
         //await refre.set({ users: [props.user.currentUser.id] },{merge:true});
     };
     
