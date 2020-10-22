@@ -88,11 +88,9 @@ const Counselling = () => {
           <br />
           <br />
           <div className="container p-10 ml-auto mr-auto">
-            <div>
-              <div data-aos="fade-down" data-aos-duration={1000}>
-                <img src={Group67} className="right-img" alt="" style={{ width: "500px" }} />
-              </div>
-              <div className="form-display col-md-5" data-aos="zoom-in" data-aos-duration={600}>
+            <div className="row flex-column-reverse flex-md-row">
+                
+              <div className="form-display col-md-6" data-aos="zoom-in" data-aos-duration={600}>
                 <center>
                   <h2
                     style={{
@@ -171,6 +169,12 @@ const Counselling = () => {
                   )}
                 </form>
               </div>
+                <div className="col-md-6">
+              <div data-aos="fade-down" data-aos-duration={1000}>
+                  <center><img src={Group67} className="img-fluid" alt="" style={{ width: "500px" }} /></center>
+                  <br/><br/>
+              </div>
+                    </div>
             </div>
           </div>
         </div>

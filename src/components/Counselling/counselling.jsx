@@ -30,11 +30,9 @@ const Counselling = () => {
           <br />
           <br />
           <div className="container ml-auto mr-auto">
-            <div>
-              <div data-aos="fade-down" data-aos-duration={1000}>
-                <img src={Group67} className="right-img" alt="" />
-              </div>
-              <div className="form-display col-md-5" data-aos="zoom-in" data-aos-duration={1000}>
+            <div className="row flex-column-reverse flex-md-row">
+               
+              <div className="form-display col-md-6" data-aos="zoom-in" data-aos-duration={1000}>
                 <h1 className="message">Get Free Counseling</h1><br />
                 <p className="head">We would contact you within 48 hours</p><br />
                 <div className="form">
@@ -58,6 +56,12 @@ const Counselling = () => {
                   <button className=" col-md-12 border-0 btn submit ">Submit</button>
                 </div>
               </div>
+                 <div className="col-md-6">
+              <div data-aos="fade-down" data-aos-duration={1000}>
+                  <center><img src={Group67} className="img-fluid" alt="" /></center>
+                  <br/><br/>
+              </div>
+                </div>
             </div>
           </div>
         </div>
