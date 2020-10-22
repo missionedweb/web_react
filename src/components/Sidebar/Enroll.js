@@ -14,6 +14,8 @@ import Select from '@material-ui/core/Select';
 import NativeSelect from '@material-ui/core/NativeSelect';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import Courses from './Courses';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -121,14 +123,11 @@ const Enroll = () => {
             </Grid>
 
         </Grid>
-          
-            
-            
-            
             
           </Toolbar>
         </AppBar>
       </div>
+      <Courses />
         </div>
     );
 }
