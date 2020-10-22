@@ -44,24 +44,26 @@ const AboutUs = () => {
           
         <div >
         <center>
-        
+            <div className="row">
+        <div className="col-md-6">
         <iframe
-          className="img-section-left ml-auto"
+          
           data-aos="fade-right"
           data-aos-duration="1500"
-          src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+          src="https://www.youtube.com/embed/4z0NS1p2QHU?rel=0"
           alt=""
-          style={{ marginTop: "180px", width: "23%" , height : "300px" , marginLeft : "50px" }}
+          style={{ width: "90%" , height : "400px" }}
           
-        >Hello</iframe>
-        
+        ></iframe>
+                </div>
+                 <div className="col-md-6">
         <div
-          className="learning-page  "
+    
           data-aos="fade-left"
           data-aos-duration="1500"
         >
           <p className="learning-heading">What we believe in?</p>
-          <h6 className="learning-txt1" style={{ margin: "auto" }}>
+          <h6 className="learning-txt1" >
             {" "}
             The environment of learning we provide is nurtured by the experts. The guidance that  
             <br/>you are seeking is from the IITians. They will provide you the enhanced way of teaching 
@@ -69,6 +71,7 @@ const AboutUs = () => {
           </h6>
           <br />
           <br />
+                     </div>
           <div
             className="col-md-6"
             data-aos="zoom-in-up"
@@ -86,6 +89,7 @@ const AboutUs = () => {
         <br />
         <br />
         <br />
+            </div>
         </center>
         </div>
         <br />
