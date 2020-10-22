@@ -148,7 +148,7 @@ export default function Login() {
                   variant="contained"
                   color="primary"
                   className={classes.submit}>
-                  <CircularProgress size={24} color="orange" />
+                  <CircularProgress size={24}  />
                 </Button>
               ) : (
                 <Button
