@@ -7,7 +7,10 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
+import {firestore} from '../../firebase/firebase.utils';
+import { connect } from 'react-redux';
+//var admin = require('firebase-admin');
+import firebase from 'firebase/app';
 
 const useStyles = makeStyles({
   root: {
@@ -22,9 +25,16 @@ const useStyles = makeStyles({
 
 
 
-export default function CourseCards(props){
+function CourseCards(props){
     const classes = useStyles();
-
+    const handleClick = async e => {
+      e.preventDefault();
+        var refre = firestore.collection('course').doc(props.id);
+        var arrUnion = await refre.update({
+          users: firebase.firestore.FieldValue.arrayUnion(props.user.currentUser.id)
+        });
+        //await refre.set({ users: [props.user.currentUser.id] },{merge:true});
+    };
     
     return(
         <div>
@@ -45,7 +55,7 @@ export default function CourseCards(props){
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button size="small" color="primary" onClick={handleClick}>
           Enroll Now
         </Button>
         <Button size="small" color="primary">
@@ -56,3 +66,9 @@ export default function CourseCards(props){
         </div>
     );
 }
+
+const mapStateToProps = state => ({
+  user: state.user
+})
+
+export default connect(mapStateToProps,null)(CourseCards);
