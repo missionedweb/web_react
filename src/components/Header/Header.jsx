@@ -129,12 +129,28 @@ function Header() {
             or <br /> Get the app on your phone now
           </p>
             </div>
-          <div className="phonenum " style={{width : "63%", display:"flex", justifyContent : "center"}}>
-          <div className="buttonIn  " data-aos="zoom-out" data-aos-duration="500" style={{border : "none" ,height : "38px", width :"300px", }}>
+          <div className="phonenum " style={{width : "auto", display:"flex", justifyContent : "center"}}>
+          <div className="buttonIn  " data-aos="zoom-out" data-aos-duration="500" style={{border : "none" ,height : "38px", width :"auto", }}>
              <form className="gform" method="post" data-email="patelaryan7751@gmail.com" action="https://script.google.com/macros/s/AKfycbwcJ9HpreX73Ze6dqz0pTn8ONQDLweP8tWqq2NqwAYxBdCV7Nw/exec">
-            
-             <input required className="form-control" name="phn" onChange={handleOnChange} placeholder = "Enter your mobile number"  style={{ width :"300px", height : "45px", borderRadius : "30px", boxShadow : ""}} />
-            <button className="joins"  style={{position : "absolute", top:"6px", right : "4px", borderRadius : "30px", }} onClick={alertModal}>Join</button>
+                 <div className="row">
+                 <div className="col">
+                     <br/>
+                                <Card bordered  style={{ width :"300px", background:"white", height : "45px", borderRadius : "30px"}}>
+                                    <input required className="form-control" name="Nam" onChange={handleOnChange} placeholder = "Enter your name"  style={{ width :"300px", height : "45px", borderRadius : "30px", diplay : "inline-block", boxShadow : "20px"}} /></Card>
+                 </div>
+                 <div className="col">
+                                          <br/>
+                                <Card bordered  style={{ width :"300px", background:"white", height : "45px", borderRadius : "30px"}}>
+
+                                    <input required className="form-control" name="phn" onChange={handleOnChange} placeholder = "Enter your mobile number"  style={{ width :"300px", height : "45px", borderRadius : "30px", boxShadow : "20px"}} /></Card>
+                 </div>
+                 </div>
+                  <br/>
+                 <div className="col-auto">
+                     
+            <Button className="joins"   onClick={alertModal}>Enquire Now</Button>
+                 <br/>
+                 </div>
                   <div style={{display:"none"}} className="thankyou_message">
 </div>
               </form>
