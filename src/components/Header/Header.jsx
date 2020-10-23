@@ -1,12 +1,24 @@
 import React, { useState } from "react";
 import NewImg from "../../Images/NewImg.png";
 import playstore from "../../Images/playstore.png";
+import learn1 from "../../Images/learn1.png";
+import practice1 from "../../Images/practice1.png";
+import discuss1 from "../../Images/discuss1.png";
+import succeed1 from "../../Images/succeed1.png";
 import appstore from "../../Images/appstore.png";
 import Typical from "react-typical";
 import swal from "sweetalert";
 import Owldemo from '../Owldemo'
 import MuiPhoneNumber from "material-ui-phone-number";
 import { Input, TextField } from "@material-ui/core";
+import { Card } from 'ui-neumorphism';
+import { CardContent } from 'ui-neumorphism';
+import { CardAction } from 'ui-neumorphism';
+import { Subtitle2 } from 'ui-neumorphism';
+import { H5 } from 'ui-neumorphism';
+import { Body2 } from 'ui-neumorphism';
+import { Button } from 'ui-neumorphism';
+import 'ui-neumorphism/dist/index.css'
 function Header() {
   const [value, setValue] = useState("");
   const alertModal = () => {
@@ -27,17 +39,13 @@ function Header() {
       <div>
           <section className="bg" >
         <div className="header" >
+            <div className="container">
+ <div className="row flex-column-reverse flex-md-row">
 
-          <div className="image-section  " style={{ float: "right" }}>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-            <img data-aos="fade-left" style={{maxWidth : "100% !important"}} className="img-fluid mr-5" src={NewImg} />
-
-          </div>
+          
+     <div className="col-md-7">
           <div className="headerButtons "  >
-            <h1 className="tagline text-center" data-aos="fade-down" data-aos-duration="3000">
+            <h1 className="tagline text-center cc" data-aos="fade-down" data-aos-duration="3000">
               <br />
               <b>
                 Learn From The <br />
@@ -55,12 +63,12 @@ function Header() {
               </b>
             </h1>
             <b>
-              <h6 className="tg2 text-center" data-aos="fade-right" data-aos-duration="500">
+             <center> <h6 className="tg2 text-center" data-aos="fade-right" data-aos-duration="500">
                 Learning app for class 8-12{" "}
               </h6>{" "}
-              <br />
-              <br />
-              <div
+             
+             
+             <div
                 className="x1 justify-content-between "
                 data-aos="zoom-in"
                 data-aos-duration="1000"
@@ -87,7 +95,7 @@ function Header() {
                   }}>
                   Explore Courses
                 </a>
-              </div>
+                </div></center>
               <br /> <br />
               <div
                 className="play  d-flex justify-content-center"
@@ -115,21 +123,109 @@ function Header() {
                 {/* </a> */}
               </div>
             </b>
-            <div className="gettheapp" style={{display : "flex", width : "62%", justifyContent : "center"}}>
+           <center><div className="gettheapp" style={{display : "flex", width : "62%", justifyContent : "center"}}>
             <p className="text-center getapp " data-aos="zoom-out" data-aos-duration="1000">
             {" "}
             or <br /> Get the app on your phone now
           </p>
             </div>
-          <div className="phonenum " style={{width : "63%", display:"flex", justifyContent : "center"}}>
-          <div className="buttonIn  " data-aos="zoom-out" data-aos-duration="500" style={{border : "none" ,height : "38px", width :"300px", }}>
-            
-             <input className="form-control" onChange={handleOnChange} placeholder = "Enter your mobile number"  style={{ height : "45px", borderRadius : "30px", boxShadow : ""}} />
-            <button className="joins" onClick={alertModal} style={{position : "absolute", top:"6px", right : "4px", borderRadius : "30px", }} onClick={alertModal}>Join</button>
+          <div className="phonenum " style={{width : "auto", display:"flex", justifyContent : "center"}}>
+          <div className="buttonIn  " data-aos="zoom-out" data-aos-duration="500" style={{border : "none" ,height : "38px", width :"auto", }}>
+             <form className="gform" method="post" data-email="patelaryan7751@gmail.com" action="https://script.google.com/macros/s/AKfycbwcJ9HpreX73Ze6dqz0pTn8ONQDLweP8tWqq2NqwAYxBdCV7Nw/exec">
+                 <div className="row">
+                 <div className="col">
+                     <br/>
+                                <Card bordered  style={{ width :"300px", background:"white", height : "45px", borderRadius : "30px"}}>
+                                    <input required className="form-control" name="Nam" onChange={handleOnChange} placeholder = "Enter your name"  style={{ width :"300px", height : "45px", borderRadius : "30px", diplay : "inline-block", boxShadow : "20px"}} /></Card>
+                 </div>
+                 <div className="col">
+                                          <br/>
+                                <Card bordered  style={{ width :"300px", background:"white", height : "45px", borderRadius : "30px"}}>
+
+                                    <input required className="form-control" name="phn" onChange={handleOnChange} placeholder = "Enter your mobile number"  style={{ width :"300px", height : "45px", borderRadius : "30px", boxShadow : "20px"}} /></Card>
+                 </div>
+                 </div>
+                  <br/>
+                 <div className="col-auto">
+                     
+            <Button className="joins"   onClick={alertModal}>Enquire Now</Button>
+                 <br/>
+                 </div>
+                  <div style={{display:"none"}} className="thankyou_message">
+</div>
+              </form>
  
                <br />
              </div>
+               </div></center>
+               </div>
+     </div>
+     
+     <div className="col-md-5 cc">
+         <br/> <br/> <br/> <br/>
+            <img data-aos="fade-left"  className="img-fluid mr-5" src={NewImg} />
+
           </div>
+      <div className="col-md-5 cf">
+         <br/> <br/> <br/> <br/>
+           <div className="row">
+       <div className="col-6">
+           <Card bordered  style={{background:"white"}}>
+  <CardContent style={{background:"white"}} >
+    
+       <img className="img-fluid" src={learn1} />
+   <center> <H5>
+     Learn
+       </H5></center>
+    
+  </CardContent>
+ 
+</Card>
+          </div>
+               <div className="col-6">
+           <Card bordered  style={{background:"white"}}>
+  <CardContent style={{background:"white"}} >
+    
+       <img className="img-fluid" src={practice1} />
+   <center> <H5>
+     Practice
+       </H5></center>
+    
+  </CardContent>
+ 
+</Card>
+          </div>
+               <div className="col-6 mt-2">
+           <Card bordered  style={{background:"white"}}>
+  <CardContent style={{background:"white"}} >
+    
+       <img className="img-fluid" src={discuss1} />
+   <center> <H5>
+    Discuss
+       </H5></center>
+    
+  </CardContent>
+ 
+</Card>
+          </div>
+               <div className="col-6 mt-2">
+           <Card bordered  style={{background:"white"}}>
+  <CardContent style={{background:"white"}} >
+    
+       <img className="img-fluid" src={succeed1} />
+   <center> <H5>
+     Succeed
+       </H5></center>
+    
+  </CardContent>
+ 
+</Card>
+          </div>
+          
+          
+          </div>
+
+
           </div>
           <b>
             
@@ -140,6 +236,8 @@ function Header() {
           
          
         </b>
+              </div>
+              </div>
               </section>
               <br/>
               <br/>

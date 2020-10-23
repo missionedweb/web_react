@@ -14,15 +14,13 @@ import firebase from 'firebase/app';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: 385,
+    padding : "10px"
   },
   media: {
-    height: 140,
+    height: 210,
   },
 });
-
-
-
 
 
 function CourseCards(props){
@@ -33,6 +31,7 @@ function CourseCards(props){
         var arrUnion = await refre.update({
           users: firebase.firestore.FieldValue.arrayUnion(props.user.currentUser.id)
         });
+        alert( `Successfully enrolled to ${props.title} course`);
         //await refre.set({ users: [props.user.currentUser.id] },{merge:true});
     };
     
@@ -55,7 +54,7 @@ function CourseCards(props){
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary" onClick={handleClick}>
+        <Button size="small" variant="contained" color="primary" onClick={handleClick}>
           Enroll Now
         </Button>
         <Button size="small" color="primary">

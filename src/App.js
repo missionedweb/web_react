@@ -45,6 +45,7 @@ import { setCurrentUser } from "./redux/user/user.actions";
 import { selectCurrentUser } from "./redux/user/user.selector";
 import Dashboard from "./pages/dashboard/dashboard";
 import Price from "./pages/pricing/pricing";
+import Exams from "./pages/Exams/Exams";
 function App({ setCurrentUser, currentUser }) {
   useEffect(() => {
     //check Auth
@@ -120,6 +121,8 @@ function App({ setCurrentUser, currentUser }) {
         <Route path="/class9ICSE" component={Class9ICSE} />
         <Route path="/class8ICSE" component={Class8ICSE} />
         <Route path="/rankpredictor" component={RankPredictore} />
+
+        <Route path="/exams" component={Exams} />
       </Switch>
     </div>
   );
