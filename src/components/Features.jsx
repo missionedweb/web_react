@@ -13,7 +13,7 @@ const Features = () => {
           className="feature "
           
         >
-          <h1 className="main text-center"
+          <h1 className="text-center"
           data-aos="zoom-in-down" data-aos-duration={1500}
           >
             <b>
