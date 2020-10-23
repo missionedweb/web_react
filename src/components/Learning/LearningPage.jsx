@@ -83,7 +83,7 @@ const LearningPage = () => {
         <br />
         <br />
           <div className="row ">
-        <div className="col-md-6 ">
+        <div className="col-md-5">
         <img
           className="img-fluid"
           data-aos="fade-right"
@@ -93,8 +93,9 @@ const LearningPage = () => {
          
         />
               </div>
-              <div className="col-md-6">
-        <div className="learning-page " data-aos="fade-left" data-aos-duration="1500">
+                    
+              <div className="col-md-6 mx-2">
+        <div  data-aos="fade-left" data-aos-duration="1500">
           <p className="learning-heading">A new way to explore the learning</p>
           <h6 className="learning-txt">
             {" "}
@@ -119,8 +120,8 @@ const LearningPage = () => {
         <br />
         {/* Learning Page 2  */}
                         
-               <div className="col-md-6" >
-        <div className="learning-page-2" data-aos="fade-left" data-aos-duration="1500">
+               <div className="col-md-6" style={{padding:"40px"}} >
+        <div data-aos="fade-left" data-aos-duration="1500">
           <p className="learning-heading-2">Let’s fall in love with learning</p>
           <h6 className="learning-txt-2">
             Studying is hard? But it doesn’t have to be that way. At MissionEd we
@@ -130,7 +131,7 @@ const LearningPage = () => {
           <br />
           <br />
                    </div>
-          <div className="col-md-6 " data-aos="zoom-in-up" data-aos-duration="1500">
+          <div className="col-md-6" data-aos="zoom-in-up" data-aos-duration="1500">
             {" "}
             <center><a type="button" href="/feature2">
               <button style={{outline: "none"}} className="border-0 learn-more-btn">Learn More</button>{" "}
