@@ -13,7 +13,7 @@ export default function Exams({ exam }) {
   return (
     <div>
       <NavbarComponent />
-      <div style={{marginTop: '20vh'}}>
+      <div style={{marginTop: '10vh'}}>
         <Tiles />
         <div className="main">
           <SidebarNav />
