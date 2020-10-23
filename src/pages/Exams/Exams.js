@@ -14,12 +14,22 @@ export default function Exams({ exam }) {
     <div>
       <NavbarComponent />
       <div style={{marginTop: '10vh'}}>
+    
         <Tiles />
-        <div className="main">
+        <div className="container">
+            <div className="row">
+                <div className="col-md-3 cc">
           <SidebarNav />
+                </div>
+                <div className="col-md-9">
           <ExamInfo exam={exam} />
+                    </div>
+            </div> 
+            
         </div>
       </div>
+      
+      
       <GetTheApp />
       <Counter />
       <Footer />

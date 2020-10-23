@@ -1,0 +1,25 @@
+nav ul { list-style-type: none; }
+/* Base */
+.pall{
+position: absolute;
+width: 281px;
+height: 453px;
+left: 96px;
+top: 805px;
+
+background: #FFFFFF;
+box-shadow: 0px 16px 32px rgba(44, 39, 56, 0.04), 0px 32px 64px rgba(44, 39, 56, 0.08);
+border-radius: 8px;
+}
+hr{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.ntb{
+    background-color: #FB8F1D;
+}
+.tco{
+   color: gray;
+}

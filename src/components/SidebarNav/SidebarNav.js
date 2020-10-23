@@ -1,41 +1,58 @@
 import React from "react";
-
-
+import { Card } from 'ui-neumorphism';
+import { Button } from 'ui-neumorphism';
+import "./snav.css";
 //Side Navigation for Exams Page
 export default function SidebarNav() {
   return (
     <div>
+      <Card style={{background:"white"}}>
       <nav>
         <ul>
-          <li>
-            <a href="#brief">Brief</a>
+      <hr/>
+          <li className="ml-5">
+            <a className="tco" href="#brief">Brief</a>
           </li>
-          <li>
-            <a href="#eligibility">Eligibility Criteria</a>
+      <hr/>
+          <li className="ml-5">
+            <a className="tco" href="#eligibility">Eligibility Criteria</a>
           </li>
-          <li>
-            <a href="#pattern">Exam Pattern</a>
+      <hr/>
+          <li className="ml-5">
+            <a className="tco" href="#pattern">Exam Pattern</a>
           </li>
-          <li>
-            <a href="#imp_dates">Important Dates</a>
+      <hr/>
+          <li className="ml-5">
+            <a className="tco" href="#imp_dates">Important Dates</a>
           </li>
-          <li>
-            <a href="#application_process">Application Process</a>
+      <hr/>
+          <li className="ml-5">
+            <a className="tco" href="#application_process">Application Process</a>
           </li>
-          <li>
-            <a href="#syllabus">Syllabus</a>
+      <hr/>
+          <li className="ml-5">
+            <a className="tco" href="#syllabus">Syllabus</a>
           </li>
-          <li>
-            <a href="#cutoff">Cut-off Scores</a>
+       <hr/>
+          <li className="ml-5">
+            <a className="tco" href="#cutoff">Cut-off Scores</a>
           </li>
-          <li>
-            <a href="#study_resources">Study Resources</a>
+       <hr/>
+          <li className="ml-5">
+            <a className="tco" href="#study_resources">Study Resources</a>
           </li>
-          <li>
-            <a href="#courses">Popular Courses</a>
+       <hr/>
+          <li className="ml-5">
+            <a className="tco" href="#courses">Popular Courses</a>
           </li>
+       <hr/>
         </ul>
       </nav>
+      </Card>
+      
+      <Button block className="ntb">Get Advice</Button>
+      <br/><br/>
     </div>
+      
   );
 }
