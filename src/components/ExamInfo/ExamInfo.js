@@ -14,26 +14,60 @@ export default function ExamInfo({exam}) {
 
 // JSON Structure
 // {
-//     "JEE Main" : {
-//         "Brief" : "Lorem ipsum dolor smet...",
-//         "Eligibility_Criteria" : "Lorem ipsum dolor smet...",
-//         "Pattern" : "Lorem ipsum dolor smet...",
-//         "Important_Dates" : "Lorem ipsum dolor smet...",
-//         "Application_Process" : "Lorem ipsum dolor smet...",
-//         "Syllabus" : "Lorem ipsum dolor smet...",
-//         "Cut-off Scores" : "Lorem ipsum dolor smet...",
-//         "Study_Resources" : "Lorem ipsum dolor smet...",
-//         "Popular_Courses" : "Lorem ipsum dolor smet..."
-//     },
-//     "NEET" : {
-//         "Brief" : "Lorem ipsum dolor smet...",
-//         "Eligibility_Criteria" : "Lorem ipsum dolor smet...",
-//         "Pattern" : "Lorem ipsum dolor smet...",
-//         "Important_Dates" : "Lorem ipsum dolor smet...",
-//         "Application_Process" : "Lorem ipsum dolor smet...",
-//         "Syllabus" : "Lorem ipsum dolor smet...",
-//         "Cut-off Scores" : "Lorem ipsum dolor smet...",
-//         "Study_Resources" : "Lorem ipsum dolor smet...",
-//         "Popular_Courses" : "Lorem ipsum dolor smet..."
-//     }
+// 	"JEE Main": [{
+// 			"Brief": "Lorem ipsum dolor smet..."
+// 		},
+// 		{
+// 			"Eligibility Criteria": "Lorem ipsum dolor smet..."
+// 		},
+// 		{
+// 			"Pattern": "Lorem ipsum dolor smet..."
+// 		},
+// 		{
+// 			"Important Dates": "Lorem ipsum dolor smet..."
+// 		},
+// 		{
+// 			"Application Process": "Lorem ipsum dolor smet..."
+// 		},
+// 		{
+// 			"Syllabus": "Lorem ipsum dolor smet..."
+// 		},
+// 		{
+// 			"Cut-off Scores": "Lorem ipsum dolor smet..."
+// 		},
+// 		{
+// 			"Study Resources": "Lorem ipsum dolor smet..."
+// 		},
+// 		{
+// 			"Popular Courses": "Lorem ipsum dolor smet..."
+// 		}
+// 	],
+// 	"NEET": [{
+// 			"Brief": "Lorem ipsum dolor smet..."
+// 		},
+// 		{
+// 			"Eligibility Criteria": "Lorem ipsum dolor smet..."
+// 		},
+// 		{
+// 			"Pattern": "Lorem ipsum dolor smet..."
+// 		},
+// 		{
+// 			"Important Dates": "Lorem ipsum dolor smet..."
+// 		},
+// 		{
+// 			"Application Process": "Lorem ipsum dolor smet..."
+// 		},
+// 		{
+// 			"Syllabus": "Lorem ipsum dolor smet..."
+// 		},
+// 		{
+// 			"Cut-off Scores": "Lorem ipsum dolor smet..."
+// 		},
+// 		{
+// 			"Study Resources": "Lorem ipsum dolor smet..."
+// 		},
+// 		{
+// 			"Popular Courses": "Lorem ipsum dolor smet..."
+// 		}
+// 	]
 // }
