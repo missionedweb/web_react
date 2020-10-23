@@ -23,9 +23,6 @@ const useStyles = makeStyles({
 });
 
 
-
-
-
 function CourseCards(props){
     const classes = useStyles();
     const handleClick = async e => {

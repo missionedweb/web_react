@@ -1,5 +1,5 @@
 import React, {useState, useEffect,} from 'react'
-import {firestore} from '../../firebase/firebase.utils';
+import {firestore, auth} from '../../firebase/firebase.utils';
 import { Grid } from "@material-ui/core";
 import Card from './CourseCards';
 export default function Courses() {
@@ -25,12 +25,13 @@ export default function Courses() {
     return (
         <div>
             <h1 className="" style={{color : "black"}}>Courses</h1>
+            
             <br/>
 
     <Grid container spacing={3}>
     {allCourses &&
       allCourses.map(course=> (
-        <Grid item xs={12} sm={4} key={course.id}>
+        <Grid item xs={12} md={4} key={course.id}>
           <Card
             id={course.id}
             title={course.title}
