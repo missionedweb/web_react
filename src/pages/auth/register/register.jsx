@@ -79,7 +79,17 @@ export default function Register() {
     try {
       const { user } = await auth.createUserWithEmailAndPassword(email, password);
       let displayName = firstName + " " + lastName;
-      await createUserProfileDocument(user, { displayName, phone });
+      if(auth.currentUser!=null){
+        auth.currentUser.updateProfile({
+          displayName : displayName
+        }).then(()=>{
+          console.log("updated");
+        }
+        ).catch((err)=>{
+          console.log("error occured", err);
+        })
+      }
+      
       setDetails({
         firstName: "",
         lastName: "",
