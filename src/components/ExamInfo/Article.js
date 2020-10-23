@@ -1,11 +1,11 @@
 import React from 'react'
-
+import { Card } from 'ui-neumorphism';
 //Short Q&A articles on each exam
 export default function Article() {
     return (
         <div className="ml-2">
          <div id="accordion">
-        <div className="card">
+      <Card style={{background:"white"}}>
                 <div className="card-header" role="tab" id="onehead">
                     <h1 className="mb-0" style={{color: '#FB8F1D'}}><a data-toggle="collapse" data-target="#one">Question ?</a></h1>
                     </div>
@@ -17,9 +17,9 @@ Sit ante sed in sit ante et a. Magna libero tincidunt scelerisque ipsum, nec. Po
                     </div>
                     </div>
                 
-                </div>
+               </Card>
         <br/>
-        <div className="card">
+        <Card style={{background:"white"}}>
                 <div className="card-header" role="tab" id="twohead">
                     <h1 className="mb-0" style={{color: '#FB8F1D'}}><a data-toggle="collapse" data-target="#two">Question ?</a></h1>
                     </div>
@@ -31,9 +31,9 @@ Sit ante sed in sit ante et a. Magna libero tincidunt scelerisque ipsum, nec. Po
                     </div>
                     </div>
                 
-                </div>
+           </Card>
         <br/>
-        <div className="card">
+       <Card style={{background:"white"}}>
                 <div className="card-header" role="tab" id="threehead">
                     <h1 className="mb-0" style={{color: '#FB8F1D'}}><a data-toggle="collapse" data-target="#three">Question ?</a></h1>
                     </div>
@@ -45,7 +45,7 @@ Sit ante sed in sit ante et a. Magna libero tincidunt scelerisque ipsum, nec. Po
                     </div>
                     </div>
                 
-                </div>
+                </Card>
         <br/>
         </div>
            
