@@ -41,7 +41,8 @@
     "reselect": "^4.0.0",
     "serve": "^11.3.2",
     "styled-components": "^5.1.1",
-    "sweetalert": "^2.1.2"
+    "sweetalert": "^2.1.2",
+    "ui-neumorphism": "^1.0.9"
   },
   "scripts": {
     "start": "react-scripts start",

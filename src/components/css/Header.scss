@@ -55,6 +55,11 @@
     width: 100% !important;
   }
 }
+@media (min-width:682px){
+    .cf{
+          display: none;
+    }
+}
 
         @media (max-width:681px)
     {
@@ -66,6 +71,9 @@
     
     
 }
+        .cc{
+            display: none;
+        }
 .tagline{
   font-size: 30px;
 }
