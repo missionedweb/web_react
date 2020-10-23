@@ -2,8 +2,20 @@ import React, {useState, useEffect,} from 'react'
 import {firestore} from '../../firebase/firebase.utils';
 import { Grid } from "@material-ui/core";
 import Card from './CourseCards';
-export default function Courses() {
+import CircularProgress from '@material-ui/core/CircularProgress';
+import { makeStyles } from '@material-ui/core/styles';
 
+const useStyles = makeStyles((theme) => ({
+    root: {
+      display: 'flex',
+      '& > * + *': {
+        marginLeft: theme.spacing(2),
+      },
+    },
+  }));
+
+export default function Courses() {
+    const classes = useStyles();
     const [allCourses, setAllCourses] = useState([]);
     const [userId, setUserId] = useState(0);
 
@@ -26,10 +38,12 @@ export default function Courses() {
         <div>
             <h1 className="" style={{color : "black"}}>Courses</h1>
             <br/>
-
+        
     <Grid container spacing={3}>
-    {allCourses &&
-      allCourses.map(course=> (
+    <div className={classes.root} style={{textAlign:"center"}}>
+    {allCourses.length===0 && <CircularProgress />}
+    </div>
+      {allCourses.map(course=> (
         <Grid item xs={12} sm={4} key={course.id}>
           <Card
             id={course.id}
