@@ -3,7 +3,7 @@ import NavigationLogo from "../Images/NavigationLogo.svg";
 import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import { connect } from "react-redux";
 
 import { auth } from "../firebase/firebase.utils";
@@ -82,7 +82,7 @@ function NavbarComponent({ currentUser }) {
                     </ul>
                   </li>
                   <li className="nav-item mr-auto ml-2">
-                    <a href="#" className="dropdown-toggle nav-link mr-auto" data-toggle="dropdown">
+                    <a href="/exams" className="dropdown-toggle nav-link mr-auto" data-toggle="dropdown">
                       {" "}
                       EXAMS <b className="caret"></b>
                     </a>

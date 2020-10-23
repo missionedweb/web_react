@@ -1,5 +1,7 @@
 import React from "react";
 
+
+//Side Navigation for Exams Page
 export default function SidebarNav() {
   return (
     <div>
