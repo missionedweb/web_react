@@ -15,19 +15,14 @@ const Pricing = () => {
   return (
     <div>
       <header>
-
-      <NavbarComponent />
+        <NavbarComponent />
       </header>
-      
+
       <Wrapper>
         <div>
           {/* <NavbarComponent/>*/}
           <div className="jumbotron text-uppercase ">
-            <div
-              className="heading mt-2"
-              data-aos="zoom-in-up"
-              data-aos-duration={2500}
-            >
+            <div className="heading mt-2" data-aos="zoom-in-up" data-aos-duration={2500}>
               Pricing
             </div>
           </div>
@@ -36,17 +31,9 @@ const Pricing = () => {
               <div className="row full-height justify-content-center">
                 <div className="col-12 text-center align-self-center py-5">
                   <div className="section text-center py-5 py-md-0">
-                    <input
-                      className="pricing"
-                      type="checkbox"
-                      id="pricing"
-                      name="pricing"
-                    />
+                    <input className="pricing" type="checkbox" id="pricing" name="pricing" />
                     <label htmlFor="pricing">
-                      <span
-                        className="block-diff"
-                        style={{ marginLeft: "20px" }}
-                      >
+                      <span className="block-diff" style={{ marginLeft: "20px" }}>
                         Free<span className="float-right">Premium</span>
                       </span>
                     </label>
@@ -55,10 +42,16 @@ const Pricing = () => {
                         <div className="card-front">
                           <div className="pricing-wrap">
                             <h4 className="mb-5">Free</h4>
-                            <p className="mb-4">Profile with level being zero,<br></br>e-Credits as 30</p>
-                            <p className="mb-4">Free notes and questions for only <br></br> 1 chapter of each subject</p>
-                            <p className="mb-4">Sample mock test of <br></br>each paper module</p>
-                            
+                            <p className="mb-4">
+                              Profile with level being zero,<br></br>e-Credits as 30
+                            </p>
+                            <p className="mb-4">
+                              Free notes and questions for only <br></br> 1 chapter of each subject
+                            </p>
+                            <p className="mb-4">
+                              Sample mock test of <br></br>each paper module
+                            </p>
+
                             <a href="#0" className="link">
                               BOOK NOW
                             </a>
@@ -80,9 +73,11 @@ const Pricing = () => {
                           <div className="pricing-wrap">
                             <h4 className="mb-5">Premium</h4>
                             <p className="mb-4">One to One mentorship</p>
-                            <p className="mb-4">Full access to subjects <br></br> with targeted exams</p>
+                            <p className="mb-4">
+                              Full access to subjects <br></br> with targeted exams
+                            </p>
                             <p className="mb-4">Live Classes</p>
-                            
+
                             <a href="#0" className="link">
                               BOOK NOW
                             </a>
@@ -134,7 +129,7 @@ const Wrapper = styled.div`
   .jumbotron {
     background: #fff5e5;
     height: 200px;
-    padding-top:90px;
+    padding-top: 90px;
   }
 
   .heading {
@@ -521,8 +516,7 @@ const Wrapper = styled.div`
     top: -50px;
     z-index: 6;
     width: calc(60% + 70px);
-    transform: translate3d(0, 0, 35px) perspective(100px) scale(0.5)
-      rotate(0deg);
+    transform: translate3d(0, 0, 35px) perspective(100px) scale(0.5) rotate(0deg);
     opacity: 0;
     pointer-events: none;
     transition: transform 400ms 100ms ease, opacity 200ms 250ms ease;
@@ -1184,7 +1178,7 @@ const Wrapper = styled.div`
   .get-app {
     margin-top: 340px;
     width: 100%;
-    
+
     background: #fff5e5;
   }
   .app {
@@ -1216,9 +1210,9 @@ const Wrapper = styled.div`
     border-radius: 8px;
     font-weight: 600;
     font-size: 16px;
-    
+
     align-items: center;
-    
+
     color: #ffffff;
   }
   .download:hover {

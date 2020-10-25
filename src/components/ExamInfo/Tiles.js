@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Target from "./Images/Target.png";
 import Eligibility from "./Images/Eligibility.png";
 import books from "./Images/Book.png";
@@ -6,144 +6,107 @@ import Duration from "./Images/Duration.png";
 import Language from "./Images/Language.png";
 import Paper from "./Images/Paper.png";
 import Home from "./Images/Home.png";
-import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
+import NavigateNextIcon from "@material-ui/icons/NavigateNext";
+import Breadcrumbs from "@material-ui/core/Breadcrumbs";
+import Typography from "@material-ui/core/Typography";
+import Link from "@material-ui/core/Link";
 import styled from "styled-components";
 
-export default function Tiles() {
-    return (
-      <Wrapper>
-        <div>
-
+export default function Tiles({exam}) {
+  return (
+    <Wrapper>
+      <div>
         <div className="jumbotron mt-5">
-          
-          <div
-            className="heading about-us"
-            data-aos="zoom-in-up"
-            data-aos-duration={2500}
-          >
-          JEE Mains
-          <h6 style = {{color : "#B8BECD"}}>India's most reputed engineering entrance exam for admission to various engineering colleges.</h6>
+          <div className="heading about-us" data-aos="zoom-in-up" data-aos-duration={2500}>
+            {exam}
+            <h6 style={{ color: "#B8BECD" }}>
+              India's most reputed engineering entrance exam for admission to various engineering
+              colleges.
+            </h6>
           </div>
-          
-
         </div>
 
         <div className="container">
-      <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
-        <Link href="/" style = {{color : "black"}}>
-          <img src={Home} alt=""></img>
-           Home
-        </Link>
-        <Link href="#" style = {{color : "black"}}>
-          Study Material
-        </Link>
-        <Typography style = {{color : "#FB8F1D"}}>JEE Mains</Typography>
-      </Breadcrumbs>
-      </div>  
+          <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
+            <Link href="/" style={{ color: "black" }}>
+              <img src={Home} alt=""></img>
+              Home
+            </Link>
+            <Link href="#" style={{ color: "black" }}>
+              Exams
+            </Link>
+            <Typography style={{ color: "#FB8F1D" }}>{exam}</Typography>
+          </Breadcrumbs>
+        </div>
 
-  <div>
-              
-    <div>
-    <section className="counters text-center">
-    <div className="container">
-    <div className="row">
-    <div
-      className="col-md-2 col-sm-4 "
-      data-aos="zoom-out"
-      data-aos-duration="1000"
-      id="counter"
-    >
-      <img src={Target} alt="" className="mt-2"/>
-      <h6 className="mt-4 mb-3" style={{color : "#828282"}}>Target Field</h6>
-      <h5 style={{color : "#F2994A"}}>
-      Engineering
-      </h5>
-    </div>
-    <div
-      className="col-md-2 col-sm-4 "
-      data-aos="zoom-out"
-      data-aos-duration="1000"
-    >
-      <img src={Eligibility} alt="" className="mt-2"/>
-      
-      <h6 className="mt-4 mb-3" style={{color : "#828282"}}>
-      Eligibility
-      </h6>
-      <h5 style={{color : "#F2994A"}}>
-      Class 12th Passout
-      </h5>
-    </div>
-    <div
-      className="col-md-2 col-sm-4 "
-      data-aos="zoom-out"
-      data-aos-duration="1000"
-    >
-      <img src={books} alt="" className="mt-2"/>
-      
-      <h6 className="mt-4 mb-3" style={{color : "#828282"}}>
-      Subjects
-      </h6>
-      <h5 style={{color : "#F2994A"}}>
-      Physics, Chemistry, Mathematics
-      </h5>  
-    </div>
-    <div
-      className="col-md-2 col-sm-4 "
-      data-aos="zoom-out"
-      data-aos-duration="1000"
-      
-    >
-      <img src={Duration} alt="" className="mt-2"/>
-      
-      <h6 className="mt-4" style={{color : "#828282"}}>
-      Duration
-      </h6>
-      <h5 style={{color : "#F2994A"}}>
-      3 hrs
-      </h5>
-    </div>
-    <div
-      className="col-md-2 col-sm-4 "
-      data-aos="zoom-out"
-      data-aos-duration="1000"
-      height = "200px"
-    >
-      <img src={Language} alt="" className="mt-2"/>
-      
-      <h6 className="mt-4 mb-3" style={{color : "#828282"}}>
-      Languages
-      </h6>
-      <h5 style={{color : "#F2994A"}}>
-      English, Hindi
-      </h5>
-    </div>
-    <div
-      className="col-md-2 col-sm-4 "
-      data-aos="zoom-out"
-      data-aos-duration="1000"
-    >
-      <img src={Paper} alt="" className="mt-2"/>
-      
-      <h6 className="mt-4 mb-3" style={{color : "#828282"}}>
-      Pattern
-      </h6>
-      <h5 style={{color : "#F2994A"}}>
-      75 questions
-      </h5>
-    </div>
-    </div>
-    </div>
-    </section>
-    </div>
+        <div>
+          <div>
+            <section className="counters text-center">
+              <div className="container">
+                <div className="row">
+                  <div
+                    className="col-md-2 col-sm-4 "
+                    data-aos="zoom-out"
+                    data-aos-duration="1000"
+                    id="counter">
+                    <img src={Target} alt="" className="mt-2" />
+                    <h6 className="mt-4 mb-3" style={{ color: "#828282" }}>
+                      Target Field
+                    </h6>
+                    <h5 style={{ color: "#F2994A" }}>Engineering</h5>
+                  </div>
+                  <div className="col-md-2 col-sm-4 " data-aos="zoom-out" data-aos-duration="1000">
+                    <img src={Eligibility} alt="" className="mt-2" />
 
+                    <h6 className="mt-4 mb-3" style={{ color: "#828282" }}>
+                      Eligibility
+                    </h6>
+                    <h5 style={{ color: "#F2994A" }}>Class 12th Passout</h5>
+                  </div>
+                  <div className="col-md-2 col-sm-4 " data-aos="zoom-out" data-aos-duration="1000">
+                    <img src={books} alt="" className="mt-2" />
 
-    </div>
-  </div>
-</Wrapper>
-    )
+                    <h6 className="mt-4 mb-3" style={{ color: "#828282" }}>
+                      Subjects
+                    </h6>
+                    <h5 style={{ color: "#F2994A" }}>Physics, Chemistry, Mathematics</h5>
+                  </div>
+                  <div className="col-md-2 col-sm-4 " data-aos="zoom-out" data-aos-duration="1000">
+                    <img src={Duration} alt="" className="mt-2" />
+
+                    <h6 className="mt-4" style={{ color: "#828282" }}>
+                      Duration
+                    </h6>
+                    <h5 style={{ color: "#F2994A" }}>3 hrs</h5>
+                  </div>
+                  <div
+                    className="col-md-2 col-sm-4 "
+                    data-aos="zoom-out"
+                    data-aos-duration="1000"
+                    height="200px">
+                    <img src={Language} alt="" className="mt-2" />
+
+                    <h6 className="mt-4 mb-3" style={{ color: "#828282" }}>
+                      Languages
+                    </h6>
+                    <h5 style={{ color: "#F2994A" }}>English, Hindi</h5>
+                  </div>
+                  <div className="col-md-2 col-sm-4 " data-aos="zoom-out" data-aos-duration="1000">
+                    <img src={Paper} alt="" className="mt-2" />
+
+                    <h6 className="mt-4 mb-3" style={{ color: "#828282" }}>
+                      Pattern
+                    </h6>
+                    <h5 style={{ color: "#F2994A" }}>75 questions</h5>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </Wrapper>
+  );
 }
 
 const Wrapper = styled.div`
@@ -159,7 +122,7 @@ const Wrapper = styled.div`
   .jumbotron {
     background: #fff5e5;
     height: 200px;
-    z-index : 1
+    z-index: 1;
   }
   .jumbotron1 {
     height: 300px;
@@ -172,9 +135,9 @@ const Wrapper = styled.div`
     line-height: 80px;
     color: #202336;
   }
-   h3 {
-     margin-top:-30px;
-   }
+  h3 {
+    margin-top: -30px;
+  }
   .heading1 {
     text-align: center;
     font-weight: bold;
@@ -183,16 +146,14 @@ const Wrapper = styled.div`
     color: #202336;
   }
 
-  .learning-txt1{
-  
- font-style: normal;
-  font-size: 19px;
-  line-height: 30px;
-  color: #000000;
-  text-align: justify;
-  text-justify: inter-word;
-  
-}
+  .learning-txt1 {
+    font-style: normal;
+    font-size: 19px;
+    line-height: 30px;
+    color: #000000;
+    text-align: justify;
+    text-justify: inter-word;
+  }
   a {
     cursor: pointer;
     transition: all 200ms linear;
@@ -222,7 +183,6 @@ const Wrapper = styled.div`
     color: white;
   }
 
-  
   .over-hide {
     overflow: hidden;
   }
@@ -586,8 +546,7 @@ const Wrapper = styled.div`
     top: -50px;
     z-index: 6;
     width: calc(60% + 70px);
-    transform: translate3d(0, 0, 35px) perspective(100px) scale(0.5)
-      rotate(0deg);
+    transform: translate3d(0, 0, 35px) perspective(100px) scale(0.5) rotate(0deg);
     opacity: 0;
     pointer-events: none;
     transition: transform 400ms 100ms ease, opacity 200ms 250ms ease;
@@ -1249,7 +1208,7 @@ const Wrapper = styled.div`
   .get-app {
     margin-top: 340px;
     width: 100%;
-    
+
     background: #fff5e5;
   }
   .app {
@@ -1275,7 +1234,7 @@ const Wrapper = styled.div`
     padding: 40px;
   }
 
-    .joins {
+  .joins {
     background: #fa9917;
     border-radius: 0 5px 5px 0;
     width: 70px;
@@ -1317,7 +1276,7 @@ const Wrapper = styled.div`
     margin-left: 15%;
     color: #7d7987;
   }
-  
+
   @media (max-width: 400px) {
     .missioned-nav {
       font-size: 30px;
