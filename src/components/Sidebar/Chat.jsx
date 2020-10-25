@@ -1,9 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export function Chat() {
-    return (
-        <div>
-            <h1>Chat</h1>
-        </div>
-    )
+  return <div>Chat</div>;
 }
