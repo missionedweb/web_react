@@ -1,15 +1,21 @@
-import React from 'react'
-import Article from './Article'
+import React from "react";
+import Article from "./Article";
+import ExamInfoData from "./examinfo.json";
 
 //Component for fetching data from the db regarding each exam
-export default function ExamInfo({exam}) {
-    //Fetch data regarding the exam from the DB
+export default function ExamInfo({ exam }) {
+  //Fetch data regarding the exam from the DB
+  const data = ExamInfoData[exam];
+  // console.log(data)
 
-    return (
-      <div>
-        <Article />
-      </div>
-    );
+  return (
+    <div>
+      {data.map((datum) => {
+        const examData = Object.entries(datum)[0];
+          return <Article question={examData[0]} answer={examData[1]} />;
+      })}
+    </div>
+  );
 }
 
 // JSON Structure
