@@ -11,6 +11,7 @@ import Box from '@material-ui/core/Box';
 import ScrollTabs from './Tabs';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import {Card, } from 'react-bootstrap';
+import '../css/dashboard.scss';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -23,6 +24,8 @@ const useStyles = makeStyles((theme) => ({
   }));
  
 export function Dashboard() {
+   
+
     const classes = useStyles();
     const [value, setValue] = useState(0);
 
@@ -34,17 +37,17 @@ export function Dashboard() {
         <div>
             
             
-                 <h5 className="" style={{fontSize : '35px', color : "#5E81F4"}}>Welcome, <span className="font-weight-bold"> {auth.currentUser.displayName.split(" ")[0]} </span></h5>
+                 <h5 className="welcome-text" style={{fontSize : '35px', color : "#5E81F4"}}>Welcome, <span className="font-weight-bold"> {auth.currentUser.displayName.split(" ")[0]} </span></h5>
                  <br/>
                  
                 <br/>
            <div className="container-fluid">
                <div className="row">
-                   <div className="col-md-9 pr-3" style={{borderRight : "2px solid #5E81F4"}}>
+                   <div className="col-xl-9 " style={{borderRight : "2px solid #5E81F4"}}>
                         <ScrollTabs/>
                    </div>
-                   <div className="col-md-3" style={{display : "flex", flexDirection : "column", justifyContent : "space-around", alignItems : "center"}}>
-                   <Card style={{ width: '18rem' }}>
+                   <div className="col-xl-3" style={{display : "flex", flexDirection : "column", justifyContent : "center", }}>
+                   <Card className="mb-5" style={{ maxWidth : "100%" }}>
                     <Card.Body style={{display : "flex" , flexDirection : "column", justifyContent : "space-around", alignItems:'center'}}>
                         <Card.Title className="text-center">Attendance</Card.Title>
                         <br/>
@@ -57,12 +60,12 @@ export function Dashboard() {
                     </Card.Body>
                     </Card>
 
-                    <Card style={{ width: '18rem' }}>
+                    <Card className="mt-3" style={{ maxWidth: '100%' }}>
                     <Card.Body style={{display : "flex" , flexDirection : "column", justifyContent : "space-around", alignItems:'center'}}>
                         <Card.Title className="text-center">CGPA</Card.Title>
                         <br/>
-                        <div className="bg-primary" style={{height : "100px", width : "100px", borderRadius : "50%", borderTop : "5px solid blue", borderRight : "5px solid blue", display : "flex", justifyContent :"center", alignItems : "center"}}>
-                        <p className="text-white">4/10</p>
+                        <div className="" style={{height : "100px",backgroundColor:"#80ffbf" ,width : "100px", borderRadius : "50%", borderTop : "5px solid #00e673", borderRight : "5px solid #00e673", display : "flex", justifyContent :"center", alignItems : "center"}}>
+                        <p className="text-black">4/10</p>
                         </div>
                         <br/>
                         <Card.Text>Completed : 3/8</Card.Text>

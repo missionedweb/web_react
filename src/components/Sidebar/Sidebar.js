@@ -177,7 +177,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   menuButton: {
-    [theme.breakpoints.up("md")]: {
+    [theme.breakpoints.up("lg")]: {
       display: "none",
     },
     position: "fixed",

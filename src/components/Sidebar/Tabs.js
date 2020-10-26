@@ -70,9 +70,9 @@ export default function ScrollableTabsButtonForce() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="default">
+      <AppBar position="absolute" color="default">
         <Tabs
-            className="tabs"
+            className=""
           value={value}
           onChange={handleChange}
           variant="scrollable"
@@ -87,7 +87,11 @@ export default function ScrollableTabsButtonForce() {
           <Tab className={classes.boot} label="Upcoming"  {...a11yProps(3)} />
           
         </Tabs>
+        
       </AppBar>
+      <br/>
+      <br/>
+      <br/>
       <TabPanel value={value} index={0}>
           <br/>
         <CenterGrid/>
@@ -101,7 +105,7 @@ export default function ScrollableTabsButtonForce() {
       <TabPanel value={value} index={3}>
         Upcoming
       </TabPanel>
-      
+     
     </div>
   );
 }
