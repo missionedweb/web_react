@@ -63,7 +63,7 @@ function SideBar(props) {
               <Link to={item.path} className={classes.link} key={index}>
                 <ListItem button>
                   <ListItemIcon>{item.icon}</ListItemIcon>
-                  <ListItemText primary={item.title} />
+                  <ListItemText style={{textDecoration : "none !important"}} primary={item.title} />
                 </ListItem>
               </Link>
             );
