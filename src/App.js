@@ -122,7 +122,7 @@ function App({ setCurrentUser, currentUser }) {
         <Route path="/class8ICSE" component={Class8ICSE} />
         <Route path="/rankpredictor" component={RankPredictore} />
 
-        <Route path="/exams" component={Exams} />
+        <Route path="/exams/:exam" component={Exams} />
       </Switch>
     </div>
   );

@@ -124,15 +124,23 @@ export default function LearningModal() {
         type="button"
         onClick={handleOpen}
         className={classes.button}
-        data-aos="zoom-in-up" data-aos-duration="1500"
-        style={{ outline: " none" ,  background:"#fb8f1d" , width: 110 , height: 46 , borderRadius: "10px" }}>
+        data-aos="zoom-in-up"
+        data-aos-duration="1500"
+        style={{
+          outline: " none",
+          background: "#fb8f1d",
+          width: 110,
+          height: 46,
+          borderRadius: "10px",
+        }}>
         Register
       </Button>
 
-       <a
+      <a
         href="/features"
         className="btn"
-        data-aos="zoom-in-up" data-aos-duration="1500"
+        data-aos="zoom-in-up"
+        data-aos-duration="1500"
         style={{
           background: "#FB8F1D",
           borderRadius: "10px",
@@ -145,13 +153,12 @@ export default function LearningModal() {
           height: 48,
           paddingTop: "8px",
           outline: "none",
-          boxShadow: "0px 2px 2px rgba(0, 0, 0, 0.25)"
-
+          boxShadow: "0px 2px 2px rgba(0, 0, 0, 0.25)",
         }}>
         Learn More
-      </a> 
+      </a>
 
-       {/* <Button
+      {/* <Button
         variant="contained"
         color="secondary"
         type="button"

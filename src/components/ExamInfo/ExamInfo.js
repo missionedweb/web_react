@@ -14,7 +14,7 @@ export default function ExamInfo({exam}) {
 
 // JSON Structure
 // {
-// 	"JEE Main": [{
+// 	"JEEMain": [{
 // 			"Brief": "Lorem ipsum dolor smet..."
 // 		},
 // 		{

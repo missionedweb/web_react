@@ -82,7 +82,10 @@ function NavbarComponent({ currentUser }) {
                     </ul>
                   </li>
                   <li className="nav-item mr-auto ml-2">
-                    <a href="/exams" className="dropdown-toggle nav-link mr-auto" data-toggle="dropdown">
+                    <a
+                      href="/exams"
+                      className="dropdown-toggle nav-link mr-auto"
+                      data-toggle="dropdown">
                       {" "}
                       EXAMS <b className="caret"></b>
                     </a>
@@ -113,9 +116,9 @@ function NavbarComponent({ currentUser }) {
                         </div>
                         <div className="col-sm-5">
                           <ul className="multi-column-dropdown">
-                            <a href="/" className="dropdown-item">
-                              JEE MAINS
-                            </a>
+                            <Link to="/exams/JEEMain" className="dropdown-item active">
+                              JEE MAIN
+                            </Link>
                             <a href="/" className="dropdown-item">
                               JEE ADVANCED
                             </a>
@@ -145,9 +148,9 @@ function NavbarComponent({ currentUser }) {
                             <a href="/" className="dropdown-item">
                               ICSE
                             </a>
-                            <a href="/" className="dropdown-item">
+                            <Link to="/exams/NEET" className="dropdown-item active">
                               NEET
-                            </a>
+                            </Link>
                             <a href="/" className="dropdown-item">
                               KVPY
                             </a>
