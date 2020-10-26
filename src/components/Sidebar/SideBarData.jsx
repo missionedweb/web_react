@@ -1,7 +1,12 @@
 import React from 'react';
-import { Dashboard, ViewList, Folder, Person, Chat, Settings } from '@material-ui/icons';
+import { Dashboard, ViewList, Folder, Person, Chat, Settings,PersonOutlineOutlined } from '@material-ui/icons';
 
 export const SideBarData = [
+    {
+        title:'Profile',
+        path:'/profile',
+        icon: <PersonOutlineOutlined />
+    },
     {
         title: 'Dashboard',
         path:'/dashboard',
