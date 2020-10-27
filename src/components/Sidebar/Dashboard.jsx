@@ -14,8 +14,8 @@ import {Card, } from 'react-bootstrap';
 import '../css/dashboard.scss';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-
-
+import Attendance from './Attendance';
+import Cgpa from './Cgpa';
 const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
@@ -51,30 +51,9 @@ export function Dashboard() {
                         <ScrollTabs/>
                    </div>
                    <div className="col-xl-3" style={{display : "flex", flexDirection : "column", justifyContent : "center", }}>
-                   <Card className="mb-5" style={{ maxWidth : "100%" }}>
-                    <Card.Body style={{display : "flex" , flexDirection : "column", justifyContent : "space-around", alignItems:'center'}}>
-                        <Card.Title className="text-center">Attendance</Card.Title>
-                        <br/>
-                        <CircularProgressbar  styles={buildStyles({
-          textColor: "red",
-          pathColor: "turquoise",
-          trailColor: "gold"
-        })} value={percentage} text={`${percentage}%`} />;
-                        <br/>
-                        <Card.Text>Absent : 10/40</Card.Text>
-                       
-                    </Card.Body>
-                    </Card>
-
-                    <Card className="mt-3" style={{ maxWidth: '100%' }}>
-                    <Card.Body style={{display : "flex" , flexDirection : "column", justifyContent : "space-around", alignItems:'center'}}>
-                        <Card.Title className="text-center">CGPA</Card.Title>
-                        <br/>
-                        <CircularProgressbar value={cgpa*10} strokeWidth={5} background backgroundPadding={3} text={`${cgpa}/10`} />;
-                        <br/>
-                        <Card.Text>Completed : 3/8</Card.Text>
-                    </Card.Body>
-                    </Card>
+                   <Attendance />
+                    <Cgpa />
+                    
                    </div>
                </div>
            </div>

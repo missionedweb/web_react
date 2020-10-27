@@ -16,6 +16,9 @@ import AssignmentIcon from '@material-ui/icons/Assignment';
 import Avatar from '@material-ui/core/Avatar';
 import { deepOrange, green } from '@material-ui/core/colors';
 import Divider from '@material-ui/core/Divider';
+import Attendance from './Attendance';
+import Cgpa from './Cgpa';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow:1,
@@ -144,7 +147,16 @@ const Profile = ({ user }) => {
                 </Card>
                 </Grid>
         </Grid>
-        
+        <Grid item xs={12}>
+                <Grid container spacing={6}>
+                    <Grid item xs={12} md={3}>
+                        <Attendance />
+                    </Grid>
+                    <Grid item xs={12} md={3}>
+                        <Cgpa />
+                    </Grid>
+                </Grid>
+        </Grid>
       </Grid>
     </div>
       
