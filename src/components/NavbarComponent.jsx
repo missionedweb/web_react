@@ -122,7 +122,7 @@ function NavbarComponent({ currentUser }) {
                             <a href="/" className="dropdown-item">
                               JEE ADVANCED
                             </a>
-                            <a href="/" className="dropdown-item">
+                            <a href="/ncert_sol" className="dropdown-item">
                               NCERT SOL
                             </a>
                             <a href="/" className="dropdown-item">
