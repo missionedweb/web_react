@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dashboard, ViewList, Folder, Person, Chat, Settings,PersonOutlineOutlined } from '@material-ui/icons';
+import { Dashboard, Work, Settings,PersonOutlineOutlined, MailOutline ,Laptop ,Ballot, CalendarToday} from '@material-ui/icons';
 
 export const SideBarData = [
     {
@@ -12,29 +12,30 @@ export const SideBarData = [
         path:'/dashboard',
         icon: <Dashboard />
     },
+    
     {
-        title: 'All courses',
-        path:'/dashboard/courses',
-        icon: <ViewList />
+        title: 'Messages',
+        path:'/dashboard/Messages',
+        icon: <MailOutline/>
     },
     {
-        title: 'Resources',
-        path:'/dashboard/resources',
-        icon: <Folder />
+        title: 'Grades',
+        path:'/dashboard/Grades',
+        icon: <Ballot/>
     },
     {
-        title: 'Referals',
-        path:'/dashboard/referals',
-        icon: <Person />
+        title: 'Calender',
+        path:'/dashboard/Calender',
+        icon: <CalendarToday />
     },
     {
-        title: 'Chats',
-        path:'/dashboard/chats',
-        icon: <Chat />
+        title: 'Community',
+        path:'/dashboard/Community',
+        icon: <Laptop />
     },
     {
-        title: 'Settings',
-        path:'/dashboard/settings',
-        icon: <Settings />
+        title: 'Jobs',
+        path:'/dashboard/Jobs',
+        icon: <Work />
     },
 ]

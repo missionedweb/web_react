@@ -47,18 +47,18 @@ export function Dashboard() {
                 <br/>
            <div className="container-fluid">
                <div className="row">
-                   <div className="col-xl-9 " style={{borderRight : "2px solid #5E81F4"}}>
+                   <div className="col-xl-9 pr-5" style={{borderRight : "2px solid #5E81F4"}}>
                         <ScrollTabs/>
                    </div>
-                   <div className="col-xl-3" style={{display : "flex", flexDirection : "column", justifyContent : "center", }}>
-                   <Card className="mb-5" style={{ maxWidth : "100%" }}>
+                   <div className="col-xl-3" style={{display : "flex", flexDirection : "column", justifyContent : "center", alignItems:"center"}}>
+                   <Card className="mb-5" style={{ maxWidth: '250px' }}>
                     <Card.Body style={{display : "flex" , flexDirection : "column", justifyContent : "space-around", alignItems:'center'}}>
                         <Card.Title className="text-center">Attendance</Card.Title>
                         <br/>
                         <CircularProgressbar  styles={buildStyles({
           textColor: "red",
           pathColor: "turquoise",
-          trailColor: "gold"
+          
         })} value={percentage} text={`${percentage}%`} />;
                         <br/>
                         <Card.Text>Absent : 10/40</Card.Text>
@@ -66,7 +66,7 @@ export function Dashboard() {
                     </Card.Body>
                     </Card>
 
-                    <Card className="mt-3" style={{ maxWidth: '100%' }}>
+                    <Card className="mt-3" style={{ maxWidth: '250px' }}>
                     <Card.Body style={{display : "flex" , flexDirection : "column", justifyContent : "space-around", alignItems:'center'}}>
                         <Card.Title className="text-center">CGPA</Card.Title>
                         <br/>
