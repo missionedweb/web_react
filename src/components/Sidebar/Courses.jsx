@@ -8,6 +8,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
+      justifyContent : "center",
       '& > * + *': {
         marginLeft: theme.spacing(2),
       },
@@ -39,13 +40,14 @@ export default function Courses() {
             <h1 className="" style={{color : "black"}}>Courses</h1>
             
             <br/>
-        
-    <Grid container spacing={3}>
-    <div className={classes.root} style={{textAlign:"center"}}>
+            <div className={classes.root} style={{textAlign:"center", display : "flex", justifyContent  :"center", alignItems : "center"}}>
     {allCourses.length===0 && <CircularProgress />}
     </div>
+        
+    <Grid container spacing={3}>
+    
       {allCourses.map(course=> (
-        <Grid item xs={12} sm={4} key={course.id}>
+        <Grid item xs={12} md={4} key={course.id}>
 
           <Card
             id={course.id}

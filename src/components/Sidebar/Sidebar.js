@@ -30,6 +30,7 @@ import { Directions } from "@material-ui/icons";
 import Pricing from './Pricing';
 import Enroll from "./Enroll";
 import Coursses from './Courses';
+import Profile from './Profile';
 function SideBar(props) {
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -63,7 +64,7 @@ function SideBar(props) {
               <Link to={item.path} className={classes.link} key={index}>
                 <ListItem button>
                   <ListItemIcon>{item.icon}</ListItemIcon>
-                  <ListItemText primary={item.title} />
+                  <ListItemText style={{textDecoration : "none !important"}} primary={item.title} />
                 </ListItem>
               </Link>
             );
@@ -118,6 +119,9 @@ function SideBar(props) {
         <main className={classes.content}>
           {/*switch*/}
           <Switch>
+            <Route path="/profile" component={Profile}>
+              
+            </Route>
             <Route exact path="/dashboard">
               <Dash />
             </Route>
@@ -173,7 +177,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   menuButton: {
-    [theme.breakpoints.up("md")]: {
+    [theme.breakpoints.up("lg")]: {
       display: "none",
     },
     position: "fixed",

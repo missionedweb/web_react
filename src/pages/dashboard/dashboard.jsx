@@ -9,7 +9,7 @@ function Dashboard() {
   return (
     <>
     
-      <DashNavbar/>
+      
       <SideBar />
       
     </>

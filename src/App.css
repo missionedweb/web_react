@@ -9,10 +9,17 @@ body {
   background-size: cover;
   overflow-x: hidden !important;
 }
+
+
+
+
 .navbar-toggler{
   border: none !important;
   border-radius: 50% !important;
   
+}
+.MuiTypography-root:hover{
+  text-decoration: none !important;
 }
 .navbar-toggler:active{
   background-color:white !important;
