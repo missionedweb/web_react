@@ -1,5 +1,15 @@
 import React from "react";
 import Home from "./Images/Home.png";
+import NavbarComponent from "../../components/NavbarComponent";
+import GetTheApp from "../../components/GetTheApp";
+import Counter from "../../components/Counter";
+import Footer from "../../components/Footer";
+import { Card } from "ui-neumorphism";
+import { CardContent } from "ui-neumorphism";
+import { CardAction } from "ui-neumorphism";
+import { Subtitle2 } from "ui-neumorphism";
+import { H5 } from "ui-neumorphism";
+import learn1 from "../../Images/learn1.png";
 import NavigateNextIcon from "@material-ui/icons/NavigateNext";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import Typography from "@material-ui/core/Typography";
@@ -8,6 +18,8 @@ import styled from "styled-components";
 
 export default function Tiles({exam}) {
   return (
+      <div>
+       <NavbarComponent />
     <Wrapper>
       <div>
         <div className="jumbotron mt-5">
@@ -32,6 +44,63 @@ export default function Tiles({exam}) {
         </div>
       </div>
     </Wrapper>
+       <br/>
+      <div className="container">
+      <div className="row">
+      <div className="col-md-3">
+        <Card bordered style={{ background: "white" }}>
+                        <CardContent style={{ background: "white" }}>
+                          <img className="img-fluid" src={learn1} />
+                          <center>
+                            {" "}
+                            <H5>Class 9</H5>
+                          </center>
+                        </CardContent>
+                      </Card>
+      
+      </div>
+      <div className="col-md-3">
+      <Card bordered style={{ background: "white" }}>
+                        <CardContent style={{ background: "white" }}>
+                          <img className="img-fluid" src={learn1} />
+                          <center>
+                            {" "}
+                            <H5>Class 10</H5>
+                          </center>
+                        </CardContent>
+                      </Card>
+      </div>
+      <div className="col-md-3">
+      <Card bordered style={{ background: "white" }}>
+                        <CardContent style={{ background: "white" }}>
+                          <img className="img-fluid" src={learn1} />
+                          <center>
+                            {" "}
+                            <H5>Class 11</H5>
+                          </center>
+                        </CardContent>
+                      </Card>
+      </div>
+      <div className="col-md-3">
+      <Card bordered style={{ background: "white" }}>
+                        <CardContent style={{ background: "white" }}>
+                          <img className="img-fluid" src={learn1} />
+                          <center>
+                            {" "}
+                            <H5>Class 12</H5>
+                          </center>
+                        </CardContent>
+                      </Card>
+       <br/>
+      </div>
+      
+      </div>
+      </div>
+      <GetTheApp />
+      <br/>
+      <Counter />
+      <Footer />
+      </div>
   );
 }
 
