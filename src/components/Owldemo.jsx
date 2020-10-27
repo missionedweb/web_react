@@ -26,15 +26,13 @@ export class OwlDemo extends Component {
         </div>  
 
         <div className='container-fluid' >   
-          <OwlCarousel items={3} margin={10} autoplay ={true} >  
+          <OwlCarousel items={3} margin={10} autoplay ={true} loop = {true}>  
 
         <div ><img  className="imgo" src= {jeemain} alt="cara1"/></div>  
            <div><img  className="imgo" src= {jeeadv} alt="cara1"/></div>  
            <div><img  className="imgo" src= {neet} alt="cara1"/></div>  
            <div><img  className="imgo" src= {kvpy} alt="cara1"/></div>  
            <div><img className="imgo" src= {bitsat} alt="cara1"/></div>  
-           <div><img className="imgo" src= {jeemain} alt="cara1"/></div>  
-           <div><img className="imgo" src= {jeeadv} alt="cara1"/></div>  
       </OwlCarousel>  
       </div>  
       </div>  
