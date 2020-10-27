@@ -12,6 +12,8 @@ import ScrollTabs from './Tabs';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import {Card, } from 'react-bootstrap';
 import '../css/dashboard.scss';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -32,6 +34,8 @@ export function Dashboard() {
     const handleChange = (e) =>{
         setValue(e.target.value)
 ;    }
+    const percentage = 66;
+    const cgpa = 4;
 
     return (
         <div>
@@ -51,9 +55,11 @@ export function Dashboard() {
                     <Card.Body style={{display : "flex" , flexDirection : "column", justifyContent : "space-around", alignItems:'center'}}>
                         <Card.Title className="text-center">Attendance</Card.Title>
                         <br/>
-                        <div className="" style={{height : "100px",backgroundColor:"#ffe6cc" ,width : "100px", borderRadius : "50%", borderTop : "5px solid #ffb366", borderRight : "5px solid #ffb366",borderBottom : "5px solid #ffb366", display : "flex", justifyContent :"center", alignItems : "center"}}>
-                        <p className="text-black">74%</p>
-                        </div>
+                        <CircularProgressbar  styles={buildStyles({
+          textColor: "red",
+          pathColor: "turquoise",
+          trailColor: "gold"
+        })} value={percentage} text={`${percentage}%`} />;
                         <br/>
                         <Card.Text>Absent : 10/40</Card.Text>
                        
@@ -64,9 +70,7 @@ export function Dashboard() {
                     <Card.Body style={{display : "flex" , flexDirection : "column", justifyContent : "space-around", alignItems:'center'}}>
                         <Card.Title className="text-center">CGPA</Card.Title>
                         <br/>
-                        <div className="" style={{height : "100px",backgroundColor:"#80ffbf" ,width : "100px", borderRadius : "50%", borderTop : "5px solid #00e673", borderRight : "5px solid #00e673", display : "flex", justifyContent :"center", alignItems : "center"}}>
-                        <p className="text-black">4/10</p>
-                        </div>
+                        <CircularProgressbar value={cgpa*10} strokeWidth={5} background backgroundPadding={3} text={`${cgpa}/10`} />;
                         <br/>
                         <Card.Text>Completed : 3/8</Card.Text>
                     </Card.Body>
