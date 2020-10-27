@@ -26,7 +26,7 @@ import CenteredGrid from "../Cards/index";
 import Course from "../Course/course";
 import { auth } from "../../firebase/firebase.utils";
 import NavigationLogo from "../../Images/NavigationLogo.svg";
-import { Directions } from "@material-ui/icons";
+import { Directions, ExitToApp } from "@material-ui/icons";
 import Pricing from './Pricing';
 import Enroll from "./Enroll";
 import Coursses from './Courses';
@@ -44,10 +44,10 @@ function SideBar(props) {
       <div className={classes.logo}>
         <div className={classes.title}>
           <img style={{ display: "block" }} src={NavigationLogo} alt="logo" />
-          <br />
-          <span style={{ fontSize: "20px" }} className="missioned-nav font-weight-bold">
+          
+          <span style={{ fontSize: "17px" }} className="missioned-nav font-weight-bold">
             Mission
-            <span style={{ fontSize: "20px" }} className="ed">
+            <span style={{ fontSize: "17px" }} className="ed">
               Ed
             </span>
           </span>
@@ -76,7 +76,7 @@ function SideBar(props) {
         <Upgrade />
       </div>
 
-      <button onClick={() => auth.signOut()}>Sign Out</button>
+      <button className="btn mt-3 mb-4" style={{backgroundColor:"#5E81F4", color:"white"}} onClick={() => auth.signOut()}><ExitToApp/>Sign Out</button>
     </div>
   );
 
@@ -213,7 +213,7 @@ const useStyles = makeStyles((theme) => ({
   },
   second: {
     flex: "0.3",
-    paddingBottom: "8px",
+    paddingBottom: "1px",
   },
   link: {
     width: "100vh",
@@ -223,6 +223,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.primary,
     "&:hover": {
       color: "#5E81F4",
+      textDecoration :"none"
     },
   },
   title: {

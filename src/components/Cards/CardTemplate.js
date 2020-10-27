@@ -18,6 +18,18 @@ const useStyles = makeStyles({
   media: {
     height: 110,
   },
+  button:{
+    "&:hover": {
+      boxShadow : "0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important",
+    
+    },
+  },
+  link:{
+    "&:hover": {
+      
+      textDecoration :"none"
+    },
+  }
 });
 
 export default function CardTemp(props) {
@@ -45,7 +57,7 @@ export default function CardTemp(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-      <Link to={`/dashboard/courses/${id}`}>
+      <Link className={classes.link} to={`/dashboard/courses/${id}`}>
           <Button className={classes.button} style={{backgroundColor : "#5E81F4", marginRight : "20px", color:"white"}}>
           Watch Now  <PlayArrowIcon style={{ color: "black", fontSize: "24px" }} />
           </Button>

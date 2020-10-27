@@ -4,7 +4,7 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 const Cgpa = () => {
     const cgpa = 4;
     return (
-        <Card className="mt-3" style={{ maxWidth: '100%' }}>
+        <Card className="" style={{ maxWidth: '250px' }}>
             <Card.Body style={{display : "flex" , flexDirection : "column", justifyContent : "space-around", alignItems:'center'}}>
                 <Card.Title className="text-center">CGPA</Card.Title>
                 <br/>
