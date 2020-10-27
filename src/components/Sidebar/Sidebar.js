@@ -11,6 +11,7 @@ import {
   Divider,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
+import Calender from  './calender';
 import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import { SideBarData } from "./SideBarData";
@@ -135,8 +136,8 @@ function SideBar(props) {
             <Route path="/dashboard/resources">
               <Resources />
             </Route>
-            <Route path="/dashboard/referals">
-              <Referals />
+            <Route path="/dashboard/Calender">
+              <Calender/>
             </Route>
             <Route path="/dashboard/chats">
               <Chats />

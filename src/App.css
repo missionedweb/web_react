@@ -11,7 +11,14 @@ body {
 }
 
 
-
+.react-calendar__navigation{
+  background-color:#5E81F4 !important;
+  color: white !important;
+}
+.react-calendar__navigation span{
+  
+  color: white !important;
+}
 
 .navbar-toggler{
   border: none !important;
