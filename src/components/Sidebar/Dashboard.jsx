@@ -14,8 +14,8 @@ import {Card, } from 'react-bootstrap';
 import '../css/dashboard.scss';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-
-
+import Attendance from './Attendance';
+import Cgpa from './Cgpa';
 const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
@@ -50,31 +50,11 @@ export function Dashboard() {
                    <div className="col-xl-9 pr-5" style={{borderRight : "2px solid #5E81F4"}}>
                         <ScrollTabs/>
                    </div>
-                   <div className="col-xl-3" style={{display : "flex", flexDirection : "column", justifyContent : "center", alignItems:"center"}}>
-                   <Card className="mb-5" style={{ maxWidth: '250px' }}>
-                    <Card.Body style={{display : "flex" , flexDirection : "column", justifyContent : "space-around", alignItems:'center'}}>
-                        <Card.Title className="text-center">Attendance</Card.Title>
-                        <br/>
-                        <CircularProgressbar  styles={buildStyles({
-          textColor: "red",
-          pathColor: "turquoise",
-          
-        })} value={percentage} text={`${percentage}%`} />;
-                        <br/>
-                        <Card.Text>Absent : 10/40</Card.Text>
-                       
-                    </Card.Body>
-                    </Card>
+                   <div className="col-xl-3" style={{display : "flex", flexDirection : "column", justifyContent : "center", }}>
+                   <Attendance />
+                    <Cgpa />
+                    
 
-                    <Card className="mt-3" style={{ maxWidth: '250px' }}>
-                    <Card.Body style={{display : "flex" , flexDirection : "column", justifyContent : "space-around", alignItems:'center'}}>
-                        <Card.Title className="text-center">CGPA</Card.Title>
-                        <br/>
-                        <CircularProgressbar value={cgpa*10} strokeWidth={5} background backgroundPadding={3} text={`${cgpa}/10`} />;
-                        <br/>
-                        <Card.Text>Completed : 3/8</Card.Text>
-                    </Card.Body>
-                    </Card>
                    </div>
                </div>
            </div>
