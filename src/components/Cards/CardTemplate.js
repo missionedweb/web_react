@@ -46,7 +46,7 @@ export default function CardTemp(props) {
       </CardActionArea>
       <CardActions>
       <Link to={`/dashboard/courses/${id}`}>
-          <Button className={classes.button} style={{backgroundColor : "#5E81F4", marginRight : "20px"}}>
+          <Button className={classes.button} style={{backgroundColor : "#5E81F4", marginRight : "20px", color:"white"}}>
           Watch Now  <PlayArrowIcon style={{ color: "black", fontSize: "24px" }} />
           </Button>
 
