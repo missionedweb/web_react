@@ -11,6 +11,7 @@ import {firestore} from '../../firebase/firebase.utils';
 import { connect } from 'react-redux';
 //var admin = require('firebase-admin');
 import firebase from 'firebase/app';
+import Alert from '@material-ui/lab/Alert';
 
 const useStyles = makeStyles({
   root: {
@@ -31,8 +32,9 @@ function CourseCards(props){
         var arrUnion = await refre.update({
           users: firebase.firestore.FieldValue.arrayUnion(props.user.currentUser.id)
         });
-        alert( `Successfully enrolled to ${props.title} course`);
-        //await refre.set({ users: [props.user.currentUser.id] },{merge:true});
+        
+       alert(`You have successfully enrolled for the ${props.title} course`);
+       //await refre.set({ users: [props.user.currentUser.id] },{merge:true});
     };
     
     return(

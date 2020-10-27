@@ -9,10 +9,24 @@ body {
   background-size: cover;
   overflow-x: hidden !important;
 }
+
+
+.react-calendar__navigation{
+  background-color:#5E81F4 !important;
+  color: white !important;
+}
+.react-calendar__navigation span{
+  
+  color: white !important;
+}
+
 .navbar-toggler{
   border: none !important;
   border-radius: 50% !important;
   
+}
+.MuiTypography-root:hover{
+  text-decoration: none !important;
 }
 .navbar-toggler:active{
   background-color:white !important;

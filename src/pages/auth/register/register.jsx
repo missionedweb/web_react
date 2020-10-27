@@ -77,11 +77,14 @@ export default function Register() {
       return;
     }
     try {
+      console.log(phone);
       const { user } = await auth.createUserWithEmailAndPassword(email, password);
       let displayName = firstName + " " + lastName;
       if(auth.currentUser!=null){
         auth.currentUser.updateProfile({
-          displayName : displayName
+          displayName : displayName,
+          phoneNumber: phone,
+          email: email
         }).then(()=>{
           console.log("updated");
         }
@@ -185,6 +188,7 @@ export default function Register() {
                     id="phone"
                     label="Phone Number"
                     name="phone"
+                    value={details.phone}
                   />
                 </Grid>
                 <Grid item xs={12}>
