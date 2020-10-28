@@ -18,6 +18,7 @@ import { deepOrange, green } from '@material-ui/core/colors';
 import Divider from '@material-ui/core/Divider';
 import Attendance from './Attendance';
 import Cgpa from './Cgpa';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -150,7 +151,7 @@ const Profile = ({ user }) => {
         <Grid item xs={12}>
                 <Grid container spacing={6}>
                     <Grid item xs={12} md={3}>
-                        <Attendance />
+                        <Link to='/dashboard/attendancedetails'><Attendance /></Link>
                     </Grid>
                     <Grid item xs={12} md={3}>
                         <Cgpa />
