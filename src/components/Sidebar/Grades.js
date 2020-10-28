@@ -8,6 +8,9 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Divider from '@material-ui/core/Divider';
+import ArrowBackTwoToneIcon from '@material-ui/icons/ArrowBackTwoTone';
+import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
@@ -45,8 +48,22 @@ const useStyles = makeStyles({
 
 const Grades = () => {
     const classes = useStyles();
-
+    const gpa = 6;
+    const agGpa = 4;
   return (
+    <div className="container-fluid">
+    <div className="row" style={{marginBottom:20}}>
+      <div className="col-xs-3"><Link to='/dashboard/profile'><ArrowBackTwoToneIcon color="primary" fontSize="large" /></Link></div>
+      <div className="col-xs-2"></div>
+      <div className="col-xs-7"><h2 style={{marginLeft:20,color:"#5840bb" }}>MARKSHEET</h2></div>
+    </div>
+    <div className="row" style={{marginBottom:20}}>
+      <div className="col-md-4"></div>
+      <div className="col-xs-12 col-md-4"><h5 style={{color:"#5840bb"}}>Academic Outlook</h5></div>
+      <div className="col-md-2"></div>
+      <div className="col-xs-12 col-md-2"><Button variant="contained" color="primary" style={{borderRadius:20}}>Semester 1</Button></div>
+    </div>
+    <div className="row" style={{marginBottom:30}}>
     <TableContainer component={Paper}>
       <Table className={classes.table} aria-label="sticky table" stickyHeader>
         <TableHead>
@@ -73,6 +90,12 @@ const Grades = () => {
         </TableBody>
       </Table>
     </TableContainer>
+    </div>
+    <div className="row" style={{display:"flex", justifyContent:"space-between"}}>
+      <h5 style={{color:"#5840bb"}}>GPA:  <span style={{fontWeight:700}}>{gpa}</span>/10</h5>
+      <h5 style={{color:"#5840bb"}}>Aggregate GPA: <span style={{fontWeight:700}}>{agGpa}</span>/10</h5>
+    </div>
+    </div>
   );
 }
 export default Grades;
