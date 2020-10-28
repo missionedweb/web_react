@@ -9,7 +9,9 @@ body {
   background-size: cover;
   overflow-x: hidden !important;
 }
-
+.link-to-grade:hover{
+text-decoration: none !important;
+}
 
 .react-calendar__navigation{
   background-color:#5E81F4 !important;
