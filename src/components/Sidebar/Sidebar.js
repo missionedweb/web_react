@@ -33,6 +33,7 @@ import Enroll from "./Enroll";
 import Coursses from './Courses';
 import Profile from './Profile';
 import Grades from './Grades';
+import AttendanceTable from "./AttendanceTable";
 function SideBar(props) {
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -151,6 +152,7 @@ function SideBar(props) {
             </Route>
             <Route path='/dashboard/enroll' component={Enroll}></Route>
             <Route path='/dashboard/grades' component={Grades}></Route>
+            <Route path='/dashboard/attendancedetails' component={AttendanceTable} />
           </Switch>
         </main>
       </Router>
