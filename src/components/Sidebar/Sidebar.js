@@ -121,9 +121,7 @@ function SideBar(props) {
         <main className={classes.content}>
           {/*switch*/}
           <Switch>
-            <Route path="/profile" component={Profile}>
-              
-            </Route>
+            
             <Route exact path="/dashboard">
               <Dash />
             </Route>
@@ -146,6 +144,9 @@ function SideBar(props) {
               <Setting />
             </Route>
             <Route path="/dashboard/pricing" component={Pricing}>
+              
+            </Route>
+            <Route path="/dashboard/profile" component={Profile}>
               
             </Route>
             <Route path='/dashboard/enroll' component={Enroll}></Route>
