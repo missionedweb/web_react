@@ -44,6 +44,7 @@ import { createStructuredSelector } from "reselect";
 import { setCurrentUser } from "./redux/user/user.actions";
 import { selectCurrentUser } from "./redux/user/user.selector";
 import Dashboard from "./pages/dashboard/dashboard";
+import TeacherDashboard from "./pages/dashboard/TeacherDashboard"
 import Price from "./pages/pricing/pricing";
 function App({ setCurrentUser, currentUser }) {
   useEffect(() => {
@@ -88,7 +89,9 @@ function App({ setCurrentUser, currentUser }) {
           path="/dashboard/:id"
           render={() => currentUser === null && <Redirect to="/" />}
         />
-        <Route path="/dashboard" component={Dashboard} />
+        <Route path="/dashboard" component={Dashboard} />       
+        <Route path="/TeacherDashboard" component={TeacherDashboard} />
+
         <Route path="/price" component={Price} />
 
         <Route path="/feature1" component={engagingAssignments} />
@@ -119,6 +122,7 @@ function App({ setCurrentUser, currentUser }) {
         <Route path="/class10ICSE" component={Class10ICSE} />
         <Route path="/class9ICSE" component={Class9ICSE} />
         <Route path="/class8ICSE" component={Class8ICSE} />
+        
         <Route path="/rankpredictor" component={RankPredictore} />
       </Switch>
     </div>

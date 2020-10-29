@@ -17,7 +17,7 @@ import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
 import { Link } from "react-router-dom";
 import CircularProgress from "@material-ui/core/CircularProgress";
-import Alert from "@material-ui/lab/Alert";
+import { Alert } from "@material-ui/lab";
 export default function Login() {
   const [clicked, setClicked] = useState(false);
   const classes = useStyles();
