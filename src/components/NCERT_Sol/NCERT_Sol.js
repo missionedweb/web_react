@@ -16,91 +16,88 @@ import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 import styled from "styled-components";
 
-export default function Tiles({exam}) {
+export default function Tiles({ exam }) {
   return (
-      <div>
-       <NavbarComponent />
-    <Wrapper>
-      <div>
-        <div className="jumbotron mt-5">
-          <div className="heading about-us" data-aos="zoom-in-up" data-aos-duration={2500}>
-            NCERT SOLUTIONS
-            <h6 style={{ color: "#B8BECD" }}>
-            </h6>
+    <div>
+      <NavbarComponent />
+      <Wrapper>
+        <div>
+          <div className="jumbotron mt-5">
+            <div className="heading about-us" data-aos="zoom-in-up" data-aos-duration={2500}>
+              NCERT SOLUTIONS
+              <h6 style={{ color: "#B8BECD" }}></h6>
+            </div>
+          </div>
+
+          <div className="container">
+            <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
+              <Link href="/" style={{ color: "black" }}>
+                <img src={Home} alt=""></img>
+                Home
+              </Link>
+              <Link href="#" style={{ color: "black" }}>
+                Exams
+              </Link>
+              <Typography style={{ color: "#FB8F1D" }}>NCERT SOL</Typography>
+            </Breadcrumbs>
           </div>
         </div>
-
-        <div className="container">
-          <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
-            <Link href="/" style={{ color: "black" }}>
-              <img src={Home} alt=""></img>
-              Home
-            </Link>
-            <Link href="#" style={{ color: "black" }}>
-              Exams
-            </Link>
-            <Typography style={{ color: "#FB8F1D" }}>NCERT SOL</Typography>
-          </Breadcrumbs>
+      </Wrapper>
+      <br />
+      <div className="container">
+        <div className="row">
+          <div className="col-md-3">
+            <Card bordered style={{ background: "white" }}>
+              <CardContent style={{ background: "white" }}>
+                <img className="img-fluid" src={learn1} />
+                <center>
+                  {" "}
+                  <H5>Class 9</H5>
+                </center>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="col-md-3">
+            <Card bordered style={{ background: "white" }}>
+              <CardContent style={{ background: "white" }}>
+                <img className="img-fluid" src={learn1} />
+                <center>
+                  {" "}
+                  <H5>Class 10</H5>
+                </center>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="col-md-3">
+            <Card bordered style={{ background: "white" }}>
+              <CardContent style={{ background: "white" }}>
+                <img className="img-fluid" src={learn1} />
+                <center>
+                  {" "}
+                  <H5>Class 11</H5>
+                </center>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="col-md-3">
+            <Card bordered style={{ background: "white" }}>
+              <CardContent style={{ background: "white" }}>
+                <img className="img-fluid" src={learn1} />
+                <center>
+                  {" "}
+                  <H5>Class 12</H5>
+                </center>
+              </CardContent>
+            </Card>
+            <br />
+          </div>
         </div>
       </div>
-    </Wrapper>
-       <br/>
-      <div className="container">
-      <div className="row">
-      <div className="col-md-3">
-        <Card bordered style={{ background: "white" }}>
-                        <CardContent style={{ background: "white" }}>
-                          <img className="img-fluid" src={learn1} />
-                          <center>
-                            {" "}
-                            <H5>Class 9</H5>
-                          </center>
-                        </CardContent>
-                      </Card>
-      
-      </div>
-      <div className="col-md-3">
-      <Card bordered style={{ background: "white" }}>
-                        <CardContent style={{ background: "white" }}>
-                          <img className="img-fluid" src={learn1} />
-                          <center>
-                            {" "}
-                            <H5>Class 10</H5>
-                          </center>
-                        </CardContent>
-                      </Card>
-      </div>
-      <div className="col-md-3">
-      <Card bordered style={{ background: "white" }}>
-                        <CardContent style={{ background: "white" }}>
-                          <img className="img-fluid" src={learn1} />
-                          <center>
-                            {" "}
-                            <H5>Class 11</H5>
-                          </center>
-                        </CardContent>
-                      </Card>
-      </div>
-      <div className="col-md-3">
-      <Card bordered style={{ background: "white" }}>
-                        <CardContent style={{ background: "white" }}>
-                          <img className="img-fluid" src={learn1} />
-                          <center>
-                            {" "}
-                            <H5>Class 12</H5>
-                          </center>
-                        </CardContent>
-                      </Card>
-       <br/>
-      </div>
-      
-      </div>
-      </div>
       <GetTheApp />
-      <br/>
+      <br />
       <Counter />
       <Footer />
-      </div>
+    </div>
   );
 }
 
