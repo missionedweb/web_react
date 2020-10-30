@@ -15,7 +15,7 @@
     "bootstrap": "^4.5.3",
     "counterup2": "^1.0.4",
     "disable-browser-back-navigation": "^0.1.0",
-    "firebase": "^7.23.0",
+    "firebase": "^7.24.0",
     "jquery": "^3.5.1",
     "material-ui-phone-number": "^2.2.6",
     "node-sass": "^4.14.1",
