@@ -4,7 +4,7 @@ import { Dashboard, Work, Settings,PersonOutlineOutlined, MailOutline ,Laptop ,B
 export const SideBarData = [
     {
         title:'Profile',
-        path:'/profile',
+        path:'/dashboard/profile',
         icon: <PersonOutlineOutlined />
     },
     {
@@ -20,7 +20,7 @@ export const SideBarData = [
     },
     {
         title: 'Grades',
-        path:'/dashboard/Grades',
+        path:'/dashboard/grades',
         icon: <Ballot/>
     },
     {
@@ -35,7 +35,7 @@ export const SideBarData = [
     },
     {
         title: 'Jobs',
-        path:'/dashboard/Jobs',
+        path:'/dashboard/jobs',
         icon: <Work />
     },
 ]

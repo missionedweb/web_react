@@ -1,10 +1,12 @@
 import React from 'react'
 import {Card, } from 'react-bootstrap';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import {Link} from 'react-router-dom';
 const Cgpa = () => {
     const cgpa = 4;
     return (
-        <Card className="mt-3" style={{ maxWidth: '100%' }}>
+        <Link className="link-to-grades" to="/dashboard/grades" >
+        <Card className="" style={{ maxWidth: '250px' }}>
             <Card.Body style={{display : "flex" , flexDirection : "column", justifyContent : "space-around", alignItems:'center'}}>
                 <Card.Title className="text-center">CGPA</Card.Title>
                 <br/>
@@ -13,6 +15,8 @@ const Cgpa = () => {
                 <Card.Text>Completed : 3/8</Card.Text>
             </Card.Body>
         </Card>
+        </Link>
+
     )
 }
 

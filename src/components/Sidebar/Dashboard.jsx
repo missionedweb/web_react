@@ -47,10 +47,10 @@ export function Dashboard() {
                 <br/>
            <div className="container-fluid">
                <div className="row">
-                   <div className="col-xl-9 pr-5" style={{borderRight : "2px solid #5E81F4"}}>
+                   <div className="col-xl-9 pr-5" >
                         <ScrollTabs/>
                    </div>
-                   <div className="col-xl-3" style={{display : "flex", flexDirection : "column", justifyContent : "center", }}>
+                   <div className="col-xl-3" style={{display : "flex", flexDirection : "column", justifyContent : "center", alignItems : "center"}}>
                    <Attendance />
                     <Cgpa />
                     

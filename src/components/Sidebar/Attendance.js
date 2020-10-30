@@ -7,7 +7,7 @@ const Attendance = () => {
     const percentage = 66;
     return (
         
-        <Card className="mb-5" style={{ maxWidth : "100%" }}>
+        <Card className="mb-5" style={{ maxWidth : "250px" }}>
         <Card.Body style={{display : "flex" , flexDirection : "column", justifyContent : "space-around", alignItems:'center'}}>
             <Card.Title className="text-center">Attendance</Card.Title>
             <br/>
