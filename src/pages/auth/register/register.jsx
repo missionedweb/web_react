@@ -77,9 +77,22 @@ export default function Register() {
       return;
     }
     try {
+      console.log(phone);
       const { user } = await auth.createUserWithEmailAndPassword(email, password);
       let displayName = firstName + " " + lastName;
-      await createUserProfileDocument(user, { displayName, phone });
+      if(auth.currentUser!=null){
+        auth.currentUser.updateProfile({
+          displayName : displayName,
+          phoneNumber: phone,
+          email: email
+        }).then(()=>{
+          console.log("updated");
+        }
+        ).catch((err)=>{
+          console.log("error occured", err);
+        })
+      }
+      
       setDetails({
         firstName: "",
         lastName: "",
@@ -99,15 +112,16 @@ export default function Register() {
   return (
     <div>
       <Link
-        variant="outlined"
+        to="#"
+        
         type="button"
         onClick={handleOpen}
         className="btn login-btn mr-2"
         style={{
-          width: 110,
-          height: 46,
+          width: 100,
+          height: 43,
           textDecoration: "none",
-          borderRadius: "10px",
+          borderRadius: "5px",
           borderColor: "orange",
           background: "orange",
           color: "white ",
@@ -126,7 +140,7 @@ export default function Register() {
         BackdropProps={{
           timeout: 500,
         }}>
-        <Fade in={open}>
+        
           <div>
             <form onSubmit={handleSubmit} className={classes.paper}>
               <Grid container spacing={2}>
@@ -174,6 +188,7 @@ export default function Register() {
                     id="phone"
                     label="Phone Number"
                     name="phone"
+                    value={details.phone}
                   />
                 </Grid>
                 <Grid item xs={12}>
@@ -260,7 +275,7 @@ export default function Register() {
               )}
             </form>
           </div>
-        </Fade>
+      
       </Modal>
     </div>
   );

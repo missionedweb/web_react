@@ -30,11 +30,9 @@ const Counselling = () => {
           <br />
           <br />
           <div className="container ml-auto mr-auto">
-            <div>
-              <div data-aos="fade-down" data-aos-duration={1000}>
-                <img src={Group67} className="right-img" alt="" />
-              </div>
-              <div className="form-display col-md-5" data-aos="zoom-in" data-aos-duration={1000}>
+            <div className="row flex-column-reverse flex-md-row">
+               
+              <div className="form-display col-md-6" data-aos="zoom-in" data-aos-duration={1000}>
                 <h1 className="message">Get Free Counseling</h1><br />
                 <p className="head">We would contact you within 48 hours</p><br />
                 <div className="form">
@@ -58,6 +56,12 @@ const Counselling = () => {
                   <button className=" col-md-12 border-0 btn submit ">Submit</button>
                 </div>
               </div>
+                 <div className="col-md-6">
+              <div data-aos="fade-down" data-aos-duration={1000}>
+                  <center><img src={Group67} className="img-fluid" alt="" /></center>
+                  <br/><br/>
+              </div>
+                </div>
             </div>
           </div>
         </div>
@@ -85,6 +89,18 @@ const Wrapper = styled.div`
     background: #fff5e5;
     height: 200px;
     
+  }
+  .footer-section {
+    background: #151414;
+    display : flex;
+    justify-content : "center";
+    flex-direction : column;
+    align-items : center;
+  }
+  .copyright-area{
+    width : 100%;
+    display : flex;
+    justify-content : center;
   }
   .heading {
     text-align: center;
@@ -802,7 +818,7 @@ const Wrapper = styled.div`
   .get-app {
     margin-top: 340px;
     width: 100%;
-    height: 400px;
+    
     background: #fff5e5;
   }
   .app {
@@ -836,7 +852,7 @@ const Wrapper = styled.div`
     font-size: 16px;
     padding: 10px;
     align-items: center;
-    padding: 20px;
+    
     color: #ffffff;
   }
   .download:hover {
@@ -897,11 +913,8 @@ const Wrapper = styled.div`
   .textfield {
     width: 50%;
   }
-  .footer-section {
-    background: #151414;
-    position: relative;
-    padding-left: 200px;
-  }
+
+ 
 
   /*MEDIA QUERIES*/
   @media (max-width: 992px) {

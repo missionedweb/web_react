@@ -4,11 +4,14 @@ import SideBar from "../../components/Sidebar/Sidebar";
 import NavbarComponent from "../../components/NavbarComponent";
 import DashNavbar from "../../components/DashNavbar/dashnavbar";
 
+
 function Dashboard() {
   return (
     <>
-      <DashNavbar />
+    
+      
       <SideBar />
+      
     </>
   );
 }

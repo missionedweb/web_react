@@ -20,57 +20,58 @@ import Excellence from "./images/Excellence.png"
 const AboutUs = () => {
   return (
     <div>
-      <header>
+      <header className="">
       <NavbarComponent />
       </header>
       <Wrapper>
+
         <div>
         
           {/* <NavbarComponent/>*/}
-          <div className="jumbotron text-uppercase">
+          <div className="jumbotron mt-5 ">
           
             <div
-              className="heading pt-2"
+              className="heading about-us pt-4"
               data-aos="zoom-in-up"
               data-aos-duration={2500}
             >
-              About Us
+              Who We Are ?
             </div>
             
 
           </div>
+          <br/>
           
-        <div>
+        <div >
         <center>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+            <div className="row">
+        <div className="col-md-6">
         <iframe
-          className="img-section-left ml-auto"
+          
           data-aos="fade-right"
           data-aos-duration="1500"
-          src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+          src="https://www.youtube.com/embed/4z0NS1p2QHU?rel=0"
           alt=""
-          style={{ marginTop: "180px", width: "23%" , height : "300px" , marginLeft : "50px" }}
+          style={{ width: "90%" , height : "400px" }}
           
-        />
-        
+        ></iframe>
+                </div>
+                 <div className="col-md-6">
         <div
-          className="learning-page "
+    
           data-aos="fade-left"
           data-aos-duration="1500"
         >
           <p className="learning-heading">What we believe in?</p>
-          <h6 className="learning-txt1" style={{ margin: "auto" }}>
+          <h6 className="learning-txt1" >
             {" "}
-            The environment of learning we provide  is nurtured by the experts. The guidance that  
+            The environment of learning we provide is nurtured by the experts. The guidance that  
             <br/>you are seeking is from the IITians. They will provide you the enhanced way of teaching 
             <br/> You  will get the quality as well as playful atmosphere.
           </h6>
           <br />
           <br />
+                     </div>
           <div
             className="col-md-6"
             data-aos="zoom-in-up"
@@ -88,6 +89,7 @@ const AboutUs = () => {
         <br />
         <br />
         <br />
+            </div>
         </center>
         </div>
         <br />
@@ -109,7 +111,7 @@ const AboutUs = () => {
               data-aos="zoom-in-up"
               data-aos-duration={2500}
             >
-              Our Values
+              <p>Our Values</p>
             </div>
             
             <div>
@@ -189,7 +191,7 @@ const AboutUs = () => {
             
 
           </div>
-          <div>
+         {/* <div>
             <br/>
             <br/>
             <br/>
@@ -204,8 +206,8 @@ const AboutUs = () => {
             
           
 
-          </div>
-          <div className="container ">
+          </div>*/}
+         {/* <div className="container ">
               <div className="row ">
                 <div
                   className="col-lg-4 center col-md-6 col-12 mt-3"
@@ -344,7 +346,7 @@ const AboutUs = () => {
                 <br />
                 
                 </div>
-                </div>
+                </div>*/}
         
           
         
@@ -1471,7 +1473,7 @@ const Wrapper = styled.div`
   .get-app {
     margin-top: 340px;
     width: 100%;
-    height: 400px;
+    
     background: #fff5e5;
   }
   .app {
@@ -1539,7 +1541,7 @@ const Wrapper = styled.div`
     margin-left: 15%;
     color: #7d7987;
   }
-
+  
   @media (max-width: 400px) {
     .missioned-nav {
       font-size: 30px;
@@ -1623,7 +1625,7 @@ const Wrapper = styled.div`
     .learning-page {
       display: block;
       /*float: none;*/
-      margin: -50px 20% 5%;
+      margin: 50px 20% 5%;
       width: 50%;
     }
   }
@@ -1633,7 +1635,7 @@ const Wrapper = styled.div`
       display: block;
       /*float: none;*/
       margin: 3% 30% 5%;
-      width: 50%;
+      width: 60%;
     }
   }
   @media (max-width: 1386px) {

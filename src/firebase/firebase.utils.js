@@ -3,13 +3,13 @@ import "firebase/firestore";
 import "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCf3sUmEuklc8L04k6J6IQkdGZ5q9THJF8",
-  authDomain: "missioned-bb43f.firebaseapp.com",
-  databaseURL: "https://missioned-bb43f.firebaseio.com",
-  projectId: "missioned-bb43f",
-  storageBucket: "missioned-bb43f.appspot.com",
-  messagingSenderId: "613467196576",
-  appId: "1:613467196576:web:6ec0773fa2f2d7cb388dc5",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID
 };
 
 //Initialize Firebase
@@ -22,7 +22,7 @@ export const firestore = firebase.firestore();
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
   const userRef = firestore.doc(`users/${userAuth.uid}`);
-
+  
   const snapShot = await userRef.get();
 
   if (!snapShot.exists) {

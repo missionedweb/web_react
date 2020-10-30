@@ -1441,7 +1441,7 @@ const Wrapper = styled.div`
   .get-app {
     margin-top: 340px;
     width: 100%;
-    height: 400px;
+   
     background: #fff5e5;
   }
   .app {

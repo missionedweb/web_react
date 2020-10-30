@@ -6,6 +6,8 @@ import { firestore } from "../../firebase/firebase.utils";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { selectCurrentUser } from "../../redux/user/user.selector";
+import course from "../Course/course";
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 function CenteredGrid({ currentUser }) {
   const [courses, setCourses] = useState([]);
@@ -17,12 +19,15 @@ function CenteredGrid({ currentUser }) {
   const classes = useStyles();
   useEffect(() => {
     var courseRef = firestore.collection("course");
+    console.log({userId});
     //query if course contains auth user.
     var query = courseRef.where("users", "array-contains", `${userId}`);
     query
       .get()
       .then(function (querySnapshot) {
+        
         querySnapshot.forEach(function (doc) {
+          
           setCourses((course) => [
             ...course,
             {
@@ -39,15 +44,19 @@ function CenteredGrid({ currentUser }) {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={3}>
+      <div className={classes.root} style={{textAlign:"center", display : "flex", justifyContent  :"center", alignItems : "center"}}>
+    {courses.length===0 && <CircularProgress />}
+    </div>
+    
+      <Grid container spacing={4}>
         {courses &&
           courses.map((course) => (
-            <Grid item xs={12} sm={6} className={classes.card} key={course.id}>
+            <Grid item xs={12} md={4} className={classes.card} key={course.id}>
               <Card
                 id={course.id}
                 title={course.title}
                 les="200"
-                image1={require("../Images/image20.png")}
+                image1={require(`../Images/${course.id}.jpg`)}
                 time="2h 30min"
                 avatarimg="https://img.cinemablend.com/filter:scale/quill/0/7/9/6/5/6/079656ce9e00f1ef328bb6c1a41958b4c0ceb6cb.jpg?mw=600"
               />

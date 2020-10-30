@@ -11,6 +11,7 @@ import {
   Divider,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
+import Calender from  './calender';
 import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import { SideBarData } from "./SideBarData";
@@ -26,8 +27,14 @@ import CenteredGrid from "../Cards/index";
 import Course from "../Course/course";
 import { auth } from "../../firebase/firebase.utils";
 import NavigationLogo from "../../Images/NavigationLogo.svg";
-import { Directions } from "@material-ui/icons";
-
+import { Directions, ExitToApp } from "@material-ui/icons";
+import Pricing from './Pricing';
+import Enroll from "./Enroll";
+import Coursses from './Courses';
+import Profile from './Profile';
+import Grades from './Grades';
+import AttendanceTable from "./AttendanceTable";
+import Jobs from "./Jobs";
 function SideBar(props) {
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -41,17 +48,17 @@ function SideBar(props) {
       <div className={classes.logo}>
         <div className={classes.title}>
           <img style={{ display: "block" }} src={NavigationLogo} alt="logo" />
-          <br />
-          <span style={{ fontSize: "20px" }} className="missioned-nav font-weight-bold">
+          
+          <span style={{ fontSize: "17px" }} className="missioned-nav font-weight-bold">
             Mission
-            <span style={{ fontSize: "20px" }} className="ed">
+            <span style={{ fontSize: "17px" }} className="ed">
               Ed
             </span>
           </span>
         </div>
-        <div className={classes.button}>
+        <Link className={classes.button} to='/dashboard/enroll'>
           <CustomButton>Join a course</CustomButton>
-        </div>
+        </Link>
       </div>
       <Divider />
       <div className={classes.first}>
@@ -61,7 +68,7 @@ function SideBar(props) {
               <Link to={item.path} className={classes.link} key={index}>
                 <ListItem button>
                   <ListItemIcon>{item.icon}</ListItemIcon>
-                  <ListItemText primary={item.title} />
+                  <ListItemText style={{textDecoration : "none !important"}} primary={item.title} />
                 </ListItem>
               </Link>
             );
@@ -73,7 +80,7 @@ function SideBar(props) {
         <Upgrade />
       </div>
 
-      <button onClick={() => auth.signOut()}>Sign Out</button>
+      <button className="btn mt-3 mb-4" style={{backgroundColor:"#5E81F4", color:"white"}} onClick={() => auth.signOut()}><ExitToApp/>Sign Out</button>
     </div>
   );
 
@@ -116,11 +123,12 @@ function SideBar(props) {
         <main className={classes.content}>
           {/*switch*/}
           <Switch>
+            
             <Route exact path="/dashboard">
               <Dash />
             </Route>
             <Route exact path="/dashboard/courses">
-              <CenteredGrid />
+              <Coursses/>
             </Route>
             <Route path="/dashboard/courses/:courseid">
               <Course />
@@ -128,8 +136,8 @@ function SideBar(props) {
             <Route path="/dashboard/resources">
               <Resources />
             </Route>
-            <Route path="/dashboard/referals">
-              <Referals />
+            <Route path="/dashboard/Calender">
+              <Calender/>
             </Route>
             <Route path="/dashboard/chats">
               <Chats />
@@ -137,6 +145,16 @@ function SideBar(props) {
             <Route path="/dashboard/settings">
               <Setting />
             </Route>
+            <Route path="/dashboard/pricing" component={Pricing}>
+              
+            </Route>
+            <Route path="/dashboard/profile" component={Profile}>
+              
+            </Route>
+            <Route path='/dashboard/enroll' component={Enroll}></Route>
+            <Route path='/dashboard/grades' component={Grades}></Route>
+            <Route path='/dashboard/attendancedetails' component={AttendanceTable} />
+            <Route path='/dashboard/jobs' component={Jobs} />
           </Switch>
         </main>
       </Router>
@@ -167,7 +185,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   menuButton: {
-    [theme.breakpoints.up("md")]: {
+    [theme.breakpoints.up("lg")]: {
       display: "none",
     },
     position: "fixed",
@@ -203,7 +221,7 @@ const useStyles = makeStyles((theme) => ({
   },
   second: {
     flex: "0.3",
-    paddingBottom: "8px",
+    paddingBottom: "1px",
   },
   link: {
     width: "100vh",
@@ -213,6 +231,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.primary,
     "&:hover": {
       color: "#5E81F4",
+      textDecoration :"none"
     },
   },
   title: {

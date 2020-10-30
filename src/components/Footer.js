@@ -3,11 +3,16 @@ const Footer = () => {
   return (
     <div>
  <br></br>
-          <footer className="footer-section">
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+
+ <footer className="footer-section">
             <div className="container" >
               <div className="footer-cta pt-5 pb-5">
                 <div className="row">
-                  <div className="col-xl-5 col-md-4 mb-30 footer-info ">
+                  <div className="col-xl-4  col-md-4 mb-30 footer-info ">
                     <div className="single-cta">
                       <i className="fas fa-map-marker-alt" />
                       <div className="cta-text" >
@@ -17,7 +22,7 @@ const Footer = () => {
                     </div>
                   </div>
                   <div className="col-xl-4 col-md-4 mb-30 footer-info">
-                    <div className="single-cta" >
+                    <div className="single-cta pl-4" >
                       <i className="fas fa-phone" />
                       <div className="cta-text">
                         <h4>Call us</h4>
@@ -26,7 +31,7 @@ const Footer = () => {
                     </div>
                   </div>
                   <div className="col-xl-3 col-md-4 mb-30 ">
-                    <div className="single-cta" >
+                    <div className="single-cta pl-4" >
                       <i className="far fa-envelope-open" />
                       <div className="cta-text">
                         <h4>Mail us</h4>
@@ -38,7 +43,7 @@ const Footer = () => {
               </div>
               <div className="footer-content pt-5 pb-5">
                 <div className="row">
-                  <div className="col-xl-4 col-lg-4 mb-50">
+                  <div className="col-xl-4 pt-4 pl-4 col-lg-4 mb-50">
                     <div className="footer-widget">
                       <div className="footer-logo">
                       </div>
@@ -54,12 +59,12 @@ const Footer = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
+                  <div className="col-xl-4  col-lg-4 col-md-6 mt-5 pt-3 pl-5">
                     <div className="footer-widget">
                       <div className="footer-widget-heading">
                         <h3 >Useful Links</h3>
                       </div>
-                      <ul >
+                      <ul className="mt-3">
                               <li><a href="/" style={{cursor:"pointer"}}>Home</a></li>
                               <li><a href="/aboutus" style={{cursor:"pointer"}}>About</a></li>
                               <li><a href="/contactus" style={{cursor:"pointer"}}>Contact</a></li>
@@ -70,12 +75,12 @@ const Footer = () => {
                       </ul>
                     </div>
                   </div>
-                  <div className="col-xl-4 col-lg-4 col-md-6 mb-30 ">
+                  <div className="col-xl-4  col-lg-4 col-md-6 mt-5 pl-5">
                     <div className="footer-widget">
                       <div className="footer-widget-heading footer-info">
                         <h3>Classes </h3>
                       </div>
-                      <ul >
+                      <ul className="mt-3">
                         <li><a  href="/class8" style={{cursor:"pointer"}}>Class 8</a></li>
                         <li><a  href="/class12s" style={{cursor:"pointer"}}>Class 12 Science</a></li>
                         <li><a  href="/class9" style={{cursor:"pointer"}}>Class 9</a></li>

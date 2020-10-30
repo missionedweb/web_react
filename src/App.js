@@ -35,6 +35,7 @@ import Class10ICSE from "./components/Class/Class10/Class10ICSE";
 import Class9ICSE from "./components/Class/Class9/Class9ICSE";
 import Class8ICSE from "./components/Class/Class8/Class8ICSE";
 import RankPredictore from "./components/RankPredictor/RankPredictore";
+import NCERT_Sol from "./components/NCERT_Sol/NCERT_Sol";
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 
@@ -46,6 +47,7 @@ import { selectCurrentUser } from "./redux/user/user.selector";
 import Dashboard from "./pages/dashboard/dashboard";
 import TeacherDashboard from "./pages/dashboard/TeacherDashboard"
 import Price from "./pages/pricing/pricing";
+import Exams from "./pages/Exams/Exams";
 function App({ setCurrentUser, currentUser }) {
   useEffect(() => {
     //check Auth
@@ -124,6 +126,8 @@ function App({ setCurrentUser, currentUser }) {
         <Route path="/class8ICSE" component={Class8ICSE} />
         
         <Route path="/rankpredictor" component={RankPredictore} />
+        <Route path="/ncert_sol" component={NCERT_Sol} />
+        <Route path="/exams/:exam" component={Exams} />
       </Switch>
     </div>
   );

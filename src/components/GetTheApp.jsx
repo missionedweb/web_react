@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Group52 from "../Images/Group52.png";
+import gapp from "../Images/gapp.png";
 import books from "../Images/books.png";
 import counsellingImg from "../Images/counsellingImg.png";
 import swal from "sweetalert";
@@ -81,15 +81,20 @@ const GetTheApp = () => {
   return (
     <div>
       <div>
-        <div className="container-fluid get-app">
-          <div className="text-block">
-            <img
-              className="img-mobile"
-              src={Group52}
+        <div className="container-fluid  get-app">
+            
+          <div className="text-block ">
+              <div className="row">
+              <div className="col-md-6">
+           <center> <img
+              className="img-fluid bh " 
+              src={gapp}
               alt=""
               data-aos="flip-up"
               data-aos-duration={1500}
-            />
+                        /></center>
+              </div>
+            <div className="col-md-6">
             <p className="app-txt" data-aos="fade-right" data-aos-duration="1000">
               <span className="app">
                 Get the app now! <br />
@@ -111,18 +116,17 @@ const GetTheApp = () => {
                   Download
                 </button>
               </a>
-              <img
-                className="books"
-                src={books}
-                alt=""
-                data-aos="flip-up"
-                data-aos-duration="2000"
-              />
+
+              
             </p>
+                                </div>
           </div>
         </div>
-        <div className="container-fluid counselling">
-          <div className="counselling-left" data-aos="zoom-out" data-aos-duration="1000">
+          </div>
+        <div className="container-fluid  counselling">
+          <div className="row">
+            <div className="col-md-6 ">
+            <div className="counselling-left " data-aos="zoom-out" data-aos-duration="1000">
             <p className="app">
               <span data-aos="zoom-out" data-aos-duration="1000">
                 Get a free counselling today!
@@ -231,13 +235,15 @@ const GetTheApp = () => {
               
             </div>
           </div>
-          <img
-            className="counselling-img"
-            src={counsellingImg}
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            alt=""
-          />
+            </div>
+            <div className="col-md-6 ">
+                <div className="counseling-img" style={{display : "flex", justifyContent : "center"}}>
+                  <img data-aos={2000} src={counsellingImg} style={{maxWidth : "100%", height:"auto"}}
+                  data-aos="fade-left"
+                  data-aos-duration="1000" />
+                </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

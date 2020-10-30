@@ -24,7 +24,7 @@ const FAQ = () => {
         <div>
           <div className="jumbotron text-uppercase">
             <div
-              className="heading"
+              className="heading faq-head"
               data-aos="zoom-in-up"
               data-aos-duration={2500}
               style = {{ fontSize : "33px" }}
@@ -456,7 +456,7 @@ const Wrapper = styled.div`
   .get-app {
     margin-top: 100px;
     width: 100%;
-    height: 400px;
+    
     background: #fff5e5;
   }
   .app {

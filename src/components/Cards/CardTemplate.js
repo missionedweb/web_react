@@ -1,88 +1,73 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Button, Avatar, Paper, IconButton } from "@material-ui/core";
+import Card from '@material-ui/core/Card';
+import Typography from '@material-ui/core/Typography';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import {  Avatar, Paper, IconButton } from "@material-ui/core";
 import PlayArrowIcon from "@material-ui/icons/PlayArrow";
 import { Link } from "react-router-dom";
-const useStyles = makeStyles((theme) => ({
-  container: {
-    display: "flex",
-    justifyContent: "space-between",
-    color: "#fff",
-    padding: "12px",
+const useStyles = makeStyles({
+  root: {
+    maxWidth: 285,
+    padding : "10px"
   },
-  container1: {
-    display: "flex",
-    justifyContent: "space-between",
-    color: "#fff",
+  media: {
+    height: 110,
   },
-  card: {
-    // backgroundColor: "red",
-  },
-  paper: {
-    color: theme.palette.text.secondary,
-    padding: "10px",
-    display: "flex",
-    flexDirection: "column",
-    height: "220px",
-    position: "relative",
-  },
-  sub: {
-    textTransform: "capitalize ",
-    letterSpacing: "1.2px",
-  },
-  avatar: {
-    position: "absolute",
-    right: "0",
-    bottom: "0",
-    padding: "20px",
-  },
-  button: {
-    position: "absolute",
-    left: "0",
-    bottom: "0",
-    margin: "20px",
-
-    background: "rgba(255, 255, 255, 0.3)",
+  button:{
     "&:hover": {
-      background: "rgba(255, 255, 255, 0.2)",
+      boxShadow : "0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important",
+    
     },
   },
-  time: {
-    margin: "auto 0",
-  },
-}));
+  link:{
+    "&:hover": {
+      
+      textDecoration :"none"
+    },
+  }
+});
 
-export default function Card(props) {
+export default function CardTemp(props) {
   const classes = useStyles();
 
   const { id, title } = props;
   return (
-    <Paper
-      style={{
-        backgroundImage: `url(${props.image1})`,
-        backgroundSize: "cover",
-      }}
-      className={classes.paper}
-      elevation={5}>
-      <div className={classes.container}>
-        <div className={classes.sub}>
-          <h3>{title} </h3>
+    
 
-          <p>{props.les} Lessons</p>
-        </div>
-        <div className={classes.time}> {props.time}</div>
-      </div>
-      <div className={classes.container1}>
-        <Link to={`/dashboard/courses/${id}`}>
-          <Button className={classes.button}>
-            <PlayArrowIcon style={{ color: "white", fontSize: "24px" }} />
+
+<Card className={classes.root}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image={props.image1}
+          title={props.title}
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            {props.title}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+           {props.time}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+      <Link className={classes.link} to={`/dashboard/courses/${id}`}>
+          <Button className={classes.button} style={{backgroundColor : "#5E81F4", marginRight : "20px", color:"white"}}>
+          Watch Now  <PlayArrowIcon style={{ color: "black", fontSize: "24px" }} />
           </Button>
-        </Link>
 
+        </Link>
         <div className={classes.avatar}>
           <Avatar alt="Remy Sharp" src={props.avatarimg} />
         </div>
-      </div>
-    </Paper>
+      </CardActions>
+    </Card>
+
   );
 }

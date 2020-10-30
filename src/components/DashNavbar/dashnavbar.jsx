@@ -4,6 +4,7 @@ import Avatar from "@material-ui/core/Avatar";
 import { selectCurrentUser } from "../../redux/user/user.selector";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
+import {auth} from '../../firebase/firebase.utils';
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 function DashNavbar({ currentUser }) {
   return (
@@ -14,10 +15,13 @@ function DashNavbar({ currentUser }) {
           <div className="dashnav__main">
             {" "}
             <Avatar alt={currentUser.displayName} style={{ background: "orange" }}>
-              {currentUser.displayName.charAt(0).toUpperCase()}
+              {auth.currentUser.displayName.charAt(0).toUpperCase()}
             </Avatar>
-            <div style={{ marginLeft: "10px" }}>{currentUser.displayName.split(" ")[0]}</div>
+            <div style={{ marginLeft: "10px" }}>{auth.currentUser.displayName.split(" ")[0]}</div>
             <ArrowDropDownIcon />
+            <br/>
+            <br/>
+            <br/>
           </div>
         )}
       </div>

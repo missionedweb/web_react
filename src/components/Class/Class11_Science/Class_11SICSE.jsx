@@ -1443,7 +1443,7 @@ const Wrapper = styled.div`
   .get-app {
     margin-top: 340px;
     width: 100%;
-    height: 400px;
+   
     background: #fff5e5;
   }
   .app {
@@ -1471,13 +1471,13 @@ const Wrapper = styled.div`
 
   .download {
     background: #fb8f1d;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+   
     border-radius: 8px;
     font-weight: 600;
     font-size: 16px;
-    padding: 10px;
+   
     align-items: center;
-    padding: 20px;
+    
     color: #ffffff;
   }
   .download:hover {

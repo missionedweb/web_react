@@ -61,16 +61,21 @@ export default function Login() {
   return (
     <div>
       <Link
+        to="#"
         variant="outlined"
         type="button"
         onClick={handleOpen}
-        className="btn login-btn mr-2"
+        className="btn login-btn mr-3"
         style={{
-          width: 110,
-          height: 46,
+          width: 100,
+          height: 43,
+          display: "flex",
+          justifyContent : "center",
+          alignItems : "center",
           textDecoration: "none",
-          borderRadius: "10px",
+          borderRadius: "5px",
           borderColor: "orange",
+          transition : "0.2s ease",
 
           "&:hover": {
             background: "orange",
@@ -91,7 +96,7 @@ export default function Login() {
         BackdropProps={{
           timeout: 500,
         }}>
-        <Fade in={open}>
+        
           <div>
             <form onSubmit={handleSubmit} className={classes.paper} noValidate>
               <Grid container spacing={2}>
@@ -143,7 +148,7 @@ export default function Login() {
                   variant="contained"
                   color="primary"
                   className={classes.submit}>
-                  <CircularProgress size={24} color="orange" />
+                  <CircularProgress size={24}  />
                 </Button>
               ) : (
                 <Button
@@ -167,7 +172,7 @@ export default function Login() {
               )}
             </form>
           </div>
-        </Fade>
+        
       </Modal>
     </div>
   );

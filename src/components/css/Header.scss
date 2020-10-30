@@ -1,12 +1,36 @@
 /* Header */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;500&family=Cantarell&family=PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gudea&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Courgette&family=Gudea&family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+
+.tagline span{
+  font-family: 'Caveat', cursive !important;
+  font-size: 84px !important;
+}
 .tagline {
   color: #202336;
-  font-size: 60px;
-  font-family: Playfair Display;
-  line-height: 80px;
+  font-size: 70px;
+  font-family: 'Manrope', sans-serif;
+  letter-spacing: 4px;
+ line-height: 80px;
   padding-top: 50px;
+  font-weight: bolder;
 }
 
+.join-btn{
+  font-family: 'Barlow Semi Condensed', sans-serif !important;
+  letter-spacing: 2px !important; 
+
+}
+.fff{
+  font-family: 'Barlow Semi Condensed', sans-serif !important;
+  letter-spacing: 2px !important; 
+
+}
+.img-fluid{
+  max-width: 100%;
+}
 .intl-tel-input {
   display: table-cell;
 }
@@ -23,12 +47,50 @@
   border-bottom-right-radius: 0;
 }
 
+@media (max-width : 1004px){
+  .phonenum{
+    width: 100% !important;
+  }
+  .gettheapp{
+    width: 100% !important;
+  }
+}
+@media (min-width:682px){
+    .cf{
+          display: none;
+    }
+}
+
+        @media (max-width:681px)
+    {
+.bg{
+    
+  background-image: url(../../Images/responsive-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+    
+    
+}
+        .cc{
+            display: none;
+        }
+.tagline{
+  font-size: 30px;
+}
+.tagline span {
+  font-size: 45px !important;
+}
+        }
+
 .play {
   margin-top: 20px;
 }
 .s0 {
   width: auto;
   height: auto;
+}
+.x1 a{
+  transition: 0.2s ease;
 }
 .x1 a:hover {
   box-shadow: 2px 2px 5px black;
@@ -50,10 +112,15 @@
   line-height: 28px;
   margin-top: 20px;
 }
+@media (max-width : 800px){
+  .headerButtons{
+    display: block;
+  }
+}
 
 .headerButtons {
   margin-top: 3%;
-  margin-left: 5%;
+  
 }
 .headerButtons .btn {
   border-radius: 25px;
@@ -76,7 +143,7 @@
 }
 .getapp {
   color: #b8becd;
-  margin-left: 60px;
+  margin-left: 10px;
 }
 
 .contact {
@@ -102,11 +169,7 @@
 }
 .joins {
   background: #fa9917;
-  border-radius: 0 5px 5px 0;
-  width: 70px;
-  height: 32px;
-  color: white;
-  border: 1px solid #fa9917;
+  text-decoration: none;
 }
 .joins2 {
   background: #fa9917;

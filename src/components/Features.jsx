@@ -10,10 +10,10 @@ const Features = () => {
     <div>
       <div>
         <section
-          className="feature"
+          className="feature "
           
         >
-          <h1 className="main text-center"
+          <h1 className="text-center"
           data-aos="zoom-in-down" data-aos-duration={1500}
           >
             <b>
@@ -34,12 +34,12 @@ const Features = () => {
                   data-aos-duration={1500}
                 ><a href="/feature3" style={{ textDecoration: 'none' }}>
                   <div className="card text-center h-100 border-0 image-background">
-                   <a href="/feature3"> <img
+                   <img
                       className="card-img-top img-fluid card01 mx-auto image-1 "
                       src={expert_teac}
                       alt=""
                     />
-                    </a>
+                    
                     <div className="card-block">
                       <h4 className="card-title ct-1 card-one">
                       
@@ -57,12 +57,12 @@ const Features = () => {
                   data-aos-duration={1500}
                 ><a href="/feature1" style={{ textDecoration: 'none' }}> 
                   <div className="card text-center h-100 border-0 image-background">
-                   <a href="/feature1"> <img
+                   <img
                       className="card-img-top img-fluid  card01 mx-auto image-2 "
                       src={engg_ass}
                       alt=""
                     />
-                    </a>
+                  
                     <div className="card-block ">
                       <h4 className="card-title ct-1 card-two">
                       
@@ -80,12 +80,12 @@ const Features = () => {
                   data-aos-duration={1500}
                 ><a href="/feature4" style={{ textDecoration: 'none' }}>
                   <div className="card text-center h-100 border-0 image-background">
-                    <a href="/feature4"><img
+                    <img
                       className="card-img-top img-fluid  card01 mx-auto image-3"
                       src={live_inter}
                       alt=""
                     />
-                    </a>
+                    
                     <div className="card-block ">
                       <h4 className="card-title ct-1 card-three">
                       
@@ -103,11 +103,11 @@ const Features = () => {
                   data-aos-duration={1500}
                 ><a href="/feature5" style={{ textDecoration: 'none' }}>
                   <div className="card text-center h-100 border-0 image-background">
-                   <a href="/feature5"> <img
+                   <img
                       className="card-img-top img-fluid card01 mx-auto image-4 "
                       src={per_learn}
                       alt=""
-                    /></a>
+                    />
                     <div className="card-block ">
                       <h4 className="card-title ct-1 card-four">
                         Personalised <br></br>Learning 

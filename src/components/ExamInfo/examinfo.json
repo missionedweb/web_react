@@ -1,0 +1,60 @@
+{
+  "JEEMain": [
+    {
+      "Brief": "This is about JEE Main... India's most reputed engineering entrance exam for admission to various engineering colleges."
+    },
+    {
+      "Eligibility Criteria": "PCM in XIIth..."
+    },
+    {
+      "Pattern": "Lorem ipsum dolor smet..."
+    },
+    {
+      "Important Dates": "To be announced..."
+    },
+    {
+      "Application Process": "Check Official Website..."
+    },
+    {
+      "Syllabus": "Everything..."
+    },
+    {
+      "Cut-off Scores": "Lorem ipsum dolor smet..."
+    },
+    {
+      "Study Resources": "There's a lot of them. Google..."
+    },
+    {
+      "Popular Courses": "That's why you're here..."
+    }
+  ],
+  "NEET": [
+    {
+      "Brief": "This is about NEET... India's most reputed medical entrance exam for admission to various medical colleges."
+    },
+    {
+      "Eligibility Criteria": "PCB / MBiPC in XIIth..."
+    },
+    {
+      "Pattern": "Lorem ipsum dolor smet..."
+    },
+    {
+      "Important Dates": "To be announced..."
+    },
+    {
+      "Application Process": "Check Official Website..."
+    },
+    {
+      "Syllabus": "Everything..."
+    },
+    {
+      "Cut-off Scores": "Lorem ipsum dolor smet..."
+    },
+    {
+      "Study Resources": "There's a lot of them. Google..."
+    },
+    {
+      "Popular Courses": "That's why you're here..."
+    }
+  ]
+}
