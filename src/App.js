@@ -38,6 +38,8 @@ import RankPredictore from "./components/RankPredictor/RankPredictore";
 import NCERT_Sol from "./components/NCERT_Sol/NCERT_Sol";
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
+import { DB_CONFIG } from "./firebase/config";
+import firebase from "./firebase/firebase.utils";
 
 //REDUX
 import { connect } from "react-redux";
@@ -48,6 +50,7 @@ import Dashboard from "./pages/dashboard/dashboard";
 import TeacherDashboard from "./pages/dashboard/TeacherDashboard"
 import Price from "./pages/pricing/pricing";
 import Exams from "./pages/Exams/Exams";
+
 function App({ setCurrentUser, currentUser }) {
   useEffect(() => {
     //check Auth
