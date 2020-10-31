@@ -1,4 +1,4 @@
-import React, {  } from "react";
+import React from "react";
 import {
   Drawer,
   Hidden,
@@ -16,13 +16,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import { TeacherSidebarData } from "./TeacherSidebarData";
 // import Courses from './Courses';
 
-
 import TeacherDass from "../../TeachersComponents/TeacherDass.jsx";
 import LiveClass from "../../TeachersComponents/LiveClass.jsx";
 import ScheduleClass from "../../TeachersComponents/ScheduleClass";
 import TeacherChat from "../../TeachersComponents/TeacherChat.jsx";
 import TeacherSettings from "../../TeachersComponents/TeacherSettings.jsx";
-
 
 import Upgrade from "./Upgrade";
 import CustomButton from "./CustomButton";
@@ -32,8 +30,7 @@ import NavigationLogo from "../../Images/NavigationLogo.svg";
 function TeacherSidebar() {
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  
-  
+
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -51,7 +48,6 @@ function TeacherSidebar() {
             </span>
           </span>
         </div>
-       
       </div>
       <Divider />
       <div className={classes.first}>
@@ -69,7 +65,6 @@ function TeacherSidebar() {
         </List>
       </div>
       <Divider />
-      
 
       <button onClick={() => auth.signOut()}>Sign Out</button>
     </div>
@@ -114,7 +109,6 @@ function TeacherSidebar() {
         <main className={classes.content}>
           {/*switch*/}
           <Switch>
-
             <Route exact path="/Teacher/dashboard">
               <TeacherDass />
             </Route>
@@ -130,7 +124,6 @@ function TeacherSidebar() {
             <Route path="/Teacher/dashboard/Settings">
               <TeacherSettings />
             </Route>
-            
           </Switch>
         </main>
       </Router>
