@@ -18,7 +18,7 @@ import { SideBarData } from "./SideBarData";
 import { Dashboard as Dash } from "./Dashboard";
 // import Courses from './Courses';
 import Resources from "./Resources";
-import Referals from "./Referals";
+import Community from "./Community";
 import { Chat as Chats } from "./Chat";
 import { Settings as Setting } from "./Settings";
 import Upgrade from "./Upgrade";

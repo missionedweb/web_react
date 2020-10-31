@@ -15,7 +15,7 @@ export default function Exams() {
   return (
     <div>
       <NavbarComponent />
-      <div style={{ marginTop: "10vh" }}>
+      <div>
         <Tiles exam={exam}/>
         <div className="container">
           <div className="row">

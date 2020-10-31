@@ -11,17 +11,19 @@ import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 import styled from "styled-components";
+import ExamTiles from './examtiles.json';
 
-export default function Tiles({exam}) {
+export default function Tiles({ exam }) {
+  const { name, headline, targetField, eligibility, subjects, duration, languages, pattern } = ExamTiles[exam];
+
   return (
     <Wrapper>
       <div>
         <div className="jumbotron mt-5">
           <div className="heading about-us" data-aos="zoom-in-up" data-aos-duration={2500}>
-            {exam}
+            {name}
             <h6 style={{ color: "#B8BECD" }}>
-              India's most reputed engineering entrance exam for admission to various engineering
-              colleges.
+              {headline}
             </h6>
           </div>
         </div>
@@ -53,7 +55,7 @@ export default function Tiles({exam}) {
                     <h6 className="mt-4 mb-3" style={{ color: "#828282" }}>
                       Target Field
                     </h6>
-                    <h5 style={{ color: "#F2994A" }}>Engineering</h5>
+                    <h5 style={{ color: "#F2994A" }}>{targetField}</h5>
                   </div>
                   <div className="col-md-2 col-sm-4 " data-aos="zoom-out" data-aos-duration="1000">
                     <img src={Eligibility} alt="" className="mt-2" />
@@ -61,7 +63,7 @@ export default function Tiles({exam}) {
                     <h6 className="mt-4 mb-3" style={{ color: "#828282" }}>
                       Eligibility
                     </h6>
-                    <h5 style={{ color: "#F2994A" }}>Class 12th Passout</h5>
+                    <h5 style={{ color: "#F2994A" }}>{eligibility}</h5>
                   </div>
                   <div className="col-md-2 col-sm-4 " data-aos="zoom-out" data-aos-duration="1000">
                     <img src={books} alt="" className="mt-2" />
@@ -69,7 +71,7 @@ export default function Tiles({exam}) {
                     <h6 className="mt-4 mb-3" style={{ color: "#828282" }}>
                       Subjects
                     </h6>
-                    <h5 style={{ color: "#F2994A" }}>Physics, Chemistry, Mathematics</h5>
+                    <h5 style={{ color: "#F2994A" }}>{subjects}</h5>
                   </div>
                   <div className="col-md-2 col-sm-4 " data-aos="zoom-out" data-aos-duration="1000">
                     <img src={Duration} alt="" className="mt-2" />
@@ -77,7 +79,7 @@ export default function Tiles({exam}) {
                     <h6 className="mt-4" style={{ color: "#828282" }}>
                       Duration
                     </h6>
-                    <h5 style={{ color: "#F2994A" }}>3 hrs</h5>
+                    <h5 style={{ color: "#F2994A" }}>{duration}</h5>
                   </div>
                   <div
                     className="col-md-2 col-sm-4 "
@@ -89,7 +91,7 @@ export default function Tiles({exam}) {
                     <h6 className="mt-4 mb-3" style={{ color: "#828282" }}>
                       Languages
                     </h6>
-                    <h5 style={{ color: "#F2994A" }}>English, Hindi</h5>
+                    <h5 style={{ color: "#F2994A" }}>{languages}</h5>
                   </div>
                   <div className="col-md-2 col-sm-4 " data-aos="zoom-out" data-aos-duration="1000">
                     <img src={Paper} alt="" className="mt-2" />
@@ -97,7 +99,7 @@ export default function Tiles({exam}) {
                     <h6 className="mt-4 mb-3" style={{ color: "#828282" }}>
                       Pattern
                     </h6>
-                    <h5 style={{ color: "#F2994A" }}>75 questions</h5>
+                    <h5 style={{ color: "#F2994A" }}>{pattern}</h5>
                   </div>
                 </div>
               </div>

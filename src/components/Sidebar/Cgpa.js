@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 const Cgpa = () => {
     const cgpa = 4;
     return (
-        <Link className="link-to-grades" to="dashboard/Grades" >
+        <Link className="link-to-grades" to="/dashboard/grades" >
         <Card className="" style={{ maxWidth: '250px' }}>
             <Card.Body style={{display : "flex" , flexDirection : "column", justifyContent : "space-around", alignItems:'center'}}>
                 <Card.Title className="text-center">CGPA</Card.Title>

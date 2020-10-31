@@ -116,7 +116,7 @@ function NavbarComponent({ currentUser }) {
                         </div>
                         <div className="col-sm-5">
                           <ul className="multi-column-dropdown">
-                            <Link to="/exams/JEEMain" className="dropdown-item active">
+                            <Link to="/exams/JEEMain" className="dropdown-item">
                               JEE MAIN
                             </Link>
                             <a href="/" className="dropdown-item">
@@ -148,7 +148,7 @@ function NavbarComponent({ currentUser }) {
                             <a href="/" className="dropdown-item">
                               ICSE
                             </a>
-                            <Link to="/exams/NEET" className="dropdown-item active">
+                            <Link to="/exams/NEET" className="dropdown-item">
                               NEET
                             </Link>
                             <a href="/" className="dropdown-item">
@@ -195,11 +195,7 @@ function NavbarComponent({ currentUser }) {
                     </div>
                   </li>
 
-                  <li className="nav-item mr-auto ml-2">
-                    <a className="nav-link " href="/pricing">
-                      PRICING
-                    </a>
-                  </li>
+                 
                   <li className="nav-item mr-auto ml-2">
                     <a className="nav-link" href="https://missioned.in/blog/">
                       BLOG

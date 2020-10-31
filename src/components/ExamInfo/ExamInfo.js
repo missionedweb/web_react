@@ -9,12 +9,13 @@ export default function ExamInfo({ exam }) {
   // console.log(data)
 
   return (
-    <div>
+    <ul>
       {data.map((datum) => {
+        {/* console.log(datum.id); */}
         const examData = Object.entries(datum)[0];
-          return <Article question={examData[0]} answer={examData[1]} />;
+        return <Article question={examData[0]} answer={examData[1]} id={datum.id} />;
       })}
-    </div>
+    </ul>
   );
 }
 

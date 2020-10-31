@@ -44,7 +44,7 @@ function Header() {
                 <div className="col-md-7">
                   <div className="headerButtons ">
                     <h1
-                      className="tagline text-center cc"
+                      className="tagline text-center"
                       data-aos="fade-down"
                       data-aos-duration="3000">
                       <br />
@@ -211,7 +211,7 @@ function Header() {
                             <br />
                             <div className="col-auto">
                               <Button className="joins" onClick={alertModal}>
-                                Enquire Now
+                                Get The App
                               </Button>
                               <br />
                             </div>
@@ -229,7 +229,7 @@ function Header() {
                   <br /> <br /> <br /> <br />
                   <img data-aos="fade-left" className="img-fluid mr-5" src={NewImg} />
                 </div>
-                <div className="col-md-5 cf">
+              { /*  <div className="col-md-5 cf">
                   <br /> <br /> <br /> <br />
                   <div className="row">
                     <div className="col-6">
@@ -277,7 +277,7 @@ function Header() {
                       </Card>
                     </div>
                   </div>
-                </div>
+                </div>*/ }
                 <b></b>
               </div>
               <b>

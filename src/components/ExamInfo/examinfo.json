@@ -1,60 +1,78 @@
 {
   "JEEMain": [
     {
-      "Brief": "This is about JEE Main... India's most reputed engineering entrance exam for admission to various engineering colleges."
+      "Brief": "This is about JEE Main... India's most reputed engineering entrance exam for admission to various engineering colleges.",
+      "id": "brief"
     },
     {
-      "Eligibility Criteria": "PCM in XIIth..."
+      "Eligibility Criteria": "PCM in XIIth...",
+      "id": "eligibility"
     },
     {
-      "Pattern": "Lorem ipsum dolor smet..."
+      "Pattern": "Lorem ipsum dolor smet...",
+      "id": "pattern"
     },
     {
-      "Important Dates": "To be announced..."
+      "Important Dates": "To be announced...",
+      "id": "imp_dates"
     },
     {
-      "Application Process": "Check Official Website..."
+      "Application Process": "Check Official Website...",
+      "id": "application_process"
     },
     {
-      "Syllabus": "Everything..."
+      "Syllabus": "Everything...",
+      "id": "syllabus"
     },
     {
-      "Cut-off Scores": "Lorem ipsum dolor smet..."
+      "Cut-off Scores": "Lorem ipsum dolor smet...",
+      "id": "cutoff"
     },
     {
-      "Study Resources": "There's a lot of them. Google..."
+      "Study Resources": "There's a lot of them. Google...",
+      "id": "study_resources"
     },
     {
-      "Popular Courses": "That's why you're here..."
+      "Popular Courses": "That's why you're here...",
+      "id": "courses"
     }
   ],
   "NEET": [
     {
-      "Brief": "This is about NEET... India's most reputed medical entrance exam for admission to various medical colleges."
+      "Brief": "This is about NEET... India's most reputed medical entrance exam for admission to various medical colleges.",
+      "id": "brief"
     },
     {
-      "Eligibility Criteria": "PCB / MBiPC in XIIth..."
+      "Eligibility Criteria": "PCB / MBiPC in XIIth...",
+      "id": "eligibility"
     },
     {
-      "Pattern": "Lorem ipsum dolor smet..."
+      "Pattern": "Lorem ipsum dolor smet...",
+      "id": "pattern"
     },
     {
-      "Important Dates": "To be announced..."
+      "Important Dates": "To be announced...",
+      "id": "imp_dates"
     },
     {
-      "Application Process": "Check Official Website..."
+      "Application Process": "Check Official Website...",
+      "id": "application_process"
     },
     {
-      "Syllabus": "Everything..."
+      "Syllabus": "Everything...",
+      "id": "syllabus"
     },
     {
-      "Cut-off Scores": "Lorem ipsum dolor smet..."
+      "Cut-off Scores": "Lorem ipsum dolor smet...",
+      "id": "cutoff"
     },
     {
-      "Study Resources": "There's a lot of them. Google..."
+      "Study Resources": "There's a lot of them. Google...",
+      "id": "study_resources"
     },
     {
-      "Popular Courses": "That's why you're here..."
+      "Popular Courses": "That's why you're here...",
+      "id": "courses"
     }
   ]
 }
