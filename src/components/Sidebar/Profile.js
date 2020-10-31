@@ -151,7 +151,7 @@ const Profile = ({ user }) => {
         <Grid item xs={12}>
                 <Grid container spacing={6}>
                     <Grid item xs={12} md={3}>
-                        <Link to='/dashboard/attendancedetails'><Attendance /></Link>
+                        <Attendance />
                     </Grid>
                     <Grid item xs={12} md={3}>
                         <Cgpa />
