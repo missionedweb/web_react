@@ -1,0 +1,22 @@
+{
+  "JEEMain": {
+    "name": "JEE Main",
+    "headline": "India's most reputed engineering entrance exam for admission to various engineering colleges.",
+    "targetField": "Engineering",
+    "eligibility": "Class XIIth Passout",
+    "subjects": "Physics, Chemistry, Mathematics",
+    "duration": "3 hrs",
+    "languages": "English, Hindi",
+    "pattern": "75 questions"
+  },
+  "NEET": {
+    "name": "NEET",
+    "headline": "India's most reputed medical entrance exam for admission to various medical colleges.",
+    "targetField": "Medical",
+    "eligibility": "Class XIIth Passout",
+    "subjects": "Physics, Chemistry, Biology",
+    "duration": "3 hrs",
+    "languages": "English, Hindi",
+    "pattern": "75 questions"
+  }
+}

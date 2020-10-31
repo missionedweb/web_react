@@ -35,7 +35,7 @@ export const SideBarData = [
     },
     {
         title: 'Jobs',
-        path:'/dashboard/Jobs',
+        path:'/dashboard/jobs',
         icon: <Work />
     },
 ]

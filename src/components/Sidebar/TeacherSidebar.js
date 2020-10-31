@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  } from "react";
 import {
   Drawer,
   Hidden,
@@ -11,34 +11,29 @@ import {
   Divider,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import Calender from  './calender';
 import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
-import { SideBarData } from "./SideBarData";
-import { Dashboard as Dash } from "./Dashboard";
+import { TeacherSidebarData } from "./TeacherSidebarData";
 // import Courses from './Courses';
-import Resources from "./Resources";
-import Community from './Community';
-import { Chat as Chats } from "./Chat";
-import { Settings as Setting } from "./Settings";
+
+
+import TeacherDass from "../../TeachersComponents/TeacherDass.jsx";
+import LiveClass from "../../TeachersComponents/LiveClass.jsx";
+import ScheduleClass from "../../TeachersComponents/ScheduleClass";
+import TeacherChat from "../../TeachersComponents/TeacherChat.jsx";
+import TeacherSettings from "../../TeachersComponents/TeacherSettings.jsx";
+
+
 import Upgrade from "./Upgrade";
 import CustomButton from "./CustomButton";
-import CenteredGrid from "../Cards/index";
-import Course from "../Course/course";
 import { auth } from "../../firebase/firebase.utils";
 import NavigationLogo from "../../Images/NavigationLogo.svg";
-import { Directions, ExitToApp } from "@material-ui/icons";
-import Pricing from './Pricing';
-import Enroll from "./Enroll";
-import Coursses from './Courses';
-import Profile from './Profile';
-import Grades from './Grades';
-import AttendanceTable from "./AttendanceTable";
-import Jobs from "./Jobs";
-function SideBar(props) {
+
+function TeacherSidebar() {
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const [courses, setCourses] = useState([]);
+  
+  
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -48,27 +43,25 @@ function SideBar(props) {
       <div className={classes.logo}>
         <div className={classes.title}>
           <img style={{ display: "block" }} src={NavigationLogo} alt="logo" />
-          
-          <span style={{ fontSize: "17px" }} className="missioned-nav font-weight-bold">
+          <br />
+          <span style={{ fontSize: "20px" }} className="missioned-nav font-weight-bold">
             Mission
-            <span style={{ fontSize: "17px" }} className="ed">
+            <span style={{ fontSize: "20px" }} className="ed">
               Ed
             </span>
           </span>
         </div>
-        <Link className={classes.button} to='/dashboard/enroll'>
-          <CustomButton>Join a course</CustomButton>
-        </Link>
+       
       </div>
       <Divider />
       <div className={classes.first}>
         <List>
-          {SideBarData.map((item, index) => {
+          {TeacherSidebarData.map((item, index) => {
             return (
               <Link to={item.path} className={classes.link} key={index}>
                 <ListItem button>
                   <ListItemIcon>{item.icon}</ListItemIcon>
-                  <ListItemText style={{textDecoration : "none !important"}} primary={item.title} />
+                  <ListItemText primary={item.title} />
                 </ListItem>
               </Link>
             );
@@ -76,11 +69,9 @@ function SideBar(props) {
         </List>
       </div>
       <Divider />
-      <div className={classes.second}>
-        <Upgrade />
-      </div>
+      
 
-      <button className="btn mt-3 mb-4" style={{backgroundColor:"#5E81F4", color:"white"}} onClick={() => auth.signOut()}><ExitToApp/>Sign Out</button>
+      <button onClick={() => auth.signOut()}>Sign Out</button>
     </div>
   );
 
@@ -123,39 +114,23 @@ function SideBar(props) {
         <main className={classes.content}>
           {/*switch*/}
           <Switch>
+
+            <Route exact path="/Teacher/dashboard">
+              <TeacherDass />
+            </Route>
+            <Route path="/Teacher/dashboard/liveSession">
+              <LiveClass />
+            </Route>
+            <Route path="/Teacher/dashboard/scheduleClass">
+              <ScheduleClass />
+            </Route>
+            <Route path="/Teacher/dashboard/teachersChat">
+              <TeacherChat />
+            </Route>
+            <Route path="/Teacher/dashboard/Settings">
+              <TeacherSettings />
+            </Route>
             
-            <Route exact path="/dashboard">
-              <Dash />
-            </Route>
-            <Route exact path="/dashboard/courses">
-              <Coursses/>
-            </Route>
-            <Route path="/dashboard/courses/:courseid">
-              <Course />
-            </Route>
-            <Route path="/dashboard/resources">
-              <Resources />
-            </Route>
-            <Route path="/dashboard/Calender">
-              <Calender/>
-            </Route>
-            <Route path="/dashboard/chats">
-              <Chats />
-            </Route>
-            <Route path="/dashboard/settings">
-              <Setting />
-            </Route>
-            <Route path="/dashboard/pricing" component={Pricing}>
-              
-            </Route>
-            <Route path="/dashboard/profile" component={Profile}>
-              
-            </Route>
-            <Route path='/dashboard/enroll' component={Enroll}></Route>
-            <Route path='/dashboard/grades' component={Grades}></Route>
-            <Route path='/dashboard/attendancedetails' component={AttendanceTable} />
-            <Route path='/dashboard/jobs' component={Jobs} />
-            <Route path='/dashboard/Community' component={Community} />
           </Switch>
         </main>
       </Router>
@@ -163,7 +138,7 @@ function SideBar(props) {
   );
 }
 
-export default SideBar;
+export default TeacherSidebar;
 
 const drawerWidth = 180;
 
@@ -186,7 +161,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   menuButton: {
-    [theme.breakpoints.up("lg")]: {
+    [theme.breakpoints.up("md")]: {
       display: "none",
     },
     position: "fixed",
@@ -222,7 +197,7 @@ const useStyles = makeStyles((theme) => ({
   },
   second: {
     flex: "0.3",
-    paddingBottom: "1px",
+    paddingBottom: "8px",
   },
   link: {
     width: "100vh",
@@ -232,7 +207,6 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.primary,
     "&:hover": {
       color: "#5E81F4",
-      textDecoration :"none"
     },
   },
   title: {
