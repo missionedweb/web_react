@@ -13,6 +13,7 @@ import {Search, Create, ThumbUpAlt, Comment} from '@material-ui/icons';
 import {Card, Typography,CardContent,CardActions} from '@material-ui/core';
 import Internships from './Internships';
 import JobsPage from './JobsPage';
+import Events from './Events';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -52,6 +53,7 @@ const Jobs = () => {
         </div>
         {selected==='Internships' && <Internships />}
         {selected==='Jobs' && <JobsPage />}
+        {selected==='Events' && <Events />}
       </div>
             
             
