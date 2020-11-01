@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography';
 import Base from '../Images/Base.png';
+import IBMI from '../Images/ibm-india1.jpg';
 import CardMedia from '@material-ui/core/CardMedia';
 import {Media} from 'react-bootstrap';
 
@@ -25,8 +26,8 @@ const Events = () => {
 
            <div className="row mt-3">
                <div className="col-lg-6">
-                    <Media className="Border shadow p-2">
-                        <img src={Base} style={{maxWidth:"165px"}} className=""/>
+                    <Media className="Border shadow p-3">
+                        <img src={IBMI} style={{maxWidth:"165px"}} className="m-3"/>
                         <Media.Body>
                             <p>Virtual Session</p>
                         <h6>IBM Champion Chats : Meet the system lifetime Champion and prep your nomination</h6>
@@ -40,7 +41,7 @@ const Events = () => {
                </div>
                <div className="col-lg-6">
                <Media className="Border shadow p-3">
-                        <img src={Base} style={{maxWidth:"165px"}} className=""/>
+                        <img src={IBMI} style={{maxWidth:"165px"}} className="m-3"/>
                         <Media.Body>
                             <p>Virtual Session</p>
                         <h6>IBM Champion Chats : Meet the system lifetime Champion and prep your nomination</h6>
@@ -53,6 +54,37 @@ const Events = () => {
                     </Media>
                </div>
            </div>
+           <div className="row mt-3">
+                <div className="col-lg-6">
+                <Media className="Border shadow p-3">
+                        <img src={Base} style={{maxWidth:"165px"}} className="m-3"/>
+                        <Media.Body>
+                            <p>Virtual Session</p>
+                        <h6>2021 Coorporate & investment Bank Summer Analyst Advancing Black Leaders Summit</h6>
+                        <p>
+                        Saturday, Sept 10 ,2020  Time : 3:00pm to 4:00pm
+                        </p>
+                        <Button variant="contained" color="primary" className="mr-2">Add To Calendar</Button>
+                        <Button variant="outlined" color="primary" className="ml-2">Register</Button>
+                    </Media.Body>
+                    </Media>
+                </div>
+                <div className="col-lg-6">
+                <Media className="Border shadow p-3">
+                        <img src={Base} style={{maxWidth:"165px"}} className="m-3"/>
+                        <Media.Body>
+                            <p>Virtual Session</p>
+                        <h6>2021 Coorporate & investment Bank Summer Analyst Advancing Black Leaders Summit</h6>
+                        <p>
+                        Saturday, Sept 10 ,2020  Time : 3:00pm to 4:00pm
+                        </p>
+                        <Button variant="contained" color="primary" className="mr-2">Add To Calendar</Button>
+                        <Button variant="outlined" color="primary" className="ml-2">Register</Button>
+                    </Media.Body>
+                    </Media>
+                </div>
+           </div>
+
         </div>
     );
 };
