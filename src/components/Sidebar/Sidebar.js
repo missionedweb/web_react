@@ -160,6 +160,7 @@ function SideBar(props) {
             <Route path="/dashboard/grades" component={Grades}></Route>
             <Route path="/dashboard/attendancedetails" component={AttendanceTable} />
             <Route path="/dashboard/jobs" component={Jobs} />
+            <Route path="/dashboard/Community" component={Community} />
           </Switch>
         </main>
       </Router>

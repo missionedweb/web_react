@@ -5,6 +5,23 @@ import {Card} from 'react-bootstrap';
 import {Button} from '@material-ui/core';
 import '../css/cards.scss';
  const Community = () =>{
+    
+    const getCommunity = [
+        {
+            title : "Prof. posted Google L3 | Microsoft L61 | Goldman Sachs",
+            text : "With supporting text below as a natural lead-in to additional content."
+        },
+        {
+            title : "Student posted X tag | Y tag | Z tag ",
+            text : "With supporting text below as a natural lead-in to additional content."
+        },
+        {
+            title : "Prof. posted Google L3 | Microsoft L61 | Goldman Sachs",
+            text : "With supporting text below as a natural lead-in to additional content."
+        },
+    ]
+
+
     return(
         <div>
            
@@ -34,39 +51,24 @@ import '../css/cards.scss';
                 
                 <br/>
                 <br/>
-                <Card style={{maxWidth:"100% !important"}} className="my-3">
-                <Card.Header className="bg-light" as="h5">Prof. posted Google L3 | Microsoft L61 | Goldman Sachs</Card.Header>
-                <Card.Body>
-                  
-                    <Card.Text>
-                    With supporting text below as a natural lead-in to additional content.
-                    </Card.Text>
-                    <Button color="primary" startIcon={<ThumbUpAlt/>} className="mx-2">Like</Button>
-                    <Button color="primary" startIcon={<Comment />} className="mx-2">Comment</Button>
-                </Card.Body>
-                </Card>
-                <Card style={{maxWidth:"100% !important"}} className="my-3">
-                <Card.Header className="bg-light" as="h5">Prof. posted Google L3 | Microsoft L61 | Goldman Sachs</Card.Header>
-                <Card.Body>
-                   
-                    <Card.Text>
-                    With supporting text below as a natural lead-in to additional content.
-                    </Card.Text>
-                    <Button startIcon={<ThumbUpAlt/>} color="primary" className="mx-2">Like</Button>
-                    <Button startIcon={<Comment />} color="primary" className="mx-2">Comment</Button>
-                </Card.Body>
-                </Card>
-                <Card style={{maxWidth:"100% !important"}} className="my-3">
-                <Card.Header className="bg-light" as="h5">Prof. posted Google L3 | Microsoft L61 | Goldman Sachs</Card.Header>
-                <Card.Body>
-                   
-                    <Card.Text>
-                    With supporting text below as a natural lead-in to additional content.
-                    </Card.Text>
-                    <Button startIcon={<ThumbUpAlt/>} color="primary" className="mx-2">Like</Button>
-                    <Button startIcon={<Comment />} color="primary" className="mx-2">Comment</Button>
-                </Card.Body>
-                </Card>
+                {getCommunity.map(community =>(
+                        <div>
+                            <Card style={{maxWidth:"100% !important"}} className="my-3">
+                                <Card.Header className="bg-light" as="h5">{community.title}</Card.Header>
+                                <Card.Body>
+                                
+                                    <Card.Text>
+                                    {community.text}
+                                    </Card.Text>
+                                    <Button color="primary" startIcon={<ThumbUpAlt/>} className="mx-2">Like</Button>
+                                    <Button color="primary" startIcon={<Comment />} className="mx-2">Comment</Button>
+                                </Card.Body>
+                            </Card>
+                        </div>
+
+                ))}
+                
+                
             </div>
 
         </div>
