@@ -8,6 +8,20 @@ import {Media} from 'react-bootstrap';
 
 
 const Events = () => {
+
+    const getEvents = [
+        {
+            title : "IBM Champion Chats : Meet the system lifetime Champion and prep your nomination",
+            date : 'Thursday, Oct 20 ,2020  Time : 1:00pm to 2:00pm',
+            img : IBMI
+        },
+        {
+            title : "2021 Coorporate & investment Bank Summer Analyst Advancing Black Leaders Summit",
+            date : ' Saturday, Sept 10 ,2020  Time : 3:00pm to 4:00pm',
+            img : Base
+        },
+    ]
+
     return (
         <div className="container-fluid">
            <div className="row">
@@ -24,15 +38,17 @@ const Events = () => {
                </div>
            </div>
 
-           <div className="row mt-3">
+           {getEvents.map(event => (
+                <div>
+                    <div className="row mt-3">
                <div className="col-lg-6">
                     <Media className="Border shadow p-3">
-                        <img src={IBMI} style={{maxWidth:"165px"}} className="m-3"/>
+                        <img src={event.img} style={{maxWidth:"165px"}} className="m-3"/>
                         <Media.Body>
                             <p>Virtual Session</p>
-                        <h6>IBM Champion Chats : Meet the system lifetime Champion and prep your nomination</h6>
+                        <h6>{event.title}</h6>
                         <p>
-                        Thursday, Oct 20 ,2020  Time : 1:00pm to 2:00pm
+                        {event.date}
                         </p>
                         <Button variant="contained" color="primary" className="mr-2">Add To Calendar</Button>
                         <Button variant="outlined" color="primary" className="ml-2">Register</Button>
@@ -41,12 +57,12 @@ const Events = () => {
                </div>
                <div className="col-lg-6">
                <Media className="Border shadow p-3">
-                        <img src={IBMI} style={{maxWidth:"165px"}} className="m-3"/>
+                        <img src={event.img} style={{maxWidth:"165px"}} className="m-3"/>
                         <Media.Body>
                             <p>Virtual Session</p>
-                        <h6>IBM Champion Chats : Meet the system lifetime Champion and prep your nomination</h6>
+                                <h6>{event.title}</h6>
                         <p>
-                        Thursday, Oct 20 ,2020  Time : 1:00pm to 2:00pm
+                        {event.date}
                         </p>
                         <Button variant="contained" color="primary" className="mr-2">Add To Calendar</Button>
                         <Button variant="outlined" color="primary" className="ml-2">Register</Button>
@@ -54,36 +70,9 @@ const Events = () => {
                     </Media>
                </div>
            </div>
-           <div className="row mt-3">
-                <div className="col-lg-6">
-                <Media className="Border shadow p-3">
-                        <img src={Base} style={{maxWidth:"165px"}} className="m-3"/>
-                        <Media.Body>
-                            <p>Virtual Session</p>
-                        <h6>2021 Coorporate & investment Bank Summer Analyst Advancing Black Leaders Summit</h6>
-                        <p>
-                        Saturday, Sept 10 ,2020  Time : 3:00pm to 4:00pm
-                        </p>
-                        <Button variant="contained" color="primary" className="mr-2">Add To Calendar</Button>
-                        <Button variant="outlined" color="primary" className="ml-2">Register</Button>
-                    </Media.Body>
-                    </Media>
                 </div>
-                <div className="col-lg-6">
-                <Media className="Border shadow p-3">
-                        <img src={Base} style={{maxWidth:"165px"}} className="m-3"/>
-                        <Media.Body>
-                            <p>Virtual Session</p>
-                        <h6>2021 Coorporate & investment Bank Summer Analyst Advancing Black Leaders Summit</h6>
-                        <p>
-                        Saturday, Sept 10 ,2020  Time : 3:00pm to 4:00pm
-                        </p>
-                        <Button variant="contained" color="primary" className="mr-2">Add To Calendar</Button>
-                        <Button variant="outlined" color="primary" className="ml-2">Register</Button>
-                    </Media.Body>
-                    </Media>
-                </div>
-           </div>
+           ))}
+          
 
         </div>
     );
