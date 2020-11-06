@@ -16,6 +16,7 @@ import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import Attendance from "./Attendance";
 import Cgpa from "./Cgpa";
+import MyProfileDropdown from './MyProfileDropdown';
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
@@ -37,6 +38,10 @@ export function Dashboard() {
 
   return (
     <div>
+      <div className="my-profile " style={{display:"flex", justifyContent:"flex-end"}}>
+      <MyProfileDropdown  />
+      </div>
+
       <br />
 
       <br />
