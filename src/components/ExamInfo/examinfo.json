@@ -1,15 +1,15 @@
 {
   "JEEMain": [
     {
-      "Brief": "This is about JEE Main... India's most reputed engineering entrance exam for admission to various engineering colleges.",
+      "Brief": "JEE Main is a computer-based online test conducted by National Testing Agency for students aspiring to pursue undergraduate courses in top engineering institutes in India. It is the first phase of the IIT Joint Entrance Exam. The JEE Main 2020 examination is conducted in two sessions and candidates can take the exam either in the month of January or in April. The candidates can further opt to appear for one exam or both the exams. The better of two NTA scores will be considered by the exam conducting authority in preparing the ranks/merit list.",
       "id": "brief"
     },
     {
-      "Eligibility Criteria": "PCM in XIIth...",
+      "Eligibility Criteria": "Class XII board examination or any other equivalent with Physics, Chemistry and Maths scoring atleast 75% or being in top 20 percentile of the board.",
       "id": "eligibility"
     },
     {
-      "Pattern": "Lorem ipsum dolor smet...",
+      "Pattern": "20 Objective questions having 4 options each with only 1 correct option 5 Numerical questions with numerical value as an answer. 4 marks for correct and -1 for incorrect MCQ wheres 4 marks for correct and 0 for incorrect in numerical.",
       "id": "pattern"
     },
     {
@@ -17,15 +17,15 @@
       "id": "imp_dates"
     },
     {
-      "Application Process": "Check Official Website...",
+      "Application Process": "Check Official Website....",
       "id": "application_process"
     },
     {
-      "Syllabus": "Everything...",
+      "Syllabus": "The JEE main test will be based on the syllabus of XI and XII Physics, Chemistry, Maths.",
       "id": "syllabus"
     },
     {
-      "Cut-off Scores": "Lorem ipsum dolor smet...",
+      "Cut-off Scores": "JEE Main cutoff is prepared by taking into consideration various factors such as difficulty level of exam, number of applicants, previous year trends and more. The cutoff changes every year.",
       "id": "cutoff"
     },
     {
@@ -39,15 +39,15 @@
   ],
   "NEET": [
     {
-      "Brief": "This is about NEET... India's most reputed medical entrance exam for admission to various medical colleges.",
+      "Brief": "The National Eligibility cum Entrance Test (Undergraduate) (or NEET (UG)), formerly the All India Pre-Medical Test (AIPMT), is an entrance examination in India for students who wish to study undergraduate medical courses (MBBS) and dental courses (BDS) in government or private medical and dental colleges in India.",
       "id": "brief"
     },
     {
-      "Eligibility Criteria": "PCB / MBiPC in XIIth...",
+      "Eligibility Criteria": "Class XII board examination or any other equivalent with Physics, Chemistry and Biology. Age limit is 17 to 25 years for general and 17 to 30 years for SC/ST/OBC/PWD",
       "id": "eligibility"
     },
     {
-      "Pattern": "Lorem ipsum dolor smet...",
+      "Pattern": "There are a total of 180 questions asked in the exam, 45 questions each from Physics and Chemistry, 90 questions from Biology. Each correct response fetches 4 marks and each incorrect response gets -1 negative marking. The exam duration is 3 hours (180mins). The exam is of 720 marks (maximum marks)",
       "id": "pattern"
     },
     {
@@ -59,11 +59,49 @@
       "id": "application_process"
     },
     {
-      "Syllabus": "Everything...",
+      "Syllabus": "NEET-UG syllabus consists of the core concepts of Physics, Chemistry and Biology taught in classes 11 and 12 as prescribed by the NCERT.",
       "id": "syllabus"
     },
     {
-      "Cut-off Scores": "Lorem ipsum dolor smet...",
+      "Cut-off Scores": "NEET cutoff is prepared by taking into consideration various factors such as difficulty level of exam, number of applicants, previous year trends and more. The cutoff changes every year.",
+      "id": "cutoff"
+    },
+    {
+      "Study Resources": "There's a lot of them. Google...",
+      "id": "study_resources"
+    },
+    {
+      "Popular Courses": "That's why you're here...",
+      "id": "courses"
+    }
+  ],
+  "KVPY": [
+    {
+      "Brief": "Kishore Vaigyanik Protsahan Yojana (KVPY) is a national-level scholarship/fellowship program conducted to promote and encourage highly driven students to opt for research careers in basic science courses. It is initiated and funded by the Department of Science and Technology of the Government of India. Students who qualify KVPY, known as the KVPY fellows, receive monthly scholarship up to pre Ph. D. level. \n\nThe KVPY exam is administered by the Indian Institute of Science, Bangalore (IISc). Candidates who qualify the aptitude round are called for a face to face interview. About 3000 out of one lakh aspirants are awarded KVPY fellowship.",
+      "id": "brief"
+    },
+    {
+      "Eligibility Criteria": "SA : Candidates must be studying science stream in class 11. A candidate must secure a minimum of 75% in math and science subjects in class 10th board exams. For SC, ST and PWD, the minimum required marks is 65%.\n\nSX - Candidates must be studying science stream in class 12. A candidate must secure a minimum of 75% in math and science subjects in class 10th board exams. For SC, ST and PWD, the minimum required marks is 65%. To avail the scholarship, the candidate must secure a minimum of 60% in math and science subjects in class 12th board exams to take up the fellowship. For SC, ST and PWD, the minimum required marks is 50%.\n\nSB - Candidates must be studying in their 1st year of Bachelor degree in any of the Basic Science courses. A candidate must secure a minimum of 60% in math and science subjects in class 12th board exams. For SC, ST and PWD, the minimum required marks is 50%. To avail the scholarship, the candidate must secure a minimum of 60% in the first year of his undergraduate course to take up the fellowship. For SC, ST and PWD, the minimum required marks is 50%.",
+      "id": "eligibility"
+    },
+    {
+      "Pattern": "It is a Computer Based Test with all MCQ's. All questions are cumpolsory for SA candidates however for SB and SX candidates there is an option to attempt any 3 sections of Part 1 and any 2 sections of part 2.  The question paper is divided in two parts. In part 1 of the test, candidates are awarded +1 and -¼ for correct and incorrect answers respectively, there are 15 questions in each section for SA and 20 in each section for SB and SX. For part 2, candidates are awarded +2 and -½ for correct and incorrect answers respectively, there are 5 questions in each section for SA and 10 questions in each section for SB and SX.",
+      "id": "pattern"
+    },
+    {
+      "Important Dates": "To be announced...",
+      "id": "imp_dates"
+    },
+    {
+      "Application Process": "Check Official Website...",
+      "id": "application_process"
+    },
+    {
+      "Syllabus": "For SA stream\nPhysics: Applications in Daily Life, Kinematics, Laws of Motion, Work, Energy and Power, Physical World and Measurement, Gravitation, Thermodynamics, Magnetic Effects of Current, Sources of Energy, Reflection, Refraction, Electromagnetic Induction.\nChemistry: Thermodynamics, States of Matter: Gases and Liquids, Classification of Elements and Periodicity in Properties, Environmental Chemistry, Chemical Reactions, Metals and Nonmetals, Periodic Classification of Elements, Carbon Compounds, Acids, Bases and Salts, Basic Concepts of Chemistry.\nMathematics: Coordinate Geometry, Mathematical Reasoning, Statistics and Probability, Trigonometric Functions, Real Numbers, Polynomials, Geometry, Introduction to Trigonometry, Statistics, Quadratic Equations, Probability, Surface Areas, and Volumes.\nBiology: Plant Physiology, Diversity of Living Organisms, Cell: Structure and Function, Human Physiology, Control and Coordination in Animals and Plants, Heredity and Evolution, Reproduction, Life Processes, Our Environment.\n\nFor SX stream\nPhysics: Thermodynamics, Electrostatics, Refraction, Current Electricity, Electromagnetic Induction and Alternating Current, Magnetic Effects of Current, Reflection of Light, Electromagnetic Induction, Kinematics, Work, Energy and Power, Sources of Energy, Physical World and Measurement, Gravitation, Laws of Motion.\nChemistry: Chemical Reactions, Environmental Chemistry, Solid State, Electrochemistry, Chemical Kinetics, Isolation of Elements, Periodic Classification of Elements, Surface Chemistry, States of Matter: Gases and Liquids, Metals and Nonmetals, Carbon Compounds, Basic Concepts of Chemistry, Thermodynamics, Classification of Elements and Periodicity in Properties.\nBiology: Human Physiology, Biology and Human Welfare, Control and Coordination in Animals and Plants, Ecology and Environment, Cell: Structure and Function, Genetics and Evolution, Life Processes, Plant Physiology, Diversity of Living Organisms, Reproduction.\nMathematics: Trigonometric Functions, Geometry, Linear Programming, Vectors and 3D Geometry, Calculus, Relations and Functions, Coordinate Geometry, Mathematical Reasoning, Real Number, Polynomials, Introduction to Trigonometry, Surface Areas and Volumes, Statistics and Quadratic Equations, Probability, Statistics, and Probability.\n\nFor SB stream\nPhysics: Thermodynamics, Reflection, Electrostatics, Current Electricity, Electromagnetic Induction and Alternating Current, Waves and Optics, Electricity and Magnetism, Electrostatics and Thermal Physics, Electromagnetic Induction, Physical World and Measurement, Sources of Energy, Refraction and its Applications in Daily Life, Kinematics, Laws of Motion, Magnetic Effects of Current, Work, Energy and Power, Gravitation.\nChemistry: Metals and Nonmetals, Environmental Chemistry, Solid State, Electrochemistry, Chemical Kinetics, Isolation of Elements, Surface Chemistry, Chemical Bonding, Chemistry of Noble Gases, Structure and Bonding, Alkenes, Cycloalkenes, Dienes and Alkynes, Thermodynamics, Chemical Reactions, Basic Concepts of Chemistry, Periodic Classification of Elements, Carbon Compounds, Acids, Bases and Salts, States of Matter: Gases and Liquids, Classification of Elements and Periodicity in Properties.\nBiology: Plant Physiology, Reproduction, Diversity of Living Organisms, Cell: Structure and Function, Biology and Human Welfare, Biotechnology, Genetics, Life Processes, Human Physiology, Control and Coordination in Animals and Plants, Genetics and Evolution, Our Environment, Ecology and Environment.\nMathematics: Coordinate Geometry, Mathematical Reasoning, Statistics and Probability, Trigonometric Functions, Linear Programming, Relations and Functions, Analytical Geometry in Two Dimensions, Vector Algebra, Evaluation of Integrals, Statistics, Surface Areas and Volumes, Vectors and 3D Geometry, Calculus, Real Number, Polynomials, Geometry, Introduction to Trigonometry, Quadratic Equations, Probability.",
+      "id": "syllabus"
+    },
+    {
+      "Cut-off Scores": "KVPY cutoff is prepared by taking into consideration various factors such as difficulty level of exam, number of applicants, previous year trends and more. The cutoff changes every year.",
       "id": "cutoff"
     },
     {

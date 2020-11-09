@@ -151,7 +151,7 @@ function NavbarComponent({ currentUser }) {
                             <Link to="/exams/NEET" className="dropdown-item">
                               NEET
                             </Link>
-                            <a href="/" className="dropdown-item">
+                            <a href="/exams/KVPY" className="dropdown-item">
                               KVPY
                             </a>
                             <a href="/" className="dropdown-item">
