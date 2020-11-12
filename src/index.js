@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
@@ -13,6 +14,9 @@ import "./App.css";
 import _ from "lodash";
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
 
 ReactDOM.render(
   <Provider store={store}>

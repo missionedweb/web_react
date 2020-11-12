@@ -65,8 +65,6 @@ function TeacherSidebar() {
         </List>
       </div>
       <Divider />
-
-      <button onClick={() => auth.signOut()}>Sign Out</button>
     </div>
   );
 

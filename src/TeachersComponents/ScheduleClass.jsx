@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Table from "react-bootstrap/Table";
-import Test from "./php files/test";
 
 function ScheduleClass() {
   var divStyle = {

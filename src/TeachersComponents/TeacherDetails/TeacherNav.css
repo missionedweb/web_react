@@ -1,0 +1,27 @@
+.justify-content-end {
+  margin-top: 1.5em;
+  color: #585858;
+}
+
+.register {
+  margin-top: 0.7em;
+  margin-right: 0.5em;
+}
+.signup {
+  margin-right: 1.5em;
+  color: white;
+  background-color: rgb(2, 2, 110);
+  font-weight: 400;
+  font-size: 15px;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+
+  max-width: 200px;
+  align-items: center;
+}
+.signup:hover {
+  background-color: rgb(0, 0, 196);
+  color: white;
+}

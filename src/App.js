@@ -36,6 +36,13 @@ import Class9ICSE from "./components/Class/Class9/Class9ICSE";
 import Class8ICSE from "./components/Class/Class8/Class8ICSE";
 import RankPredictore from "./components/RankPredictor/RankPredictore";
 import NCERT_Sol from "./components/NCERT_Sol/NCERT_Sol";
+import TeacherDetails from "./TeachersComponents/TeacherDetails/TeacherDetails";
+import TeacherSignup from "./TeachersComponents/TeacherDetails/TeacherSignup";
+import TeacherLogin from "./TeachersComponents/TeacherDetails/TeacherLogin";
+
+import TeacherHome from "./TeachersComponents/TeacherDetails/test/TeacherHome";
+import TeacherLoginNew from "./TeachersComponents/TeacherDetails/test/TeacherLoginNew";
+import TeacherDashboardNew from "./TeachersComponents/TeacherDetails/test/TeacherDashboardNew";
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { DB_CONFIG } from "./firebase/config";
@@ -47,7 +54,7 @@ import { createStructuredSelector } from "reselect";
 import { setCurrentUser } from "./redux/user/user.actions";
 import { selectCurrentUser } from "./redux/user/user.selector";
 import Dashboard from "./pages/dashboard/dashboard";
-import TeacherDashboard from "./pages/dashboard/TeacherDashboard"
+import TeacherDashboard from "./pages/dashboard/TeacherDashboard";
 import Price from "./pages/pricing/pricing";
 import Exams from "./pages/Exams/Exams";
 
@@ -94,8 +101,15 @@ function App({ setCurrentUser, currentUser }) {
           path="/dashboard/:id"
           render={() => currentUser === null && <Redirect to="/" />}
         />
-        <Route path="/dashboard" component={Dashboard} />       
+        <Route path="/dashboard" component={Dashboard} />
         <Route path="/TeacherDashboard" component={TeacherDashboard} />
+        <Route path="/TeacherDetails" component={TeacherDetails} />
+        <Route path="/TeacherSignup" component={TeacherSignup} />
+        <Route path="/TeacherLogin" component={TeacherLogin} />
+
+        <Route path="/TeacherHome" component={TeacherHome} />
+        <Route path="/TeacherLoginNew" component={TeacherLoginNew} />
+        <Route path="/TeacherDashboardNew" component={TeacherDashboardNew} />
 
         <Route path="/price" component={Price} />
 
@@ -127,7 +141,7 @@ function App({ setCurrentUser, currentUser }) {
         <Route path="/class10ICSE" component={Class10ICSE} />
         <Route path="/class9ICSE" component={Class9ICSE} />
         <Route path="/class8ICSE" component={Class8ICSE} />
-        
+
         <Route path="/rankpredictor" component={RankPredictore} />
         <Route path="/ncert_sol" component={NCERT_Sol} />
         <Route path="/exams/:exam" component={Exams} />
