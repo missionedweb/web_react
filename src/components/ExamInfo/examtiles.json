@@ -17,6 +17,16 @@
     "subjects": "Physics, Chemistry, Biology",
     "duration": "3 hrs",
     "languages": "English, Hindi",
-    "pattern": "75 questions"
+    "pattern": "180 questions"
+  },
+  "KVPY": {
+    "name": "KVPY",
+    "headline": "An annual scholarship program conducted by the Department of Technology & Science, Government of India.",
+    "targetField": "Science",
+    "eligibility": "XI and XII students and I year U.G. students",
+    "subjects": "Physics, Chemistry, Biology and Maths",
+    "duration": "3 hrs",
+    "languages": "English, Hindi",
+    "pattern": "80 questions"
   }
 }
