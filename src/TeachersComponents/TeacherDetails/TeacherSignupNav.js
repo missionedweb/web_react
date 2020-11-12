@@ -42,7 +42,7 @@ export const TeacherSignupNav = () => (
             <div className="register">Already Registered?</div>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="signup" style={{ color: "white" }} href="/TeacherLogin">
+            <Nav.Link className="signup" style={{ color: "white" }} href="/TeacherDashboardNew">
               Sign Up
             </Nav.Link>
           </Nav.Item>
