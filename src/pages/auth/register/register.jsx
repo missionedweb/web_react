@@ -56,7 +56,8 @@ export default function Register() {
     phone: "",
     confirmpassword: "",
     referralcode : "",
-    referrals : 0
+    referrals : 0,
+    edCredits:0
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -70,8 +71,9 @@ export default function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setClicked(true);
-    const { firstName, lastName, email, password, phone, confirmpassword } = details;
+    const { firstName, lastName, email, password, phone, confirmpassword, referralcode } = details;
     // check if passwords are equal
+    var ob;
     if (password !== confirmpassword) {
       setClicked(false);
 
@@ -79,12 +81,40 @@ export default function Register() {
       setErrorMsg("Passwords Don't Match !");
       return;
     }
+    if(referralcode){
+      console.log(referralcode);
+      firestore.collection('users').where("referralcode","==",referralcode).get().then(querySnapshot => {
+        const data = querySnapshot.docs.map(doc => {
+          return {
+            id: doc.id,
+            ...doc.data()
+          }
+        });
+        ob = data[0];
+        console.log(ob);
+        ob.referrals+=1;
+        ob.edCredits+=20;
+        firestore.collection('users').doc(ob.id).set({
+          firstName:ob.firstName,lastName: ob.lastName,phone:ob.phone,referralcode:ob.referralcode,email: ob.email,password:ob.password,confirmpassword:ob.confirmpassword,
+          referrals: ob.referrals,
+          edCredits: ob.edCredits
+        }).then(da => {
+          console.log("Document updated");
+        })
+      });
+    }
+
+    const newre = await referralCodeGenerator.alphaNumeric(firstName,3,3);
+
+    console.log(details);
+
+    
     try {
       console.log(phone);
       const { user } = await auth.createUserWithEmailAndPassword(email, password);
       let displayName = firstName + " " + lastName;
       if(auth.currentUser!=null){
-        firestore.collection('users').doc(auth.currentUser.uid).set(details).then(()=>{
+        firestore.collection('users').doc(auth.currentUser.uid).set({...details,referralcode:newre}).then(()=>{
           console.log('user added');
         }).catch((error)=>{
           console.log('error in creating user', error)
