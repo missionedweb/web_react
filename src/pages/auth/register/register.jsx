@@ -119,6 +119,15 @@ export default function Register() {
         }).catch((error)=>{
           console.log('error in creating user', error)
         });
+
+        auth.currentUser.updateProfile({
+          displayName : displayName,
+          phone : phone
+        }).then(()=>{
+          console.log('user created');
+        }).catch((error)=>{
+          console.log('error', error);
+        })
       }
       
       setDetails({

@@ -14,9 +14,15 @@ import ThumbUp from '@material-ui/icons/ThumbUp';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import CenterGrid from '../Cards/index';
+import {firestore,auth} from '../../firebase/firebase.utils';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
+  const userId = auth.currentUser.uid;
+  const courseRef = firestore.collection('course');
+
+  var query = courseRef.where('users', 'array-contains', `${userId}`);
+  console.log(query);
 
   return (
     <div

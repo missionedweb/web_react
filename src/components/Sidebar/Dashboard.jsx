@@ -38,7 +38,8 @@ export function Dashboard() {
 
   return (
     <div>
-      <div className="my-profile " style={{display:"flex", justifyContent:"flex-end"}}>
+      <div className="my-profile " style={{display:"flex", justifyContent:"space-between"}}>
+        <h1 style={{color:"black"}}>Welcome, {auth.currentUser.displayName}</h1>
       <MyProfileDropdown  />
       </div>
 
