@@ -21,9 +21,10 @@ import InputLabel from "@material-ui/core/InputLabel";
 import OutlinedInput from "@material-ui/core/OutlinedInput";
 import IconButton from "@material-ui/core/IconButton";
 import FormControl from "@material-ui/core/FormControl";
-
+import referralCodeGenerator from 'referral-code-generator';
 import CircularProgress from "@material-ui/core/CircularProgress";
 import Alert from "@material-ui/lab/Alert";
+import { firestore } from "../../../firebase/firebase.utils";
 
 export default function Register() {
   const [clicked, setClicked] = useState(false);
@@ -54,6 +55,8 @@ export default function Register() {
     password: "",
     phone: "",
     confirmpassword: "",
+    referralcode : "",
+    referrals : 0
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -81,16 +84,11 @@ export default function Register() {
       const { user } = await auth.createUserWithEmailAndPassword(email, password);
       let displayName = firstName + " " + lastName;
       if(auth.currentUser!=null){
-        auth.currentUser.updateProfile({
-          displayName : displayName,
-          phoneNumber: phone,
-          email: email
-        }).then(()=>{
-          console.log("updated");
-        }
-        ).catch((err)=>{
-          console.log("error occured", err);
-        })
+        firestore.collection('users').doc(auth.currentUser.uid).set(details).then(()=>{
+          console.log('user added');
+        }).catch((error)=>{
+          console.log('error in creating user', error)
+        });
       }
       
       setDetails({
@@ -99,6 +97,7 @@ export default function Register() {
         email: "",
         password: "",
         phone: "",
+        referralcode : ""
       });
     } catch (err) {
       setError(true);
@@ -202,6 +201,19 @@ export default function Register() {
                     name="email"
                     value={details.email}
                     autoComplete="email"
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    onChange={handleChange}
+                    variant="outlined"
+                    
+                    fullWidth
+                    id="referralcode"
+                    label="Referral code (optional)"
+                    name="referralcode"
+                    value={details.referralcode}
+                    
                   />
                 </Grid>
 
